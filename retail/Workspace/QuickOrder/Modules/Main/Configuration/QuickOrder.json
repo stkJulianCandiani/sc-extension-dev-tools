@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "quickorder",
+        "title": "Quick Order",
+        "description": "Quick Order Config",
+        "group": "extensions"
+    },
+    "properties": {
+        "extensions.quickorder.initialLines": {
+            "group": "extensions",
+            "subtab": "quickorder",
+            "type": "integer",
+            "title": "Default quick order line count",
+            "default": 5
+        }
+    }
+}

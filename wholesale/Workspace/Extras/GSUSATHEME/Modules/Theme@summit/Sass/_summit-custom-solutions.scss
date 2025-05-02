@@ -1,0 +1,83 @@
+/* MISC SOLUTION MODULES STYLES */
+/* Landing Page Module Styles */
+.contact-us-landing-page-container {
+    background-color: $sc-neutral-shade-0;
+}
+.contact-us-landing-page-container,
+.about-us-container {
+    padding-top: $sc-padding-lv3;
+}
+
+/* Back In Stock Module Styles */
+.back-in-stock-notification-placeholder {
+    .back-in-stock-notification-show-form-button {
+        @extend .button-secondary;
+        padding: $sc-padding-lv4;
+        font-size: $sc-font-size-l;
+        font-weight:$sc-font-weight-bold;
+        width: 100%;
+    }
+}
+
+/* Blog */
+.blog-details-divider-desktop {
+    display: block;
+    margin: $sc-margin-lv5 0;
+    clear: both;
+    height: 1px;
+}
+
+/* Infinite Scroll */
+.infinite-scroll-top {
+    background: $sc-color-theme;
+    bottom: $sc-margin-lv4 + 15;
+    @include border-radius($sc-theme-border-radius);
+}
+
+.infinite-scroll-top-icon {
+    color: $sc-neutral-shade-0;
+    position: relative;
+    top: 10px;
+}
+
+
+.productcompare-dashboard,
+.contact-us-container,
+.guest-order-status-layout-container,
+.look-layout-container,
+.lookbook-layout-container,
+.blog-main {
+    @extend .content-background;
+}
+
+/* Size Chart */
+.item-details-size-chart-link {
+    display: inline-block;
+    margin: $sc-margin-lv4 0 0;
+}
+
+/* Compare Products */
+.compare-items-title {
+    color: $sc-color-copy-light !important;
+    top: 0 !important;
+}
+.compare-items-container-hide-button {
+    color: $sc-color-copy-light !important;
+    margin-top: 7px;
+}
+.compare-items-hide-container {
+    background-color: $sc-neutral-shade-700 !important;
+}
+.compare-items-container-hide-button {
+  @extend %fa-angle-down;
+}
+.addedfromcomparison-remove-button-icon {
+    color: $sc-neutral-shade-0 !important;
+}
+
+/* Item Badges */
+.facets-item-cell-table .itembadges-badge-container{
+    @media (min-width: $screen-xs-min) {
+        width: 10% !important;
+    }
+}

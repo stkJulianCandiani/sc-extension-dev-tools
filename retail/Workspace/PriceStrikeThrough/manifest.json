@@ -1,0 +1,43 @@
+{
+	"name": "PriceStrikeThrough",
+	"fantasyName": "PriceStrikeThrough",
+	"vendor": "CS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1.0",
+		"SCS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Implements price strike through",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/CS.PriceStrikeThrough.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CS.PriceStrikeThrough.Main.js",
+					"Modules/Item/JavaScript/PriceStrikeThrough.ItemKeyMapping.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS/PriceStrikeThrough@1.0.0",
+	"activation_id": "11",
+	"extension_id": "3407"
+}

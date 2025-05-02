@@ -1,0 +1,11 @@
+{
+    "type": "object",
+    "modifications":
+    [
+        {
+            "target": "$.resource.template.facet-navigation-item",
+            "action": "add",
+            "value": "facets_faceted_navigation_hidden.tpl"
+        }
+    ]
+}

@@ -1,0 +1,220 @@
+.merchandising-zone {
+    padding-top: 0;
+}
+
+.home-cms-page-merchandising {
+    .merchandising-zone-container {
+        .bx-wrapper {
+            @media (min-width: $screen-sm-min) {
+                margin-bottom: 70px !important;
+            }
+        }
+    }
+}
+
+.merchandising-zone-container {
+    padding: 0 $sc-base-padding * 3;
+
+    .bx-viewport {
+        height: auto !important;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.merchandising-zone-cell-template {
+    min-height: 350px;
+}
+
+.merchandising-zone-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: $gs-color-tree-green;
+    font-size: 20px;
+    font-weight: $sc-font-weight-semibold - 100;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: $font-size-h1;
+        font-weight: $sc-font-weight-bold;
+    }
+}
+
+//TODO: Bad practice
+.merchandising-zone h3.merchandising-zone-title {
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-sm-min) {
+        margin-top: 15px;
+        margin-bottom: 45px;
+    }
+}
+
+//TODO: Fix styles applied to tags (file: _merchandising-zone.scss: line: 23) ".merchandising-zone h3 {...}" in order to improve above styles declaration.
+.merchandising-item-view-thumbnail {
+    width: 100%;
+    margin-bottom: 8px;
+    overflow: hidden;
+    display: block;
+
+    img {
+        margin: auto;
+        display: block;
+
+        @media (min-width: $screen-lg-min) {
+            max-height: 235px;
+        }
+    }
+}
+
+.merchandising-item-view-title {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-right: $sc-base-padding * 2;
+    width: 70%;
+    color: $gs-color-black;
+    font-weight: $sc-font-weight-semibold;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-lg-min - 1) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.merchandising-item-view-price {
+    display: inline-block;
+    vertical-align: top;
+    color: $gs-color-black;
+    font-weight: $sc-font-weight-semibold;
+    font-size: 16px;
+    line-height: 20px;
+    width: 30%;
+
+    .item-views-price {
+        text-align: right;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-lg-min - 1) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.merchandising-item-view-price {
+    .item-views-price-lead {
+        font-size: 16px;
+        line-height: 20px;
+        color: $gs-color-black;
+        font-weight: $sc-font-weight-semibold;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-lg-min - 1) {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    .item-views-price-exact.item-views-special-price,
+    .item-views-price-range {
+        .item-views-price-old {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: $sc-font-weight-semibold;
+            color: $gs-color-black;
+            display: block;
+
+            @media (min-width: $screen-sm-min) and (max-width: $screen-lg-min - 1) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        .item-views-price-lead {
+            font-weight: 600;
+        }
+    }
+}
+
+.merchandising-carousel-prev,
+.merchandising-carousel-next {
+    cursor: pointer;
+    cursor: hand;
+    position: absolute;
+    display: inline-block;
+    color: $gs-color-tree-green;
+    font-size: 37px;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 30px;
+    }
+
+    @media (min-width: 1024px) and (max-width: $screen-lg-min - 1) {
+        font-size: 40px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        font-size: 42px;
+    }
+
+    &:hover {
+        color: $gs-color-black;
+    }
+}
+
+.merchandising-carousel-prev {
+    left: -33px;
+    top: 30%;
+
+    @media (max-width: 360px) {
+        left: 0;
+    }
+
+    @media (min-width: 1024px) and (max-width: $screen-lg-min - 1) {
+        left: -36px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        left: -41px;
+    }
+}
+
+.merchandising-carousel-next {
+    right: -33px;
+    top: 30%;
+
+    @media (max-width: 360px) {
+        right: 0;
+    }
+
+    @media (min-width: 1024px) and (max-width: $screen-lg-min - 1) {
+        right: -36px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        right: -41px;
+    }
+}
+
+.merchandising-item-tag {
+    text-transform: uppercase;
+    font-family: "Trefoil Sans", Arial, sans-serif;
+    font-weight: $sc-font-weight-semibold + 100;
+    font-size: 12px;
+    color: white;
+    float: none;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-lg-min - 1) {
+        font-size: 11px;
+    }
+}
+
+.merchandising-item-tag-section {
+    text-align: left;
+    margin-bottom: 6px;
+    min-height: 17px;
+}

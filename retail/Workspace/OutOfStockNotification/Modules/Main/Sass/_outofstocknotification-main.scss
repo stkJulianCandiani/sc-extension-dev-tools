@@ -1,0 +1,85 @@
+$tooltip-width: 250px;
+$sc-base-padding: 5px;
+
+.cart-detailed-body {
+    .out-of-stock-notification-container {
+        display: inline-block;
+        vertical-align: top;
+        margin: $sc-base-margin 0 0 $sc-base-margin*2;
+    }
+}
+
+.out-of-stock-notification-text {
+    font-size: 18px;
+    padding-top: $sc-base-padding * 2;
+    color: $gs-color-black;
+}
+
+.out-of-stock-notification-icon {
+    @extend .icon;
+	@extend %fa-exclamation-triangle;
+    color: $gs-color-cart-count;
+    font-size: $sc-navigation-icon-size;
+}
+
+[disabled] {
+    @include opacity(0.5);
+    cursor: not-allowed;
+}
+
+.out-of-stock-button-overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.quantity-alert-enabled {
+    input[name="quantity"] {
+        border: 2px solid red;
+    }
+    .out-of-stock-button-overlay {
+        display: block;
+    }
+    .cart-add-to-cart-button-button {
+        @extend [disabled];
+    }
+}
+.cart-lines-row {
+    div.cart-lines-summary{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    [data-view="OutOfStockNotification"] {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+}
+
+.header-mini-cart-container {
+    .tooltip {
+        position: relative;
+        top: 0px!important;
+        left: 0px!important;
+
+        .tooltip-arrow {
+            display: none;
+        }
+    }
+}
+
+.header-mini-cart-item-cell-product-qty {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.header-mini-cart-item-cell-out-of-stock-notification {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 10px;
+}

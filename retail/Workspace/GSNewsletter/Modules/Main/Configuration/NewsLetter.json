@@ -1,0 +1,93 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "newsletter",
+        "group": "shoppingApplication",
+        "title": "Newsletter",
+        "docRef": "bridgehead_4685031554",
+        "description": "Configuration of the Newsletter subscription"
+    },
+    "properties": {
+
+        "newsletter.genericFirstName": {
+            "group": "shoppingApplication",
+			"subtab": "newsletter",
+            "type": "string",
+            "title": "Generic first name",
+            "description": "Enter the generic first name to populate in a new Lead record when a user opts in for the newsletter.",
+            "default": "unknown"
+        },
+        "newsletter.genericLastName": {
+            "group": "shoppingApplication",
+			"subtab": "newsletter",
+            "type": "string",
+            "title": "Generic last name",
+            "description": "Enter the generic last name to populate in a new Lead record when a user opts in for the newsletter.",
+            "default": "unknown"
+        },
+        "newsletter.companyName": {
+            "group": "shoppingApplication",
+            "subtab": "newsletter",
+            "type": "string",
+            "title": "Company Name",
+            "description": "Enter the generic Company name to populate in a new Lead record when a user opts in for the newsletter.",
+            "default": "unknown"
+        },
+        "newsletter.showLightbox": {
+            "group": "shoppingApplication",
+            "subtab": "newsletter",
+            "type": "boolean",
+            "title": "Lightbox enabled / disabled",
+            "default": true
+        },
+        "newsletter.lightboxTime": {
+            "group": "shoppingApplication",
+            "subtab": "newsletter",
+            "type": "integer",
+            "title": "Lightbox time",
+            "description": "Time to wait before to display lightbox subscription window (time in seconds).",
+            "default": 60
+        },
+        "newsletter.lightboxImage": {
+            "group": "shoppingApplication",
+            "subtab": "newsletter",
+            "type": "string",
+            "title": "Image to display in lightbox subscription",
+            "description": "Prefered size 610px x 785px.",
+            "default": "/img/newsletter-lightbox.jpg"
+        },
+        "newsletter.lightboxTitle": {
+          "group": "shoppingApplication",
+          "subtab": "newsletter",
+          "type": "string",
+          "title": "Lightbox title",
+          "description": "Main title.",
+          "default": "Never Miss A Thing!"
+        },
+        "newsletter.lightboxDescription": {
+          "group": "shoppingApplication",
+          "subtab": "newsletter",
+          "type": "string",
+          "title": "Lightbox description",
+          "default": "Sign up to receive Latest News, Trends & Exclusive Offers!"
+        },
+        "newsletter.lightboxDisclaimer": {
+            "group": "shoppingApplication",
+            "subtab": "newsletter",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "Subscription disclaimer",
+            "description": "HTML supported but not recommended since any error can have impact in the web store look adn feel.",
+            "default": "*Girl Scouts of the USA  complies with the Children's Online Privacy Protection Act (COPPA), which protects the personal information of children under the age of 13.<br> In compliance, we do not collect email addresses from or market to children under the age of 13."
+        },
+        "newsletter.termsMessage": {
+            "group": "shoppingApplication",
+            "subtab": "newsletter",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "Subscription Terms",
+            "description": "HTML supported but not recommended since any error can have impact in the web store look adn feel.",
+            "default": "By submitting this form, you agree to the Girl Scouts of the United States of America <a href='https://www.girlscouts.org/en/footer/help/terms-and-conditions.html' target='_blank'>Terms and Condition</a> and <a href='https://www.girlscouts.org/en/footer/help/terms-and-conditions.html' target='_blank'>Privacy Policy</a>, and you are opting in to receive marketing information from the Girl Scouts of the United States of America"
+        }
+    }
+}

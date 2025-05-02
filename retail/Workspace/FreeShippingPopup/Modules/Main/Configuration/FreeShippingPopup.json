@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "freeshipping",
+        "title": "Free Shipping",
+        "description": "Free Shipping",
+        "group": "integrations"
+    },
+    "properties": {
+        "freeshipping.config.threshold": {
+            "group": "integrations",
+            "subtab": "freeshipping",
+            "type": "integer",
+            "title": "Threshold for warning",
+            "description": "This will be the minimum value at which the pop up will be shown.",
+            "default": ""
+        },
+        "freeshipping.config.limit": {
+            "group": "integrations",
+            "subtab": "freeshipping",
+            "type": "integer",
+            "title": "Free Shipping Minimum",
+            "description": "This is the minimum required amount to qualify for free shipping.",
+            "default": ""
+        }
+    }
+}

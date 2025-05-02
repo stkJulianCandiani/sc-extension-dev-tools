@@ -1,0 +1,52 @@
+{
+	"name": "SublimePatchOptions",
+	"fantasyName": "Sublime Patch Options",
+	"vendor": "ACS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Sublime Patch Options",
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/SublimePatchOptions.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/sublimePatchOptions.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_sublimePatchOptions.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_sublimePatchOptions.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SublimePatchOptions.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/SublimePatchOptions.js",
+					"Modules/Main/JavaScript/SublimePatchOptions.View.js",
+					"Modules/Main/JavaScript/SublimePatchOptions.Cart.AddToCart.Button.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ACS/SublimePatchOptions@1.0.0",
+	"activation_id": "11",
+	"extension_id": "11601"
+}

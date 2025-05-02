@@ -1,0 +1,15 @@
+.itemssearcher-input {
+	@extend .nav-search-input;
+	width: 80%;
+	color: $gs-color-black !important;
+}
+
+input::first-line {
+	color: inherit;
+}
+
+.gs-site-searcher {
+	@media(min-width: $screen-md-min){
+		margin-right: 0 !important;
+	}
+}

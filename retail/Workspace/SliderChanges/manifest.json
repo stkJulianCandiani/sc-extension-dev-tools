@@ -1,0 +1,54 @@
+{
+	"name": "SliderChanges",
+	"fantasyName": "Slider Changes",
+	"vendor": "CS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "This extension modifies the way the slider behaves by using a different setting for each type of device (phone, tablet, desktiop, etc)",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Sass/_slider_changes.scss"
+		},
+		"files": [
+			"Modules/Sass/_slider_changes.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/CS.SliderChanges.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CS.SliderChanges.Main.js",
+					"Modules/Main/JavaScript/SliderChanges.ItemRelations.Correlated.View.js",
+					"Modules/Main/JavaScript/SliderChanges.ItemRelations.Related.View.js",
+					"Modules/Main/JavaScript/SliderChanges.Configuration.js",
+					"Modules/Main/JavaScript/SliderChanges.RecentlyViewedItems.View.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS/SliderChanges@1.0.0",
+	"activation_id": "11",
+	"extension_id": "5901"
+}

@@ -1,0 +1,10 @@
+/* Edited for Summit Theme */
+
+.product-list-control-single-button-wishlist {
+	@extend .product-list-control-button-wishlist;
+	border: 2px solid $sc-color-link;
+}
+
+.product-list-control-single-confirm-message {
+	padding-top: 5px;
+}

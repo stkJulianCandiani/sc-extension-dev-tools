@@ -1,0 +1,11 @@
+.transaction-line-views-quantity-amount-label{
+	@extend .sc-label;
+	font-weight: $gs-weight-semi-bold;
+}
+.transaction-line-views-quantity-amount-value{
+	@extend .sc-value;
+}
+
+.transaction-line-views-quantity-amount-non-discounted-amount{
+	@extend .old-price;
+}

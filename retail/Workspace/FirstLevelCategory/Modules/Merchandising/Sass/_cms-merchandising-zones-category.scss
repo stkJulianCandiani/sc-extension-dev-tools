@@ -1,0 +1,60 @@
+.merchandising-zone-category {
+    .merchandising-zone-container {
+        @media (min-width: $screen-lg-min) {
+            width: 840px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bx-wrapper {
+            @media (min-width: $screen-lg-min) {
+                max-width: 787px !important;
+            }
+        }
+    }
+
+    .merchandising-carousel-prev,
+    .merchandising-carousel-next {
+        color: $gs-color-black;
+
+        @media (min-width: $screen-md-min) {
+            font-size: 40px;
+        }
+    }
+
+    .merchandising-carousel-prev {
+        left: ($sc-base-margin* -5);
+    }
+
+    .merchandising-carousel-next {
+        right: ($sc-base-margin* -5);
+    }
+
+    .merchandising-item-view-title {
+        font-size: 16px;
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 14px;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            font-size: 16px;
+        }
+    }
+
+    .merchandising-item-view-price .item-views-price-lead {
+        font-size: 16px;
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 14px;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            font-size: 16px;
+        }
+    }
+
+    .bx-controls {
+        margin-top: 0 !important;
+    }
+}

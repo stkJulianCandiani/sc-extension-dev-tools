@@ -1,0 +1,106 @@
+.faq-view-content {
+    padding: 0;
+    margin-left: $sc-margin-lv3;
+    margin-right: $sc-margin-lv3;
+
+    @media (min-width: $screen-sm-min) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.faq-grid {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: $sc-padding-lv7;
+        margin-bottom: $sc-margin-lv7;
+    }
+}
+
+.faq-grid-questions-cell {
+    img {
+        max-height: 250px;
+        max-width: 250px;
+    }
+}
+
+.faq-section-title {
+    color: $gs-color-tree-green;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: $sc-margin-lv2;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 24px;
+        margin-bottom: $sc-margin-lv4;
+    }
+}
+
+.faq-question-title {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px $sc-padding-lv2 12px $sc-padding-lv2;
+    border-top: 1px solid $gs-color-gray-30;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 20px;
+    }
+
+    .gs-icon-c-down {
+        @include transition (rotate 200ms ease-in-out);
+        font-size: 10px;
+        float: left;
+        margin-top: 3px;
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 12px;
+            margin-top: 6px;
+        }
+    }
+
+    a {
+        color: $gs-color-black;
+
+        &.collapsed {
+            .gs-icon-c-down {
+                @include rotate(-90deg);
+            }
+        }
+
+        &:hover,
+        &:active {
+            color: $gs-color-black;
+        }
+    }
+
+    span {
+        padding-left: 8px;
+    }
+}
+
+.faq-answer {
+    padding: 0 28px $sc-padding-lv5;
+    font-size: 14px;
+
+    p {
+        font-size: 14px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        padding: $sc-padding-lv3 $sc-padding-lv6;
+        font-size: 16px;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+.faq-grid-questions {
+    border-bottom: 1px solid $gs-color-gray-30;
+}
+
+.faq-name {
+    margin-bottom: $sc-margin-lv6;
+}

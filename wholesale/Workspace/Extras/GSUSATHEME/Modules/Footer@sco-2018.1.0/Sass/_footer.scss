@@ -1,0 +1,252 @@
+/* Edited for Summit Theme */
+
+footer {
+    margin-top: 30px;
+}
+
+.footer-content{
+    @extend .container;
+    margin: auto;
+}
+
+// Banner
+.footer-banner {
+    @extend .row;
+}
+
+// Links and Copyright
+.footer-content-nav-copyright {
+    @extend .row;
+}
+.footer-content-nav {
+    @extend .col-md-8;
+    @media (min-width: $screen-md-min) {
+        padding-left: 0;
+    }
+}
+.footer-content-nav-list {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: $sc-padding-lv4 0 0;
+
+    @media (min-width: $screen-md-min) {
+        padding-top: 0;
+        padding-bottom: $sc-padding-lv5;
+    }
+
+    @media (min-width: $screen-md-min) {
+        text-align: left;
+    }
+}
+.footer-content-nav-list > li {
+    display: inline-block;
+    margin-right: $sc-margin-lv4;
+    & a {
+        color: $sc-upper-footer-link-color;
+    }
+    & a:hover {
+        color: $sc-upper-footer-link-color-hover;
+    }
+    & a:active {
+        color: $sc-upper-footer-link-color-active;
+    }
+}
+.footer-content-copyright {
+    @extend .col-md-4;
+    text-align:center;
+    padding-top: $sc-padding-lv4;
+    color: $sc-footer-copyright-text-color;
+    @media (min-width: $screen-md-min) {
+        text-align: right;
+        padding-right: 0;
+        padding-top: 0;
+    }
+}
+
+// Newsletter and Social Links
+.footer-content-newsletter-social {
+    @extend .row;
+}
+
+.footer-content-newsletter {
+    @extend .col-md-7;
+    @media (min-width: $screen-md-min) {
+        padding-left: 0;
+    }
+    & .newsletter-suscription-form {
+        margin-top: $sc-margin-lv4;
+        padding-bottom: $sc-padding-lv3;
+        @media (min-width: $screen-sm-min) {
+            padding-bottom: 0;
+            margin-top: 0;
+        }
+    }
+    & .newsletter-suscription-form div:first-child {
+        @extend .row;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    & .newsletter-subscription-form-label {
+        color: $sc-newsletter-label-color;
+        padding-top: 17px;
+        text-align: center;
+        @media (min-width: $screen-md-min) {
+            float: left;
+            width: auto;
+            text-align: left;
+        }
+    }
+    & .newsletter-subscription-form-container {
+        @media (min-width: $screen-md-min) {
+            float: left;
+            width: 400px;
+        }
+    }
+    & .newsletter-suscription-form-input { // yes there's a typo in the template
+        background-color: $sc-footer-fields-background-color !important;
+        border: 1px solid $sc-footer-fields-border-color !important;
+        color: $sc-footer-fields-text-color !important;
+        @media (min-width: $screen-sm-min) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+    & .newsletter-subscription-form-button-subscribe {
+        background: $sc-footer-buttons-background-color !important;
+        color: $sc-footer-buttons-text-color !important;
+        border: 2px solid $sc-footer-buttons-background-color !important;
+        //border-radius: $sc-footer-buttons-border-radius;
+
+        @media (min-width: $screen-sm-min) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        &:hover {
+            background: $sc-footer-buttons-background-hover-color !important;
+            border: 2px solid $sc-footer-buttons-background-hover-color !important;
+        }
+    }
+}
+
+.footer-content-social {
+    @extend .col-md-5;
+    @media (min-width: $screen-md-min) {
+        padding-right: 0;
+    }
+}
+
+.footer-content-social-list {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $sc-padding-lv2;
+    }
+
+    @media (min-width: $screen-md-min) {
+        text-align: right;
+    }
+
+    @media (max-width: $screen-xs-min) {
+        li:first-child {
+            display: block;
+            margin: $sc-margin-lv2 0;
+        }
+    }
+}
+.footer-content-social-list > li {
+    display: inline-block;
+    margin-right: $sc-margin-lv3;
+    color: $sc-footer-social-text-color;
+    & a {
+        color: $sc-footer-social-icon-color;
+    }
+    & a:hover {
+        color: $sc-footer-social-icon-hover-color;
+    }
+    @media (min-width: $screen-md-min) {
+        margin-left: $sc-margin-lv3;
+        margin-right: 0;
+    }
+}
+
+.footer-content-social-icon {
+    font-size: $sc-footer-social-icon-size;
+}
+
+// Footer Multi-Links
+// for large format footer with up to four columns of links
+.footer-columns-wrapper {
+    background-color: $sc-theme-lower-bgr-color;
+    margin-top: $sc-margin-lv7;
+    @media (min-width: $screen-md-min) {
+        margin-top: $sc-margin-lv4;
+    }
+}
+.footer-columns-container {
+    @extend .container;
+}
+.footer-columns {
+    @extend .row;
+    padding: $sc-padding-lv7 0;
+}
+
+.footer-column-links {
+    @extend .col-md-3;
+    @extend .col-xs-6;
+
+    @media (max-width: $screen-sm-min) {
+        &:nth-child(odd) {
+            clear: both;
+        }
+    }
+}
+
+.footer-column-link {
+    font-weight: $sc-font-weight-normal;
+    color: $sc-lower-footer-link-color;
+    &:hover {
+        color: $sc-lower-footer-link-color-hover;
+    }
+    &:active {
+        color: $sc-lower-footer-link-color-active;
+    }
+}
+
+:first-child.footer-column-links {
+    @media (min-width: $screen-md-min) {
+        padding-left: 0;
+    }
+}
+
+.footer-column-link-listitem {
+    margin: $sc-margin-lv1 0;
+}
+
+.footer-column-heading {
+    color: $sc-footer-headings-color;
+    padding-bottom: $sc-padding-lv1;
+    padding-top: $sc-padding-lv3;
+    //font-size: $sc-h3-font-size * 0.8;
+    font-weight: $sc-font-weight-normal;
+    text-transform: uppercase;
+    @media (min-width: $screen-md-min) {
+        padding-top: 0;
+    }
+}
+
+// all
+.footer-content-nav-copyright,
+.newsletter-subscription-form-label,
+.footer-content-social,
+.footer-columns {
+    font: $sc-font-weight-normal $sc-footer-font-size $sc-body-font-family;
+}
+
+/* Simplified */
+.footer-simplified {
+    margin-bottom: $sc-margin-lv8;
+}

@@ -1,0 +1,22 @@
+.footer-social-icons-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-icons {
+    padding: $sc-margin-lv4 0;
+}
+
+.footer-social-icons-link {
+    font-size: 32px;
+    margin: 0 $sc-margin-lv3;
+
+    .footer-d-social-icons & {
+        color: #00ae58; //$gs-color-tree-green;
+        font-size: 52px;
+    }
+
+    .footer-d-social-icons .footer-social-icons-item:first-child & {
+        margin-left: 0;
+    }
+}

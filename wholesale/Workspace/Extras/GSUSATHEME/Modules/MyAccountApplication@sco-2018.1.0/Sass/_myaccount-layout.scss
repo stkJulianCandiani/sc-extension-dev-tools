@@ -1,0 +1,140 @@
+/* Edited for Summit Theme */
+
+.myaccount-layout {
+	@extend %sc-layout;
+}
+
+.myaccount-layout-container{
+	// Footer module will set a bottom padding with the size of the footer	(on Footer.View.js)
+	@extend .container;
+	@extend .content-background;
+	clear: both;
+}
+
+.myaccount-layout-header {
+	//@include box-shadow(3px 0px 6px $sc-color-secondary);
+  	margin-bottom: 0;
+	//background-color: transparent;
+}
+
+.myaccount-layout-row{
+	@extend .row;
+
+	#content {
+		padding-top: 0;
+	}
+}
+
+.myaccount-layout-main{
+	@extend .col-xs-12;
+	@extend .col-sm-9;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: 70px;
+	}
+	.page-not-found {
+		overflow: hidden;
+	}
+	header {
+		@media (max-width: $screen-sm-min) {
+			margin-top: $sc-margin-lv2;
+			border-top: $sc-theme-border-light;
+		}
+	}
+}
+
+.myaccount-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.myaccount-layout-title{
+	margin-bottom: $sc-margin-lv4;
+	display:none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+		margin-top: $sc-margin-lv4;
+	}
+}
+
+.myaccount-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+.myaccount-layout-side-nav{
+
+	@extend .col-sm-3;
+	display: none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.force-hide-side-nav{
+
+	.myaccount-layout-side-nav{
+		display: none;
+	}
+
+	.myaccount-layout-title{
+		display: none;
+	}
+
+	.myaccount-layout-main{
+		@extend .col-sm-12;
+	}
+}
+
+.myaccount-layout-breadcrumb{
+	display: none;
+
+	@extend .container;
+	@extend .content-background;
+	padding-top: $sc-padding-lv7 !important;
+	padding-left: 0 !important;
+    font-family: $sc-theme-secondary-font;
+    text-transform: uppercase;
+	background-color: transparent !important;
+
+	@media(min-width: $screen-md-min) {
+		display: block;
+	}
+}
+
+.myaccount-layout-error-placeholder{}
+
+.myaccount-layout {
+	.invoice-paid-list-no-records {
+		@extend h5;
+		text-align: center;
+		padding:$sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+	}
+	@media (max-width: $screen-xs-max) {
+		/* MISC SPACING */
+		.caseManagement {
+			padding: $sc-padding-lv5 0;
+		}
+		.Invoices,
+		.PaidInvoices {
+			padding-top: $sc-padding-lv5;
+		}
+		.quote-list-empty-section,
+		.return-authorization-list-empty-section,
+		.reorder-items-list-empty-section,
+		.invoice-open-list-no-records,
+		.invoice-paid-list-no-records {
+			padding: $sc-padding-lv3;
+		}
+		.AccountBalance .balance-actions {
+			margin-bottom: $sc-margin-lv3;
+		}
+
+		/* Case Buttons */
+		.case-list-header-button-new {
+			margin-top: 0;
+			top: 50px;
+		}
+	}
+}

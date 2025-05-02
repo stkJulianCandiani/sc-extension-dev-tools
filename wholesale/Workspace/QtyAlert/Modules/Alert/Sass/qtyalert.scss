@@ -1,0 +1,25 @@
+
+.out-of-stock-notification-icon{
+  @extend .icon;
+	@extend %fa-exclamation-triangle;
+  color:red;
+  
+    font-size: 25px;
+}
+.out-of-stock-notification-container{
+ 
+  .tooltip{
+    width: 200px!important;
+  }
+}
+
+.quick-order-qty-container {
+  .out-of-stock-notification-container{
+    width: 100%;
+  }
+  
+}
+.header-mini-cart-quantity-alert{
+  width: 100%;
+  display: contents;
+}

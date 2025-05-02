@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "council",
+        "title": "Find your Council",
+        "description": "",
+        "group": "integrations"
+    },
+    "properties": {
+        "council.zipEmpty": {
+            "group": "integrations",
+            "subtab": "council",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "Zip code without council info",
+            "description": "Message to display if the customer try to search a council by zip code but the zip code record has not council information configured.",
+            "default": "The council associated with this zip code currently does not have their own page on this site. To find out information about your council and their own web store, go to <a href=\"/Store-Locator\">https://www.girlscoutshop.com/Store-Locator</a>. Additional council pages are coming soon!",
+            "translate": true
+        },
+        "council.zipInvalid": {
+            "group": "integrations",
+            "subtab": "council",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "Invalid zip code",
+            "description": "Message to display if the customer try to search a council by invalid zip code.",
+            "default": "Your Zip Code has 0 result.",
+            "translate": true
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "type": "object",
+
+    "modifications": [{
+        "target": "$.properties[home.carouselImages].items",
+        "action": "add",
+        "value": {
+            "type": "object",
+            "properties": {
+                "imageDesktop": {
+                    "type": "string",
+                    "title": "Image Url Desktop"
+                },
+                "imageMobile": {
+                    "type": "string",
+                    "title": "Image Url Mobile"
+                },
+                "href": {
+                    "type": "string",
+                    "title": "Link Location"
+                },
+                "altText": {
+                    "type": "string",
+                    "title": "Alt Text"
+                },
+                "target": {
+                    "type": "string",
+                    "title": "Target",
+                    "enum": [
+                        "_blank",
+                        "_self",
+                        "_parent",
+                        "_top"
+                    ]
+                }
+            }
+        }
+    }]
+}

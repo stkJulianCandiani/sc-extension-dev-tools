@@ -1,0 +1,152 @@
+{
+    "type": "object",
+     "subtab": {
+        "id": "ironon",
+        "title": "Iron On",
+        "description": "Iron on Extension Config",
+        "group": "extensions"
+    },
+    "properties": {
+        "extensions.ironon.lineIdItemOption": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Line Id Item Option",
+            "description": "Line Id Item Option",
+            "default": "custcol_acs_troop_numeral_line_id"
+        },
+        "extensions.ironon.troopNumeralSelectionItemOption": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Troop Numeral Selection Item Option",
+            "description": "Line Id Item Option",
+            "default": "custcol_acs_troop_numeral_selection"
+        },
+        "extensions.ironon.troopNumeralItemsItemOption": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Troop Numeral Items Item Option",
+            "description": "Troop Numeral Items Item Option",
+            "default": "custcol_acs_troop_numeral_items"
+        },
+        "extensions.ironon.troopNumeralItemOption": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Troop Numeral Option",
+            "description": "Troop Numeral Option (option of the actual troop numeral item)",
+            "default": "custcol_troop_numeral"
+        },
+        "extensions.ironon.troopNumeralItemCostOption": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Troop Numeral Cost Option",
+            "description": "Troop Numeral Cost Option (Total aggregated cost)",
+            "default": "custcol_acs_troop_numeral_cost"
+        },
+        "extensions.ironon.troopNumeralItemField": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Troop Numeral Option Item Field",
+            "description": "Troop Numeral Option Item Field",
+            "default": "custitem_troop_numeral"
+        },
+        "extensions.ironon.numberLength": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Number Length",
+            "description": "Max Length of the amount of numbers to be selected",
+            "default": "6"
+        },
+        "extensions.ironon.numberMinLength": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Number Minimum Length",
+            "description": "Min Length of the amount of numbers to be selected",
+            "default": "3"
+        },
+        "extensions.ironon.troopNumeralField": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Troop Numeral Parent Field",
+            "description": "Internalid of the field with the troop numeral item information",
+            "default": "custitem_acs_troop_numeral_item_id"
+        },
+        "extensions.ironon.extraItemsOptions": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Extra Items Options",
+            "description": "Internalid of the extra items to add to cart",
+            "default": "custcol_acs_extra_customized_items"
+        },
+        "extensions.ironon.flagPatchItem": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Flag Patch Item Id",
+            "description": "Internalid of the flag item patch",
+            "default": ""
+        },
+        "extensions.ironon.trefoilPin": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Trefoil Pin",
+            "description": "Internalid of the Trefoil Pin item",
+            "default": ""
+        },
+        "extensions.ironon.trefoilPinParent": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Trefoil Pin Parent",
+            "description": "Internalid of the Trefoil Pin Parent item",
+            "default": ""
+        },
+        "extensions.ironon.serviceFeeField": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Service Fee Item Field Id",
+            "description": "Service Fee Item Field Id",
+            "default": "custitem_acs_service_item_id"
+        },
+        "extensions.ironon.serviceFeeMessage": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "Service Fee Message",
+            "description": "Service Fee Message",
+            "default": "<p>Pressed for time? Start fresh with a new Customized [ITEMNAME] and add your required, core insignia seamlessly with our customization service. For an additional [SERVICECOST] service fee, we’ll add insignia via our super secure heat press process. Your new uniform will arrive troop meeting ready.</p><br><p>Step 1. Select vest size.<br>Step 2. Add any or all of the following insignia: Council identification set, and Troop numerals and American flag patch. Complete the look by adding the Insignia tab, Membership pin and World Trefoil pin to your order.<br>Step 3. Add to cart! </p><br><p>Please allow up to 20 business days for production. Upon completion, all orders are shipped via standard delivery. This item is ineligible for returns, exchanges, refunds and may shipped separately from other Girl Scout Merchandise items.</p><br><p>For more information, please see our <a href=\"https://www.girlscoutshop.com/faq\" target=\"_blank\">Customized Uniforms FAQs</a></p>"
+        },
+        "extensions.ironon.acceptedShippingMethods": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "string",
+            "title": "Accepted Shipping Methods",
+            "description": "Array of the internalid of the accepted Shipping Methods for Iron On Customization"
+        },
+        "extensions.ironon.troopCrestPatches": {
+            "group": "extensions",
+            "subtab": "ironon",
+            "type": "array",
+            "title": "Troop Crest Patches Ids",
+            "description": "Troop Crest Patches Ids",
+            "items": {
+                "type": "string",
+                "title": "Item ID",
+                "mandatory": false
+            },
+            "default": []
+        }
+    }
+}

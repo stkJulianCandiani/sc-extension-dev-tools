@@ -1,0 +1,189 @@
+/*
+    © 2020 NetSuite Inc.
+    User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+    provided, however, if you are an authorized user with a NetSuite account or log-in, you
+    may use this code subject to the terms that govern your access and use.
+*/
+
+$sc-color-tertiary: #ffffff;
+$screen-sm-min: 768px !default;
+$sc-base-margin: 5px;
+
+.quick-order {
+    @extend .container;
+}
+
+.quick-order .page-sep {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.quick-order-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+}
+
+.quick-order-steps {
+    font-size: 12px;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 23px;
+        margin-bottom: 40px;
+    }
+}
+
+// Labels
+%quick-order-label {
+    font-size: 12px;
+    font-weight: 600;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 16px;
+    }
+}
+
+.quick-order-column-labels {
+    @extend .row;
+    padding-bottom: 5px;
+}
+
+.quick-order-item-label {
+    @include make-sm-column(4);
+    @include make-xs-column(5.1);
+    @extend %quick-order-label;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 33%;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 26%;
+    }
+}
+
+.quick-order-qty-label {
+    @include make-sm-column(1.5);
+    @include make-xs-column(2.3);
+    @extend %quick-order-label;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 25%;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 20.5%;
+    }
+}
+
+.quick-order-item-details-label {
+    @include make-sm-column(2.3);
+    @extend %quick-order-label;
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: inline;
+        width: 18.2%;
+    }
+}
+
+.quick-order-remove-label,
+.quick-order-price-label,
+.quick-order-amount-label {
+    @include make-sm-column(1.4);
+    @include make-xs-column(2.3);
+    @extend %quick-order-label;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.quick-order-amount-label {
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: inline;
+        text-align: center;
+    }
+}
+
+.quick-order-remove-label {
+    text-align: center;
+}
+
+// Buttons
+.quick-order-buttons {
+    padding: 10px 0 35px 0;
+}
+
+.quick-order-add-to-cart-button {
+    @extend .button-large;
+    @extend .button-primary;
+    float: right;
+    clear: both;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.quick-order-addline-button {
+    @extend .button-large;
+    @extend .button-tertiary;
+    margin-bottom: $sc-base-margin * 2;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+// Icons
+.quick-order-add-line {
+    @extend %fa-icon-plus-circle !optional;
+    @extend .icon-plus-circle !optional;
+    @extend .fa-2x;
+    color: $sc-color-tertiary;
+}
+
+// Part of bootstrap scaffolding but not included in reference distro
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.quick-order-footer-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 23px;
+        font-weight: normal;
+    }
+}
+
+.quick-order-footer-info {
+    font-size: 12px;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 23px;
+    }
+}
+
+.quick-order-footer {
+    margin-bottom: 80px;
+}

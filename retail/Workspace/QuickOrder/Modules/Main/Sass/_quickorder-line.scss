@@ -1,0 +1,515 @@
+/*
+    © 2020 NetSuite Inc.
+    User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+    provided, however, if you are an authorized user with a NetSuite account or log-in, you
+    may use this code subject to the terms that govern your access and use.
+*/
+
+$sc-base-padding: 5px;
+$sc-color-secondary: #ec008b;
+$gs-color-black: #000;
+$gs-color-pink: #ec008b;
+$gs-color-gray-10: darken(#fff, 10%);
+$gs-color-tree-green: #00ae58;
+$screen-md-min: 992px !default;
+
+.quick-order-search {
+    @extend .fa;
+    @extend %fa-search;
+    font-size: 1.5em;
+    color: $sc-color-secondary;
+    background: none;
+}
+
+////////////////////////
+.quick-order-line {
+    @extend .row;
+    padding-top: $sc-base-padding * 2;
+}
+
+;
+
+.quick-order-line:hover {
+    background-color: $gs-color-gray-10;
+}
+
+// Item Column
+.quick-order-item {
+    @include make-sm-column(4);
+    @include make-xs-column(5.1);
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 33%;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 25%;
+    }
+}
+
+.quick-order-item-input {
+    @extend .input-large;
+    width: 72% !important;
+    float: left;
+    min-width: unset;
+    border-color: $gs-color-tree-green;
+    font-size: 12px;
+
+    @media (min-width: $screen-xs-min) {
+        width: 82% !important;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 18px;
+        width: 90% !important;
+    }
+
+    @media (min-width: $screen-md-min) {
+        min-width: 90% !important;
+    }
+}
+
+.quick-order-item-button {
+    background: none;
+    width: 25px;
+
+    @media (min-width: $screen-sm-min) {
+        width: 10%;
+        line-height: 17px;
+        position: relative;
+        top: 8px;
+    }
+
+    float: left;
+    line-height: 38px;
+    padding: 0 0 0 5px;
+}
+
+// Qty Column
+.quick-order-qty-input {
+    @extend .input-small;
+    min-width: 100% !important;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    border-color: $gs-color-tree-green;
+    font-size: 12px;
+    margin-right: 5px;
+    float: left;
+
+    @media (min-width: $screen-sm-min) {
+        min-width: auto !important;
+        width: 100%;
+        font-size: 18px;
+        float: none;
+        margin: 0 auto 10px;
+    }
+
+    @media (min-width: $screen-md-min) {
+        float: left;
+        margin: 0 5px 0 0;
+        width: 50%;
+    }
+}
+
+// Status Column
+.quick-order-status {
+    text-align: center;
+    color: $gs-color-tree-green;
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: block;
+        clear: both;
+    }
+
+    @media (min-width: $screen-md-min) {
+        display: inline;
+        clear: none;
+    }
+}
+
+.quick-order-status-mobile {
+    @include make-xs-column(2.3);
+    display: inline;
+    float: left;
+    font-size: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: left;
+    padding-top: 5px;
+
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+}
+
+.quick-order-status-found-instock {
+    border: 1px solid #000;
+    background-color: #14892c;
+    color: #fff;
+    border-radius: 8%;
+    font-size: 0.6em;
+    padding: 4px;
+    display: inline-block;
+}
+
+.quick-order-status-found-outofstock {
+    border: 1px solid #000;
+    background-color: #d04437;
+    color: #fff;
+    border-radius: 8%;
+    font-size: 0.6em;
+    padding: 4px;
+    display: block;
+}
+
+.quick-order-status-min-quantity {
+    border: 1px solid #000;
+    background-color: #ffd351;
+    color: #000;
+    border-radius: 8%;
+    font-size: 0.6em;
+    padding: 4px;
+    display: block;
+    margin-top: 3px;
+}
+
+.quick-order-item-minqty-warning {
+    border-color: #EB365D;
+}
+
+// Image Column
+.quick-order-item-image-viewonly,
+.quick-order-item-image,
+.quick-order-item-image-placeholder {
+    float: left;
+}
+
+.quick-order-item-image-viewonly img,
+.quick-order-item-image a img {
+    width: 45px;
+}
+
+// Item name and sku Column
+.quick-order-item-name,
+.quick-order-item-name-viewonly,
+.quick-order-item-name-placeholder {
+    margin-left: 55px;
+    padding-top: 5px;
+
+    @media (min-width: $screen-sm-min) {
+        margin-left: 55px;
+        padding-top: 0;
+    }
+}
+
+.quick-order-item-sku {
+    font-size: 0.8em;
+}
+
+.quick-order-item-name,
+.quick-order-item-name a {
+    color: $gs-color-black;
+}
+
+// Price Column
+.quick-order-item-amount,
+.quick-order-item-price,
+.quick-order-item-price-placeholder {
+    line-height: 38px;
+    @include make-sm-column(1.4);
+    @include make-xs-column(2.3);
+    padding-left: 8px;
+    padding-right: 8px;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.quick-order-item-price-placeholder {
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: inline;
+    }
+}
+
+.quick-order-item-price-placeholder-mobile {
+    display: inline;
+
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+}
+
+.quick-order-item-price {
+    display: none;
+    .product-views-price-lead {
+        line-height: 38px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        display: inline;
+    }
+}
+
+.quick-order-item-price-mobile {
+    display: inline;
+    float: right;
+
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+}
+
+.quick-order-item-amount {
+    text-align: center;
+    color: $gs-color-tree-green;
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: inline;
+    }
+}
+
+.quick-order-qty {
+    @include make-sm-column(1.5);
+    @include make-xs-column(2.3);
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 25%;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        width: 21%;
+    }
+
+    @media (min-width: $screen-md-min) {
+        text-align: left;
+    }
+}
+
+.quick-order-remove {
+    @include make-sm-column(1.4);
+    @include make-xs-column(2.3);
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: inline;
+        width: 11%;
+    }
+}
+
+.quick-order-remove-mobile {
+    float: right;
+    display: inline;
+    line-height: 38px;
+
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+}
+
+.quick-order-remove-newline {
+    @extend .col-md-offset-6;
+}
+
+.quick-order-item-amount-placeholder {
+    @include make-sm-column(1.4);
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: inline;
+    }
+}
+
+.quick-order-item-amount-placeholder .quick-order-item-price-shape {
+    margin: 0 auto;
+}
+
+.column-details-desktop {
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: block;
+    }
+}
+
+.column-details-mobile {
+    clear: both;
+    overflow: hidden;
+
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+}
+
+// Results placeholder (grey boxes)
+.quick-order-item-details-placeholder,
+.quick-order-item-details {
+    @include make-sm-column(2.3);
+    @include make-xs-column(5.1);
+}
+
+.quick-order-item-details-placeholder {
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: inline;
+    }
+}
+
+.quick-order-item-details {
+    clear: both;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 33%;
+
+    @media (min-width: $screen-sm-min) {
+        clear: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 19%;
+    }
+}
+
+.quick-order-item-image-shape {
+    width: 45px;
+    height: 45px;
+    background: #F3F3F3;
+}
+
+.quick-order-item-name-shape {
+    width: 100%;
+    height: 10px;
+    background: #F3F3F3;
+    margin-bottom: 3px;
+}
+
+.quick-order-item-price-shape {
+    width: 50px;
+    height: 10px;
+    background: #F3F3F3;
+}
+
+// Results dropdown
+.quick-order-lookup-noresults {
+    line-height: 15px;
+
+    span {
+        display: block;
+        margin-left: 32px;
+    }
+}
+
+.quick-order-lookup-results,
+.quick-order-lookup-noresults {
+    @include make-sm-column(2.3); //4.8
+    clear: both;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    @media (min-width: $screen-sm-min) {
+        clear: none;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.quick-order-lookup-noresults .quick-order-status-no-results,
+.quick-order-lookup-results .quick-order-status-results {
+    float: left;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.quick-order-lookup-results-group-label {
+    @extend .input-label !optional;
+}
+
+.quick-order-dropdown-form-controls {
+    margin-left: 32px;
+}
+
+select.quick-order-dropdown-select {
+    @extend .input-large;
+    max-width: 200px;
+    min-width: 110px;
+
+    @media (min-width: $screen-md-min) {
+        max-width: 124px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        max-width: 165px;
+    }
+}
+
+// Item added to cart - fade on success
+.quick-order-item-addtocart-success {
+    -webkit-transition: opacity 10s ease-in-out;
+    -moz-transition: opacity 10s ease-in-out;
+    -ms-transition: opacity 10s ease-in-out;
+    -o-transition: opacity 10s ease-in-out;
+    opacity: 0.2;
+    pointer-events: none;
+    cursor: default;
+}
+
+.quick-order-item-addedtocart-message {
+    text-align: center;
+    line-height: 38px;
+}
+
+// Icons
+.quick-order-search.gs-icon-search {
+    font-size: 18px;
+    color: $gs-color-tree-green;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 22px;
+    }
+}
+
+.quick-order-status-results {
+    @extend .icon;
+    @extend %fa-question-circle;
+    color: #ffd351;
+    font-size: 2em;
+    padding-top: 5px;
+}
+
+.quick-order-remove {
+    float: right;
+
+    .gs-icon-close {
+        color: $gs-color-tree-green;
+        font-size: 16px;
+
+        &:hover {
+            color: $gs-color-pink;
+        }
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 20px;
+        }
+    }
+}
+
+.quick-order-status-no-results {
+    @extend .icon;
+    @extend %fa-info-circle;
+    color: #d04437;
+    font-size: 2em;
+}

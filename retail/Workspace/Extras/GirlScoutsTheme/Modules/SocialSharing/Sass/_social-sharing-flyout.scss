@@ -1,0 +1,193 @@
+$sc-color-social-sharing-flyout-content-social-facebook-icon: #3b5998;
+$sc-color-social-sharing-flyout-content-social-twitter-icon: #00b6f1;
+$sc-color-social-sharing-flyout-content-social-google-icon: #dd4b38;
+$sc-color-social-sharing-flyout-content-social-pinterest-icon: #bd071d;
+
+.social-sharing-flyout-content {
+	position: relative;
+	float: right;
+}
+.social-sharing-flyout-content-button {
+	@extend .sc-flyout-control;
+	font-size: 15px;
+	min-width: 85px;
+}
+.social-sharing-flyout-content-button-icon{
+	@extend .fa;
+	@extend %fa-share-alt-square;
+	font-size: 20px;
+}
+.social-sharing-flyout-content-social {
+	@extend .sc-flyout-content;
+	width: 165px;
+	left: auto;
+	right: 0;
+}
+.social-sharing-flyout-content-social-facebook,
+.social-sharing-flyout-content-social-twitter,
+.social-sharing-flyout-content-social-google,
+.social-sharing-flyout-content-social-pinterest  {
+	text-align: left;
+	padding: $sc-margin-lv2;
+	padding-left: 0;
+	color: $sc-color-theme-700;
+	display: block;
+	font-size: 15px;
+	margin-right: $sc-margin-lv2;
+	display: inline-block;
+
+	span {
+		display: none;
+		@media (min-width: $screen-md-min) {
+			display: inline;
+		}
+	}
+}
+.social-sharing-flyout-content-social-pinterest {
+	margin-bottom: 0;
+	overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 53px;
+    height: 53px;
+	background: $gs-color-purewhite;
+
+	&:hover {
+		background: #bd081c !important;
+	}
+}
+.social-sharing-flyout-content-social-facebook-icon {
+	font-size: 20px;
+	color: $sc-color-social-sharing-flyout-content-social-facebook-icon;
+	@extend .fa;
+	@extend %fa-facebook-square;
+}
+.social-sharing-flyout-content-social-twitter-icon {
+	color: $sc-color-social-sharing-flyout-content-social-twitter-icon;
+	font-size: 20px;
+	@extend .fa;
+	@extend %fa-twitter-square;
+}
+.social-sharing-flyout-content-social-google-icon {
+	color: $sc-color-social-sharing-flyout-content-social-google-icon;
+	font-size: 20px;
+	@extend .fa;
+	@extend %fa-google-plus-square;
+}
+.social-sharing-flyout-content-social-pinterest-icon {
+	color: $sc-color-social-sharing-flyout-content-social-pinterest-icon;
+	font-size: 20px;
+	@extend .fa;
+	@extend %fa-pinterest-square;
+}
+
+.facebook-like-btn {
+	margin: $sc-margin-lv2 $sc-margin-lv2 0 0;
+}
+
+.product-details-full-social-sharing-m-container {
+	border-top: 1px solid $gs-color-black;
+    padding-top: $sc-padding-lv3;
+	margin-bottom: $sc-margin-lv5;
+    text-align: center;
+	h2 {
+		font-style: italic;
+		font-size: 18px;
+		font-weight: normal;
+		@media(min-width: $screen-xs-min){
+			font-size: 24px;
+		}
+	}
+	.social-sharing-flyout-icons {
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+
+.product-details-full-m-display {
+	.item-tag {
+		font-size: 11px;
+		@media(min-width: $screen-md-min){
+			font-size: 18px;
+		}
+	}
+	@media(min-width: $screen-md-min){
+		height: 0;
+		margin: 0;
+	}
+}
+
+.social-sharing-flyout-icons {
+	margin-top: $sc-margin-lv3;
+	padding-top: 12px;
+	text-align: center;
+	.add-this-btn {
+		display: inline-block;
+	    border-top: 1px solid $gs-color-gray-30;
+	    margin-top: $sc-margin-lv4;
+	    padding-top: 8px;
+		@media(min-width: $screen-xs-max){
+			  padding-top: 12px;
+		}
+		a {
+			font-size: 26px !important;
+			line-height: 50px;
+			margin: 0 5px;
+			float: none !important;
+			width: 50px !important;
+			height: 50px !important;
+				@media(min-width: $screen-xs-max){
+					font-size: 35px !important;
+					line-height: 55px;
+					margin: 0 9px;
+					float: none !important;
+					width: 53px !important;
+					height: 53px !important;
+				}
+
+			&.addthis_button_email {
+				@extend .gs-icon-mail;
+				&:hover {
+					color: $gs-color-purewhite;
+					background-color: $gs-color-tree-green;
+				}
+			}
+			&.addthis_button_pinterest_share {
+				@extend .gs-icon-pinterest;
+				&:hover {
+					color: $gs-color-purewhite;
+					background-color: $sc-color-social-sharing-flyout-content-social-pinterest-icon;
+				}
+			}
+			&.addthis_button_facebook {
+				@extend .gs-icon-facebook;
+				&:hover {
+					color: $gs-color-purewhite;
+					background-color: $sc-color-social-sharing-flyout-content-social-facebook-icon;
+				}
+			}
+			&.addthis_button_twitter {
+				@extend .gs-icon-twitter;
+				&:hover {
+					color: $gs-color-purewhite;
+					background-color: $sc-color-social-sharing-flyout-content-social-twitter-icon;
+				}
+			}
+			span {
+				display: none;
+			}
+		}
+		@media(min-width: $screen-sm-min){
+			margin-top: 0;
+		}
+	}
+
+}
+
+.social-sharing-flyout-icons:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}

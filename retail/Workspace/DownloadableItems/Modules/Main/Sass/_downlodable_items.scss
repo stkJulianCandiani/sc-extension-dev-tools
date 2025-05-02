@@ -1,0 +1,51 @@
+// /*
+// 	© 2020 NetSuite Inc.
+// 	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+// 	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+// 	may use this code subject to the terms that govern your access and use.
+// */
+
+.downloadable-items-audio-table {
+     margin-top: 40px;
+
+     >tbody>tr>td {
+         vertical-align: middle;
+     }
+
+     audio {
+         width: 100px;
+
+         @media (min-width: $screen-xs-min) {
+             width: 200px;
+         }
+
+         @media (min-width: $screen-md-min) {
+             width: 230px;
+         }
+     }
+ }
+
+ audio::-internal-media-controls-download-button {
+     display: none;
+ }
+
+ audio::-webkit-media-controls-enclosure {
+     overflow: hidden;
+ }
+
+ .downloadable-items-list-empty-section {
+     h5 {
+         font-weight: 600;
+         font-size: 14px;
+         padding: 20px 0;
+     }
+ }
+
+ .downloadable-items-audio-container {
+     overflow: hidden;
+     width: 105px;
+
+     @media (min-width: $screen-sm-min) {
+         width: auto;
+     }
+ }

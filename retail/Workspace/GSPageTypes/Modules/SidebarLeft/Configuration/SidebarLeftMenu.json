@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "sidebarLeftPageType",
+        "group": "customizations",
+        "title": "Sidebar Left Page Type",
+        "description": "Sidebar Left Page Type"
+    },
+    "properties": {
+        "pageTypes.sidebarLeft.sidebarLeftMenu": {
+            "group": "customizations",
+            "subtab": "sidebarLeftPageType",
+            "type": "array",
+            "title": "Sidebar Left Page menu",
+            "description": "Sidebar Left Page menu",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "title": "Title"
+                    },
+                    "link": {
+                        "type": "string",
+                        "title": "Link"
+                    }
+                }    
+            }    
+        },
+        "pageTypes.sidebarLeft.navTitle": {
+            "group": "customizations",
+            "subtab": "sidebarLeftPageType",
+            "type": "string",
+            "title": "Sidebar Left Page menu title",
+            "description": "Sidebar Left Page menu title"
+        }
+    }
+}

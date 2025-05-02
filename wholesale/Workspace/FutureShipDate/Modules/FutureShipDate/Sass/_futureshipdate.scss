@@ -1,0 +1,20 @@
+.futureshipdate-container {
+  @extend .box-column;
+  overflow:hidden;
+}
+
+.futureshipdate-input {
+  @extend .input-large;
+}
+
+.futureshipdate-title {
+  margin-bottom: $sc-margin-lv2;
+}
+
+.futureshipdate-label {
+  @extend .sc-value;
+  display: block;
+  margin-bottom: $sc-margin-lv1;
+  font-size: $sc-font-size-m;
+  font-weight: $sc-font-weight-semibold;
+}

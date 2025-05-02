@@ -1,0 +1,338 @@
+$default-input-color: #00ae58;
+$alternative-button-background-color: #00ae58;
+$button-text-color: white;
+$quick-order-image-max-height: 50px;
+$quick-order-quantity-input-max-width: 75px;
+$quick-order-line-border-color: #e6e6e6;
+$quick-order-add-line-button-background-color: #ec008b;
+$quick-order-text-default-color: black;
+
+.quick-order-container {
+  @extend .container;
+  display: none;
+  input {
+    border: 1px solid $default-input-color;
+  }
+
+  @media (min-width: $screen-md-min) {
+    display: block;
+  }
+}
+
+.quick-order-mobile-unavailable-message {
+  display: block;
+  font-size: $sc-font-size-xxl;
+  text-align: center;
+  padding: $sc-padding-lv6 $sc-padding-lv3;
+
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+}
+
+.quick-order-header {
+  margin: 0 ($sc-margin-lv3 * -1);
+}
+
+.quick-order .page-sep {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.quick-order-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    @media (min-width: 768px) {
+        font-size:30px;
+        margin-bottom: 25px;
+    }
+}
+
+.quick-order-steps {
+    font-size: 12px;
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+        font-size:23px;
+        margin-bottom: 40px;
+    }
+}
+
+.quick-order-column-labels {
+  @extend .row;
+  padding: $sc-padding-lv3 0;
+  border-bottom: 2px solid $quick-order-line-border-color;
+  font-size: 0;
+
+  &>div {
+    @extend .col-xs-2;
+    float: none !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    text-align: left;
+    font-weight: $sc-font-weight-bold;
+    font-size: $sc-font-size-m;
+    padding: 0 $sc-padding-lv1;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+
+    &.quick-order-item-label {
+      @extend .col-xs-3;
+    }
+
+    &.quick-order-item-details-label {
+      @extend .col-xs-3;
+    }
+
+    &.quick-order-unit-price-label {
+      @extend .col-xs-1;
+      text-align: center;
+      padding: 0;
+    }
+    &.quick-order-qty-label {
+      text-align: center;
+    }
+
+    &.quick-order-amount-label {
+      text-align: center;
+    }
+
+    &.quick-order-remove-label {
+      @extend .col-xs-1;
+      text-align: right;
+    }
+
+    @media (min-width: $screen-md-min) {
+      padding: 0 $sc-padding-lv3;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    margin: 0 ($sc-padding-lv3 * -1);
+  }
+}
+
+.quick-order-column-data {
+  position: relative;
+}
+
+.quick-order-line {
+  @extend .row;
+  margin: 0;
+  padding: $sc-padding-lv4 0;
+  border-bottom: 2px solid $quick-order-line-border-color;
+  font-size: 0;
+
+  &>div {
+    @extend .col-xs-2;
+    float: none !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    font-size: $sc-font-size-m;
+    padding: 0 $sc-padding-lv1;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+
+    &.quick-order-item {
+      @extend .col-xs-3;
+      font-size: 0;
+    }
+
+    &.quick-order-item-data {
+      @extend .col-xs-3;
+      font-size: 0;
+    }
+
+    &.quick-order-unit-price {
+      @extend .col-xs-1;
+      padding: ($sc-padding-lv1 * 0.5) 0;
+    }
+
+    &.quick-order-qty-container {
+      text-align: center;
+    }
+
+    &.quick-order-amount {
+      padding: ($sc-padding-lv1 * 0.5) 0;
+      text-align: center;
+    }
+
+    &.quick-order-remove {
+      @extend .col-xs-1;
+      text-align: right;
+    }
+
+    @media (min-width: $screen-md-min) {
+      padding: 0 $sc-padding-lv3;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    margin: 0 ($sc-padding-lv3 * -1);
+  }
+}
+
+.quick-order-item-input {
+  padding: $sc-padding-lv3;
+  width: 80%;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.quick-order-item-image {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: $quick-order-image-max-height;
+  width: 25%;
+
+  img {
+    max-height: $quick-order-image-max-height;
+  }
+}
+
+.quick-order-item-name {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75%;
+  font-size: $sc-font-size-m;
+
+  a {
+    color: $quick-order-text-default-color;
+  }
+}
+
+.quick-order-unit-price .product-views-price-lead {
+  font-weight: $sc-font-weight-normal;
+  font-family: inherit;
+}
+.quick-order-unit-price{
+  width:50px!important;
+  text-align: center;
+}
+.quick-order-amount{
+  width:100px!important;
+}
+.quick-order-unit-price-label{
+  width:50px!important;
+}
+.quick-order-amount-label{
+  width:100px!important;
+}
+.quick-order-dropdown-select {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.quick-order-item-button {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  text-align: center;
+  background: none;
+}
+
+.quick-order-search {
+  @extend .icon-search;
+  color: $default-input-color;
+  font-size: $sc-font-size-xxl;
+  background: none;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: $sc-font-size-xxxl;
+  }
+}
+
+.quick-order-qty-container  {
+  font-size: 0;
+  position: relative;
+  &>div {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 40%;
+    &.quick-order-status {
+      padding-left: $sc-padding-lv1;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  .quick-order-status-found-instock {
+    font-style: italic;
+    font-size: $sc-font-size-s;
+  }
+}
+
+.quick-order-status > * {
+  display: inline-block;
+  vertical-align: middle;
+
+  &.quick-order-status-no-results {
+    width: 15%;
+  }
+
+  &.quick-order-lookup-noresults {
+    width: 85%;
+  }
+}
+
+.quick-order-qty-input {
+  max-width: $quick-order-quantity-input-max-width;
+  margin: 0;
+}
+
+.quick-order-buttons {
+  padding: $sc-padding-lv3 0;
+  margin: 0 ($sc-margin-lv3 * -1);
+
+  button {
+    padding: $sc-padding-lv2 $sc-padding-lv3;
+    font-family: inherit;
+  }
+}
+
+.quick-order-add-to-cart-button {
+  float: right;
+  background: $default-input-color;
+  color: $button-text-color;
+}
+
+.icon-quickorder-remove {
+	@extend .icon-times;
+  color: #00ca66;
+  font-size: 36px;
+  &:hover {
+    color: #ec008b;
+  }
+}
+
+.quick-order-addline-button {
+  background: $quick-order-add-line-button-background-color;
+  color: $button-text-color;
+}
+
+.quick-order-status-no-results {
+  @extend .icon-message-atention;
+  font-size: $sc-font-size-xxxl;
+  color: red;
+}
+
+.quick-order-lookup-noresults {
+  font-size: $sc-font-size-m;
+  color: $quick-order-text-default-color;
+}

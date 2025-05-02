@@ -1,0 +1,66 @@
+{
+	"name": "FreeShippingPopup",
+	"fantasyName": "Free Shipping Popup",
+	"vendor": "CS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.2",
+	"description": "Extesnsion to show free shipping popup",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/FreeShippingPopup.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/freeshipping_popup.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_freeshipping_popup.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_freeshipping_popup.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/CS.FreeShippingPopup.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CS.FreeShippingPopup.Main.js",
+					"Modules/Cart/FreeShippingPopup.Cart.View.js",
+					"Modules/Main/JavaScript/CS.FreeShipping.Modal.View.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS/FreeShippingPopup@1.0.2",
+	"activation_id": "11",
+	"extension_id": "6801"
+}

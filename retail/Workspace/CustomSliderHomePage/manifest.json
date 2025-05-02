@@ -1,0 +1,45 @@
+{
+	"name": "CustomSliderHomePage",
+	"fantasyName": "Custom Slider Home Page",
+	"vendor": "CS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.1",
+	"description": "This extension is to able modify the main slider in the home page and can add images if mobile.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/CustomSliderHomePage.json"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/PS.CustomSliderHomePage.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CustomSliderHomePage.js",
+					"Modules/Main/JavaScript/PS.CustomSliderHomePage.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS/CustomSliderHomePage@1.0.1",
+	"activation_id": "11",
+	"extension_id": "8201"
+}

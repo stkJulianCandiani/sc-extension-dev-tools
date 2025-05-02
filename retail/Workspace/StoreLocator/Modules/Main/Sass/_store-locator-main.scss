@@ -1,0 +1,279 @@
+/*
+    © 2020 NetSuite Inc.
+    User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+    provided, however, if you are an authorized user with a NetSuite account or log-in, you
+    may use this code subject to the terms that govern your access and use.
+*/
+
+.store-locator-main,
+.StoreLocatorMain {
+    @extend .container;
+}
+
+.store-locator-main-container {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: table;
+    margin-bottom: 40px;
+}
+
+.store-locator-main-container-box {
+    margin-bottom: $sc-margin-lv4;
+    margin-top: $sc-margin-lv4;
+    display: block;
+    clear: both;
+
+    @media (min-width: $screen-sm-min) {
+        margin: 0;
+        margin-bottom: $sc-margin-lv4;
+    }
+}
+
+.store-locator-main-pusher {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+
+    @media (min-width: $screen-sm-min) {
+        position: relative;
+    }
+}
+
+.store-locator-main-map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background: $sc-color-tertiary;
+
+    @media (max-width: $screen-xs-max) {
+        z-index: -1000;
+    }
+
+    .gm-style .gm-style-iw div {
+        overflow: hidden !important;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        visibility: visible;
+        position: static;
+    }
+
+    .gm-style .gm-style-iw {
+        padding: $sc-padding-base * 2;
+        @extend .row;
+        margin: auto;
+    }
+
+    .gm-style-iw + div {
+        display: none;
+    }
+}
+
+.store-locator-main-map.map-view {
+    height: 100%;
+    visibility: visible;
+
+    @media (max-width: $screen-xs-max) {
+        z-index: 1;
+    }
+
+    .store-locator-map {
+        height: 100%;
+    }
+}
+
+.store-locator-main-nav {
+    width: 100%;
+    background: $sc-color-tertiary;
+    padding: 0px;
+}
+
+.store-locator-main-left {
+    @extend .col-xs-12;
+    @extend .col-sm-4;
+    background: $sc-color-tertiary;
+    padding: 0px;
+    position: static;
+
+    @media (min-width: $screen-sm-min) {
+        position: relative;
+    }
+}
+
+.store-locator-main-right {
+    @extend .col-sm-8;
+    position: static;
+    background: $sc-color-tertiary;
+    padding-right: 0px;
+}
+
+.store-locator-main-container-box-wrap {
+    display: block;
+    overflow-x: hidden;
+}
+
+.store-locator-main-list-description {
+    background: $sc-color-tertiary;
+}
+
+.store-locator-main-list {
+    padding: 0px;
+    height: 100%;
+    margin-bottom: $sc-margin-lv4;
+    overflow: hidden;
+
+    @media (min-width: $screen-sm-min) {
+        height: 565px;
+        overflow: auto;
+        overflow-x: hidden;
+        margin-bottom: 0px;
+        display: block;
+    }
+}
+
+.store-locator-main-list-container {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    background: $sc-color-tertiary;
+
+    li:hover {
+        cursor: pointer;
+        cursor: hand;
+        background: $sc-color-theme-background-light;
+    }
+}
+
+.store-locator-main-nav-button-container {
+    display: block;
+    padding: $sc-padding-base * 3;
+    clear: both;
+    overflow: hidden;
+
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+}
+
+.store-locator-main-nav-button-container-grid {
+    @extend .col-xs-6;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.store-locator-main-nav-description {
+    padding: $sc-padding-base * 3;
+}
+
+.store-locator-main-nav-description-highlight {
+    color: $sc-color-primary;
+}
+
+.store-locator-main-nav-button-map {
+    @extend .button-medium;
+    @extend .button-pill;
+    @extend .button-generic;
+    background-color: $sc-color-tertiary;
+    display: block;
+    width: 100%;
+}
+
+.store-locator-main-nav-button-map.active,
+.store-locator-main-nav-button-list.active {
+    @extend .button-pill-active;
+    display: block;
+    width: 100%;
+}
+
+.store-locator-main-nav-button-list {
+    @extend .button-medium;
+    @extend .button-pill;
+    @extend .button-generic;
+    background-color: $sc-color-tertiary;
+    display: block;
+    width: 100%;
+}
+
+.store-locator-main-nav-back {
+    background: $sc-color-theme-background-light;
+    padding: $sc-padding-base * 3;
+    text-align: left;
+}
+
+.store-locator-main-location {
+}
+
+.store-locator-main-nav-description-geolocation {
+}
+
+.store-locator-details-store-info,
+.store-locator-details-main-nav-back,
+.locator-venue-details {
+    a,
+    a:hover {
+        color: $gs-color-tree-green !important;
+    }
+}
+.locator-venue-details-title {
+    color: black;
+}
+.store-locator-details-main-nav-back:after {
+    color: $gs-color-tree-green !important;
+}
+h4.locator-venue-details-title {
+    margin: $sc-margin-lv4 0;
+    @media (min-width: $screen-sm-min) {
+        font-size: 16px;
+    }
+}
+.locator-venue-details {
+    padding: $sc-padding-lv3;
+}
+div.store-locator-details-main-nav-back {
+    margin-bottom: 0px;
+}
+p.locator-venue-details-address {
+    color: #000;
+    font-size: 14px;
+}
+span.locator-venue-details-city,
+span.locator-venue-details-state,
+span.locator-venue-details-zipcode {
+    color: #000;
+    line-height: 1.6;
+    font-size: 14px;
+}
+a.store-locator-details-corporate-website-link,
+a.store-locator-details-shopping-website-link,
+span.locator-venue-details-phone-label,
+span.locator-venue-details-description-label,
+span.locator-venue-details-description,
+a.locator-venue-details-phone {
+    font-size: 14px;
+}
+a.store-locator-details-get-directions-link {
+    font-size: 14px;
+    @media (min-width: $screen-sm-min) {
+        margin-bottom: $sc-margin-lv4;
+    }
+}
+div.store-locator-details-main-nav-back {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+div.store-locator-details-store-info {
+    position: static;
+}
+span.locator-venue-details-description {
+    display: block;
+}

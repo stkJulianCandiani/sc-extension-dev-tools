@@ -1,0 +1,109 @@
+/* Edited for Summit Theme */
+
+.product-list-details-later-macro-selectable-actionable {
+}
+
+/* Save for Later */
+
+.product-list-details-later-macro-thumbnail {
+	@extend .col-xs-3;
+	@extend .col-sm-12;
+	@media (min-width: $screen-md-min){
+        text-align: center;
+    }
+}
+
+.product-list-details-later-macro-details {
+	@extend .col-xs-9;
+	@extend .col-sm-12;
+	@media (min-width: $screen-md-min){
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    & .product-views-price-lead {
+        @extend .transaction-line-views-cell-actionable-price;
+        @extend .middle-price-primary;
+    }
+}
+
+.product-list-details-later-macro-name-link{
+	@extend .transaction-line-views-cell-actionable-name-link;
+}
+
+.product-list-details-later-macro-price {
+	@extend .transaction-line-views-cell-actionable-price;
+}
+
+.product-list-details-later-macro-qty {
+	@extend .transaction-line-views-cell-actionable-qty;
+}
+
+.product-list-details-later-macro-qty-form {
+}
+
+.product-list-details-later-macro-input-qty {
+	@extend .transaction-line-views-cell-actionable-input-qty;
+	@media (min-width: $screen-md-min){
+        display: table-cell;
+    }
+}
+
+.product-list-details-later-macro-button-quantity-add {
+	@extend .saveforlater-quantity-add;
+}
+
+
+.product-list-details-later-macro-button-quantity-minus {
+	@extend .saveforlater-quantity-minus;
+}
+
+.product-list-details-later-macro-item-stock {
+	& .product-line-stock-msg-out {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.product-list-details-later-macro-actions {
+	@extend .saveforlater-actions;
+	@media (min-width: $screen-md-min){
+        margin-top: $sc-margin-lv3;
+    }
+}
+
+.product-list-details-later-macro-button-addtocart{
+	@extend .button-saveforlater-addtocart;
+}
+
+.product-list-details-later-macro-button-remove{
+	@extend .button-saveforlater-remove;
+	@media (min-width: $screen-md-min){
+        margin: 0 auto;
+    }
+}
+
+.product-list-details-later-macro-label-qty{
+	@extend .transaction-line-views-cell-actionable-label-qty;
+	@media (min-width: $screen-md-min){
+        margin-right: 0;
+        margin-top: $sc-margin-lv3;
+    }
+}
+
+.product-list-details-later-macro-qty-input{
+}
+
+.product-list-details-later-macro-qty input[type=number]{
+	width:60px;
+	@media (min-width: $screen-xs-min){
+		width:45px;
+	}
+	@media (min-width: $screen-md-min){
+		width:60px;
+	}
+}
+
+.product-list-details-later-macro-amount{}
+.product-list-details-later-macro-info{}
+.product-list-details-later-macro-name{}

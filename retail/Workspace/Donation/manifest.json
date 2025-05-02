@@ -1,0 +1,73 @@
+{
+	"name": "Donation",
+	"fantasyName": "Donation",
+	"vendor": "CS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.1",
+	"description": "Support Donation in Checkout Payment Step",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/Donation.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/OrderWizard.Module.Donation/Templates/order_wizard_donation_module.tpl",
+					"Modules/OrderWizard.Module.Donation/Templates/order_wizard_donation_popup.tpl",
+					"Modules/OrderWizard.Module.CartSummary/Templates/donation_order_wizard_cart_summary.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/OrderWizard.Module.Donation/Sass/_order-wizard-module-donation.scss"
+		},
+		"files": [
+			"Modules/OrderWizard.Module.Donation/Sass/_order-wizard-module-donation.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/Main/JavaScript/CS.Donation.Main.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/CS.Donation.Main.js",
+					"Modules/OrderWizard.Module.Donation/JavaScript/OrderWizard.Module.Donation.js",
+					"Modules/OrderWizard.Module.Donation/JavaScript/OrderWizard.Module.Donation.Popup.js",
+					"Modules/OrderWizard.Module.CartSummary/JavaScript/Donation.OrderWizard.Module.CartSummary.js",
+					"Modules/Tracker/JavaScript/Donation.Tracker.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/LiveOrder/SuiteScript/Donation.LiveOrder.Model.js",
+		"files": [
+			"Modules/LiveOrder/SuiteScript/Donation.LiveOrder.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS/Donation@1.0.1",
+	"activation_id": "11",
+	"extension_id": "11201"
+}

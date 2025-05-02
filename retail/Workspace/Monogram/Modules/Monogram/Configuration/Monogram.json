@@ -1,0 +1,59 @@
+{
+    "type": "object",
+     "subtab": {
+        "id": "monogram",
+        "title": "Monogram",
+        "description": "Monogram Extension Config",
+        "group": "extensions"
+    },
+    "properties": {
+        "extensions.monogram.maxLength": {
+            "group": "extensions",
+            "subtab": "monogram",
+            "type": "string",
+            "title": "Maximum Length",
+            "description": "Max Length of the amount of letters to be selected",
+            "default": "2"
+        },
+        "extensions.monogram.minLength": {
+            "group": "extensions",
+            "subtab": "monogram",
+            "type": "string",
+            "title": "Minimum Length",
+            "description": "Min Length of the amount of numbers to be selected",
+            "default": "3"
+        },
+        "extensions.monogram.monogramAlphabetItem": {
+            "group": "extensions",
+            "subtab": "monogram",
+            "type": "string",
+            "title": "Monogram Alphabet Item Id",
+            "description": "Internalid of the monogram Alphabet item",
+            "default": ""
+        },
+        "extensions.monogram.serviceFeeItem": {
+            "group": "extensions",
+            "subtab": "monogram",
+            "type": "string",
+            "title": "Service Fee Item Id",
+            "description": "Service Fee Item Id",
+            "default": ""
+        },
+        "extensions.monogram.serviceFeeMessage": {
+            "group": "extensions",
+            "subtab": "monogram",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "Service Fee Message",
+            "description": "Service Fee Message",
+            "default": "<p>Pressed for time? Start fresh with a new Customized [ITEMNAME] and add your required, core insignia seamlessly with our customization service. For an additional [SERVICECOST] service fee, we’ll add insignia via our super secure heat press process. Your new uniform will arrive troop meeting ready.</p><br><p>Step 1. Select vest size.<br>Step 2. Add any or all of the following insignia: Council identification set, and Troop numerals and American flag patch. Complete the look by adding the Insignia tab, Membership pin and World Trefoil pin to your order.<br>Step 3. Add to cart! </p><br><p>Please allow up to 20 business days for production. Upon completion, all orders are shipped via standard delivery. This item is ineligible for returns, exchanges, refunds and may shipped separately from other Girl Scout Merchandise items.</p><br><p>For more information, please see our <a href=\"https://www.girlscoutshop.com/faq\" target=\"_blank\">Customized Uniforms FAQs</a></p>"
+        },
+        "extensions.monogram.acceptedShippingMethods": {
+            "group": "extensions",
+            "subtab": "monogram",
+            "type": "string",
+            "title": "Accepted Shipping Methods",
+            "description": "Array of the internalid of the accepted Shipping Methods for Monogram Customization"
+        }
+    }
+}

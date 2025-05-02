@@ -1,0 +1,42 @@
+.header-submenu-navigation {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    height: 45px;
+
+    @media (min-width: $screen-md-min) {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.header-submenu-link {
+    min-width: inherit;
+    &:hover{
+      color: black;
+    }
+    &:focus{
+      color: black;
+    }
+    a{
+      color: black;
+      font-size: 14px;
+      font-weight: 500;
+      &:hover{
+        color: black;
+      }
+      &:focus{
+        color: black;
+      }
+    }
+}
+
+.header-subheader {
+    background-color: white;
+}
+
+.header-submenu-separator {
+    padding: 0 $sc-padding-lv2;
+    color: #00ae58;
+    font-size: 18px;
+}

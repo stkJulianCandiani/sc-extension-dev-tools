@@ -1,0 +1,20 @@
+{
+    "type": "SCA",
+    "version": "20.1.12",
+    "application": [
+        "shopping",
+        "myaccount",
+        "checkout"
+    ],
+    "extensible_resources": [
+        "skins",
+        "javascript",
+        "ssp-libraries",
+        "sass",
+        "templates",
+        "services",
+        "configuration",
+        "assets",
+        "suitescript2"
+    ]
+}

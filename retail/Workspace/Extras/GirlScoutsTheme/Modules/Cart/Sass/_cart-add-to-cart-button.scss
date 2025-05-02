@@ -1,0 +1,25 @@
+.cart-add-to-cart-button-button{
+	@extend .button-primary;
+	@extend .button-large;
+	width: 100%;
+	font-size: 18px!important;
+  font-weight: $gs-weight-semi-bold;
+  text-transform: uppercase;
+ 	margin-top: $sc-margin-lv3;
+	padding: 12px $sc-padding-lv7;
+	@media(min-width: $screen-sm-max){
+		padding: 24px $sc-padding-lv7;
+		font-size: 24px!important;
+	}
+	@media(min-width: $screen-sm-min){
+			padding: 24px $sc-padding-lv7;
+	}
+}
+
+.cart-add-to-cart-button {
+	position: static;
+}
+
+.cart-add-to-cart-button-container {
+	@extend .col-sm-12;
+}

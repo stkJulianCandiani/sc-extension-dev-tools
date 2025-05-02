@@ -1,0 +1,107 @@
+// Summary box
+//
+// The Summary Box is currently used across the platform in several contexts to display key information
+// in a succinct manner facilitating the decision making process before performing an action.
+//
+// Markup:
+// <div class="summary-container" style="width: 260px;">
+//   <h3 class="summary-title">Order summary</h3>
+//   <div class="summary-subtotal">
+//     <p class="summary-grid-float">
+//       <span>
+//         Subtotal <span>1 item</span>
+//       </span>
+//       <span class="summary-grid-right">$100.00</span>
+//     </p>
+//   </div>
+//   <div>
+//     <p class="summary-grid-float">
+//       Shipping <span class="summary-grid-right">$10.00</span>
+//     </p>
+//     <p class="summary-grid-float">
+//       Tax <span class="summary-grid-right">$15.00</span>
+//     </p>
+//   </div>
+//   <div class="summary-total">
+//     <p class="summary-grid-float">
+//       Estimated total <span class="summary-grid-right">$125.00</span>
+//     </p>
+//   </div>
+// </div>
+//
+// Styleguide 3.7
+
+.summary-title {
+	text-align: center;
+	margin-bottom: $sc-margin-lv4;
+	font-size: $sc-font-size-xl;
+	text-transform: uppercase;
+	font-weight: $sc-font-weight-normal;
+	color: $sc-color-copy;
+}
+
+.summary-container {
+	font-family: $sc-theme-secondary-font;
+	margin-bottom: $sc-margin-lv4;
+	@media(min-width: $screen-sm-min){
+		margin-bottom: 0;
+	}
+}
+
+.summary-subtotal {
+	border-top: $sc-theme-border-light;
+	padding-top: $sc-padding-lv2;
+	padding-bottom: $sc-padding-lv1;
+	font-weight:$sc-font-weight-bold;
+	text-transform:uppercase;
+	font-size:$sc-font-size-m;
+}
+
+.summary-total {
+	/*font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-bold;*/
+	text-transform: uppercase;
+}
+
+.summary-grid-right {
+	float: right;
+	//padding-right: $sc-padding-lv3;
+	padding-left: $sc-padding-lv1;
+	color: $sc-color-primary;
+}
+
+.summary-grid-float {
+	@extend .row;
+	clear: both;
+	margin: 0;
+	font-size: $sc-font-size-l;
+	/*margin-bottom: $sc-margin-lv2;
+	padding-left: $sc-padding-lv3;*/
+}
+
+.summary-button-container {
+	text-align: center;
+	background: $sc-color-theme-background;
+	padding: $sc-padding-lv4 0;
+}
+
+.summary-shipping-cost-applied{
+	margin-bottom: $sc-margin-lv2;
+	text-transform: uppercase;
+	& .cart-summary-grid {
+		border: none;
+	}
+	& .cart-summary-grid-float {
+		font-size: $sc-font-size-s;
+	}
+}
+
+.button-proceed-to-checkout {
+	@extend .button-primary;
+	@extend .button-large;
+}
+
+.button-apply {
+	@extend .button-secondary;
+	@extend .button-small;
+}

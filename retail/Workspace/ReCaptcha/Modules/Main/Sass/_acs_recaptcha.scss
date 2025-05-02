@@ -1,0 +1,19 @@
+/* if badge is present make sure it shows floating above everything else */
+.grecaptcha-badge {
+  z-index: 2000;
+}
+
+.acs-recaptcha-terms-loginregister {
+  @extend .col-sm-6;
+  float:right;
+  text-align:right;
+}
+
+.acs-recaptcha-terms-ordersubmit {
+  float:right;
+  text-align:right;
+}
+
+.acs-recaptcha-checkout-clear {
+  clear: both;
+}

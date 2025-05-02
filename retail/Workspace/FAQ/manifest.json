@@ -1,0 +1,75 @@
+{
+	"name": "FAQ",
+	"fantasyName": "FAQ",
+	"vendor": "CS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.1",
+	"description": "FAQ page. Adds FAQ on configuration and page on the help section.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/FAQ.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/faq_collection_view_cell.tpl",
+					"Modules/Main/Templates/faq_collection_view_row.tpl",
+					"Modules/Main/Templates/faq_grid_cell.tpl",
+					"Modules/Main/Templates/faq_view.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_faq-main.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_faq-main.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/CS.FAQ.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CS.FAQ.Main.js",
+					"Modules/Main/JavaScript/FAQ.Collection.js",
+					"Modules/Main/JavaScript/FAQ.View.js",
+					"Modules/Main/JavaScript/FAQ.Grid.Cell.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/SuiteScript/CS.FAQ.Main.js",
+		"files": [
+			"Modules/SuiteScript/FAQ.Model.js",
+			"Modules/SuiteScript/FAQ.ServiceController.js",
+			"Modules/SuiteScript/CS.FAQ.Main.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS/FAQ@1.0.1",
+	"activation_id": "11",
+	"extension_id": "5601"
+}

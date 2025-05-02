@@ -1,0 +1,64 @@
+.login-register-header{
+	@extend .row;
+	margin-bottom: $sc-margin-lv4;
+	h1 {
+		font-size: 24px;
+		font-weight: $gs-weight-bold;
+	}
+}
+
+.login-register-title{
+	@extend .col-xs-12;
+}
+
+.login-register-body,
+.login-register-forgot-password {
+	@extend .row;
+	h2 {
+		font-size: 20px;
+		font-weight: $gs-weight-bold;
+	}
+	label {
+		font-size: $sc-font-size-m;
+    	font-weight: $gs-weight-semi-bold;
+	}
+	button {
+		padding: 12px $sc-padding-lv7;
+    	font-size: 18px;
+	}
+	p {
+		font-size: 14px;
+	}
+	small {
+		font-size: 12px;
+	}
+	a {
+		color: $gs-color-tree-green;
+		font-size: 14px;
+	}
+	.login-register-forgot-password-body {
+		background: none;
+	}
+}
+
+.login-register-body-colored{
+	@extend .login-register-body;
+	background-color: $sc-color-theme-background;
+
+	padding: $sc-padding-lv8 $sc-padding-lv1;
+
+	@media (min-width: $screen-md-min){
+		padding: $sc-padding-lv8 $sc-padding-lv5;
+	}
+}
+
+.login-register-wrapper-column-login,
+.login-register-wrapper-column-register{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.login-register-wrapper-login,
+.login-register-wrapper-register{
+	@extend .box-column;
+}

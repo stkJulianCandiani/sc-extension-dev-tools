@@ -1,0 +1,68 @@
+.header-menu-profile {
+    position: relative;
+    .header-profile-welcome-link{
+      margin: 0;
+      padding: 0;
+    }
+    .header-menu-myaccount {
+        display: flex;
+    }
+
+    .header-menu-myaccount-item-level2 {
+        padding-right: 20px;
+    }
+    .header-profile-register-link{
+      padding-right: 0;
+    }
+
+    .header-menu-myaccount-anchor,
+    span.header-menu-myaccount-span-level2,
+    a.header-menu-myaccount-anchor-level2 {
+        color: #000;
+
+        &:hover {
+            color: #ec008b;
+        }
+    }
+
+    a.header-menu-myaccount-anchor-level3 {
+        color: #00ae58;
+
+        &:hover {
+            color: #ec008b;
+        }
+    }
+
+    .header-profile-menu-myaccount-container {
+        width: 900px;
+        padding: 25px;
+        right: 0;
+        border-top: 1px solid $sc-color-theme-border-light;
+        z-index: 10002;
+        & > li {
+            max-width: 100%;
+        }
+
+        &:before {
+    		position: absolute;
+    		top: -7px;
+    		right: 14px;
+    		display: inline-block;
+    		border-right: 7px solid transparent;
+    		border-bottom: 7px solid #e6e6e6;
+    		border-left: 7px solid transparent;
+    		border-bottom-color: rgba(0,0,0,0.2);
+    		content: '';
+    	}
+    	&:after {
+    		position: absolute;
+    		top: -6px;
+    		right: 15px;
+    		display: inline-block;
+    		border-right: 6px solid transparent;
+    		border-bottom: 6px solid #fff;
+    		border-left: 6px solid transparent;
+    		content: '';
+    	}
+    }
+}

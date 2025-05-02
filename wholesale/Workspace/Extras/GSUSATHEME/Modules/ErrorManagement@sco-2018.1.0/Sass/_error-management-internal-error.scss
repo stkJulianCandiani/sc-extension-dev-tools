@@ -1,0 +1,17 @@
+/* Edited for Summit Theme */
+
+.error-management-internal-error {
+	@extend .container;
+	@extend .content-background;
+	min-height: $sc-theme-error-height-mobile;
+	padding-bottom: $sc-padding-lv5 * 2;
+    @media (min-width: $screen-md-min) {
+        min-height: $sc-theme-error-height-desktop;
+    }
+}
+
+.error-management-internal-error-header {}
+
+.error-management-internal-error-main-banner {}
+
+.error-management-internal-error-content {}

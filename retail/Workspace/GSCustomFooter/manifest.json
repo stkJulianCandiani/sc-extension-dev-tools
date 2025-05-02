@@ -1,0 +1,120 @@
+{
+	"name": "GSCustomFooter",
+	"fantasyName": "GSCustomFooter",
+	"vendor": "CS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.4",
+	"description": "Adds functionality to GS Theme Footer. Update: removes footer from my account and checkout. Update: removed unused style that hides header",
+	"assets": {
+		"img": {
+			"files": [
+				"img/footer-dots.png",
+				"img/ico-world-wide.png",
+				"img/sprite.png"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/GSCustomFooter.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/cs_gscustomfooter_main.tpl",
+					"Modules/GSCustomFooterMobile/Template/cs_gscustomfooter_mobile.tpl",
+					"Modules/GSCustomFooterPolicies/Templates/cs_gscustomfooter_policies.tpl",
+					"Modules/GSCustomFooterDesktop/Template/cs_gscustomfooter_desktop.tpl",
+					"Modules/GSCustomFooterSocial/Templates/cs_gscustomfooter_social.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/Templates/cs_gscustomfooter_main.tpl",
+					"Modules/GSCustomFooterMobile/Template/cs_gscustomfooter_mobile.tpl",
+					"Modules/GSCustomFooterPolicies/Templates/cs_gscustomfooter_policies.tpl",
+					"Modules/GSCustomFooterDesktop/Template/cs_gscustomfooter_desktop.tpl",
+					"Modules/GSCustomFooterSocial/Templates/cs_gscustomfooter_social.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/Templates/cs_gscustomfooter_main.tpl",
+					"Modules/GSCustomFooterMobile/Template/cs_gscustomfooter_mobile.tpl",
+					"Modules/GSCustomFooterPolicies/Templates/cs_gscustomfooter_policies.tpl",
+					"Modules/GSCustomFooterDesktop/Template/cs_gscustomfooter_desktop.tpl",
+					"Modules/GSCustomFooterSocial/Templates/cs_gscustomfooter_social.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_gscustomfooter-main.scss",
+			"myaccount": "Modules/Main/Sass/_gscustomfooter-main.scss",
+			"checkout": "Modules/Main/Sass/_gscustomfooter-main.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_gscustomfooter-main.scss",
+			"Modules/GSCustomFooterMobile/Sass/_gscustomfooter-mobile.scss",
+			"Modules/GSCustomFooterDesktop/Sass/_gscustomfooter-desktop.scss",
+			"Modules/GSCustomFooterPolicies/Sass/_gscustomfooter-policies.scss",
+			"Modules/GSCustomFooterSocial/Sass/_gscustomfooter-social.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/CS.GSCustomFooter.Main.js",
+			"checkout": "Modules/Main/JavaScript/CS.GSCustomFooter.Main.js",
+			"myaccount": "Modules/Main/JavaScript/CS.GSCustomFooter.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CS.GSCustomFooter.Main.js",
+					"Modules/GSCustomFooterMobile/JavaScript/GSCustomFooterMobile.View.js",
+					"Modules/GSCustomFooterPolicies/JavaScript/GSCustomFooterPolicies.View.js",
+					"Modules/GSCustomFooterDesktop/JavaScript/GSCustomFooterDesktop.View.js",
+					"Modules/GSCustomFooterSocial/JavaScript/GSCustomFooterSocial.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/CS.GSCustomFooter.Main.js",
+					"Modules/GSCustomFooterMobile/JavaScript/GSCustomFooterMobile.View.js",
+					"Modules/GSCustomFooterPolicies/JavaScript/GSCustomFooterPolicies.View.js",
+					"Modules/GSCustomFooterDesktop/JavaScript/GSCustomFooterDesktop.View.js",
+					"Modules/GSCustomFooterSocial/JavaScript/GSCustomFooterSocial.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/CS.GSCustomFooter.Main.js",
+					"Modules/GSCustomFooterMobile/JavaScript/GSCustomFooterMobile.View.js",
+					"Modules/GSCustomFooterPolicies/JavaScript/GSCustomFooterPolicies.View.js",
+					"Modules/GSCustomFooterDesktop/JavaScript/GSCustomFooterDesktop.View.js",
+					"Modules/GSCustomFooterSocial/JavaScript/GSCustomFooterSocial.View.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS/GSCustomFooter@1.0.4",
+	"activation_id": "11",
+	"extension_id": "3602"
+}

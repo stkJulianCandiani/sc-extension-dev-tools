@@ -1,0 +1,200 @@
+.item-relations-related {
+	position: relative;
+	margin-top: $sc-margin-lv6;
+	.bx-wrapper {
+		width: 280px;
+		margin: 0 auto;
+		position: relative;
+
+		@media(min-width: $screen-sm-min) {
+			width: 682px !important;
+		}
+		@media(min-width: $screen-md-min) {
+			width: 100% !important;
+		}
+		@media(min-width: $screen-lg-min) {
+			min-width: 540px !important;
+			max-width: 1080px !important;
+			width: 1080px !important;
+		}
+	}
+}
+
+.item-relations-related .bx-controls-direction {
+    text-align: right;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.item-relations-related,
+.salesforce-slider {
+		h3 {
+		    margin-bottom: $sc-margin-lv8;
+			font-size: 20px;
+			text-align: center;
+			text-transform: uppercase;
+
+			span {
+				background: $gs-color-purewhite;
+			    display: inline-block;
+			    padding: 0 $sc-padding-lv2;
+			    position: relative;
+				z-index: 0;
+			}
+
+			&:before {
+			    content: "";
+			    border-bottom: 1px solid $gs-color-black;
+			    display: block;
+			    width: 100%;
+			    position: relative;
+			    top: 14px;
+				@media(min-width: $screen-sm-min) {
+					 top: 19px;
+				}
+			}
+
+			@media(min-width: $screen-sm-min) {
+				font-size: 36px;
+			}
+		}
+}
+
+.item-relations-related .global-views-star-rating {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.item-relations-related-carousel-next{
+	@extend .button-tertiary;
+	@extend .button-small;
+	margin-left:$sc-margin-lv2;
+	background: none;
+	cursor:pointer;
+	cursor:hand;
+	border: 0;
+	position:absolute;
+	right: -23px;
+	top: 26%;
+
+	.control-text {
+		content: '';
+		display: block;
+	    width: 32px;
+	    height: 40px;
+	    color: black;
+	    overflow: hidden;
+
+		&:before {
+			@extend .gs-icon-c-right-2;
+			font-family: "girl_scouts_icons";
+			font-size: 37px !important;
+			@media(min-width: $screen-sm-min){
+				font-size: 30px !important;
+			}
+		}
+		@media(min-width: $screen-md-min) {
+			display: none;
+		}
+	}
+
+	i {
+		display: none;
+	    font-family: "girl_scouts_icons";
+
+		&:before {
+			@extend .gs-icon-c-right;
+		}
+		@media(min-width: $screen-md-min){
+			display: block;
+		}
+	}
+	@media(min-width: 375px) {
+		right: -49px;
+	}
+	@media(min-width: $screen-sm-min) {
+		right: -54px;
+	}
+}
+
+.item-relations-related-carousel-prev {
+	@extend .button-tertiary;
+	@extend .button-small;
+	background: none;
+	cursor:pointer;
+	cursor:hand;
+	border: 0;
+	position:absolute;
+	left: -23px;
+	top: 26%;
+
+	.control-text {
+		content: '';
+		display: block;
+	    width: 32px;
+	    height: 40px;
+	    color: black;
+	    overflow: hidden;
+
+		&:before {
+			@extend .gs-icon-c-left-2;
+			font-family: "girl_scouts_icons";
+			font-size: 37px !important;
+			@media(min-width: $screen-sm-min){
+				font-size: 30px !important;
+			}
+		}
+
+		@media(min-width: $screen-md-min) {
+			display: none;
+		}
+	}
+
+	i {
+		display: none;
+	    font-family: "girl_scouts_icons";
+
+		&:before {
+			@extend .gs-icon-c-left;
+		}
+		@media(min-width: $screen-md-min){
+			display: block;
+		}
+	}
+	@media(min-width: 375px) {
+		left: -49px;
+	}
+	@media(min-width: $screen-sm-min) {
+		left: -44px;
+	}
+	@media(min-width: $screen-lg-min) {
+		left: -55px;
+	}
+}
+
+.item-relations-related-carousel-prev,
+.item-relations-related-carousel-next {
+	font-size: 40px;
+	font-weight: normal;
+	&:hover {
+		background: none;
+		color: $gs-color-tree-green;
+	}
+	i {
+		margin-right: 0;
+	}
+	margin-left: 0;
+	@media(min-width: $screen-md-min){
+		display: block;
+	}
+	@media(min-width: $screen-lg-min) {
+		font-size: 47px;
+	}
+}
+
+.item-relations-related-carousel-next.disabled,
+.item-relations-related-carousel-prev.disabled {
+	display: none;
+}
+.control-text{
+	display:none;
+}

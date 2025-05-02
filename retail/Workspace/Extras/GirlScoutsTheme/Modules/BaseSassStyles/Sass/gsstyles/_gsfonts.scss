@@ -1,0 +1,137 @@
+//Extenton font path
+$extension-font-path: getThemeAssetsPath("");
+$font-class: 0;
+$font-familyname: 0;
+$font-weight: 0;
+$folder: 0;
+$file-name: 0;
+
+@mixin font-config($font-class, $font-familyname, $font-weight, $folder, $file-name) {
+    @font-face{
+        font-family: $font-familyname;
+        src:url($extension-font-path + "fonts/" + $folder/$file-name + ".woff2") format("woff2"),
+        url($extension-font-path + "fonts/" + $folder/$file-name + ".woff") format("woff");
+        font-weight: $font-weight;
+        font-style: normal
+    }
+
+    @font-face{
+        font-family: $font-familyname;
+        src:url($extension-font-path + "fonts/" + $folder/$file-name + "It.woff2") format("woff2"),
+        url($extension-font-path + "fonts/" + $folder/$file-name + "It.woff") format("woff");
+        font-weight: $font-weight;
+        font-style: italic
+    }
+
+    .#{$font-class}-normal {
+        font: {
+            family: $font-familyname;
+            style: normal;
+        }
+    }
+
+    .#{$font-class}-italic {
+        font: {
+            family: $font-familyname;
+            style: italic;
+        }
+    }
+}
+@include font-config('font-thin', 'Trefoil Sans', 100, Trefoil, TrefoilSans-Thi);
+@include font-config('font-xllight', 'Trefoil Sans', 200, Trefoil, TrefoilSansWeb-XLigh);
+@include font-config('font-light', 'Trefoil Sans', 300, Trefoil, TrefoilSans-Light);
+@include font-config('font-regular', 'Trefoil Sans', 400, Trefoil, TrefoilSans-Regular);
+@include font-config('font-medium', 'Trefoil Sans', 500, Trefoil, TrefoilSans-Medium);
+@include font-config('font-semibold', 'Trefoil Sans', 600, Trefoil, TrefoilSans-SemiBold);
+@include font-config('font-bold', 'Trefoil Sans', 700, Trefoil, TrefoilSans-Bold);
+@include font-config('font-black', 'Trefoil Sans', 800, Trefoil, TrefoilSans-Black);
+@include font-config('font-ultra', 'Trefoil Sans', 900, Trefoil, TrefoilSans-Ultra);
+
+
+/* Icon moon fontface*/
+
+@font-face{
+    font-family: "girl_scouts_icons";
+    src:url($extension-font-path + "fonts/Icomoon/icomoon.woff2") format("woff2"),
+    url($extension-font-path + "fonts/Icomoon/icomoon.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+$iconPrefix: 'gs-icon';
+$gs-icons: "girl_scouts_icons";
+
+@mixin make-gs-icons($class, $type) {
+    .#{$iconPrefix}-#{$class} {
+        @extend %sds-icon;
+
+        &:before {
+            content: "#{$type}";
+        }
+    }
+}
+
+%sds-icon {
+    display: inline-block;
+
+    font: {
+        family: $gs-icons;
+        style: normal;
+        size: inherit;
+    }
+
+    text-rendering: auto;
+    text-transform: none;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@include make-gs-icons(c-left, "\e900");
+@include make-gs-icons(c-right, "\e901");
+@include make-gs-icons(bag, "\e902");
+@include make-gs-icons(open, "\e903");
+@include make-gs-icons(start, "\e904");
+@include make-gs-icons(cart, "\e905");
+@include make-gs-icons(twitter, "\e90d");
+@include make-gs-icons(search, "\e90c");
+@include make-gs-icons(pinterest, "\e90b");
+@include make-gs-icons(location, "\e90a");
+@include make-gs-icons(instagram, "\e909");
+@include make-gs-icons(hamburguer, "\e908");
+@include make-gs-icons(girl, "\e907");
+@include make-gs-icons(facebook, "\e906");
+@include make-gs-icons(compass, "\e90e");
+@include make-gs-icons(mail, "\e90f");
+@include make-gs-icons(note, "\e910");
+@include make-gs-icons(back, "\e911");
+@include make-gs-icons(arc, "\e912");
+@include make-gs-icons(arrow-down, "\e913");
+@include make-gs-icons(arrow-up-down, "\e914");
+@include make-gs-icons(arrow-up, "\e915");
+@include make-gs-icons(at, "\e916");
+@include make-gs-icons(boy, "\e917");
+@include make-gs-icons(c-down, "\e918");
+@include make-gs-icons(c-up, "\e919");
+@include make-gs-icons(check, "\e91a");
+@include make-gs-icons(close-facet, "\e91b");
+@include make-gs-icons(close, "\e91c");
+@include make-gs-icons(cupcake, "\e91d");
+@include make-gs-icons(daisyflower, "\e91e");
+@include make-gs-icons(flower, "\e91f");
+@include make-gs-icons(gift, "\e920");
+@include make-gs-icons(googleplus, "\e921");
+@include make-gs-icons(medal, "\e922");
+@include make-gs-icons(plane, "\e923");
+@include make-gs-icons(sun, "\e924");
+@include make-gs-icons(size, "\e925");
+@include make-gs-icons(thumb-down, "\e926");
+@include make-gs-icons(thumb-up, "\e927");
+@include make-gs-icons(case, "\e928");
+@include make-gs-icons(light, "\e929");
+@include make-gs-icons(phone, "\e92a");
+@include make-gs-icons(lock, "\e92b");
+@include make-gs-icons(question, "\e92c");
+@include make-gs-icons(award, "\e92d");
+@include make-gs-icons(c-left-2, "\e92e");
+@include make-gs-icons(c-right-2, "\e92f");

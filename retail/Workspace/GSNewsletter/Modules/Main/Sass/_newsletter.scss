@@ -1,0 +1,133 @@
+/*
+	© 2016 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+$sc-small-margin: $sc-margin-lv1;
+.input-base {
+    @extend input;
+}
+
+.custom-checkbox {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+
+	em {
+		border: 1px solid $gs-color-gray-30;
+		width: 20px;
+		height: 20px;
+		margin-right: 15px;
+		display: inline-block;
+		position: relative;
+		text-align: center;
+	}
+
+	&:hover {
+		label {
+		color: $gs-color-tree-green;
+		}
+		em {
+		border-color: $gs-color-tree-green;
+		}
+	}
+
+	em:after {
+		@include opacity(0);
+		content: '✓';
+		font-weight: 600;
+		font-size: 17px;
+		color: $gs-color-purewhite;
+		width: 20px;
+		height: 20px;
+		vertical-align: middle;
+		position: absolute;
+		left: -2px;
+		top: -1px;
+		text-align: center;
+	}
+
+	input[type='checkbox'] {
+		visibility: hidden;
+		margin: 0;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+
+		&:checked + em {
+		background-color: $gs-color-tree-green;
+		border-color: $gs-color-tree-green;
+			&:after {
+				@include opacity(100);
+			}
+		}
+	}
+}
+
+@import './newsletter_form';
+@import './newsletter_lightbox';
+@import './newsletter_sidebar';
+@import './newsletter_site';
+
+.newsletter-suscription-form {
+	padding-bottom: $sc-padding-lv2;
+}
+
+.newsletter-subscription-form-label {
+    @extend .col-sm-12;
+    text-align: center;
+    margin-bottom: $sc-margin-lv2;
+    padding-left: 0;
+    @media (min-width: $screen-sm-min) {
+        text-align: left;
+    }
+}
+
+//.newsletter-subscription-form-container {
+//    input {
+//        @extend .input-base;
+//        margin: 0 auto;
+//        height: $sc-target-size;
+//        margin-bottom: $sc-small-margin;
+//        @extend .col-sm-7;
+//        @extend .col-xs-12;
+//    }
+//}
+
+.newsletter-subscription-form-button-subscribe {
+    height: $sc-target-size;
+    margin-bottom: $sc-margin-lv2;
+    @extend .button-secondary;
+    @extend .col-sm-5;
+    @extend .col-xs-12;
+}
+
+.newsletter-subscription-form-container {
+    [data-validation-error="block"] {
+        @extend .col-sm-12;
+        text-align: left;
+        width: 100%;
+        float: left;
+    }
+}
+.newsletter-alert-placeholder {
+    padding: 0px;
+    @extend .col-sm-12;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+        text-align: left;
+    }
+}
+
+.newsletter-alert-placeholder .global-views-message {
+    @extend .col-sm-12;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+        text-align: left;
+    }
+}
+
+.newsletter-suscription-form-input {}
+.newsletter-suscription-form-button-suscribe {}
+

@@ -1,0 +1,183 @@
+
+.newsletter-subscription-form-container {
+  [data-validation-error="block"] {
+    @extend .col-sm-12;
+    text-align: left;
+    width: 100%;
+    float: left;
+    margin-top: $sc-margin-lv2;
+  }
+}
+
+.footer-newsletter .newsletter-subscription-form-label {
+
+  @extend .col-sm-12;
+
+  color: $gs-color-tree-green;
+  width: 42%;
+  text-align: right;
+  line-height: 50px;
+  text-transform: capitalize;
+  font-size: 20px;
+  display: none;
+
+  margin-bottom: $sc-small-margin;
+  padding-left: 0;
+
+  @media (min-width: $screen-sm-min){
+    display: inline-block;
+    float: right;
+  }
+
+  @media (min-width: $screen-md-min){
+    width: 36%;
+    font-size: 25px;
+    line-height: 63px;
+  }
+
+  @media (min-width: $screen-lg-min){
+    width: 50%;
+  }
+}
+
+.footer-content-nav-list-last {
+
+  @media (min-width: $screen-sm-min){
+    width: 75%;
+  }
+
+  @media (min-width: $screen-md-min){
+    width: 68%;
+  }
+
+  @media (min-width: $screen-lg-min){
+    width: 70%;
+  }
+}
+
+.newsletter-suscription-form {
+  padding: 0;
+  margin: 0;
+}
+
+.newsletter-subscription-form-container {
+  @media (min-width: $screen-sm-min) {
+    float: right;
+  }
+  @media (max-width: $screen-sm-min) {
+    text-align: center;
+  }
+  .footer-newsletter & .newsletter-suscription-form-input { // Using selector weight to override an issue with styles
+    @extend .input-base;
+    height: 44px;
+    padding: 0 15px;
+    width: calc(100% - 130px);
+    font-size: 14px;
+    font-weight: $gs-weight-light;
+    display: block;
+    margin: 0;
+    float: left;
+
+    @media (min-width: $screen-sm-min){
+      width: 230px;
+      height: 50px;
+      font-size: 20px;
+      display: inline-block;
+    }
+
+    @media (min-width: $screen-md-min){
+      width: 290px;
+      height: 63px;
+    }
+
+    &::-webkit-input-placeholder { /* Chrome */
+      color: $gs-color-font-newsletter;
+      font-style: italic;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $gs-color-font-newsletter;
+      font-style: italic;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: $gs-color-font-newsletter;
+      //opacity: 1;
+      font-style: italic;
+    }
+    &:-moz-placeholder { /* Firefox 4 - 18 */
+      color: $gs-color-font-newsletter;
+      //opacity: 1;
+      font-style: italic;
+    }
+  }
+  > p {
+    clear: both;
+  }
+  .newsletter-subscription-form-button-subscribe-gs {
+    @extend .btn;
+    background-color: $gs-color-tree-green;
+    color: $gs-color-purewhite;
+    display: inline-block;
+    height: 44px;
+    width: 300px;
+    //line-height: 44px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    border-radius: 0;
+
+    @media (min-width: $screen-sm-min){
+      font-size: 22px;
+      //line-height: 50px;
+      height: 50px;
+      width: 300px;
+    }
+
+    @media (min-width: $screen-md-min){
+      width: 300px;
+      height: 63px;
+      // line-height: 63px;
+      font-size: 27px;
+    }
+
+    .text {
+      display: none;
+      @media (min-width: $screen-sm-min) {
+        display: inline;
+      }
+    }
+
+    .mobile-text {
+      display: inline;
+      @media (min-width: $screen-sm-min) {
+        display: none;
+      }
+    }
+
+  }
+}
+.newsletter-alert-placeholder {
+  clear: both;
+}
+
+.mobile-form-label {
+  text-align: center;
+  color: $gs-color-tree-green;
+  margin-bottom: 10px;
+
+  @media (min-width: $screen-sm-min){
+    display: none;
+  }
+
+  .newsletter-icon {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 20px;
+    color: $gs-color-tree-green;
+  }
+}
+
+.pre-footer form.newsletter-suscription-form {
+  float: none;
+}

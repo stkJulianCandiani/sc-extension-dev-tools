@@ -1,0 +1,18 @@
+.cart-item-actions-links {
+	margin-top: $sc-margin-lv4;
+	display: table;
+	width: auto;
+
+	a {
+		color: $gs-color-black;
+		font-size: 14px;
+		font-weight: $gs-weight-light;
+		text-decoration: underline;
+		padding-right: $sc-padding-lv4;
+
+		&:hover {
+			color: $gs-color-black;
+			text-decoration: underline;
+		}
+	}
+}

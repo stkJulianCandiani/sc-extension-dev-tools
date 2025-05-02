@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "CompanyAlphaNumeric.config": {
+            "group": "extensions",
+            "subtab": "CompanyAlphaNumeric_subtab",
+            "type": "string",
+            "title": "CompanyAlphaNumeric_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

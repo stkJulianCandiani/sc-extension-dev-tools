@@ -1,0 +1,297 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "gsCustomFooter",
+        "title": "GS Custom Footer",
+        "group": "customizations"
+    },
+    "resource": {
+        "footerNavigation": {
+            "touchpoints": [
+                "",
+                "home",
+                "chckout",
+                "customercenter"
+            ],
+            "target": [
+                "",
+                "_blank"
+            ]
+        }
+    },
+    "properties": {
+        "footer.navigationLinks": {
+            "group": "customizations",
+            "subtab": "gsCustomFooter",
+            "type": "array",
+            "title": "Footer navigation",
+            "description": "Footer navigation links that goes in the footer",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Text",
+                        "description": ""
+                    },
+                    "href": {
+                        "type": "string",
+                        "title": "URL",
+                        "description": ""
+                    }
+                }
+            },
+            "default": [{
+                "text": "Link a",
+                "href": "#"
+            }, {
+                "text": "Link b",
+                "href": "#"
+            }, {
+                "text": "Link c",
+                "href": "#"
+            }]
+        },
+        "footer.navigationQuickLinks": {
+            "group": "customizations",
+            "subtab": "gsCustomFooter",
+            "type": "array",
+            "title": "Quick Links",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Text",
+                        "description": ""
+                    },
+                    "href": {
+                        "type": "string",
+                        "title": "URL",
+                        "description": ""
+                    },
+                    "touchpoint": {
+                        "title": "Touchpoint",
+                        "description": "",
+                        "type": "string",
+                        "source": "$resource.footerNavigation.touchpoints"
+                    },
+                    "target": {
+                        "title": "Window Target",
+                        "description": "",
+                        "type": "string",
+                        "source": "$resource.footerNavigation.target"
+                    }
+                }
+            },
+            "default": [{
+                    "text": "My Account",
+                    "href": "/overview",
+                    "touchpoint": "customercenter"
+                },
+                {
+                    "text": "View our E-Catalog",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Gift Cards",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Cookie Dough",
+                    "href": "#",
+                    "touchpoint": "home"
+                }
+            ]
+        },
+        "footer.navigationShopLinks": {
+            "group": "customizations",
+            "subtab": "gsCustomFooter",
+            "type": "array",
+            "title": "Shop",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Text",
+                        "description": ""
+                    },
+                    "href": {
+                        "type": "string",
+                        "title": "URL",
+                        "description": ""
+                    },
+                    "touchpoint": {
+                        "title": "Touchpoint",
+                        "description": "",
+                        "type": "string",
+                        "source": "$resource.footerNavigation.touchpoints"
+                    },
+                    "target": {
+                        "title": "Window Target",
+                        "description": "",
+                        "type": "string",
+                        "source": "$resource.footerNavigation.target"
+                    }
+                }
+            },
+            "default": [{
+                    "text": "Girl Scout Daisy",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Girl Scout Brownie",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Girl Scout Junior",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Girl Scout Cadette",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Girl Scout Senior",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Girl Scout Ambassador",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Adult Volunteers",
+                    "href": "#",
+                    "touchpoint": "home"
+                }
+            ]
+        },
+        "footer.navigationNeedHelp": {
+            "group": "customizations",
+            "subtab": "gsCustomFooter",
+            "type": "array",
+            "title": "Need Help",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Text",
+                        "description": ""
+                    },
+                    "href": {
+                        "type": "string",
+                        "title": "URL",
+                        "description": ""
+                    },
+                    "touchpoint": {
+                        "title": "Touchpoint",
+                        "description": "",
+                        "type": "string",
+                        "source": "$resource.footerNavigation.touchpoints"
+                    },
+                    "target": {
+                        "title": "Window Target",
+                        "description": "",
+                        "type": "string",
+                        "source": "$resource.footerNavigation.target"
+                    }
+                }
+            },
+            "default": [{
+                    "text": "FAQ",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Contact Us",
+                    "href": "/contact-us",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Return Policy",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Shipping Info",
+                    "href": "#",
+                    "touchpoint": "home"
+                }
+            ]
+        },
+        "footer.navigationOfficialGsusaLinks": {
+            "group": "customizations",
+            "subtab": "gsCustomFooter",
+            "type": "array",
+            "title": "Official GSUSA Links",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Text",
+                        "description": ""
+                    },
+                    "href": {
+                        "type": "string",
+                        "title": "URL",
+                        "description": ""
+                    },
+                    "touchpoint": {
+                        "title": "Touchpoint",
+                        "description": "",
+                        "type": "string",
+                        "source": "$resource.footerNavigation.touchpoints"
+                    },
+                    "target": {
+                        "title": "Window Target",
+                        "description": "",
+                        "type": "string",
+                        "source": "$resource.footerNavigation.target"
+                    }
+                }
+            },
+            "default": [{
+                    "text": "Official Website",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Find Cookies",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Alumnae",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "ToGetHerThere",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Just for Girls",
+                    "href": "#",
+                    "touchpoint": "home"
+                },
+                {
+                    "text": "Make Your Own Badge",
+                    "href": "#",
+                    "touchpoint": "home"
+                }
+            ]
+        }
+    }
+}

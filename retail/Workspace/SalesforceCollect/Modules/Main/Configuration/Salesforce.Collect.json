@@ -1,0 +1,19 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "collect",
+        "title": "Salesforce Collect",
+        "description": "Salesforce Collect",
+        "group": "integrations"
+    }
+,	"properties": {
+		"tracking.salesforceCollectTracking.id": {
+			"group": "integrations"
+		,	"subtab": "collect"
+		,	"type": "string"
+		,	"title": "Org ID"
+		,	"description": "Enter your Org ID. This value corresponds to your Business Unit member ID."
+		,	"default": 0
+		}
+	}
+}

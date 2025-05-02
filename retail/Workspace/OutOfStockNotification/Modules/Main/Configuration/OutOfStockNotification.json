@@ -1,0 +1,78 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "quantityalert",
+        "group": "extensions",
+        "title": "Quantity Alert"
+    },
+    "properties": {
+        "quantityalert.showquantityalert": {
+            "group": "extensions",
+            "subtab": "quantityalert",
+            "type": "boolean",
+            "title": "Show quantity available warning.",
+            "description": "Enables the quantity available warning feature.",
+            "default": true
+        },
+         "quantityalert.text": {
+            "group": "extensions",
+            "subtab": "quantityalert",
+            "type": "string",
+            "title": "Cart/Mini cart quantity alert text",
+            "nsType": "textarea",
+            "description": "Quantity alert text to show on the cart and minicart. Item attributes should be encolsed with [].",
+            "default": "Item [itemname] does not have [unitsrequested] units in stock. Only [unitsavailable] are available."
+        },
+        "quantityalert.pdptext": {
+            "group": "extensions",
+            "subtab": "quantityalert",
+            "type": "string",
+            "title": "PDP quantity alert text",
+            "nsType": "textarea",
+            "description": "Quantity alert text to show on the PDP.",
+            "default": "Quantity entered is more than available. Please review quantity before adding to cart."
+        },
+        "quantityalert.mapping": {
+            "group": "extensions",
+            "subtab": "quantityalert",
+            "type": "array",
+            "title": "Cart line key mapping",
+            "description": "Maps the attributes from the cart line to the text to be displayed in the website.",
+
+            "items": {
+                "type": "object",
+                "properties": {
+                    "messageText": {
+                        "type": "string",
+                        "title": "Message variable",
+                        "translate": false,
+                        "description": "The string in the quantity alert message to match the cart line attribute.",
+                        "mandatory": true
+                    },
+                    "cartLineAttribute": {
+                        "type": "string",
+                        "title": "Cart line attribute (id from fieldset)",
+                        "translate": false,
+                        "description": "The name of the attribute present in the cart line model.",
+                        "mandatory": true
+                    }
+                }
+            },
+            "default":[
+                {
+                    "messageText": "itemname",
+                    "cartLineAttribute": "displayname"
+                },
+                {
+                    "messageText": "unitsrequested",
+                    "cartLineAttribute": "quantity"
+                },
+                {
+                    "messageText": "unitsavailable",
+                    "cartLineAttribute": "quantityavailable"
+                }
+            ]
+        }
+
+    }
+}

@@ -1,0 +1,29 @@
+{
+	"name": "STKQuickOrder",
+	"fantasyName": "STK Quick Order",
+	"vendor": "Softtek",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1.0",
+		"SCS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Quick Order extension to add Google Tag Manager events.",
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/JavaScript/STKQuickOrder.entrypoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/JavaScript/STKQuickOrder.entrypoint.js",
+					"Modules/JavaScript/STKQuickOrder.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Softtek/STKQuickOrder@1.0.0",
+	"activation_id": "11",
+	"extension_id": "13201"
+}

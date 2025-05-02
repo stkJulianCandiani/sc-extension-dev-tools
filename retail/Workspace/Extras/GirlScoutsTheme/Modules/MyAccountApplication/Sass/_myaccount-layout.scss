@@ -1,0 +1,206 @@
+.myaccount-layout,
+.myaccount-standalone-layout {
+	@extend %sc-layout;
+}
+
+.myaccount-layout-container{
+	// Footer module will set a bottom padding with the size of the footer	(on Footer.View.js)
+	@extend .container;
+}
+
+.myaccount-layout-header {
+	@include box-shadow(3px 0px 6px $sc-color-secondary);
+    margin-bottom: $sc-margin-lv5;
+    &.myaccount-layout-header-standalone {
+      box-shadow: none;
+    }
+}
+
+.myaccount-layout-row{
+	@extend .row;
+}
+
+.myaccount-layout-main,
+.myaccount-standalone-layout-main {
+	@extend .col-xs-12;
+	@extend .col-sm-9;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: 70px;
+	}
+	.page-not-found {
+		overflow: hidden;
+	}
+
+	label {
+		font-weight: $gs-weight-semi-bold;
+	}
+
+	label, p {
+		font-size: 14px;
+		&.address-details-actions {
+			font-size: 12px;
+		}
+	}
+
+	p {
+		span {
+			font-size: 14px;
+			color: $sc-color-copy;
+		}
+	}
+
+	h2, h3 {
+		font-size: 20px;
+	}
+	.overview-home-mysettings {
+		h4 {
+			font-size: 16px;
+		}
+	}
+
+	.overview-profile-card-button-edit-container,
+	.overview-shipping-card-button-edit-container,
+	.overview-payment-card-button-edit-container {
+		text-align: left;
+	}
+
+	.overview-profile-card-button-edit,
+	.overview-shipping-card-button-edit,
+	.overview-payment-card-button-edit {
+		@extend .button-tertiary;
+		padding: $sc-padding-lv2 $sc-padding-lv3;
+		color: $gs-color-purewhite;
+		text-align: left;
+		font-size: 12px;
+		line-height: 1;
+	}
+
+	.product-list-list-details-last-item {
+		color: $gs-color-tree-green;
+	}
+
+	.product-list-list-details-anchor {
+		font-size: 15px;
+		&:hover {
+			color: $gs-color-tree-green;
+		}
+	}
+	.product-list-list-details-share {
+		@extend .button-tertiary;
+		padding: 5px $sc-padding-lv2;
+		margin-top: $sc-margin-lv1;
+	}
+	.product-list-list-details-last-update,
+	.product-list-list-details-description {
+		span {
+			font-size: 14px;
+		}
+	}
+	.invoice-paid-list-no-records,
+	.invoice-open-list-no-records {
+		a {
+			color: $gs-color-tree-green;
+		}
+	}
+
+	.profile-information {
+		label {
+			font-weight: $gs-weight-semi-bold;
+			font-size: 14px;
+
+			.profile-information-input-optional {
+				font-size: 12px;
+				color: $gs-color-pink;
+			}
+		}
+		.profile-information-input-email {
+			font-size: 14px;
+			.profile-information-change-email-address {
+				color: $gs-color-tree-green;
+			}
+		}
+	}
+	.profile-emailpreferences-controls {
+		line-height: 1.4;
+		input {
+			margin-bottom: 0;
+		}
+		label {
+			font-weight: normal;
+		}
+	}
+	.address-list {
+		.address-details-new-address {
+			@extend .button-secondary;
+			height: auto;
+			border-style: none;
+			height: auto;
+			width: auto;
+			font-size: 12px;
+			line-height: normal;
+    		border: 1px solid $gs-color-purewhite;
+			padding: $sc-padding-lv2 $sc-padding-lv3;
+		}
+	}
+}
+.profile-change-email-form-label {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.myaccount-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.myaccount-layout-title{
+	margin-bottom: $sc-margin-lv4;
+	display:none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.myaccount-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+.myaccount-layout-side-nav{
+
+	@extend .col-sm-3;
+	display: none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.force-hide-side-nav{
+
+	.myaccount-layout-side-nav{
+		display: none;
+	}
+
+	.myaccount-layout-title{
+		display: none;
+	}
+
+	.myaccount-layout-main,
+	.myaccount-standalone-layout-main{
+		@extend .col-sm-12;
+	}
+}
+
+.recordviews-actionable-actions {
+	font-size: 14px;
+}
+.downloadable-item-link-text {
+	color: $gs-color-tree-green;
+}
+.downloadable-items-list-header {
+	th {
+		color: $gs-color-black;
+		font-size: 16px;
+	}
+}

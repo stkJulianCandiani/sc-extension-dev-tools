@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "firstLevelCategory",
+        "title": "First Level Category",
+        "description": "First Level Category",
+        "group": "extensions"
+    },
+    "properties": {
+        "firstLevelCategory.enabled": {
+            "group": "extensions",
+            "type": "boolean",
+            "subtab": "firstLevelCategory",
+            "title": "Enable Merch Zone on Level 1 Cat",
+            "description": "Enable Merch Zone on Level 1 Cat",
+            "default": false
+        }
+    }
+}

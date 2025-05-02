@@ -1,0 +1,60 @@
+.pdp-accordion-details {
+	border-top: 1px solid #b3b3b3;
+	padding: 0px 0;
+	margin: 24px 0 22px 0px;
+}
+
+.pdp-accordion-header {
+  font-size: 13px;
+	padding: 8px $sc-padding-lv3;
+	border-bottom: 1px solid #b3b3b3;
+	margin-top: 0;
+	display: block;
+	width: 100%;
+	@media (min-width: $screen-sm-min) {
+		font-size: 18px;
+		padding: 12px $sc-padding-lv3;
+		h4{		font-size: 18px;}
+	}
+	.gs-icon-c-right {
+		color: black;
+	}
+	h4{
+			font-size: 13px;
+			font-weight: 600!important;
+	}
+}
+
+.pdp-accordion-header-element {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.pdp-accordion-body {
+	padding: 8px;
+		@media (min-width: $screen-sm-min) {
+				padding: 25px;
+		}
+}
+
+a[aria-expanded="true"] .gs-icon-c-right {
+	-webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: -webkit-transform 300ms ease;
+    -moz-transition: -moz-transform 300ms ease;
+    -o-transition: -o-transform 300ms ease;
+    transition: transform 300ms ease;
+}
+
+a[aria-expanded="false"] .gs-icon-c-right {
+	-webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: -webkit-transform 300ms ease;
+    -moz-transition: -moz-transform 300ms ease;
+    -o-transition: -o-transform 300ms ease;
+    transition: transform 300ms ease;
+}

@@ -1,0 +1,70 @@
+// Main navigation variables
+$sc-main-navigation-height: 72px;
+$sc-main-navigation-background-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Background"}) */
+$sc-main-navigation-border-size: 0; /* editable({"type": "string", "label": "Border size"}) */
+$sc-main-navigation-border-color: transparent; /* editable({"type": "color", "label": "Border"}) */
+
+$sc-main-navigation-link-background-color: transparent;
+$sc-main-navigation-link-color: $sc-color-theme-900; /* editable({"type": "color", "label": "Link"}) */
+$sc-main-navigation-font-size: $sc-font-size-s; /* editable({"type": "string", "label": "Font size"}) */
+$sc-main-navigation-link-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Text transform",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"}
+	]
+}) */
+$sc-main-navigation-link-letter-spacing: 0; /* editable({"type": "string", "label": "Letter spacing"}) */
+$sc-main-navigation-link-border-color: initial;
+$sc-main-navigation-link-border-top-width: 0;
+$sc-main-navigation-link-border-bottom-width: 0;
+$sc-main-navigation-link-padding: $sc-margin-lv3; /* editable({"type": "string", "label": "Link horizontal padding"}) */
+
+$sc-main-navigation-link-hover-background-color: transparent;
+$sc-main-navigation-link-hover-color: $sc-color-link-hover; /* editable({"type": "color", "label": "Hover link"}) */
+$sc-main-navigation-link-hover-border-color: initial;
+$sc-main-navigation-link-hover-border-top-width: 0;
+$sc-main-navigation-link-hover-border-bottom-width: 0;
+
+$sc-main-navigation-link-active-background-color: transparent;
+$sc-main-navigation-link-active-color: $sc-color-link-active; /* editable({"type": "color", "label": "Active link"}) */
+$sc-main-navigation-link-active-border-color: initial;
+$sc-main-navigation-link-active-border-top-width: 0;
+$sc-main-navigation-link-active-border-bottom-width: 0;
+
+$sc-main-navigation-submenu-background-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Submenu and search bar background"}) */
+$sc-main-navigation-submenu-heading-color: $sc-color-copy; /* editable({"type": "color", "label": "Level 2"}) */
+$sc-main-navigation-submenu-heading-hover-color: $sc-color-link-hover; /* editable({"type": "color", "label": "Level 2 hover"}) */
+$sc-main-navigation-submenu-font-size: $sc-font-size-s; /* editable({"type": "string", "label": "Level 2 and 3 font size"}) */
+$sc-main-navigation-submenu-heading-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Level 2 text transform",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"}
+	]
+}) */
+$sc-main-navigation-submenu-heading-text-decoration: none;
+$sc-main-navigation-submenu-heading-border-color: $sc-color-theme-border-light; /* editable({"type": "color", "label": "Level 2 underline"}) */
+
+$sc-main-navigation-subsubmenu-link-color: $sc-color-primary;  /* editable({"type": "color", "label": "Level 3 link"}) */
+$sc-main-navigation-subsubmenu-link-hover-color: $sc-color-link-hover;  /* editable({"type": "color", "label": "Level 3 link hover"}) */
+$sc-main-navigation-subsubmenu-link-active-color: $sc-color-copy;  /* editable({"type": "color", "label": "Level 3 link active"}) */
+
+// Mobile navigation variables
+$sc-sidebar-size: 246px; /* editable({"type": "string", "label": "Mobile navigation sidebar width"}) */
+$sc-mobile-navigation-sidebar-overlay-color: $sc-neutral-shade-500;
+$sc-mobile-navigation-background-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Mobile navigation background"}) */
+
+$sc-mobile-navigation-link-background-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Mobile navigation link background"}) */
+$sc-mobile-navigation-link-color: $sc-color-theme-900; /* editable({"type": "color", "label": "Mobile navigation link"}) */
+$sc-mobile-navigation-link-hover-color: $sc-color-link-hover; /* editable({"type": "color", "label": "Mobile navigation link hover"}) */
+$sc-mobile-navigation-link-active-color: $sc-color-link-active; /* editable({"type": "color", "label": "Mobile navigation link active"}) */
+
+$sc-mobile-navigation-border-width: 1px; /* editable({"type": "string", "label": "Mobile navigation border width"}) */
+$sc-mobile-navigation-border-color: $sc-color-theme-border-light; /* editable({"type": "color", "label": "Mobile navigation border"}) */

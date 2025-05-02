@@ -1,0 +1,77 @@
+{
+	"name": "FirstLevelCategory",
+	"fantasyName": "First Level Category",
+	"vendor": "CS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "22.2.0",
+		"SCS": "22.2.0"
+	},
+	"version": "1.0.4",
+	"description": "Extension to customize first level category",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Facets/Configuration/FirstLevelCategory.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/firstlevelcategory_facets_category_cell.tpl",
+					"Modules/Merchandising/Templates/merch_zone_cms.tpl",
+					"Modules/Merchandising/Templates/merch_zone_category_cms.tpl",
+					"Modules/Merchandising/Templates/merchandising-item.tpl",
+					"Modules/Merchandising/Templates/firstlevelcategory_merchandising_zone_row_template.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_firstlevelcategory.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_firstlevelcategory.scss",
+			"Modules/Merchandising/Sass/_cms-merchandising-zones.scss",
+			"Modules/Merchandising/Sass/_cms-merchandising-zones-category.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/CS.FirstLevelCategory.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CS.FirstLevelCategory.Main.js",
+					"Modules/Facets/JavaScript/FirstLevelCategory.Facets.CategoryCell.View.js",
+					"Modules/Merchandising/JavaScript/FirstLevelCategory.Merchandising.View.js",
+					"Modules/Merchandising/JavaScript/FirstLevelCategory.Merchandising.Item.View.js",
+					"Modules/Main/JavaScript/FirstLevelCategory.Helper.js",
+					"Modules/Facets/JavaScript/FirstLevelCategory.Facets.FacetedNavigationItemCategory.View.js",
+					"Modules/Facets/JavaScript/FirstLevelCategory.Facets.Browse.View.js",
+					"Modules/Facets/JavaScript/FirstLevelCategory.Facets.Browse.CategoryHeading.View.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS/FirstLevelCategory@1.0.4",
+	"activation_id": "11",
+	"extension_id": "12101"
+}

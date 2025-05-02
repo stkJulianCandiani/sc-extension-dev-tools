@@ -1,0 +1,46 @@
+//Gscouts design colors
+$gs-color-black: #000000; /* editable({"type": "color", "label": "GS Color Black"}) */
+$gs-color-purewhite: #ffffff; /* editable({"type": "color", "label": "GS Color Pure White"}) */
+$gs-color-tree-green: #00ae58; /* editable({"type": "color", "label": "GS Color Tree Green"}) */
+$gs-color-tree-green-hover: #00ca66; /* editable({"type": "color", "label": "GS Color Tree Green Hover"}) */
+$gs-color-grass-green: #b2d235; /* editable({"type": "color", "label": "GS Color Tree Grass Green"}) */
+$gs-color-yellow: #fddd00; /* editable({"type": "color", "label": "GS Color Tree Yellow"}) */
+$gs-color-lightyellow: #edf4d5; /* editable({"type": "color", "label": "GS Light Yellow"}) */
+$gs-color-pink: #ec008b; /* editable({"type": "color", "label": "GS Color Pink"}) */
+$gs-color-pink-hover: #ff31aa; /* editable({"type": "color", "label": "GS Color Pink Hover"}) */
+$gs-color-lightpink: #f793be; /* editable({"type": "color", "label": "GS Color Light Pink"}) */
+$gs-color-orange: #f37021; /* editable({"type": "color", "label": "GS Color Orange"}) */
+$gs-color-purple: #6e298d; /* editable({"type": "color", "label": "GS Color Purple"}) */
+$gs-color-blue: #004e9a; /* editable({"type": "color", "label": "GS Color Blue"}) */
+$gs-color-skyblue: #00abe6; /* editable({"type": "color", "label": "GS Color Sky Blue"}) */
+$gs-color-menu-gray: #daeddd; /* editable({"type": "color", "label": "GS Menu Gray"}) */
+$gs-color-lightpurple: #e1d5eb; /* editable({"type": "color", "label": "GS Color Light Purple"}) */
+
+//Gscouts design fonts color
+$gs-color-font-newsletter: #9e9e9e; /* editable({"type": "color", "label": "GS Font Color Newsletter"}) */
+
+$gs-color-dropdown-border: #cbcbcb; /* editable({"type": "color", "label": "GS Dropdown Border "}) */
+$gs-color-dropdown-background: #f5f5f5; /* editable({"type": "color", "label": "GS Dropdown Background Color"}) */
+$gs-color-background-pink: #ef4fad; /* editable({"type": "color", "label": "GS Background Color "}) */
+$gs-color-border-dark: #353535; /* editable({"type": "color", "label": "GS Border Dark Color"}) */
+
+$gs-color-disable: #c4c4c4; /* editable({"type": "color", "label": "GS Disable Color"}) */
+$gs-reviews-bar-bg: #f1f1f1; /* editable({"type": "color", "label": "GS Reviews Bar Background"}) */
+$gs-reviews-bar-bdr: #b0b0b0; /* editable({"type": "color", "label": "GS Reviews Bar Border"}) */
+
+$gs-color-row-odd: #fcdfeb; /* editable({"type": "color", "label": "GS Row Odd Background Color"}) */
+$gs-color-row-even: #f8c1d9; /* editable({"type": "color", "label": "GS Row Even Background Color"}) */
+$gs-color-bg-modals: #f3f3f3; /* editable({"type": "color", "label": "GS Modal Background Color"}) */
+
+$gs-color-cart-count: #ee3124; /* editable({"type": "color", "label": "GS Cart Count Color"}) */
+$gs-color-cart-count-font: #ffffff; /* editable({"type": "color", "label": "GS Cart Count Font Color"}) */
+
+$gs-color-gray-10: darken($gs-color-purewhite, 10%); //e6e6e6 /* editable({"type": "color", "label": "GS Gray 10"}) */
+$gs-color-gray-20: darken($gs-color-purewhite, 20%); //#ccc /* editable({"type": "color", "label": "GS Gray 20"}) */
+$gs-color-gray-30: darken($gs-color-purewhite, 30%); //#b3b3b3 /* editable({"type": "color", "label": "GS Gray 30"}) */
+$gs-color-gray-40: darken($gs-color-purewhite, 40%); //999 /* editable({"type": "color", "label": "GS Gray 40"}) */
+$gs-color-gray-50: darken($gs-color-purewhite, 50%); //808080 /* editable({"type": "color", "label": "GS Gray 50"}) */
+$gs-color-gray-60: darken($gs-color-purewhite, 60%); //#666 /* editable({"type": "color", "label": "GS Gray 60"}) */
+$gs-color-gray-70: darken($gs-color-purewhite, 70%); //#4d4d4d /* editable({"type": "color", "label": "GS Gray 70"}) */
+$gs-color-gray-80: darken($gs-color-purewhite, 80%); //333 /* editable({"type": "color", "label": "GS Gray 80"}) */
+$gs-color-gray-90: darken($gs-color-purewhite, 90%); //1a1a1a /* editable({"type": "color", "label": "GS Gray 9 0"}) */

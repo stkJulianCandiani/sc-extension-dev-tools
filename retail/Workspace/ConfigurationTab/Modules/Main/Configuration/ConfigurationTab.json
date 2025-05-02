@@ -1,0 +1,8 @@
+{
+    "type": "object",
+    "group": {
+        "id": "customizations",
+        "title": "Customizations Tab",
+        "description": "Customizations Configs"
+    }
+}

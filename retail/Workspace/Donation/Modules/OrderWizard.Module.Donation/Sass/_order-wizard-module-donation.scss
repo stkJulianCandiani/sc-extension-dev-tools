@@ -1,0 +1,163 @@
+.roundup-label {
+    display: block;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.roundup-label>input {
+    float: left;
+    margin-top: 5px;
+}
+
+.roundup-label>a {
+    padding: 5px;
+}
+
+.roundup-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0;
+    border-color: #fff;
+}
+
+.rounduptext {
+    display: inline;
+}
+
+.round-up-button {
+    float: left;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.pop-up-roundup-p {
+    padding: 10px 0;
+}
+
+.round-up-mobile {
+    display: none !important;
+
+    @media (max-width: $screen-sm-min) {
+        display: block !important;
+    }
+}
+
+.round-up-desktop {
+    display: none !important;
+
+    @media (min-width: $screen-sm-min) {
+        display: block !important;
+    }
+}
+
+.roundup-btn {
+    font-weight: bold;
+    padding: 10px 20px;
+    background: white;
+    margin: 0;
+    margin-right: -4px;
+    color: #00ae58;
+    border: #888 1px solid;
+    font-size: inherit;
+}
+
+input.roundup-btn {
+    display: inline;
+}
+
+.roundup-btn-active {
+    font-weight: bold;
+    background: #00ae58;
+    color: white;
+}
+
+input.roundup-btn::placeholder {
+    color: #ccc;
+    font-weight: lighter;
+}
+
+input.roundup-btn {
+    padding: 10px;
+    width: 130px;
+}
+
+.custom-roundup {
+    @media (min-width: $screen-md-min) {
+        margin-left: 20px;
+    }
+
+    @media (max-width: $screen-md-min) {
+        margin-top: 20px;
+    }
+}
+
+.donation-container {
+    @media (max-width: $screen-md-min) {
+        margin-bottom: 10px;
+    }
+}
+
+.roundup-remove-donation {
+    color: red !important;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.roundup-remove-donation a {
+    color: red !important;
+    text-decoration: underline;
+}
+
+.roundupheader {
+    color: #5b7f8c;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.imageroundup {
+    right: 5%;
+
+    @media (min-width: 1281px) {
+        top: 5%;
+    }
+
+    @media (max-width: 1280px) {
+        top: 11%;
+    }
+
+    position: absolute;
+    top: 14%;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        top: 14%;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        top: 10%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        top: 11%;
+    }
+}
+
+.addspace {
+    padding-bottom: 15px;
+    display: inline-grid;
+
+    @media (min-width: 1281px) {
+        display: inherit;
+    }
+}
+
+.roundup-box {
+    min-height: fit-content;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.donation-title {
+    @media (min-width: $screen-sm-min) {
+        font-size: 28px;
+    }
+}

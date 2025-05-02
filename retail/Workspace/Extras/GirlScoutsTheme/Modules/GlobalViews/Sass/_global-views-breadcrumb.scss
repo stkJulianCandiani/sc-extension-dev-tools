@@ -1,0 +1,27 @@
+.global-views-breadcrumb-item-active {
+	@extend .breadcrumb-item-active;
+	font-weight: $gs-weight-semi-bold;
+}
+
+.global-views-breadcrumb-item {
+	@extend .breadcrumb-item;
+	a {
+		color: $gs-color-black;
+		&:hover {
+			color: $gs-color-black;
+		}
+	}
+}
+
+.global-views-breadcrumb-divider {
+	@extend .breadcrumb-divider;
+}
+
+.global-views-breadcrumb {
+	@extend .breadcrumb;
+	font-size: 16px;
+}
+
+.global-views-breadcrumb-divider-icon {
+	@extend .breadcrumb-divider-icon;
+}

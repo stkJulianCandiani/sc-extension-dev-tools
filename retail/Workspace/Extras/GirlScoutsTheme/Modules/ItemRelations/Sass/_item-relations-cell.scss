@@ -1,0 +1,16 @@
+.item-relations-cell {
+    width: 280px !important;
+    margin: 0;
+    text-align: center;
+    @media(min-width: $screen-sm-min) {
+        width: 200px !important;
+        margin: 0 41px 0 0;
+    }
+    @media(min-width: $screen-md-min) {
+        margin: 0 46px 0 0;
+    }
+    @media(min-width: $screen-lg-min) {
+        width: 235px !important;
+        margin: 0 46px 0 0;
+    }
+}

@@ -1,0 +1,16 @@
+/* Edited for Summit Theme */
+
+.error-management-forbidden-error {
+	@extend .container;
+	min-height: $sc-theme-error-height-mobile;
+	padding-bottom: $sc-padding-lv5 * 2;
+    @media (min-width: $screen-md-min) {
+        min-height: $sc-theme-error-height-desktop;
+    }
+}
+
+.error-management-forbidden-error-header {}
+
+.error-management-forbidden-error-main-banner {}
+
+.error-management-forbidden-error-content {}

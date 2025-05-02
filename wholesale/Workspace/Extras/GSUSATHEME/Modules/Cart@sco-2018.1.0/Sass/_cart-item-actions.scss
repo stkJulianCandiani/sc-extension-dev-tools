@@ -1,0 +1,52 @@
+/* Edited for Summit Theme */
+
+.cart-item-actions-links {
+	margin-top: $sc-margin-lv5;
+	/*display: table;
+	width: auto;*/
+
+	a {
+		padding: $sc-padding-lv2;
+
+		&:first-child {
+			padding-left: 0;
+		}
+		/*display: table-cell;
+		height: $sc-target-size;
+		vertical-align: middle;
+		padding-right: $sc-margin-lv4;*/
+	}
+
+	@media (max-width: $screen-sm-min) {
+		margin-top: 0;
+	}
+}
+
+.cart-item-actions-item-list-actionable-edit-button{
+	margin-top: $sc-margin-lv2;
+}
+
+.cart-item-actions-item-list-actionable-edit-button-edit {
+	//margin-right: $sc-margin-lv2;
+}
+
+.cart-item-actions-item-list-actionable-edit-button-drop{
+	@extend .transaction-line-views-cell-actionable-edit-button-drop !optional;
+	padding: 13px 16px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.cart-item-actions-item-list-actionable-edit-content-saveforlater {
+	margin-right: $sc-margin-lv2;
+}
+
+.cart-item-actions-item-list-actionable-edit-content-remove {
+	//@extend .button-tertiary;
+	//@extend .button-small;
+}
+
+.cart-item-actions-item-list-actionable-edit-content-remove-sb{
+	@extend .button-tertiary;
+	@extend .button-small;
+}

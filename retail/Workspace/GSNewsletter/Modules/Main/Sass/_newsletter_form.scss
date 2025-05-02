@@ -1,0 +1,120 @@
+.newslleter-page-email-profile-container {
+  @extend .container;
+}
+
+.newslleter-page-email-profile-header {
+  text-align: center;
+  border-bottom: 2px solid $gs-color-gray-10;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  @media (min-width: $screen-sm-min) {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+.newslleter-page-email-profile-header-icon {
+  margin-bottom: 10px;
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: 20px;
+  }
+  .gs-icon-mail {
+    font-size: 32px;
+    @media (min-width: $screen-sm-min) {
+      font-size: 50px;
+    }
+    color: $gs-color-tree-green;
+  }
+}
+.newslleter-page-email-profile-title {
+  font-size: 18px;
+  @media (min-width: $screen-sm-min) {
+    font-size: 30px;
+  }
+}
+.newslleter-page-email-profile-form-container {
+  width: 240px;
+  margin: 0 auto;
+  @media (min-width: $screen-sm-min) {
+    width: 400px;
+  }
+}
+.newslleter-page-email-profile-form-description {
+  font-size: 14px;
+  color: $gs-color-tree-green;
+  margin-bottom: 20px;
+  text-align: center;
+  @media (min-width: $screen-sm-min) {
+    font-size: 24px;
+  }
+}
+.newslleter-page-email-profile-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  display: block;
+  @media (min-width: $screen-sm-min) {
+    font-size: 18px;
+  }
+  small {
+    text-transform: none;
+    color: $sc-color-error;
+    font-size: 10px;
+    font-weight: 500;
+    @media (min-width: $screen-sm-min) {
+      font-size: 14px;
+    }
+  }
+}
+.newslleter-page-email-profile-control {
+  margin-bottom: 35px;
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: 22px;
+  }
+  [data-validation-error="block"] {
+    margin: 0;
+    display: block;
+  }
+}
+.newslleter-page-email-profile-firstname,
+.newslleter-page-email-profile-lastname,
+.newslleter-page-email-profile-email,
+.newslleter-page-email-profile-zipcode,
+.newslleter-page-email-profile-birth {
+  @extend .input-base;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 8px;
+  font-size: 14px;
+  border-color: $gs-color-tree-green;
+  @media (min-width: $screen-sm-min) {
+    padding: 14px;
+    font-size: 18px;
+  }
+}
+
+.newslleter-page-email-profile-button {
+  @extend .button-tertiary;
+  @extend .button-large;
+  width: auto;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 10px 20px;
+  @media (min-width: $screen-sm-min) {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 35px;
+  }
+}
+.newslleter-page-email-profile-disclaimer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 10px;
+  @media (min-width: $screen-sm-min) {
+    fonot-size: 14px;
+  }
+}
+
+.newslleter-page-email-profile-form-container .newslleter-page-email-profile-terms {
+    margin-bottom: $sc-margin-lv3;
+}

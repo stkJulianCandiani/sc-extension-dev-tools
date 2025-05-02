@@ -1,0 +1,161 @@
+$sc-base-padding: 5px;
+$sc-base-margin: 5px;
+
+
+.facets-category-browse-facets {
+    @extend .col-sm-3;
+    padding: 0;
+    overflow-x: hidden;
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: block;
+    }
+
+    @media (min-width: $screen-md-min) {
+        overflow: hidden;
+        padding-right: $sc-base-padding * 3;
+        width: 25%;
+        background-color: transparent;
+    }
+}
+
+.facets-category-browse-results {
+    @extend .col-sm-9;
+
+    @media (min-width: $screen-md-min) {
+        padding: 0;
+    }
+}
+
+.facets-category-browse-facets-sidebar {
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: block;
+    }
+}
+
+.facets-category-cell-list {
+    @extend .clearfix;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    .cms-merchandising-carousel-container .row>div {
+        font-size: 0;
+
+        .merchandising-item-view-title,
+        .merchandising-item-view-price {
+            width: 50%;
+        }
+    }
+
+    .merchandising-item-view-title {
+        @media (min-width: $screen-lg-min) {
+            margin-right: 0;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    @media (min-width: $screen-md-min) {
+        margin-bottom: 40px;
+    }
+
+    .category-merch-slider .bx-wrapper {
+        @media(min-width: $screen-sm-min){
+            min-width: 540px !important;
+            width: 760px !important;
+        }
+
+        @media(min-width: $screen-md-min){
+            min-width: 540px !important;
+            width: 720px !important;
+        }
+
+        @media(min-width: $screen-lg-min){
+            min-width: 540px !important;
+            width: 870px !important;
+        }
+        .merch-home-item-status {
+            display: table;
+        }
+    }
+}
+
+.facets-category-cell-list-title {
+    display: block;
+    vertical-align: middle;
+    font-size: 22px;
+    margin-bottom: 0;
+    line-height: 45px;
+    font-weight: 500;
+    text-transform: none;
+
+    @media (min-width: $screen-sm-min) {
+        height: 45px;
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    a {
+        color: $gs-color-black;
+        background: $gs-color-purewhite;
+        padding-right: 15px;
+    }
+
+    img {
+        max-width: 35px;
+        vertical-align: middle;
+        margin-right: 5px;
+        margin-left: -9px;
+
+        @media (min-width: $screen-sm-min) {
+            margin-left: 0;
+            margin-right: 10px;
+            max-width: 45px;
+        }
+    }
+
+    &:after {
+        content: "";
+        border-bottom: 1px solid $gs-color-black;
+        display: none;
+        width: 100%;
+        margin-top: -24px;
+
+        @media (min-width: $screen-sm-min) {
+            display: block;
+        }
+    }
+}
+
+.facets-category-cell-list-view-all {
+    text-align: center;
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-sm-min) {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-md-min) {
+        padding-top: 10px;
+    }
+
+    a {
+        font-size: 20px;
+        font-weight: 500;
+        color: $gs-color-tree-green;
+        text-decoration: underline;
+    }
+}
+
+@import "../../Merchandising/Sass/_cms-merchandising-zones.scss";
+@import "../../Merchandising/Sass/_cms-merchandising-zones-category.scss";

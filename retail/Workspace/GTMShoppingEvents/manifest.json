@@ -1,0 +1,30 @@
+{
+	"name": "GTMShoppingEvents",
+	"fantasyName": "GTM Shopping Events",
+	"vendor": "Softtek",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1.0",
+		"SCS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Shopping Custom Events for Google Tag Manager",
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/JavaScript/GTMShoppingEvents.entrypoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/JavaScript/GTMShoppingEvents.entrypoint.js",
+					"Modules/JavaScript/GTMShoppingEvents.GoogleTagManager.js",
+					"Modules/JavaScript/GTMShoppingEvents.HeaderMiniCart.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Softtek/GTMShoppingEvents@1.0.0",
+	"activation_id": "11",
+	"extension_id": "13001"
+}

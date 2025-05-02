@@ -1,0 +1,303 @@
+.dropdown-selector-select {
+    // @extend .input-base;
+  height: 38px;
+  padding: 0;
+  position: relative;
+  border: 0;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  @media (min-width: $screen-sm-min){
+    min-width: 200px;
+    margin: 0 auto;
+  }
+
+  .selected-sort {
+    display: block;
+    padding: 3px 0;
+    font-size: 13px;
+    border: 1px solid $gs-color-dropdown-border;
+    white-space: nowrap;
+
+    @media (min-width: $screen-sm-min){
+      font-size: 16px;
+    }
+
+    span {
+      padding: 5px 25px 5px 10px;
+      @media (min-width: $screen-sm-min) {
+        padding-right: 22px;
+      }
+      display: block;
+      white-space: nowrap;
+    }
+
+    &:hover {
+      span {
+        background: $gs-color-background-pink;
+        color: $gs-color-purewhite;
+      }
+    }
+  }
+
+  .gs-icon-arrow-up-down {
+    font-size: 13px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    @media (min-width: $screen-sm-min) {
+        font-size: 35px;
+        top: 17px;
+        right: 18px;
+    }
+  }
+
+  ul {
+    display: none;
+    background: $gs-color-dropdown-background;
+    min-width: 100% !important;
+    position: absolute;
+    z-index: 1002;
+    left: 0;
+    border-left: 1px solid $gs-color-dropdown-border;
+    border-right: 1px solid $gs-color-dropdown-border;
+    border-top: 1px solid $gs-color-dropdown-border;
+    margin-top: -1px;
+
+    li {
+      padding: 3px 0;
+      font-size: 13px;
+      cursor: pointer;
+      border-bottom: 1px solid $gs-color-dropdown-border;
+      @media (min-width: $screen-sm-min){
+        font-size: 16px;
+      }
+      &:hover {
+        span {
+          background: $gs-color-background-pink;
+          color: $gs-color-purewhite;
+        }
+      }
+    }
+    span {
+      display: block;
+      padding: 5px 25px 5px 10px;
+      white-space: nowrap;
+    }
+    .gs-icon-check {
+      font-size: 12px;
+      padding-left: 3px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 14px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  &.open {
+    background: $gs-color-dropdown-background;
+
+    .gs-icon-arrow-up-down {
+      opacity: 0;
+    }
+    ul {
+      display: block;
+    }
+  }
+}
+
+.dropdown-selector-select-large {
+  @media(max-width: $screen-xs-max){
+      width: 100% !important;
+  }
+  @media (min-width: $screen-sm-min){
+    width: 680px !important;
+    height: 70px !important;
+  }
+  .selected-sort {
+    @media (min-width: $screen-sm-min){
+      font-size: 31px !important;
+      padding: 5px 0 !important;
+    }
+    span {
+      @media (min-width: $screen-sm-min) {
+        padding: 12px 60px 12px 20px !important;
+      }
+    }
+  }
+  .gs-icon-arrow-up-down {
+    @media (min-width: $screen-sm-min) {
+      font-size: 35px;
+      top: 17px;
+      right: 18px;
+    }
+  }
+  ul {
+    @media (min-width: $screen-sm-min) {
+      min-width: 680px;
+    }
+    li {
+      @media (min-width: $screen-sm-min) {
+        padding: 5px 0;
+        font-size: 31px !important;
+      }
+    }
+    span {
+      @media (min-width: $screen-sm-min) {
+        padding: 12px 65px 12px 20px !important;
+      }
+    }
+    .gs-icon-check {
+      @media (min-width: $screen-sm-min) {
+        font-size: 25px !important;
+        padding-left: 10px !important;
+      }
+    }
+  }
+}
+
+
+.category-council-shop-container {
+  @extend .container;
+}
+.category-council-shop-container {
+  text-align: center;
+  h3 {
+    font-size: 23px;
+    margin-bottom: 25px;
+    color: $gs-color-black;
+    @media (min-width: $screen-sm-min) {
+      font-size: 46px;
+      margin-bottom: 45px;
+    }
+  }
+  .zip-code-banner {
+    input {
+      border: 1px solid $gs-color-gray-10;
+      font-size: 15px;
+      padding: 10px;
+      font-style: italic;
+      margin-bottom: 20px;
+      display: inline-block;
+      width: auto;
+      @media (min-width: $screen-sm-min) {
+        border: 2px solid $gs-color-gray-10;
+        margin-bottom: 45px;
+        font-size: 30px;
+        padding: 15px;
+      }
+    }
+  }
+  .categories-council-large-button {
+    @extend .button-primary;
+    @extend .button-large;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    width: auto;
+    padding: 8px 35px;
+    min-width: 210px;
+    line-height: 20px;
+    @media (min-width: $screen-sm-min) {
+      min-width: 410px;
+      font-size: 38px;
+      margin-bottom: 80px;
+      padding: 12px 35px;
+      line-height: 46px;
+    }
+  }
+}
+.categories-council-select-container {
+  margin-top: 15px;
+}
+.categories-council-select-container {
+  border-top: 2px solid $gs-color-tree-green;
+}
+.categories-council-select-container,
+.categories-council-find-container {
+  padding-top: 30px;
+  @media (min-width: $screen-sm-min) {
+    padding-top: 60px;
+  }
+}
+
+.categories-council-select-dropdown {
+    @extend .dropdown-selector-select;
+    @extend .dropdown-selector-select-large;
+  text-align: left;
+  margin-bottom: 0px !important;
+  width: 100%;
+
+    .gs-icon-arrow-up-down {
+        font-size: 13px;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+    }
+    @media (min-width: $screen-sm-min) {
+        width: 100%;
+        margin: 0 auto 40px !important;
+
+        .gs-icon-arrow-up-down {
+          font-size: 35px !important;
+          top: 17px !important;
+          right: 18px !important;
+        }
+    }
+
+  .selected-sort {
+    background: $gs-color-gray-10;
+  }
+  &.open {
+    .selected-sort {
+      background: $gs-color-dropdown-background;
+    }
+  }
+  ul {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 450px;
+    @media (min-width: $screen-sm-min) {
+      width: auto;
+      max-height: 600px;
+    }
+  }
+}
+
+
+.line {
+    overflow: hidden;
+    text-align: center;
+
+}
+.line:before,
+.line:after {
+    background-color: $gs-color-tree-green;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    padding: 0 10px;
+    position: relative;
+    vertical-align: middle;
+    font-weight: 600;
+    width: 50%;
+    margin-bottom: 16px;
+}
+.line:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.line:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+.line-or {
+  font-weight: 600;
+  font-size: 23px;
+    @media (min-width: $screen-sm-min) {
+       font-size: 46px;
+       font-weight: 600;
+  }
+
+}

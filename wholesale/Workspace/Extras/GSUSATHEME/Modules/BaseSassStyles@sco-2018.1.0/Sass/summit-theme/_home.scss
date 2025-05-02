@@ -1,0 +1,47 @@
+// Home Carousel variables
+$sc-desktop-carousel-slide-height: 400px; /* editable({"type": "string", "label": "Carousel slide height - desktop"}) */
+$sc-mobile-carousel-slide-height: 180px; /* editable({"type": "string", "label": "Carousel slide height - mobile/tablet"}) */
+
+$sc-carousel-slide-caption-top-m: 140px; /* editable({"type": "string", "label": "Caption top distance - medium screens"}) */
+$sc-carousel-slide-caption-top-xs: 10px; /* editable({"type": "string", "label": "Caption top distance - very small screens"}) */
+$sc-carousel-slide-caption-top-s: 40px; /* editable({"type": "string", "label": "Caption top distance - small screens"}) */
+$sc-carousel-slide-caption-padding-left-m: 110px; /* editable({"type": "string", "label": "Caption left padding - medium screens"}) */
+
+$sc-carousel-title-size-desktop: 50px; /* editable({"type": "string", "label": "Slide title font size - desktop"}) */
+$sc-carousel-title-size-mobile: 35px; /* editable({"type": "string", "label": "Slide title font size - mobile"}) */
+$sc-carousel-title-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Slide title"}) */
+$sc-carousel-slide-caption-title-weight: $sc-font-weight-light; /* editable({"type": "string", "label": "Slide title font weight"}) */
+$sc-carousel-slide-caption-title-font: $sc-theme-secondary-font; /* editable({"type": "string", "label": "Slide title font"}) */
+
+$sc-carousel-text-size: 19px; /* editable({"type": "string", "label": "Slide text font-size"}) */
+$sc-carousel-text-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Slide text"}) */
+$sc-carousel-slide-caption-text-weight: $sc-font-weight-normal; /* editable({"type": "string", "label": "Slide text font weight"}) */
+$sc-carousel-slide-caption-text-width: 400px; /* editable({"type": "string", "label": "Slide text box width"}) */
+$sc-carousel-slide-caption-text-line-height: 30px; /* editable({"type": "string", "label": "Slide text line height"}) */
+
+$sc-carousel-button-color: $sc-button-primary-background-color; /* editable({"type": "color", "label": "Carousel button"}) */
+$sc-carousel-button-border-color: $sc-button-primary-border-color; /* editable({"type": "color", "label": "Carousel button border"}) */
+$sc-carousel-button-hover-color: $sc-button-primary-hover-background-color; /* editable({"type": "color", "label": "Carousel button hover"}) */
+$sc-carousel-button-border-hover-color: $sc-button-primary-hover-border-color; /* editable({"type": "color", "label": "Carousel button border hover"}) */
+$sc-carousel-button-underline-size: 4px; /* editable({"type": "string", "label": "Carousel button underline size"}) */
+$sc-carousel-button-underline-color: $sc-color-primary-dark; /* editable({"type": "color", "label": "Carousel button underline"}) */
+
+// Home Infoblocks variables
+$sc-infoblock-height-mobile: 160px; /* editable({"type": "string", "label": "Infoblock height - mobile"}) */
+$sc-infoblock-height-desktop: 200px; /* editable({"type": "string", "label": "Infoblock height - desktop"}) */
+$sc-infoblock-content-padding: 40px; /* editable({"type": "string", "label": "Infoblock padding"}) */
+$sc-infoblock-title-size-desktop: 50px; /* editable({"type": "string", "label": "Infoblock title - desktop"}) */
+$sc-infoblock-title-size-mobile: 28px; /* editable({"type": "string", "label": "Infoblock title - mobile"}) */
+$sc-infoblock-text-size: 20px; /* editable({"type": "string", "label": "Infoblock text size"}) */
+$sc-infoblock-link-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Infoblock text"}) */
+$sc-infoblock-link-opacity: 0.75; /* editable({"type": "string", "label": "Infoblock text hover opacity"}) */
+$sc-infoblock-font-weight: $sc-font-weight-extrabold; /* editable({"type": "string", "label": "Infoblock font weight"}) */
+
+// Home Freetext variables
+$sc-freetext-heading-color: $sc-color-copy; /* editable({"type": "color", "label": "Freetext heading"}) */
+$sc-freetext-text-color: $sc-color-copy; /* editable({"type": "color", "label": "Freetext text"}) */
+$sc-freetext-vertical-padding: $sc-padding-lv6; /* editable({"type": "string", "label": "Freetext text vertical padding"}) */
+$sc-freetext-horizontal-padding: 45px; /* editable({"type": "string", "label": "Freetext text horizontal padding"}) */
+
+// General home variables
+$sc-color-shadow: transparentize(black, 1-0.25);

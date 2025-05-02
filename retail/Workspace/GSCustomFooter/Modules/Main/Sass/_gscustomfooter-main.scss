@@ -1,0 +1,60 @@
+@import '../../GSCustomFooterMobile/Sass/gscustomfooter-mobile';
+@import '../../GSCustomFooterPolicies/Sass/gscustomfooter-policies';
+@import '../../GSCustomFooterDesktop/Sass/gscustomfooter-desktop';
+@import '../../GSCustomFooterSocial/Sass/gscustomfooter-social';
+
+$extension-img-path: getExtensionAssetsPath("img");
+
+.global-views-back-to-top,
+#site-footer {
+    background-color: transparent;
+    border: 0;
+}
+
+.footer-content {
+    width: 100%;
+
+    @media (min-width: $screen-md-min) {
+        border: 3px solid black;
+        border-right: 0;
+        border-left: 0;
+        text-align: left;
+    }
+}
+
+.footer-newsletter {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 $sc-margin-lv3;
+
+    @media (min-width: $screen-sm-min) {
+        flex: 2;
+        width: auto;
+    }    
+}
+
+.footer-d-main-navigation {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.pre-footer {
+    align-items: center;
+    background: #fff url(#{$extension-img-path}/footer-dots.png) left top repeat-x;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: $sc-padding-lv1*10 $sc-padding-lv3 $sc-padding-lv1*5;
+
+    @media (min-width: $screen-sm-min) {
+        .newsletter-suscription-form {
+            float: right;
+        }
+    }   
+
+    @media (min-width: $screen-lg-min) {
+        padding: $sc-padding-lv1*10 0 $sc-padding-lv1*5;
+    }
+}

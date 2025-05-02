@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "storeLocator.icons.council": {
+            "group": "storeLocator",
+            "subtab": "storeLocatorGeneral",
+            "type": "string",
+            "title": "Icons > Stores",
+            "description": "Enter the URL for the store marker icon.This icon appears in the store list, next to the name of the store and in the Store Information popup (if enabled).",
+            "default": "img/councilIcon.png"
+        },
+        "storeLocator.icons.retail": {
+            "group": "storeLocator",
+            "subtab": "storeLocatorGeneral",
+            "type": "string",
+            "title": "Icons > Stores",
+            "description": "Enter the URL for the store marker icon.This icon appears in the store list, next to the name of the store and in the Store Information popup (if enabled).",
+            "default": "img/retailIcon.png"
+        }
+    },
+    "modifications": [{
+        "target": "$.properties['storeLocator.radius'].default",
+        "action": "replace",
+        "value": 120
+    }]
+}

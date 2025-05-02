@@ -1,0 +1,69 @@
+/*
+    © 2020 NetSuite Inc.
+    User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+    provided, however, if you are an authorized user with a NetSuite account or log-in, you
+    may use this code subject to the terms that govern your access and use.
+*/
+
+$sc-color-theme: #444444;
+$sc-color-theme-light:#888888;
+$sc-color-secondary: #ec008b;
+$sc-color-dark-copy: #1f2223;
+//sizing
+$sc-base-font-size: 14px;
+$sc-font-weight-semibold:600;
+
+.button-pill {
+    display: inline-block;
+    border: 1px solid $sc-color-theme-light;
+    color: $sc-color-theme;
+    width: auto;
+}
+
+.button-pill-active {
+    width: auto;
+    display: inline-block;
+    background-color: $sc-color-secondary;
+    border: 1px solid $sc-color-secondary;
+    color: $sc-color-tertiary;
+}
+
+.input-base {
+    padding: $sc-padding-lv2;
+    display: block;
+    color: $sc-color-dark-copy;
+    font-size: $sc-base-font-size;
+    border: 1px solid $sc-color-theme-light;
+    @include border-radius(0);
+}
+
+.input-generic {
+    @extend .input-base;
+    width: 100%;
+}
+
+.input-label {
+    display: inline-block;
+    margin-bottom: $sc-margin-base * 2;
+    font-size: $sc-base-font-size;
+    font-weight: $sc-font-weight-semibold;
+    color: $sc-color-dark-copy;
+}
+
+//Custom Store Locator Styles
+.store-locator-tooltip-box,
+.store-locator-main-results{
+  a, a:hover {
+    color: $gs-color-tree-green;
+    font-size: 14px;
+  }
+  font-size: 14px;
+}
+.store-locator-search-group-label{
+  font-weight: 600;
+}
+
+@import 'store-locator-main';
+@import 'store-locator-location';
+@import 'store-locator-icons';
+@import '../../FooterStoreLocator/Sass/store-locator-footer';

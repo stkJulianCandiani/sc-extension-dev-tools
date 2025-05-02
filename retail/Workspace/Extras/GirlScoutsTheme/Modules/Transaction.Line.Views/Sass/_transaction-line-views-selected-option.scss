@@ -1,0 +1,13 @@
+
+.transaction-line-views-selected-option-label {
+    margin-bottom: $sc-margin-lv2;
+    font-weight: $gs-weight-regular;
+    @extend .sc-label;
+    font-size: 14px;
+}
+.transaction-line-views-selected-option-value {
+    margin-bottom: $sc-margin-lv2;
+    @extend .sc-value;
+    font-size: 14px;
+    font-weight: $gs-weight-regular;
+}

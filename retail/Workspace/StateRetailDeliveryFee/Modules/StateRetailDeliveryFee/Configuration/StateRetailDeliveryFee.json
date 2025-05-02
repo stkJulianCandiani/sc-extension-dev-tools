@@ -1,0 +1,37 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "stateRetailDeliveryFee",
+        "group": "integrations",
+        "title": "State Retail Delivery Fee List",
+        "description": "State Retail Delivery Fee List"
+    },
+    "properties": {
+        "stateRetailDeliveryFee.list": {
+            "group": "integrations",
+            "subtab": "stateRetailDeliveryFee",
+            "type": "array",
+            "title": "Delivery Fee List",
+            "description": "Configure Delivery Fee List per state",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "stateCode": {
+                        "type": "string",
+                        "title": "State Code",
+                        "description": "State code",
+                        "mandatory": false
+                    },
+                    "itemID": {
+                        "type": "string",
+                        "title": "Item Internal ID",
+                        "description": "Item Internal ID",
+                        "mandatory": false
+                    }
+                }
+            },
+            "default": [
+            ]
+        }
+    }
+}

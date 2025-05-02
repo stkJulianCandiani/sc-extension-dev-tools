@@ -1,0 +1,42 @@
+{
+	"name": "RedirectPromoItems",
+	"fantasyName": "Redirect Promotional Items",
+	"vendor": "ACS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Redirect promotional items",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/RedirectPromoItems/JavaScript/RedirectPromoItems.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/RedirectPromoItems/JavaScript/RedirectPromoItems.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ACS/RedirectPromoItems@1.0.0",
+	"activation_id": "11",
+	"extension_id": "8601"
+}

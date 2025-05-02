@@ -1,0 +1,130 @@
+@mixin setColorsToNavigation($class-name, $color, $index) {
+    .category-color-#{$class-name} {
+        background-color: $color;
+    }
+
+    // Just while colors are not propperly set in backend
+    .footer-m-navigation-link-#{$index} {
+        background-color: $color;
+    }
+}
+
+#site-footer ul {
+    padding: 0;
+    float: none;
+    width: 100%;
+}
+
+.footer-content a {
+    color: white;
+
+    &:hover,
+    &:focus {
+        color: white;
+    }
+
+    &.footer-m-main-navigation-link {
+        border-bottom: 1px solid black;
+        color: black;
+        display: block;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 15px;
+
+        &:focus,
+        &:active
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+footer a { // Yeap some one made me do this.
+    margin-right: inherit;
+}
+
+.footer-d {
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: block;
+    }
+}
+
+.footer-m {
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+}
+
+.footer-content {
+    padding: 0;
+    background-color: #00ae58;
+}
+
+.footer-m-navigation-link {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 0;
+
+    &[data-hastag='#/SALE'] {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.footer-m-social-icons-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-m-social-icons {
+    padding: $sc-margin-lv4 0;
+}
+
+.footer-m-social-icons-link {
+    font-size: 32px;
+    margin: 0 $sc-margin-lv3;
+}
+
+.footer-m-main-navigation {
+    text-align: left;
+
+    &-dropdown-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 $sc-padding-lv3;
+        font-size: 15px;
+        border-top: 1px solid #fff;
+        height: 45px;
+        line-height: 45px;
+
+        .icon-plus {
+            padding: 0;
+        }
+    }
+}
+
+.footer-m-main-navigation-title-link {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer-m-main-navigation-list {
+    background: #daeddd;
+    padding: 0;
+}
+
+@include setColorsToNavigation('light-pink', #f793be, '0');
+@include setColorsToNavigation('color-orange', #f37021, '1');
+@include setColorsToNavigation('pink', #ec008b, '2');
+@include setColorsToNavigation('purple', #6e298d, '3');
+@include setColorsToNavigation('blue', #004e9a, '4');
+@include setColorsToNavigation('light-blue', #00abe6, '5');
+@include setColorsToNavigation('light-green', #b2d235, '6');

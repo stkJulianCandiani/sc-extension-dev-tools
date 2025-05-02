@@ -1,0 +1,28 @@
+.free-shipping-continue-checkout {
+    @extend .button-primary;
+    @extend .button-large;
+    margin-right: 10px;
+    font-size: 24px;
+}
+.free-shipping-continue-button {
+    @extend .button-tertiary;
+    @extend .button-large;
+    float: right;
+    font-size: 24px;
+}
+.free-shipping-actions {
+    padding: 20px 0 0;
+}
+.free-shipping-popup {
+    width: fit-content;
+
+    .global-views-modal-content {
+        height: 270px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        .global-views-modal-content {
+            height: 197px;
+        }
+    }
+}

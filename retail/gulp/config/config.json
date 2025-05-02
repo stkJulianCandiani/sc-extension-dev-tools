@@ -1,0 +1,138 @@
+{
+    "dbConfig": {
+        "keepalive": false,
+        "port": 7777,
+        "https": false,
+        "key": "KEYPEM",
+        "cert": "CERTPEM"
+    },
+    "scaffolding": {
+        "keepalive": false,
+        "port": 7777
+    },
+    "fetchConfig": {
+        "extension": "CompanyAlphaNumeric,ConfigurationTab,CoreFixes,CustomSliderHomePage,Donation,DownloadableItems,EmptyCart,ExternalCSS,FAQ,FindYourCouncil,FirstLevelCategory,FreeShippingPopup,GSCustomFooter,GSCustomHeader,GSFilterBySelector,GSNewsletter,GSPageTypes,GTMCustomEvents,GTMShoppingEvents,GridOrder,HiddenTemplate,HideProducts,IronOn,ItemOptionValidation,Monogram,OutOfStockNotification,PDPAccordionForDetails,PDPTags,PIICompliance,PriceStrikeThrough,QuickOrder,ReCaptcha,RedirectPromoItems,RegistrationForm,ReplaceForgotPasswordMsg,STKQuickOrder,SalesForceRecommendation,SalesforceCollect,SharedWishlist,ShipMethodsSorting,ShippingBar,SizeChart,SliderChanges,StateRetailDeliveryFee,StockNotifications,StoreLocator,SublimePatchOptions"
+    },
+    "extensionMode": true,
+    "preserveManifest": false,
+    "folders": {
+        "source": {
+            "source_path": "Workspace",
+            "extras_path": "Workspace/Extras"
+        },
+        "application_manifest": "Workspace/Extras",
+        "theme": "Extras",
+        "overrides": "Overrides",
+        "output": "LocalDistribution/tmp",
+        "local": "LocalDistribution",
+        "deploy": "DeployDistribution",
+        "extensions_dest_name": "Deploy_Extensions",
+        "extmech_parent": "-15",
+        "extensions_path": [
+            "Workspace/CompanyAlphaNumeric",
+            "Workspace/ConfigurationTab",
+            "Workspace/CoreFixes",
+            "Workspace/Donation",
+            "Workspace/DownloadableItems",
+            "Workspace/CustomSliderHomePage",
+            "Workspace/EmptyCart",
+            "Workspace/ExternalCSS",
+            "Workspace/FindYourCouncil",
+            "Workspace/FirstLevelCategory",
+            "Workspace/FreeShippingPopup",
+            "Workspace/FAQ",
+            "Workspace/GSCustomFooter",
+            "Workspace/GSCustomHeader",
+            "Workspace/GSNewsletter",
+            "Workspace/GSFilterBySelector",
+            "Workspace/GTMCustomEvents",
+            "Workspace/GTMShoppingEvents",
+            "Workspace/GSPageTypes",
+            "Workspace/HiddenTemplate",
+            "Workspace/IronOn",
+            "Workspace/ItemOptionValidation",
+            "Workspace/HideProducts",
+            "Workspace/Monogram",
+            "Workspace/PDPAccordionForDetails",
+            "Workspace/OutOfStockNotification",
+            "Workspace/PDPTags",
+            "Workspace/PIICompliance",
+            "Workspace/PriceStrikeThrough",
+            "Workspace/ReCaptcha",
+            "Workspace/RedirectPromoItems",
+            "Workspace/RegistrationForm",
+            "Workspace/ReplaceForgotPasswordMsg",
+            "Workspace/QuickOrder",
+            "Workspace/STKQuickOrder",
+            "Workspace/SalesForceRecommendation",
+            "Workspace/SalesforceCollect",
+            "Workspace/ShipMethodsSorting",
+            "Workspace/SharedWishlist",
+            "Workspace/SliderChanges",
+            "Workspace/StateRetailDeliveryFee",
+            "Workspace/StoreLocator",
+            "Workspace/SublimePatchOptions"
+        ],
+        "theme_path": "Workspace/Extras/GirlScoutsTheme",
+        "overrides_path": "Workspace/Extras/GirlScoutsTheme/Overrides"
+    },
+    "application": {
+        "application_manifest": {
+            "type": "SCA",
+            "version": "20.1.12",
+            "application": [
+                "shopping",
+                "myaccount",
+                "checkout"
+            ],
+            "extensible_resources": [
+                "skins",
+                "javascript",
+                "ssp-libraries",
+                "sass",
+                "templates",
+                "services",
+                "configuration",
+                "assets",
+                "suitescript2"
+            ]
+        }
+    },
+    "services": {
+        "EXTENSION_SERVICE": {
+            "script": "customscript_ns_sc_ext_mech_restlets",
+            "deploy": "customdeploy_ns_sc_ext_mech_restlets"
+        },
+        "WEBSITE_SERVICE": {
+            "script": "customscript_ns_sc_ext_mech_restlets",
+            "deploy": "customdeploy_ns_sc_ext_mech_restlets"
+        },
+        "FILE_SERVICE": {
+            "script": "customscript_ns_sc_ext_mech_restlets",
+            "deploy": "customdeploy_ns_sc_ext_mech_restlets"
+        },
+        "DEPLOY_SERVICE": {
+            "script": "customscript_ext_mech_deployer_rest",
+            "deploy": "customdeploy_ext_mech_deployer_rest"
+        }
+    },
+    "deploy_config": {
+        "update": true,
+        "chunk_size": 80
+    },
+    "credentials": {
+        "user_agent": "sc-extension-devtools/2024.1.0",
+        "authID": "GSUSA.DEV",
+        "key": "ccab74c90efb6560994428b3cf0d3277668ca4b012f163a18c001679378ac81e",
+        "secret": "710bdd6adbbf3b0e9dcec558c70fcba8e659c5b55afc0fc47b36db2285c539f1",
+        "account": "317771-SB2",
+        "hostname": "317771-SB2.restlets.api.netsuite.com",
+        "website": "7",
+        "domain": "sandbox2.girlscoutshop.com",
+        "webapp_id": "447273",
+        "ssp_folder": "447273",
+        "is_scis": false
+    },
+    "product": "gulp",
+    "nsdeployPath": ".nsdeploy"
+}

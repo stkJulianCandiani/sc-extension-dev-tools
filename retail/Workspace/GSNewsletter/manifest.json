@@ -1,0 +1,137 @@
+{
+	"name": "GSNewsletter",
+	"fantasyName": "GS Newsletter",
+	"vendor": "CS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.4",
+	"description": "Extra functionality for Newsletter",
+	"assets": {
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		},
+		"img": {
+			"files": [
+				"img/newsletter-lightbox.jpg"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/NewsLetter.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/newsletter_form.tpl",
+					"Modules/Main/Templates/newsletter_lightbox.tpl",
+					"Modules/Main/Templates/newsletter_sidebar.tpl",
+					"Modules/Main/Templates/newsletter.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/Templates/newsletter_form.tpl",
+					"Modules/Main/Templates/newsletter_lightbox.tpl",
+					"Modules/Main/Templates/newsletter_sidebar.tpl",
+					"Modules/Main/Templates/newsletter.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/Templates/newsletter_form.tpl",
+					"Modules/Main/Templates/newsletter_lightbox.tpl",
+					"Modules/Main/Templates/newsletter_sidebar.tpl",
+					"Modules/Main/Templates/newsletter.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_newsletter.scss",
+			"myaccount": "Modules/Main/Sass/_newsletter.scss",
+			"checkout": "Modules/Main/Sass/_newsletter.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_newsletter_form.scss",
+			"Modules/Main/Sass/_newsletter_lightbox.scss",
+			"Modules/Main/Sass/_newsletter_sidebar.scss",
+			"Modules/Main/Sass/_newsletter_site.scss",
+			"Modules/Main/Sass/_newsletter.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/GSNewsletter.js",
+			"myaccount": "Modules/Main/JavaScript/GSNewsletter.Checkout.js",
+			"checkout": "Modules/Main/JavaScript/GSNewsletter.Checkout.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/Newsletter.Form.View.js",
+					"Modules/Main/JavaScript/GSNewsletter.js",
+					"Modules/Main/JavaScript/Newsletter.Lightbox.View.js",
+					"Modules/Main/JavaScript/Newsletter.Model.Site.js",
+					"Modules/Main/JavaScript/Newsletter.View.Site.js",
+					"Modules/Main/JavaScript/Newsletter.PageType.js",
+					"Modules/Main/JavaScript/Newsletter.Footer.js",
+					"Modules/Main/JavaScript/Newsletter.Sidebar.js",
+					"Modules/Main/JavaScript/Newsletter.Lightbox.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/Newsletter.Form.View.js",
+					"Modules/Main/JavaScript/GSNewsletter.js",
+					"Modules/Main/JavaScript/Newsletter.Lightbox.View.js",
+					"Modules/Main/JavaScript/Newsletter.Model.Site.js",
+					"Modules/Main/JavaScript/Newsletter.View.Site.js",
+					"Modules/Main/JavaScript/Newsletter.PageType.js",
+					"Modules/Main/JavaScript/Newsletter.Footer.js",
+					"Modules/Main/JavaScript/Newsletter.Sidebar.js",
+					"Modules/Main/JavaScript/GSNewsletter.Checkout.js",
+					"Modules/Main/JavaScript/Newsletter.Lightbox.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/Newsletter.Form.View.js",
+					"Modules/Main/JavaScript/GSNewsletter.js",
+					"Modules/Main/JavaScript/Newsletter.Lightbox.View.js",
+					"Modules/Main/JavaScript/Newsletter.Model.Site.js",
+					"Modules/Main/JavaScript/Newsletter.View.Site.js",
+					"Modules/Main/JavaScript/Newsletter.PageType.js",
+					"Modules/Main/JavaScript/Newsletter.Footer.js",
+					"Modules/Main/JavaScript/Newsletter.Sidebar.js",
+					"Modules/Main/JavaScript/GSNewsletter.Checkout.js",
+					"Modules/Main/JavaScript/Newsletter.Lightbox.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Main/SuiteScript/GSNewsletter.js",
+		"files": [
+			"Modules/Main/SuiteScript/Newsletter.ServiceController.Site.js",
+			"Modules/Main/SuiteScript/Newsletter.Site.Model.js",
+			"Modules/Main/SuiteScript/GSNewsletter.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS/GSNewsletter@1.0.4",
+	"activation_id": "11",
+	"extension_id": "10502"
+}

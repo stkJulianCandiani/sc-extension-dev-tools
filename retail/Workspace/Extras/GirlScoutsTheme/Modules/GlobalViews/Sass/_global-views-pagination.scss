@@ -1,0 +1,181 @@
+/*
+	© 2016 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.global-views-pagination {
+    float: right;
+
+    @media (max-width: $screen-sm-min) {
+        width: auto;
+    }
+}
+
+.global-views-pagination-next-icon {
+    @extend .gs-icon-c-right;
+    margin-right: 0 !important;
+}
+
+.global-views-pagination-prev-icon {
+    @extend .gs-icon-c-left;
+}
+
+.global-views-pagination-links {
+    @extend .pagination-links;
+    border: 1px solid $gs-color-dropdown-border;
+
+    li {
+        width: 25px;
+        height: 30px;
+        margin: 0;
+        text-align: center;
+
+        @media(min-width: 375px){
+            width: 30px;
+        }
+
+        @media (min-width: $screen-sm-min) {
+            width: 35px;
+            height: 34px;
+        }
+
+        &:last-child {
+            a {
+                border-right: 0;
+            }
+        }
+    }
+
+    a {
+        border-right: 1px solid $gs-color-dropdown-border;
+        padding: 0;
+        width: 25px;
+        height: 30px;
+        line-height: 30px;
+        color: $gs-color-black;
+        font-size: 14px;
+
+        @media(min-width: 375px){
+            width: 30px;
+        }
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 17px;
+            width: 35px;
+            height: 34px;
+            line-height: 34px;
+        }
+    }
+}
+
+.global-views-pagination-prev {
+    @extend .pagination-prev;
+    background-color: transparent;
+
+    a {
+        padding: 0;
+        width: 25px;
+        height: 30px;
+        line-height: 30px;
+
+        @media(min-width: 375px){
+            width: 30px;
+        }
+
+        @media (min-width: $screen-sm-min) {
+            width: 35px;
+            height: 34px;
+            line-height: 34px;
+        }
+    }
+
+    i {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+
+        @media (min-width: $screen-sm-min) {
+            height: 34px;
+            line-height: 34px;
+        }
+    }
+}
+
+.global-views-pagination-prev-disabled {
+    @extend .pagination-prev-disabled;
+}
+
+.global-views-pagination-disabled {
+    @extend .pagination-disabled;
+}
+
+.global-views-pagination-links-number {
+    @extend .pagination-links-number;
+    background: none;
+
+    @media (min-width: $screen-xs-min) {
+        display: block;
+    }
+
+    li {
+        display: block;
+    }
+}
+
+.global-views-pagination-links-number-before,
+.global-views-pagination-links-number-current,
+.global-views-pagination-links-number-after {
+    display: block;
+}
+
+.global-views-pagination-active {
+    @extend .pagination-active;
+    background: $gs-color-dropdown-background;
+    color: $gs-color-gray-50 !important;
+}
+
+.global-views-pagination-next-disabled {
+    @extend .pagination-next-disabled;
+    background-color: transparent;
+}
+
+.global-views-pagination-next {
+    @extend .pagination-next;
+    background-color: transparent;
+
+    a {
+        padding: 0;
+        height: 30px;
+        line-height: 30px;
+
+        @media (min-width: $screen-sm-min) {
+            height: 34px;
+            line-height: 34px;
+        }
+    }
+
+    i {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+
+        @media (min-width: $screen-sm-min) {
+            height: 34px;
+            line-height: 34px;
+        }
+    }
+}
+
+.global-views-pagination-count {
+    @extend .pagination-count;
+    display: none;
+    padding: 5px;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 17px;
+    }
+}
+
+.global-views-pagination-links-compact {}

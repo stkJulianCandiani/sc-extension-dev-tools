@@ -1,0 +1,214 @@
+.gs-site-search {
+    .site-search {
+        background-color: #fddd00;
+        border-bottom: 0;
+        display: block !important;
+    }
+
+    .nav-search-content::before,
+    .nav-search-content::after {
+        content: none;
+    }
+
+    .nav-search-content {
+        width: 100%;
+    }
+
+    .nav-search {
+        padding: 0;
+    }
+
+    .nav-search-content-input input {
+        background-color: transparent;
+    }
+
+    .nav-search-content-input {
+        float: none;
+        display: flex;
+    }
+
+    .gs-icon-search {
+        font-size: 28px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        width: 60px;
+        position: absolute;
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            height: 40px;
+            line-height: 40px;
+            width: 40px;
+            font-size: 22px;
+        }
+    }
+
+    .gs-site-search-button-submit {
+        background: transparent;
+        font-size: 34px;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        transform: translate(0, -50%);
+        top: 30%;
+        width: 30px;
+    }
+
+    .site-search-input-reset {
+        background-color: transparent;
+    }
+}
+
+.gs-site-searcher {
+    width: 100%;
+    margin-right: 10px;
+}
+
+// search field skin
+.header-site-search {
+    display: block;
+}
+
+.site-search {
+    padding: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.searcher-container {
+    padding-top: 4px;
+}
+
+.site-search-content {
+    background: $gs-color-yellow;
+
+    @media (min-width: $screen-sm-min) {
+        height: 70px;
+        padding-top: 10px;
+    }
+
+    @media (min-width: $screen-md-min) {
+        height: 40px;
+        padding-top: 0;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        height: 50px;
+    }
+
+    &:after,
+    &:before {
+        display: none;
+    }
+}
+
+.site-search-input-reset {
+    display: none !important;
+}
+
+.site-search-content-input {
+    &:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: #000;
+        width: calc(100% - 60px);
+        left: 50px;
+        top: 37px;
+        position: absolute;
+
+        @media (min-width: $screen-md-min) {
+            left: 40px;
+            top: 30px;
+            width: calc(100% - 50px);
+        }
+
+        @media (min-width: $screen-lg-min) {
+            top: 36px;
+            left: 50px;
+            width: calc(100% - 60px);
+        }
+    }
+
+}
+
+.site-search-content-form {
+
+    .site-search-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 30px;
+        width: 48px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+
+        @media (min-width: $screen-md-min) {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 24px;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 28px;
+        }
+    }
+
+    .twitter-typeahead {}
+
+    .itemssearcher-input {
+        width: calc(100% - 80px);
+        padding: 15px 0 12px 50px;
+        background: transparent !important;
+        height: 22px;
+        font-size: 16px;
+        font-weight: 500;
+
+        @media (min-width: $screen-md-min) {
+            width: calc(100% - 70px);
+            padding-left: 40px;
+            height: 22px;
+            padding-top: 8px;
+            padding-bottom: 0;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            width: calc(100% - 80px);
+            padding-left: 50px;
+            padding-top: 12px;
+        }
+    }
+
+    .site-search-button-submit {
+        padding: 0;
+        width: 30px;
+        height: 45px;
+        color: #000;
+        background: transparent;
+        font-size: 34px;
+        line-height: 0;
+        visibility: visible;
+
+        @media (min-width: $screen-sm-min) {
+            top: 10px;
+        }
+
+        @media (min-width: $screen-md-min) {
+            top: -4px;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            top: 0;
+        }
+
+        span {
+            position: relative;
+            top: -4px;
+        }
+    }
+}

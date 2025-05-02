@@ -1,0 +1,69 @@
+{
+	"name": "ForgetPassword",
+	"fantasyName": "Forget Password",
+	"vendor": "ACS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Forget Password",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ForgetPassword.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ForgetPassword/Configuration/forgetpassword.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/ForgetPassword/Templates/acs_forgetpassword_forgetpassword.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/ForgetPassword/Sass/_forgetpassword-forgetpassword.scss"
+		},
+		"files": [
+			"Modules/ForgetPassword/Sass/_forgetpassword-forgetpassword.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/ForgetPassword/JavaScript/ACS.ForgetPassword.ForgetPassword.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/ForgetPassword/JavaScript/ACS.ForgetPassword.ForgetPassword.js",
+					"Modules/ForgetPassword/JavaScript/ForgetPassword.Router.js",
+					"Modules/ForgetPassword/JavaScript/ForgotPassword.View.js",
+					"Modules/ForgetPassword/JavaScript/Account.ForgotPassword.Custom.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ForgetPassword/SuiteScript/ACS.ForgetPassword.ForgetPassword.js",
+		"files": [
+			"Modules/ForgetPassword/SuiteScript/ACS.ForgetPassword.ForgetPassword.js",
+			"Modules/ForgetPassword/SuiteScript/ACS.ForgetPassword.ForgetPassword.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ACS/ForgetPassword@1.0.0",
+	"activation_id": "10",
+	"extension_id": "3101"
+}

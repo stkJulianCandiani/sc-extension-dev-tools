@@ -1,0 +1,42 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "salesforceRecommendation",
+        "group": "integrations",
+        "title": "Salesforce Recommendation"
+    },
+
+    "properties": {
+        "salesforceRecommendation.enabled": {
+            "group": "integrations",
+            "subtab": "salesforceRecommendation",
+            "type": "boolean",
+            "title": "Enabled",
+            "default": false
+        },
+        "salesforceRecommendation.sections": {
+            "group": "integrations",
+            "subtab": "salesforceRecommendation",
+            "type": "array",
+            "title": "Sections",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "sectionid": {
+                        "type": "string",
+                        "title": "Section Id",
+                        "description": "Section Id'",
+                        "mandatory": true,
+                        "enum": ["category", "checkout", "popup_cart", "quick_shop", "search", "pdp"]
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "Section Script URL",
+                        "description": "Section Script URL'",
+                        "mandatory": true
+                    }
+                }
+            }
+        }
+    }
+}

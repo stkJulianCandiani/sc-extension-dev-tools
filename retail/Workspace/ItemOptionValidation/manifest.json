@@ -1,0 +1,28 @@
+{
+	"name": "ItemOptionValidation",
+	"fantasyName": "Item Option Validation",
+	"vendor": "ACS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Change the default item option validation to include option name.",
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ItemOptionValidation/JavaScript/Product.Option.Model.Site.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ItemOptionValidation/JavaScript/Product.Option.Model.Site.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ACS/ItemOptionValidation@1.0.0",
+	"activation_id": "11",
+	"extension_id": "11701"
+}

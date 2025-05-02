@@ -1,0 +1,65 @@
+{
+	"name": "PDPAccordionForDetails",
+	"fantasyName": "PDP Accordion For Details",
+	"vendor": "CS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.3",
+	"description": "Accordion functionality to display Details on Product details page. Update 1.0.1 > 1.0.2 added: Added styles for collapse elements. Hides mobile / desktop behiaviors.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/PDPAccordionDetails.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/pdp_accordion_details.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_pdpaccordionfordetails-main.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_pdpaccordionfordetails-main.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/CS.PDPAccordionForDetails.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CS.PDPAccordionForDetails.Main.js",
+					"Modules/Main/JavaScript/PDPAccordionForDetails.View.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS/PDPAccordionForDetails@1.0.3",
+	"activation_id": "11",
+	"extension_id": "4601"
+}

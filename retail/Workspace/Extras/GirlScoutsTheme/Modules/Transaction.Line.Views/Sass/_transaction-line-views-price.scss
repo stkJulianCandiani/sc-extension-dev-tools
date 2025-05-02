@@ -1,0 +1,27 @@
+.transaction-line-views-price-lead{
+	@extend .middle-price;
+}
+
+.transaction-line-views-price-old{
+	@extend .old-price;
+	font-size: 18px !important;
+	font-weight: 300;
+}
+
+.transaction-line-views-price-login-to-see-prices-highlighted {
+	margin-top: $sc-margin-lv2;
+    margin-bottom: $sc-margin-lv2;
+}
+
+.transaction-line-views-price-message {
+	font-weight: normal;
+}
+
+.transaction-line-views-price-exact {
+	> span:nth-child(odd) {
+		color: $gs-color-pink;
+	}
+	> span:nth-child(even) {
+		color: $gs-color-black;
+	}
+}

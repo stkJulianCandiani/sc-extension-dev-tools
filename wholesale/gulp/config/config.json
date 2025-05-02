@@ -1,0 +1,106 @@
+{
+    "dbConfig": {
+        "keepalive": false,
+        "port": 7777,
+        "https": false,
+        "key": "KEYPEM",
+        "cert": "CERTPEM"
+    },
+    "scaffolding": {
+        "keepalive": false,
+        "port": 7777
+    },
+    "fetchConfig": {
+        "extension": "AboutUsExtension,B2BPDPFieldsExtension,BackInStockNotificationExtension,ContactUsLandingPageExtension,ContactUsLeadFormExtension,CustomerSegmentsExtension,DownloadableItems,EFCoreExtension,ForgetPassword,FutureShipDate,GTMCustomEventsSCS,GlobalConfigurationExtension,InventoryDisplayExtension,ItemBadgesExtension,MatrixMultiAddExtension,ProductComparisonExtension,QtyAlert,QuantityAlert,QuickBuy,RemoveCCFromMyAccount,RemoveInventoryPerEmail,RequirePurchaseNumber,SizeChartExtension,StagingNoIndex,SummitThemeExtension"
+    },
+    "extensionMode": true,
+    "preserveManifest": false,
+    "folders": {
+        "source": {
+            "source_path": "Workspace",
+            "extras_path": "Workspace/Extras"
+        },
+        "application_manifest": "Workspace/Extras",
+        "theme": "Extras",
+        "overrides": "Overrides",
+        "output": "LocalDistribution/tmp",
+        "local": "LocalDistribution",
+        "deploy": "DeployDistribution",
+        "extensions_dest_name": "Deploy_Extensions",
+        "extmech_parent": "-15",
+        "extensions_path": [
+            "Workspace/ForgetPassword",
+            "Workspace/DownloadableItems",
+            "Workspace/FutureShipDate",
+            "Workspace/GTMCustomEventsSCS",
+            "Workspace/QtyAlert",
+            "Workspace/QuantityAlert",
+            "Workspace/QuickBuy",
+            "Workspace/RemoveCCFromMyAccount",
+            "Workspace/RemoveInventoryPerEmail",
+            "Workspace/RequirePurchaseNumber"
+        ],
+        "theme_path": "Workspace/Extras/GSUSATHEME",
+        "overrides_path": "Workspace/Extras/GSUSATHEME/Overrides"
+    },
+    "application": {
+        "application_manifest": {
+            "type": "SCS",
+            "version": "24.2.40",
+            "application": [
+                "shopping",
+                "myaccount",
+                "checkout"
+            ],
+            "extensible_resources": [
+                "skins",
+                "javascript",
+                "ssp-libraries",
+                "sass",
+                "templates",
+                "services",
+                "configuration",
+                "assets",
+                "suitescript2",
+                "translations"
+            ]
+        }
+    },
+    "services": {
+        "EXTENSION_SERVICE": {
+            "script": "customscript_ns_sc_ext_mech_restlets",
+            "deploy": "customdeploy_ns_sc_ext_mech_restlets"
+        },
+        "WEBSITE_SERVICE": {
+            "script": "customscript_ns_sc_ext_mech_restlets",
+            "deploy": "customdeploy_ns_sc_ext_mech_restlets"
+        },
+        "FILE_SERVICE": {
+            "script": "customscript_ns_sc_ext_mech_restlets",
+            "deploy": "customdeploy_ns_sc_ext_mech_restlets"
+        },
+        "DEPLOY_SERVICE": {
+            "script": "customscript_ext_mech_deployer_rest",
+            "deploy": "customdeploy_ext_mech_deployer_rest"
+        }
+    },
+    "deploy_config": {
+        "update": true,
+        "chunk_size": 80
+    },
+    "credentials": {
+        "user_agent": "sc-extension-devtools/2024.1.0",
+        "authID": "GSUSA.DEV",
+        "key": "ccab74c90efb6560994428b3cf0d3277668ca4b012f163a18c001679378ac81e",
+        "secret": "710bdd6adbbf3b0e9dcec558c70fcba8e659c5b55afc0fc47b36db2285c539f1",
+        "account": "317771-SB2",
+        "hostname": "317771-SB2.restlets.api.netsuite.com",
+        "website": "6",
+        "domain": "sandbox2.gsmwholesale.org",
+        "webapp_id": "316154",
+        "ssp_folder": "316154",
+        "is_scis": false
+    },
+    "product": "gulp",
+    "nsdeployPath": ".nsdeploy"
+}

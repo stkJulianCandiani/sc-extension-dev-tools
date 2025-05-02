@@ -1,0 +1,100 @@
+{
+	"name": "QuickOrder",
+	"fantasyName": "Quick Order",
+	"vendor": "CS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.4",
+	"description": "Quick Order Extension allows shopper to add multiple items into cart at one time",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CS.QuickOrder.Service.ss",
+				"services/CS.QuickOrder.LiveOrder.MultiLine.Service.ss"
+			]
+		},
+		"scripts": {
+			"files": [
+				"scripts/QO - QuickOrder.js"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/QuickOrder.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/quickorder_container.tpl",
+					"Modules/Main/Templates/quickorder_line.tpl",
+					"Modules/Main/Templates/quickorder.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_quickorder-main.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_quickorder-line.scss",
+			"Modules/Main/Sass/_quickorder-main.scss",
+			"Modules/Main/Sass/_quickorder.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/CS.QuickOrder.js",
+			"myaccount": "Modules/Main/JavaScript/CS.QuickOrder.MyAccount.js",
+			"checkout": "Modules/Main/JavaScript/CS.QuickOrder.Checkout.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CS.QuickOrder.js",
+					"Modules/Main/JavaScript/CS.QuickOrder.Collection.js",
+					"Modules/Main/JavaScript/CS.QuickOrder.Container.View.js",
+					"Modules/Main/JavaScript/CS.QuickOrder.Line.View.js",
+					"Modules/Main/JavaScript/CS.QuickOrder.View.js",
+					"Modules/LiveOrder/JavaScript/CS.QuickOrder.LiveOrder.Model.MultiLine.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/CS.QuickOrder.MyAccount.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/CS.QuickOrder.Checkout.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Main/SuiteScript/CS.QuickOrder.Main.js",
+		"files": [
+			"Modules/Main/SuiteScript/CS.QuickOrder.Main.js",
+			"Modules/Main/SuiteScript/CS.QuickOrder.Model.js",
+			"Modules/Main/SuiteScript/CS.QuickOrder.ServiceController.js",
+			"Modules/LiveOrder/SuiteScript/CS.QuickOrder.LiveOrder.Model.MultiLine.js",
+			"Modules/LiveOrder/SuiteScript/CS.QuickOrder.LiveOrder.MultiLine.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS/QuickOrder@1.0.4",
+	"activation_id": "11",
+	"extension_id": "7001"
+}

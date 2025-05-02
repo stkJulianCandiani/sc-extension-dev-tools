@@ -1,0 +1,555 @@
+$sc-base-padding: 5px;
+$sc-base-margin: 5px;
+
+.salesforce-container {
+    @extend .row;
+    margin: 0 auto;
+
+
+}
+
+.salesforce-placeholder {
+    display: none;
+    visibility: hidden;
+}
+
+.salesforce-slider {
+  @extend .col-xs-12;
+  padding: 0 ($sc-base-padding * 10);
+  visibility: hidden;
+
+  &.checkout {
+    @media(max-width: $screen-xs-max){
+        padding: 0;
+        margin: 0 auto;
+        float: none;
+        width: 250px !important;
+    }
+  }
+
+  &.pdp {
+    float: none;
+    padding: 0;
+  }
+
+  &.category {
+      padding: 0;
+
+      .bx-wrapper {
+        position: relative;
+        margin: 0 12px;
+      }
+  }
+
+  .not-visible {
+      visibility: hidden !important;
+  }
+
+  &:after {
+    @extend .clearfix;
+  }
+
+  .bx-wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .igo_boxhead {
+    margin-bottom: 25px;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      h2 {
+        font-size: 24px;
+      }
+    }
+
+    @media (min-width: 1024px) and (max-width: $screen-lg-min - 1) {
+      h2 {
+        font-size: 30px;
+      }
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      h2 {
+        font-size: 36px;
+        font-weight: 500;
+      }
+      margin-bottom: 35px;
+    }
+  }
+
+  .igo_product {
+    min-height: 345px;
+
+    .igo_product_product_name_label,
+    .igo_product_item_tag_label {
+      display: none;
+    }
+
+    .igo_product_item_tag {
+      .igo_product_item_tag_value {
+        text-transform: uppercase;
+        color: $gs-color-purewhite;
+        background-color: $gs-color-pink;
+        display: inline-block;
+        padding: 3px 8px;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 6px 0 4px 0;
+        text-align: center;
+        min-height: 20px;
+      }
+
+      &.no-tag {
+        .igo_product_item_tag_value {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .igo_product_product_name,
+    > a:nth-child(3) {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      color: $gs-color-black;
+      float: left;
+      width: 70%;
+      padding-right: 52px;
+      min-height: 25px;
+      display: block;
+      word-wrap: break-word;
+
+      @media (min-width: $screen-sm-min) {
+        padding-right: 15px;
+      }
+
+      @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        padding-right: 10px;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        padding-right: 5px;
+      }
+    }
+
+    .igo_product_regular_price,
+    .igo_product_sale_price {
+      float: right;
+      width: 30%;
+      text-align: right;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+
+    .igo_product_sale_price {
+      color: $gs-color-pink;
+    }
+
+    a {
+      display: block;
+
+      &:first-child {
+          text-align: center;
+          width: 85%;
+          margin: 0 auto;
+          @media(min-width: 375px){
+              width: 100%;
+          }
+      }
+
+      &:last-child {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        color: $gs-color-black;
+      }
+
+      &:hover {
+        color: $gs-color-tree-green;
+      }
+    }
+
+    .igo_product_regular_price_value {
+      text-decoration: line-through;
+    }
+
+    &.no-item-tag {
+      .igo_product_product_name,
+      .igo_product_regular_price {
+        margin-top: 27px;
+      }
+    }
+
+    &.no-sale-price {
+      .igo_product_regular_price_value {
+        text-decoration: none;
+      }
+
+      .igo_product_sale_price {
+        display: none;
+      }
+    }
+  }
+}
+
+.salesforce-carousel-next,
+.salesforce-carousel-prev {
+  cursor: pointer;
+  cursor: hand;
+  position: absolute;
+  display: inline-block;
+  color: $gs-color-black;
+  font-size: 37px;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 30px;
+  }
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-lg-min - 1) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    font-size: 47px;
+  }
+
+  &:hover {
+    color: $gs-color-tree-green;
+  }
+}
+
+.salesforce-carousel-prev {
+  left: -37px;
+  top: 96px;
+
+  @media (max-width: 375px) {
+    left: -20px;
+  }
+
+  @media (max-width: 350px) {
+    left: -12px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    top: 84px;
+    left: -27px;
+  }
+
+  @media (min-width: 1024px) and (max-width: $screen-lg-min - 1) {
+    top: 79px;
+    left: -34px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    top: 92px;
+    left: -44px;
+  }
+}
+
+.salesforce-carousel-next {
+  right: -37px;
+  top: 96px;
+
+  @media (max-width: 375px) {
+    right: -20px;
+  }
+
+  @media (max-width: 350px) {
+    right: -12px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    top: 84px;
+    right: -27px;
+  }
+
+  @media (min-width: 1024px) and (max-width: $screen-lg-min - 1) {
+    top: 79px;
+    right: -36px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    top: 92px;
+    right: -47px;
+  }
+}
+
+.quick_shop,
+.popup_cart {
+  .igo_boxhead {
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin: $sc-base-margin 0 $sc-base-margin*5;
+    }
+  }
+
+  .salesforce-carousel-prev {
+    @media (min-width: $screen-lg-min){
+      top: 88px;
+      left: -45px;
+    }
+  }
+
+  .salesforce-carousel-next {
+    @media (min-width: $screen-lg-min){
+      top: 88px;
+      right: -39px;
+    }
+  }
+}
+
+.popup_cart {
+  .igo_boxhead {
+    h2 {
+      font-weight: 600;
+
+      @media (min-width: $screen-md-min) {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .igo_product {
+    min-height: 300px;
+    @media(max-width: $screen-xs-max){
+        width: 250px !important;
+    }
+
+
+    .igo_product_product_name,
+    .igo_product_regular_price,
+    .igo_product_sale_price {
+      @media (min-width: $screen-sm-min) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      @media (min-width: $screen-md-min) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.category {
+  .bx-controls {
+    position: relative;
+    margin-top: 60px;
+  }
+
+  .igo_boxhead {
+    margin-bottom: 6px;
+
+    h2 {
+      font-size: 19px;
+      font-weight: 500;
+    }
+  }
+
+  .igo_product {
+    min-height: 270px;
+
+    .igo_product_product_name,
+    .igo_product_regular_price,
+    .igo_product_sale_price {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .igo_product_product_name {
+      width: 80%;
+    }
+
+    .igo_product_regular_price,
+    .igo_product_sale_price {
+      width: 30%;
+    }
+
+    .igo_product_item_tag {
+      font-size: 11px;
+      margin: 8px 0 2px 0;
+    }
+
+    a:last-child {
+      display: none;
+    }
+  }
+
+  .bx-controls-direction {
+    position: relative;
+  }
+
+  .salesforce-carousel-next {
+    right: 23px;
+    text-align: left;
+
+    .gs-icon-c-right-2 {
+      font-family: none;
+
+      &:before {
+        content: url(./CS/SalesForceRecommendation/1.0.0/img/arrow-right.png);
+      }
+    }
+  }
+
+  .salesforce-carousel-prev {
+    left: 23px;
+    text-align: right;
+
+    .gs-icon-c-left-2 {
+      font-family: none;
+
+      &:before {
+        content: url(./CS/SalesForceRecommendation/1.0.0/img/arrow-left.png);
+      }
+    }
+  }
+
+  .salesforce-carousel-next,
+  .salesforce-carousel-prev {
+    font-size: 25px;
+    top: auto;
+    bottom: 0;
+    color: $gs-color-black;
+
+    .control-text {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $gs-color-black;
+    }
+
+    &:hover {
+      color: $gs-color-tree-green;
+
+      .control-text {
+        color: $gs-color-tree-green;
+      }
+    }
+  }
+}
+
+.checkout, .pdp {
+  .igo_boxhead {
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2 {
+      display: inline-block;
+      background: #fff;
+      padding-left: 10px;
+      padding-right: 10px;
+      position: relative;
+      z-index: 1;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      border-top: 1px solid $gs-color-black;
+      position: absolute;
+      height: 1px;
+      width: 50%;
+      display: block;
+      top: 50%;
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
+  }
+}
+
+.modal-backdrop.salesforce-recommendation-modal-backdrop {
+  position: fixed;
+  height: 100% !important;
+}
+
+.search {
+  @extend .container;
+
+  .igo_boxhead {
+    position: relative;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+      max-width: 738px;
+    }
+
+    @media (min-width: 1024px) and (max-width: $screen-lg-min - 1) {
+      max-width: 935px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      max-width: none;
+    }
+
+    h2 {
+      display: inline-block;
+      background: #fff;
+      padding-left: 10px;
+      padding-right: 10px;
+      position: relative;
+      z-index: 99;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      border-top: 1px solid $gs-color-black;
+      position: absolute;
+      height: 1px;
+      width: 50%;
+      display: block;
+      top: 50%;
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
+  }
+
+  .igo_product {
+    .igo_product_product_name {
+      line-height: 18px;
+
+      @media (min-width: $screen-sm-min) {
+        line-height: 20px;
+      }
+    }
+  }
+}

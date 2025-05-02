@@ -1,0 +1,9 @@
+/* Edited for Summit Theme */
+
+.notifications {
+	@extend .container;
+	@extend .content-background;
+	padding: 0 !important;
+	font-family: $sc-theme-secondary-font;
+	background-color: transparent !important;
+}

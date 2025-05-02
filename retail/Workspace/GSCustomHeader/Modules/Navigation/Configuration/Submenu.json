@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        "header.submenu": {
+            "group": "customizations",
+            "subtab": "gsCustomHeader",
+            "type": "array",
+            "title": "Submenu Links",
+            "description": "List of links from submenu",
+            "default": "Default config example",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Text"
+                    },
+                    "link": {
+                        "type": "string",
+                        "title": "Link path"
+                    }
+                }
+            }
+        },
+        "header.quickorderSubmenu": {
+            "group": "customizations",
+            "subtab": "gsCustomHeader",
+            "type": "boolean",
+            "title": "Enable quickorder link",
+            "description": "Enable quickorder link"
+        },
+        "header.storelocatorSubmenu": {
+            "group": "customizations",
+            "subtab": "gsCustomHeader",
+            "type": "boolean",
+            "title": "Enable store locator link",
+            "description": "Enable store locator link"
+        }
+    }
+}

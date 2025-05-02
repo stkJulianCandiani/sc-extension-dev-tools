@@ -1,0 +1,9 @@
+.facets-items-collection-view-row {
+	@extend .row;
+	padding-bottom:$sc-padding-lv3;
+
+	@media(min-width: $screen-md-min){
+		margin-left: -34px;
+		margin-right: -34px;
+	}
+}

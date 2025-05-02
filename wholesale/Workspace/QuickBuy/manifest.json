@@ -1,0 +1,76 @@
+{
+	"name": "QuickBuy",
+	"fantasyName": "CSS Quick Buy",
+	"vendor": "CSSTeam",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "CSS Quick Buy",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CSSQuickBuy.Service.ss",
+				"services/LiveOrder.MultiLine.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CSSQuickBuy/Templates/cssteam_quickbuy_cssquickbuy.tpl",
+					"Modules/CSSQuickBuy/Templates/cssteam_quickbuy_quickbuy.tpl",
+					"Modules/CSSQuickBuy/Templates/quickorder_add.tpl",
+					"Modules/CSSQuickBuy/Templates/quickorder_container_add.tpl",
+					"Modules/CSSQuickBuy/Templates/quickorder_line_add.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/CSSQuickBuy/Sass/_quickbuy-cssquickbuy.scss"
+		},
+		"files": [
+			"Modules/CSSQuickBuy/Sass/_quickbuy-cssquickbuy.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/CSSQuickBuy/JavaScript/CSSTeam.QuickBuy.CSSQuickBuy.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CSSQuickBuy/JavaScript/CSSTeam.QuickBuy.CSSQuickBuy.js",
+					"Modules/CSSQuickBuy/JavaScript/LiveOrder.Model.MultiLine.js",
+					"Modules/CSSQuickBuy/JavaScript/QuickBuy.View.js",
+					"Modules/CSSQuickBuy/JavaScript/QuickBuySite.Router.js",
+					"Modules/CSSQuickBuy/JavaScript/QuickOrder.Collection.js",
+					"Modules/CSSQuickBuy/JavaScript/QuickOrder.Line.View.js",
+					"Modules/CSSQuickBuy/JavaScript/QuickOrderAdd.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CSSQuickBuy/SuiteScript/CSSTeam.QuickBuy.CSSQuickBuy.js",
+		"files": [
+			"Modules/CSSQuickBuy/SuiteScript/CSSTeam.QuickBuy.CSSQuickBuy.js",
+			"Modules/CSSQuickBuy/SuiteScript/CSSQuickBuy.ServiceController.js",
+			"Modules/CSSQuickBuy/SuiteScript/LiveOrder.Model.MultiLine.js",
+			"Modules/CSSQuickBuy/SuiteScript/LiveOrder.MultiLine.ServiceController.js",
+			"Modules/CSSQuickBuy/SuiteScript/QuickOrder.EntryPoint.js",
+			"Modules/CSSQuickBuy/SuiteScript/QuickOrder.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CSSTeam/QuickBuy@1.0.0",
+	"activation_id": "10",
+	"extension_id": "2201"
+}

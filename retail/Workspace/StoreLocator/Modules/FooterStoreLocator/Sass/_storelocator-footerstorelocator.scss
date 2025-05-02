@@ -1,0 +1,68 @@
+.footer-store-location-section {
+    @media (min-width: $screen-sm-min) {
+        clear: both;
+        width: 35%;
+        padding-top: 50px;
+    }
+
+    @media (min-width: $screen-md-min) {
+        clear: none;
+        width: 20%;
+        float: left;
+        padding-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .store-locator-location-enter-location {
+        padding: 0 15px 15px;
+        margin: 0;
+
+        @media (min-width: $screen-sm-min) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .nearest-store {
+        padding: 0 15px 40px;
+
+        @media (min-width: $screen-sm-min) {
+            padding: 0;
+        }
+    }
+
+    .store-locator-location-input-autocomplete {
+        border: 0;
+        margin: 0;
+        height: 43px;
+        width: calc(100% - 95px);
+        float: left;
+
+        @media (min-width: $screen-sm-min) {
+            width: 100%;
+            float: none;
+            margin-top: 5px;
+            margin-bottom: 12px;
+        }
+    }
+
+    .store-locator-location-button-find {
+        @extend .btn;
+        @extend .button-pink;
+        width: 95px;
+        padding: 13px 20px;
+        font-size: 16px;
+    }
+
+    .nearest-store-title {
+        color: $gs-color-purewhite;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    p {
+        color: $gs-color-purewhite;
+    }
+}

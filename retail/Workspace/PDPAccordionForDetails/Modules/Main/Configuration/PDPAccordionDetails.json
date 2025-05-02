@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "pdpAccordion",
+        "group": "customizations",
+        "title": "PDP Accordion",
+        "description": "Product details page Accordion"
+    },
+    "properties": { 
+        "pdpAccordion": {
+            "group": "customizations",
+            "subtab": "pdpAccordion",
+            "type": "array",
+            "title": "PDP Accordion",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "title": "Title",
+                        "description": ""
+                    },
+                    "open": {
+                        "type": "boolean",
+                        "title": "Is Open",
+                        "description": "If the accordion is open on load"
+                    },
+                    "mappedField": {
+                        "type": "string",
+                        "title": "Item Field Id",
+                        "description": "The Item field id to map in this section."
+                    },
+                    "active": {
+                        "type": "boolean",
+                        "title": "Is Active",
+                        "description": "If the accordion is open on load",
+                        "default": "true"
+                    }
+                }
+            }
+        }
+    }
+}

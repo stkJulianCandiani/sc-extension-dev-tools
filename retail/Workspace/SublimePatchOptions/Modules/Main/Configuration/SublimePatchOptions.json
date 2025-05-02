@@ -1,0 +1,27 @@
+{
+    "type": "object",
+     "subtab": {
+        "id": "sublimePatchOptions",
+        "title": "Sublime Patch Options",
+        "description": "Sublime Patch Options",
+        "group": "extensions"
+    },
+    "properties": {
+        "sublimePatchOptions.customMessageLength": {
+            "group": "extensions",
+            "subtab": "sublimePatchOptions",
+            "type": "string",
+            "title": "Custom Message Max Length",
+            "description": "Custom Message Max Length",
+            "default": "13"
+        },
+        "sublimePatchOptions.mainPatchOption": {
+            "group": "extensions",
+            "subtab": "sublimePatchOptions",
+            "type": "string",
+            "title": "Main Patch Item Option Id",
+            "description": "Item Option To Identify Patch Item",
+            "default": "custcol_sublim_patch_tagline"
+        }
+    }
+}
