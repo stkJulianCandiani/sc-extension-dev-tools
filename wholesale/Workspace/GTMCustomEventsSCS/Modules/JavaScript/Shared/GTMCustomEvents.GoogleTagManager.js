@@ -34,10 +34,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                             !item.get('category').includes(lastItemTitle)
                         ) {
                             var splitCategory = item.get('category').split('/');
-                            var list_id = splitCategory[splitCategory.length - 1].replaceAll(
-                                '-',
-                                '_'
-                            );
+                            var list_id = splitCategory[splitCategory.length - 1].replaceAll('-', '_');
                             var list_name = list_id.replaceAll('_', ' ');
                             var listNameSplit = list_name.split(' ');
 
@@ -79,14 +76,10 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                     var eventNameIds = ['select_item', 'view_item'];
                     var result = this.findCategoryAndListInDataLayer(line);
 
-                    var isAgregatedTotal = line.get('aggregatedTotal')
-                        ? line.get('aggregatedTotal').length > 0
-                        : false;
+                    var isAgregatedTotal = line.get('aggregatedTotal') ? line.get('aggregatedTotal').length > 0 : false;
                     var agregatedFormated = isAgregatedTotal ? line.get('aggregatedTotal') : '';
                     var agregatedAmount =
-                        agregatedFormated !== ''
-                            ? parseFloat(agregatedFormated.replace('$', ''))
-                            : false;
+                        agregatedFormated !== '' ? parseFloat(agregatedFormated.replace('$', '')) : false;
                     var item_id = item.get('itemid');
                     var item_name = line.get('item').get('_name');
                     var quantity = 1; // line.get('quantity');
@@ -132,21 +125,16 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                             item_list_name,
                             items: items,
                         },
-                        source: 'GTM',
                     };
 
                     //view_item
                     var eventData1 = {
                         event: eventNameIds[1],
                         ecommerce: {
-                            currency:
-                                (SC.ENVIRONMENT.currentCurrency &&
-                                    SC.ENVIRONMENT.currentCurrency.code) ||
-                                '',
+                            currency: (SC.ENVIRONMENT.currentCurrency && SC.ENVIRONMENT.currentCurrency.code) || '',
                             value: total,
                             items: items,
                         },
-                        source: 'GTM',
                     };
 
                     this.item = null;
@@ -186,9 +174,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                             : false;
                         var agregatedFormated = isAgregatedTotal ? line.get('aggregatedTotal') : '';
                         var agregatedAmount =
-                            agregatedFormated !== ''
-                                ? parseFloat(agregatedFormated.replace('$', ''))
-                                : false;
+                            agregatedFormated !== '' ? parseFloat(agregatedFormated.replace('$', '')) : false;
                         var item_id = item.get('itemid');
                         var item_name = item.get('_name');
                         var quantity = line.get('quantity');
@@ -213,10 +199,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                         var eventData = {
                             event: eventNameId,
                             ecommerce: {
-                                currency:
-                                    (SC.ENVIRONMENT.currentCurrency &&
-                                        SC.ENVIRONMENT.currentCurrency.code) ||
-                                    '',
+                                currency: (SC.ENVIRONMENT.currentCurrency && SC.ENVIRONMENT.currentCurrency.code) || '',
                                 value: total,
                                 items: [
                                     {
@@ -234,7 +217,6 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                         variant,
                                     },
                                 ],
-                                source: 'GTM',
                             },
                         };
 
@@ -280,9 +262,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
 
                         if (!cartEventType.includes('quick')) {
                             var itemSelected = selectedItems.find(function (_itemSelected) {
-                                return (
-                                    items[0].get('keyMapping_name') === _itemSelected.displayName
-                                );
+                                return items[0].get('keyMapping_name') === _itemSelected.displayName;
                             });
 
                             if (cartEventType.includes('add') && itemSelected) {
@@ -296,9 +276,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                             eventNameId = 'remove_from_cart';
 
                             selectedItems = selectedItems.filter(function (_itemSelected) {
-                                return (
-                                    _itemSelected.displayName !== items[0].get('keyMapping_name')
-                                );
+                                return _itemSelected.displayName !== items[0].get('keyMapping_name');
                             });
                         }
 
@@ -321,12 +299,9 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                 event: eventNameId,
                                 ecommerce: {
                                     currency:
-                                        (SC.ENVIRONMENT.currentCurrency &&
-                                            SC.ENVIRONMENT.currentCurrency.code) ||
-                                        '',
+                                        (SC.ENVIRONMENT.currentCurrency && SC.ENVIRONMENT.currentCurrency.code) || '',
                                     coupon: orderCoupon.join(', '),
                                     value: 0,
-                                    source: 'GTM',
                                 },
                             };
 
@@ -351,24 +326,15 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                 var item_brand = '';
                                 var item_category = _item.get('_url');
                                 var total =
-                                    _item.get('onlinecustomerprice_detail').onlinecustomerprice *
-                                    _item.get('quantity');
-                                var price = _item.get(
-                                    'onlinecustomerprice_detail'
-                                ).onlinecustomerprice;
-                                var item_list_name = itemSelected
-                                    ? itemSelected.listName
-                                    : 'Quick Order';
-                                var item_list_id = itemSelected
-                                    ? itemSelected.listId
-                                    : 'quick_order';
+                                    _item.get('onlinecustomerprice_detail').onlinecustomerprice * _item.get('quantity');
+                                var price = _item.get('onlinecustomerprice_detail').onlinecustomerprice;
+                                var item_list_name = itemSelected ? itemSelected.listName : 'Quick Order';
+                                var item_list_id = itemSelected ? itemSelected.listId : 'quick_order';
                                 var coupon =
                                     line.get && line.get('discounts_impact')
-                                        ? line
-                                              .get('discounts_impact')
-                                              .discounts.map(function (_discount) {
-                                                  return _discount.promotion_couponcode;
-                                              })
+                                        ? line.get('discounts_impact').discounts.map(function (_discount) {
+                                              return _discount.promotion_couponcode;
+                                          })
                                         : [];
                                 var variant = _.map(selected_options, function (option) {
                                     return option.get('value').label;
@@ -398,13 +364,10 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                 event: eventNameId,
                                 ecommerce: {
                                     currency:
-                                        (SC.ENVIRONMENT.currentCurrency &&
-                                            SC.ENVIRONMENT.currentCurrency.code) ||
-                                        '',
+                                        (SC.ENVIRONMENT.currentCurrency && SC.ENVIRONMENT.currentCurrency.code) || '',
                                     value: 0,
                                     coupon: orderCoupon.join(', '),
                                     items: [],
-                                    source: 'GTM',
                                 },
                             };
 
@@ -433,17 +396,11 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                 var discountByItem = _line.get('discount')
                                     ? parseFloat(_line.get('discount').toFixed(2)) / quantity
                                     : 0;
-                                var discount = _line.get('discount')
-                                    ? parseFloat(_line.get('discount').toFixed(2))
-                                    : 0;
+                                var discount = _line.get('discount') ? parseFloat(_line.get('discount').toFixed(2)) : 0;
                                 var item_brand = '';
                                 var item_category = _item.get('_url');
                                 var total = _line.get('aggregatedTotal')
-                                    ? parseFloat(
-                                          parseFloat(
-                                              _line.get('aggregatedTotal').replace('$', '')
-                                          ).toFixed(2)
-                                      )
+                                    ? parseFloat(parseFloat(_line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                                     : _line.get('amount') - discount;
                                 var price = parseFloat((total / quantity).toFixed(2));
                                 var item_list_name = itemSelected ? itemSelected.listName : '';
@@ -451,9 +408,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                 var coupon = _line.get('discounts_impact')
                                     ? _line
                                           .get('discounts_impact')
-                                          .discounts.map(
-                                              (_discount) => _discount.promotion_couponcode
-                                          )
+                                          .discounts.map((_discount) => _discount.promotion_couponcode)
                                     : [];
                                 var variant = _.map(selected_options, function (option) {
                                     return option.get('value').label;
@@ -502,13 +457,9 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                         var eventData = {
                             event: eventNameId,
                             ecommerce: {
-                                currency:
-                                    (SC.ENVIRONMENT.currentCurrency &&
-                                        SC.ENVIRONMENT.currentCurrency.code) ||
-                                    '',
+                                currency: (SC.ENVIRONMENT.currentCurrency && SC.ENVIRONMENT.currentCurrency.code) || '',
                                 value: model.get('summary')?.discountedsubtotal || 0,
                                 items: [],
-                                source: 'GTM',
                             },
                         };
 
@@ -522,31 +473,22 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
 
                             eventData.ecommerce.items = lines.models.map((line, index) => {
                                 var item = line.get('item');
-                                var selected_options = line
-                                    .get('options')
-                                    .filter(function (option) {
-                                        return option.get('value') && option.get('value').label;
-                                    });
+                                var selected_options = line.get('options').filter(function (option) {
+                                    return option.get('value') && option.get('value').label;
+                                });
                                 var itemSelected = selectedItems.find(function (_itemSelected) {
-                                    return (
-                                        item.get('keyMapping_name') === _itemSelected.displayName
-                                    );
+                                    return item.get('keyMapping_name') === _itemSelected.displayName;
                                 });
 
                                 var item_id = item.get('itemid');
                                 var item_name = item.get('_name');
                                 var quantity = line.get('quantity');
-                                var discountByItem =
-                                    parseFloat(line.get('discount').toFixed(2)) / quantity;
+                                var discountByItem = parseFloat(line.get('discount').toFixed(2)) / quantity;
                                 var discount = parseFloat(line.get('discount').toFixed(2));
                                 var item_brand = '';
                                 var item_category = item.get('_url');
                                 var total = line.get('aggregatedTotal')
-                                    ? parseFloat(
-                                          parseFloat(
-                                              line.get('aggregatedTotal').replace('$', '')
-                                          ).toFixed(2)
-                                      )
+                                    ? parseFloat(parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                                     : line.get('amount') - discount;
                                 var price = parseFloat((total / quantity).toFixed(2));
                                 var finalPrice =
@@ -558,10 +500,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                                       parseFloat(
                                                           model
                                                               .get('promocodes')
-                                                              .reduce(function (
-                                                                  result,
-                                                                  _promocode
-                                                              ) {
+                                                              .reduce(function (result, _promocode) {
                                                                   if (
                                                                       _promocode.type === 'ORDER' &&
                                                                       eventData.ecommerce.coupon.includes(
@@ -569,22 +508,15 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                                                       )
                                                                   ) {
                                                                       var newDiscount =
-                                                                          result +
-                                                                          parseFloat(
-                                                                              _promocode.rate
-                                                                          );
+                                                                          result + parseFloat(_promocode.rate);
 
-                                                                      return Math.abs(newDiscount) >
-                                                                          100
+                                                                      return Math.abs(newDiscount) > 100
                                                                           ? -100
                                                                           : newDiscount;
                                                                   }
 
-                                                                  return Math.abs(result) > 100
-                                                                      ? -100
-                                                                      : result;
-                                                              },
-                                                              0.0)
+                                                                  return Math.abs(result) > 100 ? -100 : result;
+                                                              }, 0.0)
                                                               .toFixed(2)
                                                       ) *
                                                       0.01
@@ -592,17 +524,13 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                           )
                                         : price;
                                 discountByItem +=
-                                    finalPrice !== price
-                                        ? parseFloat((price - finalPrice).toFixed(2))
-                                        : 0.0;
+                                    finalPrice !== price ? parseFloat((price - finalPrice).toFixed(2)) : 0.0;
                                 var item_list_id = itemSelected ? itemSelected.listId : '';
                                 var item_list_name = itemSelected ? itemSelected.listName : '';
                                 var coupon = line.get('discounts_impact')
                                     ? line
                                           .get('discounts_impact')
-                                          .discounts.map(
-                                              (_discount) => _discount.promotion_couponcode
-                                          )
+                                          .discounts.map((_discount) => _discount.promotion_couponcode)
                                     : [];
                                 var variant = _.map(selected_options, function (option) {
                                     return option.get('value').label;
@@ -651,14 +579,10 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                     var eventData = {
                         event: eventNameId,
                         ecommerce: {
-                            currency:
-                                (SC.ENVIRONMENT.currentCurrency &&
-                                    SC.ENVIRONMENT.currentCurrency.code) ||
-                                '',
+                            currency: (SC.ENVIRONMENT.currentCurrency && SC.ENVIRONMENT.currentCurrency.code) || '',
                             value: model.get('summary').discountedsubtotal,
                             coupon: orderCoupon.join(', '),
                             items: [],
-                            source: 'GTM',
                         },
                     };
 
@@ -681,11 +605,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                         var item_brand = '';
                         var item_category = item.get('_url');
                         var total = line.get('aggregatedTotal')
-                            ? parseFloat(
-                                  parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(
-                                      2
-                                  )
-                              )
+                            ? parseFloat(parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                             : line.get('amount') - discount;
                         var price = parseFloat((total / quantity).toFixed(2));
                         var finalPrice =
@@ -700,22 +620,14 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                                       .reduce(function (result, _promocode) {
                                                           if (
                                                               _promocode.type === 'ORDER' &&
-                                                              eventData.ecommerce.coupon.includes(
-                                                                  _promocode.code
-                                                              )
+                                                              eventData.ecommerce.coupon.includes(_promocode.code)
                                                           ) {
-                                                              var newDiscount =
-                                                                  result +
-                                                                  parseFloat(_promocode.rate);
+                                                              var newDiscount = result + parseFloat(_promocode.rate);
 
-                                                              return Math.abs(newDiscount) > 100
-                                                                  ? -100
-                                                                  : newDiscount;
+                                                              return Math.abs(newDiscount) > 100 ? -100 : newDiscount;
                                                           }
 
-                                                          return Math.abs(result) > 100
-                                                              ? -100
-                                                              : result;
+                                                          return Math.abs(result) > 100 ? -100 : result;
                                                       }, 0.0)
                                                       .toFixed(2)
                                               ) *
@@ -723,16 +635,11 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                       ).toFixed(2)
                                   )
                                 : price;
-                        discountByItem +=
-                            finalPrice !== price
-                                ? parseFloat((price - finalPrice).toFixed(2))
-                                : 0.0;
+                        discountByItem += finalPrice !== price ? parseFloat((price - finalPrice).toFixed(2)) : 0.0;
                         var item_list_id = itemSelected ? itemSelected.listId : '';
                         var item_list_name = itemSelected ? itemSelected.listName : '';
                         var coupon = line.get('discounts_impact')
-                            ? line
-                                  .get('discounts_impact')
-                                  .discounts.map((_discount) => _discount.promotion_couponcode)
+                            ? line.get('discounts_impact').discounts.map((_discount) => _discount.promotion_couponcode)
                             : [];
                         var variant = _.map(selected_options, function (option) {
                             return option.get('value').label;
@@ -758,9 +665,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                     return this;
                 },
                 trackProductListGeneric: function (eventName, items, listName) {
-                    var newListName = window.location.href.includes('search?')
-                        ? 'Search'
-                        : listName;
+                    var newListName = window.location.href.includes('search?') ? 'Search' : listName;
 
                     if (newListName === 'Category') {
                         var splitCategory = window.location.href.split('/');
@@ -769,10 +674,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
 
                         if (newListName.includes('#')) {
                             splitCategory = newListName.split('#');
-                            newListName = splitCategory[splitCategory.length - 1].replaceAll(
-                                '-',
-                                ' '
-                            );
+                            newListName = splitCategory[splitCategory.length - 1].replaceAll('-', ' ');
                         }
 
                         var listNameSplit = newListName.split(' ');
@@ -799,9 +701,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                     var eventNameId = 'view_item_list';
                     var itemListName = newListName || localStorage.getItem('itemListName');
                     itemListName = itemListName || newListName;
-                    var itemListId = itemListName
-                        ? itemListName.replaceAll(' ', '_').toLowerCase()
-                        : '';
+                    var itemListId = itemListName ? itemListName.replaceAll(' ', '_').toLowerCase() : '';
 
                     var eventData = {
                         event: eventNameId,
@@ -810,7 +710,6 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                             item_list_name: itemListName,
                             items: [],
                         },
-                        source: 'GTM',
                     };
 
                     eventData.ecommerce.items = items.models.map(function (_item, index) {
@@ -874,14 +773,10 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                     var eventData = {
                         event: eventNameId,
                         ecommerce: {
-                            currency:
-                                (SC.ENVIRONMENT.currentCurrency &&
-                                    SC.ENVIRONMENT.currentCurrency.code) ||
-                                '',
+                            currency: (SC.ENVIRONMENT.currentCurrency && SC.ENVIRONMENT.currentCurrency.code) || '',
                             value: parseFloat(model.get('summary').discountedsubtotal.toFixed(2)),
                             coupon: orderCoupon.join(', '),
                             items: [],
-                            source: 'GTM',
                         },
                     };
 
@@ -902,11 +797,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                         var item_brand = '';
                         var item_category = item.get('_url');
                         var total = line.get('aggregatedTotal')
-                            ? parseFloat(
-                                  parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(
-                                      2
-                                  )
-                              )
+                            ? parseFloat(parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                             : line.get('amount') - discount;
                         var price = parseFloat((total / quantity).toFixed(2));
                         var finalPrice =
@@ -917,24 +808,16 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                           price *
                                               parseFloat(
                                                   parseFloat(
-                                                      model
-                                                          .get('promocodes')
-                                                          .find(function (_promocode) {
-                                                              return (
-                                                                  _promocode.code ===
-                                                                  eventData.ecommerce.coupon
-                                                              );
-                                                          }).rate
+                                                      model.get('promocodes').find(function (_promocode) {
+                                                          return _promocode.code === eventData.ecommerce.coupon;
+                                                      }).rate
                                                   ).toFixed(2)
                                               ) *
                                               0.01
                                       ).toFixed(2)
                                   )
                                 : price;
-                        discountByItem +=
-                            finalPrice !== price
-                                ? parseFloat((price - finalPrice).toFixed(2))
-                                : 0.0;
+                        discountByItem += finalPrice !== price ? parseFloat((price - finalPrice).toFixed(2)) : 0.0;
                         var item_list_id = itemSelected ? itemSelected.listId : '';
                         var item_list_name = itemSelected ? itemSelected.listName : '';
                         var coupon = line.get('discounts_impact')
@@ -988,10 +871,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                         ecommerce: {
                             payment_type: paymentType,
                             po_number: poNumber,
-                            currency:
-                                (SC.ENVIRONMENT.currentCurrency &&
-                                    SC.ENVIRONMENT.currentCurrency.code) ||
-                                '',
+                            currency: (SC.ENVIRONMENT.currentCurrency && SC.ENVIRONMENT.currentCurrency.code) || '',
                             value: parseFloat(model.get('summary').discountedsubtotal.toFixed(2)),
                             shipping_tier: !model.get('shipmethod')
                                 ? 'online'
@@ -1003,7 +883,6 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                       .get('name'),
                             coupon: orderCoupon.join(', '),
                             items: [],
-                            source: 'GTM',
                         },
                     };
 
@@ -1024,11 +903,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                         var item_brand = '';
                         var item_category = item.get('_url');
                         var total = line.get('aggregatedTotal')
-                            ? parseFloat(
-                                  parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(
-                                      2
-                                  )
-                              )
+                            ? parseFloat(parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                             : line.get('amount') - discount;
                         var price = parseFloat((total / quantity).toFixed(2));
                         var finalPrice =
@@ -1039,24 +914,16 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                           price *
                                               parseFloat(
                                                   parseFloat(
-                                                      model
-                                                          .get('promocodes')
-                                                          .find(function (_promocode) {
-                                                              return (
-                                                                  _promocode.code ===
-                                                                  eventData.ecommerce.coupon
-                                                              );
-                                                          }).rate
+                                                      model.get('promocodes').find(function (_promocode) {
+                                                          return _promocode.code === eventData.ecommerce.coupon;
+                                                      }).rate
                                                   ).toFixed(2)
                                               ) *
                                               0.01
                                       ).toFixed(2)
                                   )
                                 : price;
-                        discountByItem +=
-                            finalPrice !== price
-                                ? parseFloat((price - finalPrice).toFixed(2))
-                                : 0.0;
+                        discountByItem += finalPrice !== price ? parseFloat((price - finalPrice).toFixed(2)) : 0.0;
                         var item_list_id = itemSelected ? itemSelected.listId : '';
                         var item_list_name = itemSelected ? itemSelected.listName : '';
                         var coupon = line.get('discounts_impact')
@@ -1112,10 +979,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                         ecommerce: {
                             payment_type: paymentType,
                             po_number: poNumber,
-                            currency:
-                                (SC.ENVIRONMENT.currentCurrency &&
-                                    SC.ENVIRONMENT.currentCurrency.code) ||
-                                '',
+                            currency: (SC.ENVIRONMENT.currentCurrency && SC.ENVIRONMENT.currentCurrency.code) || '',
                             value: parseFloat(model.get('summary').discountedsubtotal.toFixed(2)),
                             shipping_tier: !model.get('shipmethod')
                                 ? 'online'
@@ -1127,7 +991,6 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                       .get('name'),
                             coupon: orderCoupon.join(', '),
                             items: [],
-                            source: 'GTM',
                         },
                     };
 
@@ -1148,11 +1011,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                         var item_brand = '';
                         var item_category = item.get('_url');
                         var total = line.get('aggregatedTotal')
-                            ? parseFloat(
-                                  parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(
-                                      2
-                                  )
-                              )
+                            ? parseFloat(parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                             : line.get('amount') - discount;
                         var price = parseFloat((total / quantity).toFixed(2));
                         var finalPrice =
@@ -1163,24 +1022,16 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                                           price *
                                               parseFloat(
                                                   parseFloat(
-                                                      model
-                                                          .get('promocodes')
-                                                          .find(function (_promocode) {
-                                                              return (
-                                                                  _promocode.code ===
-                                                                  eventData.ecommerce.coupon
-                                                              );
-                                                          }).rate
+                                                      model.get('promocodes').find(function (_promocode) {
+                                                          return _promocode.code === eventData.ecommerce.coupon;
+                                                      }).rate
                                                   ).toFixed(2)
                                               ) *
                                               0.01
                                       ).toFixed(2)
                                   )
                                 : price;
-                        discountByItem +=
-                            finalPrice !== price
-                                ? parseFloat((price - finalPrice).toFixed(2))
-                                : 0.0;
+                        discountByItem += finalPrice !== price ? parseFloat((price - finalPrice).toFixed(2)) : 0.0;
                         var item_list_id = itemSelected ? itemSelected.listId : '';
                         var item_list_name = itemSelected ? itemSelected.listName : '';
                         var coupon = line.get('discounts_impact')
@@ -1220,16 +1071,11 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                     var paymentType = localStorage.getItem('paymentmethod');
 
                     var transaction_id = transaction.get('confirmationNumber');
-                    var currency =
-                        (SC.ENVIRONMENT.currentCurrency && SC.ENVIRONMENT.currentCurrency.code) ||
-                        '';
+                    var currency = (SC.ENVIRONMENT.currentCurrency && SC.ENVIRONMENT.currentCurrency.code) || '';
                     var value = this.paymentEventData.ecommerce.value;
                     var tax = transaction.get('taxTotal');
-                    var shipping =
-                        transaction.get('shippingCost') + transaction.get('handlingCost');
-                    var shippingTier =
-                        (this.paymentEventData && this.paymentEventData.ecommerce.shipping_tier) ||
-                        '';
+                    var shipping = transaction.get('shippingCost') + transaction.get('handlingCost');
+                    var shippingTier = (this.paymentEventData && this.paymentEventData.ecommerce.shipping_tier) || '';
                     shippingTier = !shippingTier
                         ? transaction
                               .get('shipmethods')
@@ -1252,7 +1098,6 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                             payment_type: paymentType,
                             po_number: poNumber,
                             items: [],
-                            source: 'GTM',
                         },
                     };
 
@@ -1263,11 +1108,7 @@ define('GTMCustomEvents.GoogleTagManager', [], function () {
                             eventData.ecommerce.coupon.push(promo.code);
                         });
 
-                        for (
-                            var it = 0, _item;
-                            (_item = transaction.get('products').models[it]);
-                            it++
-                        ) {
+                        for (var it = 0, _item; (_item = transaction.get('products').models[it]); it++) {
                             var result = self.findCategoryAndListInDataLayer(_item);
 
                             var item_id = _item.get('itemid');

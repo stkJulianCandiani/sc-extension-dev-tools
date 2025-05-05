@@ -1,132 +1,131 @@
 {
-	"name": "DownloadableItems",
-	"fantasyName": "Downloadable Items",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.1.2",
-	"description": "This extension allows the user to manage and view downloadable items at My Account and PDP",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": [
-				"services/DownloadableItems.Service.ss"
-			]
-		}
-	},
-	"templates": {
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/Templates/downloadable_items_item_details.tpl",
-					"Modules/Main/Templates/downloadable_items_item.tpl",
-					"Modules/Main/Templates/downloadable_items.tpl",
-					"Modules/Main/Templates/downloadable_items_hardcopy.tpl"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/Main/Templates/downloadable_items_item_details.tpl",
-					"Modules/Main/Templates/downloadable_items_item.tpl",
-					"Modules/Main/Templates/downloadable_items.tpl",
-					"Modules/Main/Templates/downloadable_items_hardcopy.tpl"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/Main/Templates/downloadable_items_item_details.tpl",
-					"Modules/Main/Templates/downloadable_items_item.tpl",
-					"Modules/Main/Templates/downloadable_items.tpl",
-					"Modules/Main/Templates/downloadable_items_hardcopy.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/Main/Sass/_downlodable_items.scss",
-			"myaccount": "Modules/Main/Sass/_downlodable_items.scss",
-			"checkout": "Modules/Main/Sass/_downlodable_items.scss"
-		},
-		"files": [
-			"Modules/Main/Sass/_downlodable_items.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CS.DownloadableItems.Main.js",
-			"myaccount": "Modules/Main/JavaScript/CS.DownloadableItems.Main.js",
-			"checkout": "Modules/Main/JavaScript/CS.DownloadableItems.Main.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/CS.DownloadableItems.Main.js",
-					"Modules/Main/JavaScript/DownloadableItems.ChildItems.View.js",
-					"Modules/Main/JavaScript/DownloadableItems.Collection.js",
-					"Modules/Main/JavaScript/DownloadableItems.Item.View.js",
-					"Modules/Main/JavaScript/DownloadableItems.js",
-					"Modules/Main/JavaScript/DownloadableItems.List.View.js",
-					"Modules/Main/JavaScript/DownloadableItems.Model.js",
-					"Modules/Main/JavaScript/DownloadableItems.Router.js",
-					"Modules/Main/JavaScript/DownloadableItems.HardCopy.View.js",
-					"Modules/Cart/JavaScript/DownloadableItems.Cart.AddToCart.Button.View.js",
-					"Modules/Cart/JavaScript/DownloadableItems.Cart.Lines.View.js",
-					"Modules/ProductDetails/JavaScript/DownloadableItems.ProductDetails.Full.View.js"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/Main/JavaScript/CS.DownloadableItems.Main.js",
-					"Modules/Main/JavaScript/DownloadableItems.ChildItems.View.js",
-					"Modules/Main/JavaScript/DownloadableItems.Collection.js",
-					"Modules/Main/JavaScript/DownloadableItems.Item.View.js",
-					"Modules/Main/JavaScript/DownloadableItems.js",
-					"Modules/Main/JavaScript/DownloadableItems.List.View.js",
-					"Modules/Main/JavaScript/DownloadableItems.Model.js",
-					"Modules/Main/JavaScript/DownloadableItems.Router.js",
-					"Modules/Main/JavaScript/DownloadableItems.HardCopy.View.js",
-					"Modules/Cart/JavaScript/DownloadableItems.Cart.AddToCart.Button.View.js",
-					"Modules/Cart/JavaScript/DownloadableItems.Cart.Lines.View.js",
-					"Modules/ProductDetails/JavaScript/DownloadableItems.ProductDetails.Full.View.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/Main/JavaScript/CS.DownloadableItems.Main.js",
-					"Modules/Main/JavaScript/DownloadableItems.ChildItems.View.js",
-					"Modules/Main/JavaScript/DownloadableItems.Collection.js",
-					"Modules/Main/JavaScript/DownloadableItems.Item.View.js",
-					"Modules/Main/JavaScript/DownloadableItems.js",
-					"Modules/Main/JavaScript/DownloadableItems.List.View.js",
-					"Modules/Main/JavaScript/DownloadableItems.Model.js",
-					"Modules/Main/JavaScript/DownloadableItems.Router.js",
-					"Modules/Main/JavaScript/DownloadableItems.HardCopy.View.js",
-					"Modules/Cart/JavaScript/DownloadableItems.Cart.AddToCart.Button.View.js",
-					"Modules/Cart/JavaScript/DownloadableItems.Cart.Lines.View.js",
-					"Modules/ProductDetails/JavaScript/DownloadableItems.ProductDetails.Full.View.js"
-				]
-			}
-		}
-	},
-	"ssp-libraries": {
-		"entry_point": "Modules/Main/SuiteScript/CS.DownloadableItems.Main.js",
-		"files": [
-			"Modules/Main/SuiteScript/CS.DownloadableItems.Main.js",
-			"Modules/Main/SuiteScript/DownloadableItems.Model.js",
-			"Modules/Main/SuiteScript/DownloadableItems.ServiceController.js"
-		]
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/DownloadableItems@1.1.2",
-	"activation_id": "11",
-	"extension_id": "5801"
+    "name": "DownloadableItems",
+    "fantasyName": "Downloadable Items",
+    "vendor": "CS",
+    "version": "1.1.2",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "This extension allows the user to manage and view downloadable items at My Account and PDP",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/DownloadableItems.Service.ss"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Main/Sass/_downlodable_items.scss",
+            "myaccount": "Modules/Main/Sass/_downlodable_items.scss",
+            "checkout": "Modules/Main/Sass/_downlodable_items.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_downlodable_items.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/Templates/downloadable_items_item_details.tpl",
+                    "Modules/Main/Templates/downloadable_items_item.tpl",
+                    "Modules/Main/Templates/downloadable_items.tpl",
+                    "Modules/Main/Templates/downloadable_items_hardcopy.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Main/Templates/downloadable_items_item_details.tpl",
+                    "Modules/Main/Templates/downloadable_items_item.tpl",
+                    "Modules/Main/Templates/downloadable_items.tpl",
+                    "Modules/Main/Templates/downloadable_items_hardcopy.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Main/Templates/downloadable_items_item_details.tpl",
+                    "Modules/Main/Templates/downloadable_items_item.tpl",
+                    "Modules/Main/Templates/downloadable_items.tpl",
+                    "Modules/Main/Templates/downloadable_items_hardcopy.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CS.DownloadableItems.Main.js",
+            "myaccount": "Modules/Main/JavaScript/CS.DownloadableItems.Main.js",
+            "checkout": "Modules/Main/JavaScript/CS.DownloadableItems.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.DownloadableItems.Main.js",
+                    "Modules/Main/JavaScript/DownloadableItems.ChildItems.View.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Collection.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Item.View.js",
+                    "Modules/Main/JavaScript/DownloadableItems.js",
+                    "Modules/Main/JavaScript/DownloadableItems.List.View.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Model.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Router.js",
+                    "Modules/Main/JavaScript/DownloadableItems.HardCopy.View.js",
+                    "Modules/Cart/JavaScript/DownloadableItems.Cart.AddToCart.Button.View.js",
+                    "Modules/Cart/JavaScript/DownloadableItems.Cart.Lines.View.js",
+                    "Modules/ProductDetails/JavaScript/DownloadableItems.ProductDetails.Full.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.DownloadableItems.Main.js",
+                    "Modules/Main/JavaScript/DownloadableItems.ChildItems.View.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Collection.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Item.View.js",
+                    "Modules/Main/JavaScript/DownloadableItems.js",
+                    "Modules/Main/JavaScript/DownloadableItems.List.View.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Model.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Router.js",
+                    "Modules/Main/JavaScript/DownloadableItems.HardCopy.View.js",
+                    "Modules/Cart/JavaScript/DownloadableItems.Cart.AddToCart.Button.View.js",
+                    "Modules/Cart/JavaScript/DownloadableItems.Cart.Lines.View.js",
+                    "Modules/ProductDetails/JavaScript/DownloadableItems.ProductDetails.Full.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.DownloadableItems.Main.js",
+                    "Modules/Main/JavaScript/DownloadableItems.ChildItems.View.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Collection.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Item.View.js",
+                    "Modules/Main/JavaScript/DownloadableItems.js",
+                    "Modules/Main/JavaScript/DownloadableItems.List.View.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Model.js",
+                    "Modules/Main/JavaScript/DownloadableItems.Router.js",
+                    "Modules/Main/JavaScript/DownloadableItems.HardCopy.View.js",
+                    "Modules/Cart/JavaScript/DownloadableItems.Cart.AddToCart.Button.View.js",
+                    "Modules/Cart/JavaScript/DownloadableItems.Cart.Lines.View.js",
+                    "Modules/ProductDetails/JavaScript/DownloadableItems.ProductDetails.Full.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Main/SuiteScript/CS.DownloadableItems.Main.js",
+        "files": [
+            "Modules/Main/SuiteScript/CS.DownloadableItems.Main.js",
+            "Modules/Main/SuiteScript/DownloadableItems.Model.js",
+            "Modules/Main/SuiteScript/DownloadableItems.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\DownloadableItems"
 }

@@ -1,127 +1,126 @@
 {
-	"name": "GSCustomHeader",
-	"fantasyName": "GS Custom Header",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.1.1",
-	"description": "Custom styling, template and functionality of the header. Update: Fixes for my account in sidebar menu.",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"configuration": {
-		"files": [
-			"Modules/Main/Configuration/Main.json",
-			"Modules/Navigation/Configuration/Submenu.json"
-		]
-	},
-	"templates": {
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Header/Templates/gs-header.tpl",
-					"Modules/MiniCart/Templates/header_mini_cart.tpl",
-					"Modules/Navigation/Templates/gs-header_menu.tpl",
-					"Modules/SiteSearch/Templates/gs-site_search.tpl",
-					"Modules/Navigation/Templates/gs-header_sidebar.tpl",
-					"Modules/Navigation/Templates/gs-header_profile_mobile.tpl"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/Header/Templates/gs-header.tpl",
-					"Modules/MiniCart/Templates/header_mini_cart.tpl",
-					"Modules/Navigation/Templates/gs-header_menu.tpl",
-					"Modules/SiteSearch/Templates/gs-site_search.tpl",
-					"Modules/Navigation/Templates/gs-header_sidebar.tpl",
-					"Modules/Navigation/Templates/gs-header_profile_mobile.tpl"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/Header/Templates/gs-header.tpl",
-					"Modules/MiniCart/Templates/header_mini_cart.tpl",
-					"Modules/Navigation/Templates/gs-header_menu.tpl",
-					"Modules/SiteSearch/Templates/gs-site_search.tpl",
-					"Modules/Navigation/Templates/gs-header_sidebar.tpl",
-					"Modules/Navigation/Templates/gs-header_profile_mobile.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/Main/Sass/_gscustomheader-main.scss",
-			"myaccount": "Modules/Main/Sass/_gscustomheader-main.scss",
-			"checkout": "Modules/Main/Sass/_gscustomheader-main.scss"
-		},
-		"files": [
-			"Modules/Main/Sass/_gscustomheader-main.scss",
-			"Modules/Navigation/Sass/_gs-submenu.scss",
-			"Modules/Header/Sass/_gs-header.scss",
-			"Modules/MiniCart/Sass/_gs-mini-cart.scss",
-			"Modules/SiteSearch/Sass/_gs-site_search.scss",
-			"Modules/Navigation/Sass/_gs-header-menu.scss",
-			"Modules/Navigation/Sass/_gs-header-sidebar.scss",
-			"Modules/Navigation/Sass/_gs-header-menu-myaccount.scss",
-			"Modules/Navigation/Sass/_gs-header-profile.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/GSCustomHeader.Main.js",
-			"myaccount": "Modules/Main/JavaScript/GSCustomHeader.Main.js",
-			"checkout": "Modules/Main/JavaScript/GSCustomHeader.Main.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/GSCustomHeader.Main.js",
-					"Modules/Header/JavaScript/GSCustomHeader.Header.js",
-					"Modules/Header/JavaScript/Custom.jQuery.sidebarMenu.js",
-					"Modules/Navigation/JavaScript/GSCustomHeader.Menu.js",
-					"Modules/SiteSearch/JavaScript/GSCustomHeader.SiteSearch.js",
-					"Modules/MiniCart/JavaScript/GSCustomHeader.MiniCart.js"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/Main/JavaScript/GSCustomHeader.Main.js",
-					"Modules/Header/JavaScript/GSCustomHeader.Header.js",
-					"Modules/Navigation/JavaScript/GSCustomHeader.Menu.js",
-					"Modules/SiteSearch/JavaScript/GSCustomHeader.SiteSearch.js",
-					"Modules/MiniCart/JavaScript/GSCustomHeader.MiniCart.js",
-					"Modules/Header/JavaScript/Custom.jQuery.sidebarMenu.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/Main/JavaScript/GSCustomHeader.Main.js",
-					"Modules/Header/JavaScript/GSCustomHeader.Header.js",
-					"Modules/Navigation/JavaScript/GSCustomHeader.Menu.js",
-					"Modules/SiteSearch/JavaScript/GSCustomHeader.SiteSearch.js",
-					"Modules/MiniCart/JavaScript/GSCustomHeader.MiniCart.js",
-					"Modules/Header/JavaScript/Custom.jQuery.sidebarMenu.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/GSCustomHeader@1.1.1",
-	"activation_id": "11",
-	"extension_id": "8101"
+    "name": "GSCustomHeader",
+    "fantasyName": "GS Custom Header",
+    "vendor": "CS",
+    "version": "1.1.1",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Custom styling, template and functionality of the header. Update: Fixes for my account in sidebar menu.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/Main/Configuration/Main.json",
+            "Modules/Navigation/Configuration/Submenu.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Main/Sass/_gscustomheader-main.scss",
+            "myaccount": "Modules/Main/Sass/_gscustomheader-main.scss",
+            "checkout": "Modules/Main/Sass/_gscustomheader-main.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_gscustomheader-main.scss",
+            "Modules/Navigation/Sass/_gs-submenu.scss",
+            "Modules/Header/Sass/_gs-header.scss",
+            "Modules/MiniCart/Sass/_gs-mini-cart.scss",
+            "Modules/SiteSearch/Sass/_gs-site_search.scss",
+            "Modules/Navigation/Sass/_gs-header-menu.scss",
+            "Modules/Navigation/Sass/_gs-header-sidebar.scss",
+            "Modules/Navigation/Sass/_gs-header-menu-myaccount.scss",
+            "Modules/Navigation/Sass/_gs-header-profile.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Header/Templates/gs-header.tpl",
+                    "Modules/MiniCart/Templates/header_mini_cart.tpl",
+                    "Modules/Navigation/Templates/gs-header_menu.tpl",
+                    "Modules/SiteSearch/Templates/gs-site_search.tpl",
+                    "Modules/Navigation/Templates/gs-header_sidebar.tpl",
+                    "Modules/Navigation/Templates/gs-header_profile_mobile.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Header/Templates/gs-header.tpl",
+                    "Modules/MiniCart/Templates/header_mini_cart.tpl",
+                    "Modules/Navigation/Templates/gs-header_menu.tpl",
+                    "Modules/SiteSearch/Templates/gs-site_search.tpl",
+                    "Modules/Navigation/Templates/gs-header_sidebar.tpl",
+                    "Modules/Navigation/Templates/gs-header_profile_mobile.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Header/Templates/gs-header.tpl",
+                    "Modules/MiniCart/Templates/header_mini_cart.tpl",
+                    "Modules/Navigation/Templates/gs-header_menu.tpl",
+                    "Modules/SiteSearch/Templates/gs-site_search.tpl",
+                    "Modules/Navigation/Templates/gs-header_sidebar.tpl",
+                    "Modules/Navigation/Templates/gs-header_profile_mobile.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/GSCustomHeader.Main.js",
+            "myaccount": "Modules/Main/JavaScript/GSCustomHeader.Main.js",
+            "checkout": "Modules/Main/JavaScript/GSCustomHeader.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/GSCustomHeader.Main.js",
+                    "Modules/Header/JavaScript/GSCustomHeader.Header.js",
+                    "Modules/Header/JavaScript/Custom.jQuery.sidebarMenu.js",
+                    "Modules/Navigation/JavaScript/GSCustomHeader.Menu.js",
+                    "Modules/SiteSearch/JavaScript/GSCustomHeader.SiteSearch.js",
+                    "Modules/MiniCart/JavaScript/GSCustomHeader.MiniCart.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Main/JavaScript/GSCustomHeader.Main.js",
+                    "Modules/Header/JavaScript/GSCustomHeader.Header.js",
+                    "Modules/Navigation/JavaScript/GSCustomHeader.Menu.js",
+                    "Modules/SiteSearch/JavaScript/GSCustomHeader.SiteSearch.js",
+                    "Modules/MiniCart/JavaScript/GSCustomHeader.MiniCart.js",
+                    "Modules/Header/JavaScript/Custom.jQuery.sidebarMenu.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/GSCustomHeader.Main.js",
+                    "Modules/Header/JavaScript/GSCustomHeader.Header.js",
+                    "Modules/Navigation/JavaScript/GSCustomHeader.Menu.js",
+                    "Modules/SiteSearch/JavaScript/GSCustomHeader.SiteSearch.js",
+                    "Modules/MiniCart/JavaScript/GSCustomHeader.MiniCart.js",
+                    "Modules/Header/JavaScript/Custom.jQuery.sidebarMenu.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\GSCustomHeader",
+    "suitescript2": {
+        "files": []
+    }
 }

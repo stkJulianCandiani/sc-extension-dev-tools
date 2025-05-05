@@ -1,71 +1,70 @@
 {
-	"name": "SalesForceRecommendation",
-	"fantasyName": "SalesForce Recommendation",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.1",
-	"description": "Extension integrated with SalesForce Recommendation to show the product from Salesforce",
-	"assets": {
-		"img": {
-			"files": [
-				"img/arrow-left.png",
-				"img/arrow-right.png"
-			]
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"configuration": {
-		"files": [
-			"Modules/Main/Configuration/Salesforce.Recommendation.json"
-		]
-	},
-	"templates": {
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/ShoppingApplication/Templates/salesforce_recommendation_shopping_layout.tpl",
-					"Modules/Cart/Templates/salesforce_recommendation_cart_detailed.tpl",
-					"Modules/Main/Templates/salesforce_recommendation_slider.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/Main/Sass/_salesforce-recommendation-slider.scss",
-			"checkout": "Modules/Main/Sass/_salesforce-recommendation-slider.scss"
-		},
-		"files": [
-			"Modules/Main/Sass/_salesforce-recommendation-slider.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CS.Salesforce.Recommendation.Main.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/CS.Salesforce.Recommendation.Main.js",
-					"Modules/Main/JavaScript/Salesforce.Recommendation.Slider.View.js",
-					"Modules/Main/JavaScript/Salesforce.Recommendation.Configuration.js",
-					"Modules/ShoppingApplication/JavaScript/Salesforce.Recommendation.SC.Shopping.Layout.js",
-					"Modules/Cart/JavaScript/Salesforce.Recommendation.Cart.Detailed.View.js"
-				]
-			}
-		}
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/SalesForceRecommendation@1.0.1",
-	"activation_id": "11",
-	"extension_id": "5501"
+    "name": "SalesForceRecommendation",
+    "fantasyName": "SalesForce Recommendation",
+    "vendor": "CS",
+    "version": "1.0.1",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Extension integrated with SalesForce Recommendation to show the product from Salesforce",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": [
+                "img/arrow-left.png",
+                "img/arrow-right.png"
+            ]
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/Main/Configuration/Salesforce.Recommendation.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Main/Sass/_salesforce-recommendation-slider.scss",
+            "checkout": "Modules/Main/Sass/_salesforce-recommendation-slider.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_salesforce-recommendation-slider.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ShoppingApplication/Templates/salesforce_recommendation_shopping_layout.tpl",
+                    "Modules/Cart/Templates/salesforce_recommendation_cart_detailed.tpl",
+                    "Modules/Main/Templates/salesforce_recommendation_slider.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CS.Salesforce.Recommendation.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.Salesforce.Recommendation.Main.js",
+                    "Modules/Main/JavaScript/Salesforce.Recommendation.Slider.View.js",
+                    "Modules/Main/JavaScript/Salesforce.Recommendation.Configuration.js",
+                    "Modules/ShoppingApplication/JavaScript/Salesforce.Recommendation.SC.Shopping.Layout.js",
+                    "Modules/Cart/JavaScript/Salesforce.Recommendation.Cart.Detailed.View.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\SalesForceRecommendation"
 }

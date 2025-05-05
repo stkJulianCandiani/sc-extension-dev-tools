@@ -1,69 +1,68 @@
 {
-	"name": "GSPageTypes",
-	"fantasyName": "GS Page Types",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.3",
-	"description": "Adds custom page types to the CMS.",
-	"assets": {
-		"img": {
-			"files": [
-				"img/smtLayout-hdr_2row_tallTop.svg",
-				"img/smtLayout-2column_leftNarrow.svg"
-			]
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"configuration": {
-		"files": [
-			"Modules/SidebarLeft/Configuration/SidebarLeftMenu.json"
-		]
-	},
-	"templates": {
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Home/Templates/gs_home.tpl",
-					"Modules/SidebarLeft/Templates/gs_sidebar_left.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/Main/Sass/_gs-pagetypes.scss"
-		},
-		"files": [
-			"Modules/Home/Sass/_gs-home.scss",
-			"Modules/SidebarLeft/Sass/_gs-sidebar-left.scss",
-			"Modules/Main/Sass/_gs-pagetypes.scss",
-			"Modules/SidebarLeft/Sass/_gs-main-content.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CS.GSPageTypes.Main.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/CS.GSPageTypes.Main.js",
-					"Modules/SidebarLeft/JavaScript/SidebarLeft.View.js"
-				]
-			}
-		}
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/GSPageTypes@1.0.3",
-	"activation_id": "11",
-	"extension_id": "6901"
+    "name": "GSPageTypes",
+    "fantasyName": "GS Page Types",
+    "vendor": "CS",
+    "version": "1.0.3",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Adds custom page types to the CMS.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": [
+                "img/smtLayout-hdr_2row_tallTop.svg",
+                "img/smtLayout-2column_leftNarrow.svg"
+            ]
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/SidebarLeft/Configuration/SidebarLeftMenu.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Main/Sass/_gs-pagetypes.scss"
+        },
+        "files": [
+            "Modules/Home/Sass/_gs-home.scss",
+            "Modules/SidebarLeft/Sass/_gs-sidebar-left.scss",
+            "Modules/Main/Sass/_gs-pagetypes.scss",
+            "Modules/SidebarLeft/Sass/_gs-main-content.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Home/Templates/gs_home.tpl",
+                    "Modules/SidebarLeft/Templates/gs_sidebar_left.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CS.GSPageTypes.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.GSPageTypes.Main.js",
+                    "Modules/SidebarLeft/JavaScript/SidebarLeft.View.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\GSPageTypes"
 }

@@ -1,29 +1,28 @@
 {
-	"name": "ConfigurationTab",
-	"fantasyName": "CS ecomm customizations tab",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.0",
-	"description": "CS ecomm customizations tab inside configuration.",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		}
-	},
-	"configuration": {
-		"files": [
-			"Modules/Main/Configuration/ConfigurationTab.json"
-		]
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/ConfigurationTab@1.0.0",
-	"activation_id": "11",
-	"extension_id": "4801"
+    "name": "ConfigurationTab",
+    "fantasyName": "CS ecomm customizations tab",
+    "vendor": "CS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "CS ecomm customizations tab inside configuration.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/Main/Configuration/ConfigurationTab.json"
+        ]
+    },
+    "local_folder": "Workspace\\ConfigurationTab"
 }

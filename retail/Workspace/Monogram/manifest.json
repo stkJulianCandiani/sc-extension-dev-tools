@@ -1,66 +1,65 @@
 {
-	"name": "Monogram",
-	"fantasyName": "Monogram",
-	"vendor": "ACS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.0",
-	"description": "Monogram Characters",
-	"configuration": {
-		"files": [
-			"Modules/Monogram/Configuration/Monogram.json"
-		]
-	},
-	"templates": {
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Monogram/Templates/monogram.tpl",
-					"Modules/Monogram/Templates/monogram_alphabet_view.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/Monogram/Sass/_monogram.scss"
-		},
-		"files": [
-			"Modules/Monogram/Sass/_monogram.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Monogram/JavaScript/Monogram.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Monogram/JavaScript/Monogram.Alphabet.View.js",
-					"Modules/Monogram/JavaScript/Monogram.Item.Model.js",
-					"Modules/Monogram/JavaScript/Monogram.js",
-					"Modules/Monogram/JavaScript/Monogram.Values.js",
-					"Modules/Monogram/JavaScript/Monogram.View.js",
-					"Modules/Monogram/JavaScript/Monogram.CartConfirmation.View.js",
-					"Modules/Monogram/JavaScript/Monogram.Cart.AddToCart.Button.View.js"
-				]
-			}
-		}
-	},
-	"ssp-libraries": {
-		"entry_point": "Modules/Monogram/SuiteScript/Monogram.LiveOrder.Main.js",
-		"files": [
-			"Modules/Monogram/SuiteScript/Monogram.LiveOrder.Helper.js",
-			"Modules/Monogram/SuiteScript/Monogram.LiveOrder.Main.js",
-			"Modules/Monogram/SuiteScript/Monogram.LiveOrder.Model.js",
-			"Modules/Monogram/SuiteScript/Monogram.Transaction.Model.js"
-		]
-	},
-	"path": "SuiteScripts/Deploy_Extensions/ACS/Monogram@1.0.0",
-	"activation_id": "11",
-	"extension_id": "11501"
+    "name": "Monogram",
+    "fantasyName": "Monogram",
+    "vendor": "ACS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Monogram Characters",
+    "skins": [],
+    "configuration": {
+        "files": [
+            "Modules/Monogram/Configuration/Monogram.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Monogram/Sass/_monogram.scss"
+        },
+        "files": [
+            "Modules/Monogram/Sass/_monogram.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Monogram/Templates/monogram.tpl",
+                    "Modules/Monogram/Templates/monogram_alphabet_view.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Monogram/JavaScript/Monogram.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Monogram/JavaScript/Monogram.Alphabet.View.js",
+                    "Modules/Monogram/JavaScript/Monogram.Item.Model.js",
+                    "Modules/Monogram/JavaScript/Monogram.js",
+                    "Modules/Monogram/JavaScript/Monogram.Values.js",
+                    "Modules/Monogram/JavaScript/Monogram.View.js",
+                    "Modules/Monogram/JavaScript/Monogram.CartConfirmation.View.js",
+                    "Modules/Monogram/JavaScript/Monogram.Cart.AddToCart.Button.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Monogram/SuiteScript/Monogram.LiveOrder.Main.js",
+        "files": [
+            "Modules/Monogram/SuiteScript/Monogram.LiveOrder.Helper.js",
+            "Modules/Monogram/SuiteScript/Monogram.LiveOrder.Main.js",
+            "Modules/Monogram/SuiteScript/Monogram.LiveOrder.Model.js",
+            "Modules/Monogram/SuiteScript/Monogram.Transaction.Model.js"
+        ]
+    },
+    "local_folder": "Workspace\\Monogram"
 }

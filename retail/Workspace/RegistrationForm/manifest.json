@@ -1,53 +1,52 @@
 {
-	"name": "RegistrationForm",
-	"fantasyName": "Registration Form",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.0",
-	"description": "Customized Registration Form to include 13 years of age or older checkbox option",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"templates": {
-		"application": {
-			"checkout": {
-				"files": [
-					"Modules/LoginRegister/Templates/registrationform_login_register_register.tpl"
-				]
-			}
-		}
-	},
-	"javascript": {
-		"entry_points": {
-			"checkout": "Modules/Main/JavaScript/CS.RegistrationForm.Main.js"
-		},
-		"application": {
-			"checkout": {
-				"files": [
-					"Modules/Main/JavaScript/CS.RegistrationForm.Main.js",
-					"Modules/Account/JavaScript/RegistrationForm.Account.Register.Model.js",
-					"Modules/LoginRegister/JavaScript/RegistrationForm.LoginRegister.Register.View.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/RegistrationForm@1.0.0",
-	"activation_id": "11",
-	"extension_id": "3702"
+    "name": "RegistrationForm",
+    "fantasyName": "Registration Form",
+    "vendor": "CS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Customized Registration Form to include 13 years of age or older checkbox option",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/LoginRegister/Templates/registrationform_login_register_register.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/Main/JavaScript/CS.RegistrationForm.Main.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.RegistrationForm.Main.js",
+                    "Modules/Account/JavaScript/RegistrationForm.Account.Register.Model.js",
+                    "Modules/LoginRegister/JavaScript/RegistrationForm.LoginRegister.Register.View.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\RegistrationForm",
+    "suitescript2": {
+        "files": []
+    }
 }

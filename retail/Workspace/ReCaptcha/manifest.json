@@ -1,84 +1,83 @@
 {
-	"name": "ReCaptcha",
-	"fantasyName": "ReCaptcha",
-	"vendor": "ACS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "4.1.0",
-	"description": "ReCaptcha protection for Account Registration/Login/Guest Registration, & Sales Order creation. By ACS Tech - Commerce",
-	"assets": {
-		"services": {
-			"files": [
-				"services/ReCaptcha.Configuration.Service.ss"
-			]
-		}
-	},
-	"templates": {
-		"application": {
-			"checkout": {
-				"files": [
-					"Modules/Main/Templates/acs_recaptcha_checkout_order_wizard_module.tpl",
-					"Modules/Main/Templates/acs_recaptcha_terms.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"checkout": "Modules/Main/Sass/_acs_recaptcha.scss"
-		},
-		"files": [
-			"Modules/Main/Sass/_acs_recaptcha.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"checkout": "Modules/Main/JavaScript/ACS.ReCaptcha.EntryPoint.js",
-			"shopping": "Modules/ReCaptcha/JavaScript/ReCaptcha.js"
-		},
-		"application": {
-			"checkout": {
-				"files": [
-					"Modules/Main/JavaScript/ACS.ReCaptcha.EntryPoint.js",
-					"Modules/ReCaptcha/JavaScript/ReCaptcha.Adapter.js",
-					"Modules/Main/JavaScript/ACS.ReCaptcha.Checkout.OrderWizard.Module.js",
-					"Modules/ReCaptcha/JavaScript/ReCaptcha.Configuration.Model.js",
-					"Modules/ReCaptcha/JavaScript/ReCaptcha.js",
-					"Modules/Main/JavaScript/ACS.ReCaptcha.GuestCheckoutHook.js",
-					"Modules/Main/JavaScript/ACS.ReCaptcha.LoginHook.js",
-					"Modules/Main/JavaScript/ACS.ReCaptcha.OrderSubmitHook.js",
-					"Modules/Main/JavaScript/ACS.ReCaptcha.RegistrationHook.js",
-					"Modules/Main/JavaScript/ACS.ReCaptcha.Terms.View.js",
-					"Modules/Main/JavaScript/ACS.ReCaptcha.TermsAndConditionsHook.js",
-					"Modules/Main/JavaScript/ACS.ReCaptcha.ForgotPasswordHook.js"
-				]
-			},
-			"shopping": {
-				"files": [
-					"Modules/ReCaptcha/JavaScript/ReCaptcha.js",
-					"Modules/ReCaptcha/JavaScript/ReCaptcha.Configuration.Model.js",
-					"Modules/ReCaptcha/JavaScript/ReCaptcha.Adapter.js"
-				]
-			}
-		}
-	},
-	"ssp-libraries": {
-		"entry_point": "Modules/Main/SuiteScript/ACS.ReCaptcha.EntryPoint.js",
-		"files": [
-			"Modules/Main/SuiteScript/ACS.ReCaptcha.EntryPoint.js",
-			"Modules/ReCaptcha/SuiteScript/ReCaptcha.Adapter.js",
-			"Modules/Utils/SuiteScript/ReCaptcha.Utils.js",
-			"Modules/ReCaptcha/SuiteScript/ReCaptcha.Configuration.Model.js",
-			"Modules/ReCaptcha/SuiteScript/ReCaptcha.Configuration.ServiceController.js",
-			"Modules/Main/SuiteScript/ACS.ReCaptcha.Account.Hook.js",
-			"Modules/Main/SuiteScript/ACS.ReCaptcha.Cart.Hook.js"
-		]
-	},
-	"path": "SuiteScripts/Deploy_Extensions/ACS/ReCaptcha@4.1.0",
-	"activation_id": "11",
-	"extension_id": "10401"
+    "name": "ReCaptcha",
+    "fantasyName": "ReCaptcha",
+    "vendor": "ACS",
+    "version": "4.1.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "ReCaptcha protection for Account Registration/Login/Guest Registration, & Sales Order creation. By ACS Tech - Commerce",
+    "skins": [],
+    "assets": {
+        "services": {
+            "files": [
+                "services/ReCaptcha.Configuration.Service.ss"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/Main/Sass/_acs_recaptcha.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_acs_recaptcha.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/Main/Templates/acs_recaptcha_checkout_order_wizard_module.tpl",
+                    "Modules/Main/Templates/acs_recaptcha_terms.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/Main/JavaScript/ACS.ReCaptcha.EntryPoint.js",
+            "shopping": "Modules/ReCaptcha/JavaScript/ReCaptcha.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/ACS.ReCaptcha.EntryPoint.js",
+                    "Modules/ReCaptcha/JavaScript/ReCaptcha.Adapter.js",
+                    "Modules/Main/JavaScript/ACS.ReCaptcha.Checkout.OrderWizard.Module.js",
+                    "Modules/ReCaptcha/JavaScript/ReCaptcha.Configuration.Model.js",
+                    "Modules/ReCaptcha/JavaScript/ReCaptcha.js",
+                    "Modules/Main/JavaScript/ACS.ReCaptcha.GuestCheckoutHook.js",
+                    "Modules/Main/JavaScript/ACS.ReCaptcha.LoginHook.js",
+                    "Modules/Main/JavaScript/ACS.ReCaptcha.OrderSubmitHook.js",
+                    "Modules/Main/JavaScript/ACS.ReCaptcha.RegistrationHook.js",
+                    "Modules/Main/JavaScript/ACS.ReCaptcha.Terms.View.js",
+                    "Modules/Main/JavaScript/ACS.ReCaptcha.TermsAndConditionsHook.js",
+                    "Modules/Main/JavaScript/ACS.ReCaptcha.ForgotPasswordHook.js"
+                ]
+            },
+            "shopping": {
+                "files": [
+                    "Modules/ReCaptcha/JavaScript/ReCaptcha.js",
+                    "Modules/ReCaptcha/JavaScript/ReCaptcha.Configuration.Model.js",
+                    "Modules/ReCaptcha/JavaScript/ReCaptcha.Adapter.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Main/SuiteScript/ACS.ReCaptcha.EntryPoint.js",
+        "files": [
+            "Modules/Main/SuiteScript/ACS.ReCaptcha.EntryPoint.js",
+            "Modules/ReCaptcha/SuiteScript/ReCaptcha.Adapter.js",
+            "Modules/Utils/SuiteScript/ReCaptcha.Utils.js",
+            "Modules/ReCaptcha/SuiteScript/ReCaptcha.Configuration.Model.js",
+            "Modules/ReCaptcha/SuiteScript/ReCaptcha.Configuration.ServiceController.js",
+            "Modules/Main/SuiteScript/ACS.ReCaptcha.Account.Hook.js",
+            "Modules/Main/SuiteScript/ACS.ReCaptcha.Cart.Hook.js"
+        ]
+    },
+    "local_folder": "Workspace\\ReCaptcha"
 }

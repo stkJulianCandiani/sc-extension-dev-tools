@@ -1,113 +1,112 @@
 {
-	"name": "IronOn",
-	"fantasyName": "Iron On ",
-	"vendor": "ACS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "4.0.0",
-	"description": "Iron on troop numeral on Vests items",
-	"configuration": {
-		"files": [
-			"Modules/IronOn/Configuration/IronOn.json"
-		]
-	},
-	"templates": {
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/IronOn/Templates/ironon.tpl",
-					"Modules/IronOn/Templates/ironon_troop_numerals.tpl",
-					"Modules/IronOn/Templates/ironon_patches_pins.tpl",
-					"Modules/IronOn/Templates/ironon_item_price.tpl"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/IronOn/Templates/ironon.tpl",
-					"Modules/IronOn/Templates/ironon_troop_numerals.tpl",
-					"Modules/IronOn/Templates/ironon_patches_pins.tpl",
-					"Modules/IronOn/Templates/ironon_item_price.tpl"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/IronOn/Templates/ironon.tpl",
-					"Modules/IronOn/Templates/ironon_troop_numerals.tpl",
-					"Modules/IronOn/Templates/ironon_patches_pins.tpl",
-					"Modules/IronOn/Templates/ironon_item_price.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/IronOn/Sass/_ironon.scss",
-			"myaccount": "Modules/IronOn/Sass/_ironon.scss",
-			"checkout": "Modules/IronOn/Sass/_ironon.scss"
-		},
-		"files": [
-			"Modules/IronOn/Sass/_ironon.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/IronOn/JavaScript/IronOn.js",
-			"myaccount": "Modules/IronOn/JavaScript/IronOn.MyAccount.js",
-			"checkout": "Modules/IronOn/JavaScript/IronOn.Checkout.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/IronOn/JavaScript/IronOn.View.js",
-					"Modules/IronOn/JavaScript/IronOn.js",
-					"Modules/IronOn/JavaScript/IronOn.TroopNumerals.View.js",
-					"Modules/IronOn/JavaScript/IronOn.Cart.AddToCart.Button.View.js",
-					"Modules/IronOn/JavaScript/IronOn.Item.Model.js",
-					"Modules/IronOn/JavaScript/IronOn.ProductViews.Price.View.js",
-					"Modules/IronOn/JavaScript/IronOn.CartConfirmation.View.js",
-					"Modules/IronOn/JavaScript/IronOn.Cart.HideActions.js",
-					"Modules/IronOn/JavaScript/IronOn.ItemPrice.js",
-					"Modules/IronOn/JavaScript/IronOn.PatchesAndPinsView.js"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/IronOn/JavaScript/IronOn.Cart.AddToCart.Button.View.js",
-					"Modules/IronOn/JavaScript/IronOn.ProductViews.Price.View.js",
-					"Modules/IronOn/JavaScript/IronOn.CartConfirmation.View.js",
-					"Modules/IronOn/JavaScript/IronOn.Cart.HideActions.js",
-					"Modules/IronOn/JavaScript/IronOn.MyAccount.js",
-					"Modules/IronOn/JavaScript/IronOn.ItemPrice.js",
-					"Modules/IronOn/JavaScript/IronOn.PatchesAndPinsView.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/IronOn/JavaScript/IronOn.Cart.AddToCart.Button.View.js",
-					"Modules/IronOn/JavaScript/IronOn.ProductViews.Price.View.js",
-					"Modules/IronOn/JavaScript/IronOn.CartConfirmation.View.js",
-					"Modules/IronOn/JavaScript/IronOn.Cart.HideActions.js",
-					"Modules/IronOn/JavaScript/IronOn.Checkout.js",
-					"Modules/IronOn/JavaScript/IronOn.ItemPrice.js",
-					"Modules/IronOn/JavaScript/IronOn.PatchesAndPinsView.js"
-				]
-			}
-		}
-	},
-	"ssp-libraries": {
-		"entry_point": "Modules/IronOn/SuiteScript/IronOn.LiveOrder.Main.js",
-		"files": [
-			"Modules/IronOn/SuiteScript/IronOn.LiveOrder.Model.js",
-			"Modules/IronOn/SuiteScript/IronOn.LiveOrder.Helper.js",
-			"Modules/IronOn/SuiteScript/IronOn.LiveOrder.Main.js",
-			"Modules/IronOn/SuiteScript/IronOn.Transaction.Model.js"
-		]
-	},
-	"path": "SuiteScripts/Deploy_Extensions/ACS/IronOn@4.0.0",
-	"activation_id": "11",
-	"extension_id": "12801"
+    "name": "IronOn",
+    "fantasyName": "Iron On ",
+    "vendor": "ACS",
+    "version": "4.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Iron on troop numeral on Vests items",
+    "skins": [],
+    "configuration": {
+        "files": [
+            "Modules/IronOn/Configuration/IronOn.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/IronOn/Sass/_ironon.scss",
+            "myaccount": "Modules/IronOn/Sass/_ironon.scss",
+            "checkout": "Modules/IronOn/Sass/_ironon.scss"
+        },
+        "files": [
+            "Modules/IronOn/Sass/_ironon.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/IronOn/Templates/ironon.tpl",
+                    "Modules/IronOn/Templates/ironon_troop_numerals.tpl",
+                    "Modules/IronOn/Templates/ironon_patches_pins.tpl",
+                    "Modules/IronOn/Templates/ironon_item_price.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/IronOn/Templates/ironon.tpl",
+                    "Modules/IronOn/Templates/ironon_troop_numerals.tpl",
+                    "Modules/IronOn/Templates/ironon_patches_pins.tpl",
+                    "Modules/IronOn/Templates/ironon_item_price.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/IronOn/Templates/ironon.tpl",
+                    "Modules/IronOn/Templates/ironon_troop_numerals.tpl",
+                    "Modules/IronOn/Templates/ironon_patches_pins.tpl",
+                    "Modules/IronOn/Templates/ironon_item_price.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/IronOn/JavaScript/IronOn.js",
+            "myaccount": "Modules/IronOn/JavaScript/IronOn.MyAccount.js",
+            "checkout": "Modules/IronOn/JavaScript/IronOn.Checkout.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/IronOn/JavaScript/IronOn.View.js",
+                    "Modules/IronOn/JavaScript/IronOn.js",
+                    "Modules/IronOn/JavaScript/IronOn.TroopNumerals.View.js",
+                    "Modules/IronOn/JavaScript/IronOn.Cart.AddToCart.Button.View.js",
+                    "Modules/IronOn/JavaScript/IronOn.Item.Model.js",
+                    "Modules/IronOn/JavaScript/IronOn.ProductViews.Price.View.js",
+                    "Modules/IronOn/JavaScript/IronOn.CartConfirmation.View.js",
+                    "Modules/IronOn/JavaScript/IronOn.Cart.HideActions.js",
+                    "Modules/IronOn/JavaScript/IronOn.ItemPrice.js",
+                    "Modules/IronOn/JavaScript/IronOn.PatchesAndPinsView.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/IronOn/JavaScript/IronOn.Cart.AddToCart.Button.View.js",
+                    "Modules/IronOn/JavaScript/IronOn.ProductViews.Price.View.js",
+                    "Modules/IronOn/JavaScript/IronOn.CartConfirmation.View.js",
+                    "Modules/IronOn/JavaScript/IronOn.Cart.HideActions.js",
+                    "Modules/IronOn/JavaScript/IronOn.MyAccount.js",
+                    "Modules/IronOn/JavaScript/IronOn.ItemPrice.js",
+                    "Modules/IronOn/JavaScript/IronOn.PatchesAndPinsView.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/IronOn/JavaScript/IronOn.Cart.AddToCart.Button.View.js",
+                    "Modules/IronOn/JavaScript/IronOn.ProductViews.Price.View.js",
+                    "Modules/IronOn/JavaScript/IronOn.CartConfirmation.View.js",
+                    "Modules/IronOn/JavaScript/IronOn.Cart.HideActions.js",
+                    "Modules/IronOn/JavaScript/IronOn.Checkout.js",
+                    "Modules/IronOn/JavaScript/IronOn.ItemPrice.js",
+                    "Modules/IronOn/JavaScript/IronOn.PatchesAndPinsView.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/IronOn/SuiteScript/IronOn.LiveOrder.Main.js",
+        "files": [
+            "Modules/IronOn/SuiteScript/IronOn.LiveOrder.Model.js",
+            "Modules/IronOn/SuiteScript/IronOn.LiveOrder.Helper.js",
+            "Modules/IronOn/SuiteScript/IronOn.LiveOrder.Main.js",
+            "Modules/IronOn/SuiteScript/IronOn.Transaction.Model.js"
+        ]
+    },
+    "local_folder": "Workspace\\IronOn"
 }

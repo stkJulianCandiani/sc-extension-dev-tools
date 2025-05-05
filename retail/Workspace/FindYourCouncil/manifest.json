@@ -1,150 +1,149 @@
 {
-	"name": "FindYourCouncil",
-	"fantasyName": "Find your Council",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.8",
-	"description": "Council landing pages are individual pages with information dedicated to a specific local council. Each council maintains its own set of products that it sells through the website.",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": [
-				"services/Council.Service.ss"
-			]
-		}
-	},
-	"configuration": {
-		"files": [
-			"Modules/Main/Configuration/FindYourCouncil.json"
-		]
-	},
-	"templates": {
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/Templates/find_your_council.tpl",
-					"Modules/Main/Templates/council_find.tpl",
-					"Modules/Main/Templates/council_select.tpl",
-					"Modules/Main/Templates/council_shop.tpl",
-					"Modules/Merchandising/Templates/merchandising_item.tpl",
-					"Modules/Categories/Templates/custom_merchandising_zone_row_template.tpl",
-					"Modules/Categories/Templates/council_categories_marketing_spaces_cell.tpl",
-					"Modules/Categories/Templates/council_categories_marketing_spaces_collection.tpl",
-					"Modules/Categories/Templates/council_categories_marketing_spaces_row.tpl",
-					"Modules/Categories/Templates/council_categories_marketing_spaces.tpl",
-					"Modules/Categories/Templates/council_categories_slider_items.tpl",
-					"Modules/Categories/Templates/council_categories.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/Main/Sass/_findyourcouncil-main.scss"
-		},
-		"files": [
-			"Modules/Main/Sass/_findyourcouncil-main.scss",
-			"Modules/Main/Sass/_categories_council_find.scss",
-			"Modules/Main/Sass/_categories_council_select.scss",
-			"Modules/Main/Sass/_categories_council_shop.scss",
-			"Modules/Main/Sass/_categories_council.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CS.FindYourCouncil.Shopping.js",
-			"myaccount": "Modules/Main/JavaScript/CS.FindYourCouncil.MyAccount.js",
-			"checkout": "Modules/Main/JavaScript/CS.FindYourCouncil.Checkout.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/Council.KeyMapping.js",
-					"Modules/Main/JavaScript/Council.Model.js",
-					"Modules/Main/JavaScript/FindYourCouncil.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.js",
-					"Modules/Main/JavaScript/CS.FindYourCouncil.Checkout.js",
-					"Modules/Main/JavaScript/CS.FindYourCouncil.MyAccount.js",
-					"Modules/Main/JavaScript/CS.FindYourCouncil.Shopping.js",
-					"Modules/Facets/JavaScript/Council.Facets.Browse.View.js",
-					"Modules/Main/JavaScript/Council.Router.js",
-					"Modules/Main/JavaScript/Council.Select.View.js",
-					"Modules/Main/JavaScript/Council.Shop.View.js",
-					"Modules/Merchandising/JavaScript/Merchandising.Item.js",
-					"Modules/Categories/JavaScript/Council.Categories.Collection.SliderItems.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.Configuration.js",
-					"Modules/Categories/JavaScript/Council.Categories.MarketingSpace.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.SliderItems.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.View.js",
-					"Modules/Home/JavaScript/Council.Home.View.js"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/Main/JavaScript/Council.KeyMapping.js",
-					"Modules/Main/JavaScript/Council.Model.js",
-					"Modules/Main/JavaScript/FindYourCouncil.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.js",
-					"Modules/Main/JavaScript/CS.FindYourCouncil.Checkout.js",
-					"Modules/Main/JavaScript/CS.FindYourCouncil.MyAccount.js",
-					"Modules/Main/JavaScript/CS.FindYourCouncil.Shopping.js",
-					"Modules/Facets/JavaScript/Council.Facets.Browse.View.js",
-					"Modules/Main/JavaScript/Council.Router.js",
-					"Modules/Main/JavaScript/Council.Select.View.js",
-					"Modules/Main/JavaScript/Council.Shop.View.js",
-					"Modules/Merchandising/JavaScript/Merchandising.Item.js",
-					"Modules/Categories/JavaScript/Council.Categories.Collection.SliderItems.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.Configuration.js",
-					"Modules/Categories/JavaScript/Council.Categories.MarketingSpace.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.SliderItems.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.View.js",
-					"Modules/Home/JavaScript/Council.Home.View.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/Main/JavaScript/Council.KeyMapping.js",
-					"Modules/Main/JavaScript/Council.Model.js",
-					"Modules/Main/JavaScript/FindYourCouncil.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.js",
-					"Modules/Main/JavaScript/CS.FindYourCouncil.Checkout.js",
-					"Modules/Main/JavaScript/CS.FindYourCouncil.MyAccount.js",
-					"Modules/Main/JavaScript/CS.FindYourCouncil.Shopping.js",
-					"Modules/Facets/JavaScript/Council.Facets.Browse.View.js",
-					"Modules/Main/JavaScript/Council.Router.js",
-					"Modules/Main/JavaScript/Council.Select.View.js",
-					"Modules/Main/JavaScript/Council.Shop.View.js",
-					"Modules/Merchandising/JavaScript/Merchandising.Item.js",
-					"Modules/Categories/JavaScript/Council.Categories.Collection.SliderItems.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.Configuration.js",
-					"Modules/Categories/JavaScript/Council.Categories.MarketingSpace.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.SliderItems.View.js",
-					"Modules/Categories/JavaScript/Council.Categories.View.js",
-					"Modules/Home/JavaScript/Council.Home.View.js"
-				]
-			}
-		}
-	},
-	"ssp-libraries": {
-		"entry_point": "Modules/Main/SuiteScript/CS.FindYourCouncil.Main.js",
-		"files": [
-			"Modules/Main/SuiteScript/CS.FindYourCouncil.Main.js",
-			"Modules/Main/SuiteScript/Council.Model.js",
-			"Modules/Main/SuiteScript/Council.ServiceController.js",
-			"Modules/Categories/SuiteScript/Council.Categories.Model.js"
-		]
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/FindYourCouncil@1.0.8",
-	"activation_id": "11",
-	"extension_id": "6201"
+    "name": "FindYourCouncil",
+    "fantasyName": "Find your Council",
+    "vendor": "CS",
+    "version": "1.0.8",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Council landing pages are individual pages with information dedicated to a specific local council. Each council maintains its own set of products that it sells through the website.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/Council.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/Main/Configuration/FindYourCouncil.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Main/Sass/_findyourcouncil-main.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_findyourcouncil-main.scss",
+            "Modules/Main/Sass/_categories_council_find.scss",
+            "Modules/Main/Sass/_categories_council_select.scss",
+            "Modules/Main/Sass/_categories_council_shop.scss",
+            "Modules/Main/Sass/_categories_council.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/Templates/find_your_council.tpl",
+                    "Modules/Main/Templates/council_find.tpl",
+                    "Modules/Main/Templates/council_select.tpl",
+                    "Modules/Main/Templates/council_shop.tpl",
+                    "Modules/Merchandising/Templates/merchandising_item.tpl",
+                    "Modules/Categories/Templates/custom_merchandising_zone_row_template.tpl",
+                    "Modules/Categories/Templates/council_categories_marketing_spaces_cell.tpl",
+                    "Modules/Categories/Templates/council_categories_marketing_spaces_collection.tpl",
+                    "Modules/Categories/Templates/council_categories_marketing_spaces_row.tpl",
+                    "Modules/Categories/Templates/council_categories_marketing_spaces.tpl",
+                    "Modules/Categories/Templates/council_categories_slider_items.tpl",
+                    "Modules/Categories/Templates/council_categories.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CS.FindYourCouncil.Shopping.js",
+            "myaccount": "Modules/Main/JavaScript/CS.FindYourCouncil.MyAccount.js",
+            "checkout": "Modules/Main/JavaScript/CS.FindYourCouncil.Checkout.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/Council.KeyMapping.js",
+                    "Modules/Main/JavaScript/Council.Model.js",
+                    "Modules/Main/JavaScript/FindYourCouncil.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.js",
+                    "Modules/Main/JavaScript/CS.FindYourCouncil.Checkout.js",
+                    "Modules/Main/JavaScript/CS.FindYourCouncil.MyAccount.js",
+                    "Modules/Main/JavaScript/CS.FindYourCouncil.Shopping.js",
+                    "Modules/Facets/JavaScript/Council.Facets.Browse.View.js",
+                    "Modules/Main/JavaScript/Council.Router.js",
+                    "Modules/Main/JavaScript/Council.Select.View.js",
+                    "Modules/Main/JavaScript/Council.Shop.View.js",
+                    "Modules/Merchandising/JavaScript/Merchandising.Item.js",
+                    "Modules/Categories/JavaScript/Council.Categories.Collection.SliderItems.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.Configuration.js",
+                    "Modules/Categories/JavaScript/Council.Categories.MarketingSpace.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.SliderItems.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.View.js",
+                    "Modules/Home/JavaScript/Council.Home.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Main/JavaScript/Council.KeyMapping.js",
+                    "Modules/Main/JavaScript/Council.Model.js",
+                    "Modules/Main/JavaScript/FindYourCouncil.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.js",
+                    "Modules/Main/JavaScript/CS.FindYourCouncil.Checkout.js",
+                    "Modules/Main/JavaScript/CS.FindYourCouncil.MyAccount.js",
+                    "Modules/Main/JavaScript/CS.FindYourCouncil.Shopping.js",
+                    "Modules/Facets/JavaScript/Council.Facets.Browse.View.js",
+                    "Modules/Main/JavaScript/Council.Router.js",
+                    "Modules/Main/JavaScript/Council.Select.View.js",
+                    "Modules/Main/JavaScript/Council.Shop.View.js",
+                    "Modules/Merchandising/JavaScript/Merchandising.Item.js",
+                    "Modules/Categories/JavaScript/Council.Categories.Collection.SliderItems.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.Configuration.js",
+                    "Modules/Categories/JavaScript/Council.Categories.MarketingSpace.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.SliderItems.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.View.js",
+                    "Modules/Home/JavaScript/Council.Home.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/Council.KeyMapping.js",
+                    "Modules/Main/JavaScript/Council.Model.js",
+                    "Modules/Main/JavaScript/FindYourCouncil.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.js",
+                    "Modules/Main/JavaScript/CS.FindYourCouncil.Checkout.js",
+                    "Modules/Main/JavaScript/CS.FindYourCouncil.MyAccount.js",
+                    "Modules/Main/JavaScript/CS.FindYourCouncil.Shopping.js",
+                    "Modules/Facets/JavaScript/Council.Facets.Browse.View.js",
+                    "Modules/Main/JavaScript/Council.Router.js",
+                    "Modules/Main/JavaScript/Council.Select.View.js",
+                    "Modules/Main/JavaScript/Council.Shop.View.js",
+                    "Modules/Merchandising/JavaScript/Merchandising.Item.js",
+                    "Modules/Categories/JavaScript/Council.Categories.Collection.SliderItems.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.Configuration.js",
+                    "Modules/Categories/JavaScript/Council.Categories.MarketingSpace.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.SliderItems.View.js",
+                    "Modules/Categories/JavaScript/Council.Categories.View.js",
+                    "Modules/Home/JavaScript/Council.Home.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Main/SuiteScript/CS.FindYourCouncil.Main.js",
+        "files": [
+            "Modules/Main/SuiteScript/CS.FindYourCouncil.Main.js",
+            "Modules/Main/SuiteScript/Council.Model.js",
+            "Modules/Main/SuiteScript/Council.ServiceController.js",
+            "Modules/Categories/SuiteScript/Council.Categories.Model.js"
+        ]
+    },
+    "local_folder": "Workspace\\FindYourCouncil"
 }

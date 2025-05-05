@@ -1,50 +1,49 @@
 {
-	"name": "GSFilterBySelector",
-	"fantasyName": "GS Filter By Selector",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": ">=20.1.0",
-		"SCS": ">=20.1.0"
-	},
-	"version": "1.0.0",
-	"description": "Changes the filter by selector style",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/Main/Sass/_gsfliterbyselector-main.scss"
-		},
-		"files": [
-			"Modules/Main/Sass/_gsfliterbyselector-main.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CS.GSFilterBySelector.Main.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/CS.GSFilterBySelector.Main.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/GSFilterBySelector@1.0.0",
-	"activation_id": "11",
-	"extension_id": "4502"
+    "name": "GSFilterBySelector",
+    "fantasyName": "GS Filter By Selector",
+    "vendor": "CS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "Changes the filter by selector style",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Main/Sass/_gsfliterbyselector-main.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_gsfliterbyselector-main.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CS.GSFilterBySelector.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.GSFilterBySelector.Main.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\GSFilterBySelector",
+    "suitescript2": {
+        "files": []
+    }
 }

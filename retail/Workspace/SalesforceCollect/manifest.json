@@ -1,68 +1,67 @@
 {
-	"name": "SalesforceCollect",
-	"fantasyName": "SalesForce Collect",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.2",
-	"description": "Track user browse info to Salesforce",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"configuration": {
-		"files": [
-			"Modules/Main/Configuration/Salesforce.Collect.json"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CS.Salesforce.Collect.Shopping.js",
-			"checkout": "Modules/Main/JavaScript/CS.Salesforce.Collect.Checkout.js",
-			"myaccount": "Modules/Main/JavaScript/CS.Salesforce.Collect.MyAccount.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Cart/JavaScript/Salesforce.Collect.Cart.Detailed.View.js",
-					"Modules/Main/JavaScript/CS.Salesforce.Collect.Shopping.js",
-					"Modules/Newsletter/JavaScript/Salesforce.Collect.Newsletter.View.js",
-					"Modules/Main/JavaScript/Salesforce.Collect.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/LoginRegister/JavaScript/Salesforce.Collect.LoginRegister.Login.View.js",
-					"Modules/LoginRegister/JavaScript/Salesforce.Collect.LoginRegister.Register.View.js",
-					"Modules/Main/JavaScript/CS.Salesforce.Collect.Checkout.js",
-					"Modules/Newsletter/JavaScript/Salesforce.Collect.Newsletter.View.js",
-					"Modules/Main/JavaScript/Salesforce.Collect.js"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/Main/JavaScript/CS.Salesforce.Collect.MyAccount.js",
-					"Modules/Newsletter/JavaScript/Salesforce.Collect.Newsletter.View.js",
-					"Modules/Main/JavaScript/Salesforce.Collect.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/SalesforceCollect@1.0.2",
-	"activation_id": "11",
-	"extension_id": "3704"
+    "name": "SalesforceCollect",
+    "fantasyName": "SalesForce Collect",
+    "vendor": "CS",
+    "version": "1.0.2",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Track user browse info to Salesforce",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/Main/Configuration/Salesforce.Collect.json"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CS.Salesforce.Collect.Shopping.js",
+            "checkout": "Modules/Main/JavaScript/CS.Salesforce.Collect.Checkout.js",
+            "myaccount": "Modules/Main/JavaScript/CS.Salesforce.Collect.MyAccount.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Cart/JavaScript/Salesforce.Collect.Cart.Detailed.View.js",
+                    "Modules/Main/JavaScript/CS.Salesforce.Collect.Shopping.js",
+                    "Modules/Newsletter/JavaScript/Salesforce.Collect.Newsletter.View.js",
+                    "Modules/Main/JavaScript/Salesforce.Collect.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/LoginRegister/JavaScript/Salesforce.Collect.LoginRegister.Login.View.js",
+                    "Modules/LoginRegister/JavaScript/Salesforce.Collect.LoginRegister.Register.View.js",
+                    "Modules/Main/JavaScript/CS.Salesforce.Collect.Checkout.js",
+                    "Modules/Newsletter/JavaScript/Salesforce.Collect.Newsletter.View.js",
+                    "Modules/Main/JavaScript/Salesforce.Collect.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.Salesforce.Collect.MyAccount.js",
+                    "Modules/Newsletter/JavaScript/Salesforce.Collect.Newsletter.View.js",
+                    "Modules/Main/JavaScript/Salesforce.Collect.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\SalesforceCollect",
+    "suitescript2": {
+        "files": []
+    }
 }

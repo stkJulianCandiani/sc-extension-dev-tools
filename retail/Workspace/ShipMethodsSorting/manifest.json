@@ -1,49 +1,48 @@
 {
-	"name": "ShipMethodsSorting",
-	"fantasyName": "Ship Methods Sorting",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": ">=20.1.0",
-		"SCS": ">=20.1.0"
-	},
-	"version": "1.0.0",
-	"description": "Sorting of the ship methods during checkout.",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		}
-	},
-	"javascript": {
-		"entry_points": {
-			"checkout": "Modules/Main/JavaScript/CS.ShipMethodsSorting.js"
-		},
-		"application": {
-			"checkout": {
-				"files": [
-					"Modules/OrderWizard.Module.ShipMethod/JavaScript/ShipMethodsSorting.OrderWizard.Module.Shipmethod.js",
-					"Modules/OrderWizard.Module.ShipMethod/JavaScript/ShipMethodsSorting.OrderWizard.Module.ShowShipments.js",
-					"Modules/OrderWizard.Module.ShipMethod/JavaScript/ShipMethodsSorting.Helper.js",
-					"Modules/Main/JavaScript/CS.ShipMethodsSorting.js"
-				]
-			}
-		}
-	},
-	"ssp-libraries": {
-		"entry_point": "Modules/Main/SuiteScript/CS.ShipMethodsSorting.js",
-		"files": [
-			"Modules/LiveOrder/SuiteScript/ShipMethodsSorting.LiveOrder.Model.js",
-			"Modules/Main/SuiteScript/CS.ShipMethodsSorting.js"
-		]
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/ShipMethodsSorting@1.0.0",
-	"activation_id": "11",
-	"extension_id": "3705"
+    "name": "ShipMethodsSorting",
+    "fantasyName": "Ship Methods Sorting",
+    "vendor": "CS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "Sorting of the ship methods during checkout.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/Main/JavaScript/CS.ShipMethodsSorting.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/OrderWizard.Module.ShipMethod/JavaScript/ShipMethodsSorting.OrderWizard.Module.Shipmethod.js",
+                    "Modules/OrderWizard.Module.ShipMethod/JavaScript/ShipMethodsSorting.OrderWizard.Module.ShowShipments.js",
+                    "Modules/OrderWizard.Module.ShipMethod/JavaScript/ShipMethodsSorting.Helper.js",
+                    "Modules/Main/JavaScript/CS.ShipMethodsSorting.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Main/SuiteScript/CS.ShipMethodsSorting.js",
+        "files": [
+            "Modules/LiveOrder/SuiteScript/ShipMethodsSorting.LiveOrder.Model.js",
+            "Modules/Main/SuiteScript/CS.ShipMethodsSorting.js"
+        ]
+    },
+    "local_folder": "Workspace\\ShipMethodsSorting",
+    "suitescript2": {
+        "files": []
+    }
 }

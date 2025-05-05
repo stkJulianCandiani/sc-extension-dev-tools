@@ -1,48 +1,47 @@
 {
-	"name": "GTMCustomEvents",
-	"fantasyName": "GTM Custom Events",
-	"vendor": "Softtek",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": ">=20.1.0",
-		"SCS": ">=20.1.0"
-	},
-	"version": "1.0.0",
-	"description": "GTM Custom Events",
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/JavaScript/GTMCustomEvents.Shopping.entrypoint.js",
-			"checkout": "Modules/JavaScript/GTMCustomEvents.Checkout.entrypoint.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/JavaScript/GTMCustomEvents.Checkout.entrypoint.js",
-					"Modules/JavaScript/GTMCustomEvents.Items.Utilities.js",
-					"Modules/JavaScript/GTMCustomEvents.GoogleTagManager.js",
-					"Modules/JavaScript/GTMCustomEvents.Shopping.entrypoint.js",
-					"Modules/JavaScript/GTMCustomEvents.View.js",
-					"Modules/JavaScript/GTMCustomEvents.Wizard.View.js",
-					"Modules/JavaScript/GTMCustomEvents.entrypoint.js",
-					"Modules/JavaScript/GTMCUstomEvents.Shopping.entrypoint.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/JavaScript/GTMCustomEvents.Checkout.entrypoint.js",
-					"Modules/JavaScript/GTMCustomEvents.Items.Utilities.js",
-					"Modules/JavaScript/GTMCustomEvents.GoogleTagManager.js",
-					"Modules/JavaScript/GTMCustomEvents.Shopping.entrypoint.js",
-					"Modules/JavaScript/GTMCustomEvents.View.js",
-					"Modules/JavaScript/GTMCustomEvents.Wizard.View.js",
-					"Modules/JavaScript/GTMCustomEvents.entrypoint.js",
-					"Modules/JavaScript/GTMCUstomEvents.Shopping.entrypoint.js"
-				]
-			}
-		}
-	},
-	"path": "SuiteScripts/Deploy_Extensions/Softtek/GTMCustomEvents@1.0.0",
-	"activation_id": "11",
-	"extension_id": "12901"
+    "name": "GTMCustomEvents",
+    "fantasyName": "GTM Custom Events",
+    "vendor": "Softtek",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "GTM Custom Events",
+    "skins": [],
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/JavaScript/GTMCustomEvents.Shopping.entrypoint.js",
+            "checkout": "Modules/JavaScript/GTMCustomEvents.Checkout.entrypoint.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/JavaScript/GTMCustomEvents.Checkout.entrypoint.js",
+                    "Modules/JavaScript/GTMCustomEvents.Items.Utilities.js",
+                    "Modules/JavaScript/GTMCustomEvents.GoogleTagManager.js",
+                    "Modules/JavaScript/GTMCustomEvents.Shopping.entrypoint.js",
+                    "Modules/JavaScript/GTMCustomEvents.View.js",
+                    "Modules/JavaScript/GTMCustomEvents.Wizard.View.js",
+                    "Modules/JavaScript/GTMCustomEvents.entrypoint.js",
+                    "Modules/JavaScript/GTMCUstomEvents.Shopping.entrypoint.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/JavaScript/GTMCustomEvents.Checkout.entrypoint.js",
+                    "Modules/JavaScript/GTMCustomEvents.Items.Utilities.js",
+                    "Modules/JavaScript/GTMCustomEvents.GoogleTagManager.js",
+                    "Modules/JavaScript/GTMCustomEvents.Shopping.entrypoint.js",
+                    "Modules/JavaScript/GTMCustomEvents.View.js",
+                    "Modules/JavaScript/GTMCustomEvents.Wizard.View.js",
+                    "Modules/JavaScript/GTMCustomEvents.entrypoint.js",
+                    "Modules/JavaScript/GTMCUstomEvents.Shopping.entrypoint.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\GTMCustomEvents"
 }

@@ -11,7 +11,34 @@
         "port": 7777
     },
     "fetchConfig": {
-        "extension": "AboutUsExtension,B2BPDPFieldsExtension,BackInStockNotificationExtension,ContactUsLandingPageExtension,ContactUsLeadFormExtension,CustomerSegmentsExtension,DownloadableItems,EFCoreExtension,ForgetPassword,FutureShipDate,GTMCustomEventsSCS,GlobalConfigurationExtension,InventoryDisplayExtension,ItemBadgesExtension,MatrixMultiAddExtension,ProductComparisonExtension,QtyAlert,QuantityAlert,QuickBuy,RemoveCCFromMyAccount,RemoveInventoryPerEmail,RequirePurchaseNumber,SizeChartExtension,StagingNoIndex,SummitThemeExtension"
+        "extension": "AboutUsExtension,B2BPDPFieldsExtension,BackInStockNotificationExtension,ContactUsLandingPageExtension,ContactUsLeadFormExtension,CustomerSegmentsExtension,DownloadableItems,EFCoreExtension,ForgetPassword,FutureShipDate,GTMCustomEventsSCS,GlobalConfigurationExtension,InventoryDisplayExtension,ItemBadgesExtension,MatrixMultiAddExtension,ProductComparisonExtension,QtyAlert,QuantityAlert,QuickBuy,RemoveCCFromMyAccount,RemoveInventoryPerEmail,RequirePurchaseNumber,SizeChartExtension,StagingNoIndex,SummitThemeExtension",
+        "overwrite_ext": [
+            "Workspace/DownloadableItems",
+            "Workspace/ForgetPassword",
+            "Workspace/FutureShipDate",
+            "Workspace/GTMCustomEventsSCS",
+            "Workspace/QtyAlert",
+            "Workspace/QuantityAlert",
+            "Workspace/QuickBuy",
+            "Workspace/RemoveCCFromMyAccount",
+            "Workspace/RemoveInventoryPerEmail",
+            "Workspace/RequirePurchaseNumber",
+            "Workspace/AboutUsExtension",
+            "Workspace/B2BPDPFieldsExtension",
+            "Workspace/BackInStockNotificationExtension",
+            "Workspace/ContactUsLandingPageExtension",
+            "Workspace/ContactUsLeadFormExtension",
+            "Workspace/CustomerSegmentsExtension",
+            "Workspace/EFCoreExtension",
+            "Workspace/GlobalConfigurationExtension",
+            "Workspace/InventoryDisplayExtension",
+            "Workspace/ItemBadgesExtension",
+            "Workspace/MatrixMultiAddExtension",
+            "Workspace/ProductComparisonExtension",
+            "Workspace/SizeChartExtension",
+            "Workspace/StagingNoIndex",
+            "Workspace/SummitThemeExtension"
+        ]
     },
     "extensionMode": true,
     "preserveManifest": false,
@@ -29,16 +56,16 @@
         "extensions_dest_name": "Deploy_Extensions",
         "extmech_parent": "-15",
         "extensions_path": [
-            "Workspace/ForgetPassword",
             "Workspace/DownloadableItems",
+            "Workspace/ForgetPassword",
             "Workspace/FutureShipDate",
             "Workspace/GTMCustomEventsSCS",
             "Workspace/QtyAlert",
             "Workspace/QuantityAlert",
-            "Workspace/QuickBuy",
+            "Workspace/RequirePurchaseNumber",
             "Workspace/RemoveCCFromMyAccount",
-            "Workspace/RemoveInventoryPerEmail",
-            "Workspace/RequirePurchaseNumber"
+            "Workspace/QuickBuy",
+            "Workspace/RemoveInventoryPerEmail"
         ],
         "theme_path": "Workspace/Extras/GSUSATHEME",
         "overrides_path": "Workspace/Extras/GSUSATHEME/Overrides"

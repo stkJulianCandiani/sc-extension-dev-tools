@@ -1,68 +1,67 @@
 {
-	"name": "OutOfStockNotification",
-	"fantasyName": "Out of Stock Notification",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.2",
-	"description": "Extension to alert out of stock information in PDP, Cart pages, MiniCart ",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"configuration": {
-		"files": [
-			"Modules/Main/Configuration/OutOfStockNotification.json"
-		]
-	},
-	"templates": {
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/Templates/out_of_stock_notification.tpl",
-					"Modules/Main/Templates/out_of_stock_notification_pdp.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/Main/Sass/_outofstocknotification-main.scss"
-		},
-		"files": [
-			"Modules/Main/Sass/_outofstocknotification-main.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CS.OutOfStockNotification.Main.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/CS.OutOfStockNotification.Main.js",
-					"Modules/Main/JavaScript/OutOfStockNotification.Helper.js",
-					"Modules/Main/JavaScript/OutOfStockNotification.PDP.View.js",
-					"Modules/Main/JavaScript/OutOfStockNotification.View.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/OutOfStockNotification@1.0.2",
-	"activation_id": "11",
-	"extension_id": "7601"
+    "name": "OutOfStockNotification",
+    "fantasyName": "Out of Stock Notification",
+    "vendor": "CS",
+    "version": "1.0.2",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Extension to alert out of stock information in PDP, Cart pages, MiniCart ",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/Main/Configuration/OutOfStockNotification.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Main/Sass/_outofstocknotification-main.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_outofstocknotification-main.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/Templates/out_of_stock_notification.tpl",
+                    "Modules/Main/Templates/out_of_stock_notification_pdp.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CS.OutOfStockNotification.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.OutOfStockNotification.Main.js",
+                    "Modules/Main/JavaScript/OutOfStockNotification.Helper.js",
+                    "Modules/Main/JavaScript/OutOfStockNotification.PDP.View.js",
+                    "Modules/Main/JavaScript/OutOfStockNotification.View.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\OutOfStockNotification",
+    "suitescript2": {
+        "files": []
+    }
 }

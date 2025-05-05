@@ -1,50 +1,49 @@
 {
-	"name": "CoreFixes",
-	"fantasyName": "Core Fixes",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.1",
-	"description": "This extension contains patches to the core components of SCA 20.1",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CS.CoreFixes.Main.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/CS.CoreFixes.Main.js",
-					"Modules/Main/JavaScript/Cart.Confirmation.View.NameFix.js",
-					"Modules/Main/JavaScript/ProductDetails.ImageGallery.View.ZoomFix.js"
-				]
-			}
-		}
-	},
-	"ssp-libraries": {
-		"entry_point": "Modules/Main/SuiteScript/LiveOrder.Model.Free.ShipMethods.js",
-		"files": [
-			"Modules/Main/SuiteScript/LiveOrder.Model.Free.ShipMethods.js"
-		]
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/CoreFixes@1.0.1",
-	"activation_id": "11",
-	"extension_id": "7901"
+    "name": "CoreFixes",
+    "fantasyName": "Core Fixes",
+    "vendor": "CS",
+    "version": "1.0.1",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "This extension contains patches to the core components of SCA 20.1",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CS.CoreFixes.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.CoreFixes.Main.js",
+                    "Modules/Main/JavaScript/Cart.Confirmation.View.NameFix.js",
+                    "Modules/Main/JavaScript/ProductDetails.ImageGallery.View.ZoomFix.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Main/SuiteScript/LiveOrder.Model.Free.ShipMethods.js",
+        "files": [
+            "Modules/Main/SuiteScript/LiveOrder.Model.Free.ShipMethods.js"
+        ]
+    },
+    "local_folder": "Workspace\\CoreFixes",
+    "suitescript2": {
+        "files": []
+    }
 }

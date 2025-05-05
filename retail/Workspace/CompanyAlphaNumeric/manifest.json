@@ -1,80 +1,79 @@
 {
-	"name": "CompanyAlphaNumeric",
-	"fantasyName": "Company Field Alphanumeric",
-	"vendor": "SuiteCommerceCustom",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.0",
-	"description": "This extensions makes the Company field in Shipping address and Billing addresss as alphanumeric.",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"configuration": {
-		"files": [
-			"Modules/CompanyAlphaNumeric/Configuration/CompanyAlphaNumeric.json"
-		]
-	},
-	"templates": {
-		"application": {
-			"myaccount": {
-				"files": [
-					"Modules/CompanyAlphaNumeric/Templates/sca_companyalphanumeric_companyalphanumeric.tpl"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/CompanyAlphaNumeric/Templates/sca_companyalphanumeric_companyalphanumeric.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"myaccount": "Modules/CompanyAlphaNumeric/Sass/_companyalphanumeric-companyalphanumeric.scss",
-			"checkout": "Modules/CompanyAlphaNumeric/Sass/_companyalphanumeric-companyalphanumeric.scss"
-		},
-		"files": [
-			"Modules/CompanyAlphaNumeric/Sass/_companyalphanumeric-companyalphanumeric.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"myaccount": "Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.js",
-			"checkout": "Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.js"
-		},
-		"application": {
-			"myaccount": {
-				"files": [
-					"Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.js",
-					"Modules/CompanyAlphaNumeric/JavaScript/CompanyAlphaNumeric.View.js",
-					"Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.Model.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.js",
-					"Modules/CompanyAlphaNumeric/JavaScript/CompanyAlphaNumeric.View.js",
-					"Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.Model.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/SuiteCommerceCustom/CompanyAlphaNumeric@1.0.0",
-	"activation_id": "11",
-	"extension_id": "13401"
+    "name": "CompanyAlphaNumeric",
+    "fantasyName": "Company Field Alphanumeric",
+    "vendor": "SuiteCommerceCustom",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "This extensions makes the Company field in Shipping address and Billing addresss as alphanumeric.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/CompanyAlphaNumeric/Configuration/CompanyAlphaNumeric.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/CompanyAlphaNumeric/Sass/_companyalphanumeric-companyalphanumeric.scss",
+            "checkout": "Modules/CompanyAlphaNumeric/Sass/_companyalphanumeric-companyalphanumeric.scss"
+        },
+        "files": [
+            "Modules/CompanyAlphaNumeric/Sass/_companyalphanumeric-companyalphanumeric.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/CompanyAlphaNumeric/Templates/sca_companyalphanumeric_companyalphanumeric.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/CompanyAlphaNumeric/Templates/sca_companyalphanumeric_companyalphanumeric.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.js",
+            "checkout": "Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.js",
+                    "Modules/CompanyAlphaNumeric/JavaScript/CompanyAlphaNumeric.View.js",
+                    "Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.js",
+                    "Modules/CompanyAlphaNumeric/JavaScript/CompanyAlphaNumeric.View.js",
+                    "Modules/CompanyAlphaNumeric/JavaScript/SCA.CompanyAlphaNumeric.CompanyAlphaNumeric.Model.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\CompanyAlphaNumeric",
+    "suitescript2": {
+        "files": []
+    }
 }

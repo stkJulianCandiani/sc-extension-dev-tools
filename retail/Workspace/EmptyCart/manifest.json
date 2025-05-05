@@ -1,60 +1,59 @@
 {
-	"name": "EmptyCart",
-	"fantasyName": "Empty Cart",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.2",
-	"description": "Extension to empty cart in cart detail page",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"templates": {
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/Templates/emptycart_button.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/Main/Sass/_emptycart-main.scss"
-		},
-		"files": [
-			"Modules/Main/Sass/_emptycart-main.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CS.EmptyCart.Main.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/CS.EmptyCart.Main.js",
-					"Modules/Main/JavaScript/EmptyCart.Button.View.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/EmptyCart@1.0.2",
-	"activation_id": "11",
-	"extension_id": "6101"
+    "name": "EmptyCart",
+    "fantasyName": "Empty Cart",
+    "vendor": "CS",
+    "version": "1.0.2",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Extension to empty cart in cart detail page",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Main/Sass/_emptycart-main.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_emptycart-main.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/Templates/emptycart_button.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CS.EmptyCart.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.EmptyCart.Main.js",
+                    "Modules/Main/JavaScript/EmptyCart.Button.View.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\EmptyCart",
+    "suitescript2": {
+        "files": []
+    }
 }

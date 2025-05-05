@@ -1,7 +1,4 @@
-define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], function (
-    GoogleTagManager,
-    Tracker
-) {
+define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], function (GoogleTagManager, Tracker) {
     'use strict';
 
     _.extend(GoogleTagManager, {
@@ -17,23 +14,17 @@ define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], func
                         value: event.value || '',
                     },
                     eventCallback: event.callback,
-                    source: 'GTM',
                 };
 
                 // Triggers a Backbone.Event so others can subscribe to this event and add/replace data
                 // before is send it to Google Tag Manager
 
-                if (
-                    !JSON.parse(localStorage.getItem('trackEventValue') ?? '[]').includes(eventName)
-                ) {
+                if (!JSON.parse(localStorage.getItem('trackEventValue') ?? '[]').includes(eventName)) {
                     Tracker.trigger(eventName, eventData, event);
                     this.pushData(eventData);
                     localStorage.setItem(
                         'trackEventValue',
-                        JSON.stringify([
-                            ...(JSON.parse(localStorage.getItem('trackEventValue')) ?? []),
-                            eventName,
-                        ])
+                        JSON.stringify([...(JSON.parse(localStorage.getItem('trackEventValue')) ?? []), eventName])
                     );
                 }
             }
@@ -64,7 +55,6 @@ define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], func
                     value: parseFloat(model.get('summary').discountedsubtotal.toFixed(2)),
                     coupon: orderCoupon.join(', '),
                     items: [],
-                    source: 'GTM',
                 },
             };
 
@@ -90,9 +80,7 @@ define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], func
                 var item_brand = '';
                 var item_category = item.get('_url');
                 var total = line.get('aggregatedTotal')
-                    ? parseFloat(
-                          parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2)
-                      )
+                    ? parseFloat(parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                     : line.get('amount') - discount;
                 var price = parseFloat((total / quantity).toFixed(2));
                 var finalPrice =
@@ -107,16 +95,11 @@ define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], func
                                               .reduce(function (result, _promocode) {
                                                   if (
                                                       _promocode.type === 'ORDER' &&
-                                                      eventData.ecommerce.coupon.includes(
-                                                          _promocode.code
-                                                      )
+                                                      eventData.ecommerce.coupon.includes(_promocode.code)
                                                   ) {
-                                                      var newDiscount =
-                                                          result + parseFloat(_promocode.rate);
+                                                      var newDiscount = result + parseFloat(_promocode.rate);
 
-                                                      return Math.abs(newDiscount) > 100
-                                                          ? -100
-                                                          : newDiscount;
+                                                      return Math.abs(newDiscount) > 100 ? -100 : newDiscount;
                                                   }
 
                                                   return Math.abs(result) > 100 ? -100 : result;
@@ -190,7 +173,6 @@ define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], func
                     value: parseFloat(model.get('summary').discountedsubtotal.toFixed(2)),
                     coupon: orderCoupon.join(', '),
                     items: [],
-                    source: 'GTM',
                 },
             };
 
@@ -216,9 +198,7 @@ define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], func
                 var item_brand = '';
                 var item_category = item.get('_url');
                 var total = line.get('aggregatedTotal')
-                    ? parseFloat(
-                          parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2)
-                      )
+                    ? parseFloat(parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                     : line.get('amount') - discount;
                 var price = parseFloat((total / quantity).toFixed(2));
                 var finalPrice =
@@ -233,16 +213,11 @@ define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], func
                                               .reduce(function (result, _promocode) {
                                                   if (
                                                       _promocode.type === 'ORDER' &&
-                                                      eventData.ecommerce.coupon.includes(
-                                                          _promocode.code
-                                                      )
+                                                      eventData.ecommerce.coupon.includes(_promocode.code)
                                                   ) {
-                                                      var newDiscount =
-                                                          result + parseFloat(_promocode.rate);
+                                                      var newDiscount = result + parseFloat(_promocode.rate);
 
-                                                      return Math.abs(newDiscount) > 100
-                                                          ? -100
-                                                          : newDiscount;
+                                                      return Math.abs(newDiscount) > 100 ? -100 : newDiscount;
                                                   }
 
                                                   return Math.abs(result) > 100 ? -100 : result;
@@ -317,7 +292,6 @@ define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], func
                     value: parseFloat(model.get('summary').discountedsubtotal.toFixed(2)),
                     coupon: orderCoupon.join(', '),
                     items: [],
-                    source: 'GTM',
                 },
             };
 
@@ -343,9 +317,7 @@ define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], func
                 var item_brand = '';
                 var item_category = item.get('_url');
                 var total = line.get('aggregatedTotal')
-                    ? parseFloat(
-                          parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2)
-                      )
+                    ? parseFloat(parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                     : line.get('amount') - discount;
                 var price = parseFloat((total / quantity).toFixed(2));
                 var finalPrice =
@@ -360,16 +332,11 @@ define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], func
                                               .reduce(function (result, _promocode) {
                                                   if (
                                                       _promocode.type === 'ORDER' &&
-                                                      eventData.ecommerce.coupon.includes(
-                                                          _promocode.code
-                                                      )
+                                                      eventData.ecommerce.coupon.includes(_promocode.code)
                                                   ) {
-                                                      var newDiscount =
-                                                          result + parseFloat(_promocode.rate);
+                                                      var newDiscount = result + parseFloat(_promocode.rate);
 
-                                                      return Math.abs(newDiscount) > 100
-                                                          ? -100
-                                                          : newDiscount;
+                                                      return Math.abs(newDiscount) > 100 ? -100 : newDiscount;
                                                   }
 
                                                   return Math.abs(result) > 100 ? -100 : result;
@@ -435,7 +402,6 @@ define('GTMCustomEvents.GoogleTagManager', ['GoogleTagManager', 'Tracker'], func
                     tax,
                     shipping,
                     items: [],
-                    source: 'GTM',
                 },
             };
 

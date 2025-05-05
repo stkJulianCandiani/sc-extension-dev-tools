@@ -1,8 +1,8 @@
-define('GTMShoppingEvents.GoogleTagManager', [
-    'GoogleTagManager',
-    'LiveOrder.Model',
-    'Tracker',
-], function (GoogleTagManager, LiveOrderModel, Tracker) {
+define('GTMShoppingEvents.GoogleTagManager', ['GoogleTagManager', 'LiveOrder.Model', 'Tracker'], function (
+    GoogleTagManager,
+    LiveOrderModel,
+    Tracker
+) {
     'use strict';
 
     _.extend(GoogleTagManager, {
@@ -58,12 +58,8 @@ define('GTMShoppingEvents.GoogleTagManager', [
 
                     selectedItems.push(itemSelected);
                 } else {
-                    itemSelected.listId = itemSelected.isInCart
-                        ? itemSelected.listId
-                        : item.get('item_list_id');
-                    itemSelected.listName = itemSelected.isInCart
-                        ? itemSelected.listName
-                        : item.get('item_list_name');
+                    itemSelected.listId = itemSelected.isInCart ? itemSelected.listId : item.get('item_list_id');
+                    itemSelected.listName = itemSelected.isInCart ? itemSelected.listName : item.get('item_list_name');
                 }
 
                 localStorage.setItem('selectedItems', JSON.stringify(selectedItems));
@@ -73,12 +69,9 @@ define('GTMShoppingEvents.GoogleTagManager', [
             var eventNameIds = ['select_item', 'view_item'];
             var result = this.findCategoryAndListInDataLayer(line);
 
-            var isAgregatedTotal = line.get('aggregatedTotal')
-                ? line.get('aggregatedTotal').length > 0
-                : false;
+            var isAgregatedTotal = line.get('aggregatedTotal') ? line.get('aggregatedTotal').length > 0 : false;
             var agregatedFormated = isAgregatedTotal ? line.get('aggregatedTotal') : '';
-            var agregatedAmount =
-                agregatedFormated !== '' ? parseFloat(agregatedFormated.replace('$', '')) : false;
+            var agregatedAmount = agregatedFormated !== '' ? parseFloat(agregatedFormated.replace('$', '')) : false;
             var item_id = item.get('itemid');
             var item_name = line.get('item').get('_name');
             var quantity = line.get('quantity');
@@ -89,8 +82,7 @@ define('GTMShoppingEvents.GoogleTagManager', [
             var haveDiscount =
                 !isNaN(item.get('_comparePriceAgainst')) &&
                 !isNaN(item.get('onlinecustomerprice_detail').onlinecustomerprice)
-                    ? item.get('_comparePriceAgainst') !==
-                      item.get('onlinecustomerprice_detail').onlinecustomerprice
+                    ? item.get('_comparePriceAgainst') !== item.get('onlinecustomerprice_detail').onlinecustomerprice
                     : false;
             var discount = haveDiscount ? item.get('_comparePriceAgainst') - price : 0;
             discount = parseFloat(discount.toFixed(2));
@@ -124,7 +116,6 @@ define('GTMShoppingEvents.GoogleTagManager', [
                     item_list_name,
                     items: items,
                 },
-                source: 'GTM',
             };
 
             //view_item
@@ -135,7 +126,6 @@ define('GTMShoppingEvents.GoogleTagManager', [
                     value: total,
                     items: items,
                 },
-                source: 'GTM',
             };
 
             this.item = null;
@@ -167,14 +157,9 @@ define('GTMShoppingEvents.GoogleTagManager', [
                     return _itemSelected.displayName === item._keyMapping._name(item);
                 });
 
-                var isAgregatedTotal = line.get('aggregatedTotal')
-                    ? line.get('aggregatedTotal').length > 0
-                    : false;
+                var isAgregatedTotal = line.get('aggregatedTotal') ? line.get('aggregatedTotal').length > 0 : false;
                 var agregatedFormated = isAgregatedTotal ? line.get('aggregatedTotal') : '';
-                var agregatedAmount =
-                    agregatedFormated !== ''
-                        ? parseFloat(agregatedFormated.replace('$', ''))
-                        : false;
+                var agregatedAmount = agregatedFormated !== '' ? parseFloat(agregatedFormated.replace('$', '')) : false;
                 var item_id = item.get('itemid');
                 var item_name = item.get('_name');
                 var quantity = line.get('quantity');
@@ -182,8 +167,7 @@ define('GTMShoppingEvents.GoogleTagManager', [
                     ? parseFloat((agregatedAmount / quantity).toFixed(2))
                     : item.get('onlinecustomerprice');
                 var total = price * quantity;
-                var haveDiscount =
-                    item.get('_comparePriceAgainst') !== item.get('onlinecustomerprice');
+                var haveDiscount = item.get('_comparePriceAgainst') !== item.get('onlinecustomerprice');
                 var discount = haveDiscount ? item.get('_comparePriceAgainst') - price : 0;
                 var coupon = line.get('promotion_discount') || ''; // no funciona
                 var item_category = this.getCategory();
@@ -216,7 +200,6 @@ define('GTMShoppingEvents.GoogleTagManager', [
                                 variant,
                             },
                         ],
-                        source: 'GTM',
                     },
                 };
 
@@ -299,7 +282,6 @@ define('GTMShoppingEvents.GoogleTagManager', [
                             currency: SC.ENVIRONMENT.currencyCodeSpecifiedOnUrl,
                             coupon: orderCoupon.join(', '),
                             value: 0,
-                            source: 'GTM',
                         },
                     };
 
@@ -321,15 +303,9 @@ define('GTMShoppingEvents.GoogleTagManager', [
                         var item_id = _item.get('itemid');
                         var item_name = _item.get('_name');
                         var quantity = _item.get('quantity');
-                        var discount =
-                            line.attributes && line.get('discount')
-                                ? line.get('discount') / quantity
-                                : 0;
+                        var discount = line.attributes && line.get('discount') ? line.get('discount') / quantity : 0;
                         var discountByItem = parseFloat(
-                            (
-                                discount +
-                                (_item.get('pricelevel8') - _item.get('onlinecustomerprice'))
-                            ).toFixed(2)
+                            (discount + (_item.get('pricelevel8') - _item.get('onlinecustomerprice'))).toFixed(2)
                         );
                         var item_brand = '';
                         var item_category = _item.get('_url');
@@ -379,17 +355,13 @@ define('GTMShoppingEvents.GoogleTagManager', [
                     var item_brand = '';
                     var item_category = item.get('_url');
                     var total = line.get('aggregatedTotal')
-                        ? parseFloat(
-                              parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2)
-                          )
+                        ? parseFloat(parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                         : line.get('amount') - discount;
                     var price = parseFloat((total / quantity).toFixed(2));
                     var item_list_name = itemSelected ? itemSelected.listName : '';
                     var item_list_id = itemSelected ? itemSelected.listId : '';
                     var coupon = line.get('discounts_impact')
-                        ? line
-                              .get('discounts_impact')
-                              .discounts.map((_discount) => _discount.promotion_couponcode)
+                        ? line.get('discounts_impact').discounts.map((_discount) => _discount.promotion_couponcode)
                         : [];
                     var variant = _.map(selected_options, function (option) {
                         return option.get('value').label;
@@ -417,7 +389,6 @@ define('GTMShoppingEvents.GoogleTagManager', [
                                     variant,
                                 },
                             ],
-                            source: 'GTM',
                         },
                     };
                 }
@@ -446,7 +417,6 @@ define('GTMShoppingEvents.GoogleTagManager', [
                     currency: SC.ENVIRONMENT.currencyCodeSpecifiedOnUrl,
                     value: model.get('summary')?.discountedsubtotal || 0,
                     items: [],
-                    source: 'GTM',
                 },
             };
 
@@ -480,9 +450,7 @@ define('GTMShoppingEvents.GoogleTagManager', [
                     var item_brand = '';
                     var item_category = item.get('_url');
                     var total = line.get('aggregatedTotal')
-                        ? parseFloat(
-                              parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2)
-                          )
+                        ? parseFloat(parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                         : line.get('amount') - discount;
                     var price = parseFloat((total / quantity).toFixed(2));
                     var finalPrice =
@@ -497,16 +465,11 @@ define('GTMShoppingEvents.GoogleTagManager', [
                                                   .reduce(function (result, _promocode) {
                                                       if (
                                                           _promocode.type === 'ORDER' &&
-                                                          eventData.ecommerce.coupon.includes(
-                                                              _promocode.code
-                                                          )
+                                                          eventData.ecommerce.coupon.includes(_promocode.code)
                                                       ) {
-                                                          var newDiscount =
-                                                              result + parseFloat(_promocode.rate);
+                                                          var newDiscount = result + parseFloat(_promocode.rate);
 
-                                                          return Math.abs(newDiscount) > 100
-                                                              ? -100
-                                                              : newDiscount;
+                                                          return Math.abs(newDiscount) > 100 ? -100 : newDiscount;
                                                       }
 
                                                       return Math.abs(result) > 100 ? -100 : result;
@@ -521,9 +484,7 @@ define('GTMShoppingEvents.GoogleTagManager', [
                     var item_list_id = itemSelected ? itemSelected.listId : '';
                     var item_list_name = itemSelected ? itemSelected.listName : '';
                     var coupon = line.get('discounts_impact')
-                        ? line
-                              .get('discounts_impact')
-                              .discounts.map((_discount) => _discount.promotion_couponcode)
+                        ? line.get('discounts_impact').discounts.map((_discount) => _discount.promotion_couponcode)
                         : [];
                     var variant = _.map(selected_options, function (option) {
                         return option.get('value').label;
@@ -569,7 +530,6 @@ define('GTMShoppingEvents.GoogleTagManager', [
                     value: model.get('summary').discountedsubtotal,
                     coupon: orderCoupon.join(', '),
                     items: [],
-                    source: 'GTM',
                 },
             };
 
@@ -597,9 +557,7 @@ define('GTMShoppingEvents.GoogleTagManager', [
                 var item_brand = '';
                 var item_category = item.get('_url');
                 var total = line.get('aggregatedTotal')
-                    ? parseFloat(
-                          parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2)
-                      )
+                    ? parseFloat(parseFloat(line.get('aggregatedTotal').replace('$', '')).toFixed(2))
                     : line.get('amount') - discount;
                 var price = parseFloat((total / quantity).toFixed(2));
                 var finalPrice =
@@ -614,16 +572,11 @@ define('GTMShoppingEvents.GoogleTagManager', [
                                               .reduce(function (result, _promocode) {
                                                   if (
                                                       _promocode.type === 'ORDER' &&
-                                                      eventData.ecommerce.coupon.includes(
-                                                          _promocode.code
-                                                      )
+                                                      eventData.ecommerce.coupon.includes(_promocode.code)
                                                   ) {
-                                                      var newDiscount =
-                                                          result + parseFloat(_promocode.rate);
+                                                      var newDiscount = result + parseFloat(_promocode.rate);
 
-                                                      return Math.abs(newDiscount) > 100
-                                                          ? -100
-                                                          : newDiscount;
+                                                      return Math.abs(newDiscount) > 100 ? -100 : newDiscount;
                                                   }
 
                                                   return Math.abs(result) > 100 ? -100 : result;
@@ -634,14 +587,11 @@ define('GTMShoppingEvents.GoogleTagManager', [
                               ).toFixed(2)
                           )
                         : price;
-                discountByItem +=
-                    finalPrice !== price ? parseFloat((price - finalPrice).toFixed(2)) : 0.0;
+                discountByItem += finalPrice !== price ? parseFloat((price - finalPrice).toFixed(2)) : 0.0;
                 var item_list_id = itemSelected ? itemSelected.listId : '';
                 var item_list_name = itemSelected ? itemSelected.listName : '';
                 var coupon = line.get('discounts_impact')
-                    ? line
-                          .get('discounts_impact')
-                          .discounts.map((_discount) => _discount.promotion_couponcode)
+                    ? line.get('discounts_impact').discounts.map((_discount) => _discount.promotion_couponcode)
                     : [];
                 var variant = _.map(selected_options, function (option) {
                     return option.get('value').label;
@@ -686,7 +636,6 @@ define('GTMShoppingEvents.GoogleTagManager', [
                     item_list_name: itemListName,
                     items: [],
                 },
-                source: 'GTM',
             };
 
             eventData.ecommerce.items = items.models.map(function (_item, index) {

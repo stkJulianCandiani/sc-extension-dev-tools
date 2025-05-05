@@ -1,94 +1,93 @@
 {
-	"name": "StateRetailDeliveryFee",
-	"fantasyName": "State Retail Delivery Fee",
-	"vendor": "ACS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.4",
-	"description": "Add state retail delivery fee to the sales order. Update: 1.0.4: My account fixes",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": [
-				"services/RedirectPages.Service.ss"
-			]
-		}
-	},
-	"configuration": {
-		"files": [
-			"Modules/StateRetailDeliveryFee/Configuration/StateRetailDeliveryFee.json"
-		]
-	},
-	"templates": {
-		"application": {
-			"checkout": {
-				"files": [
-					"Modules/StateRetailDeliveryFee/Templates/order_history_summary_delivery_fee.tpl"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/StateRetailDeliveryFee/Templates/order_history_summary_delivery_fee.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"checkout": "Modules/StateRetailDeliveryFee/Sass/_stateRetailDeliveryFee.scss",
-			"myaccount": "Modules/StateRetailDeliveryFee/Sass/_stateRetailDeliveryFee.scss"
-		},
-		"files": [
-			"Modules/StateRetailDeliveryFee/Sass/_stateRetailDeliveryFee.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Shopping.EntryPoint.js",
-			"checkout": "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Checkout.EntryPoint.js",
-			"myaccount": "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.MyAccount.EntryPoint.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Shopping.EntryPoint.js",
-					"Modules/StateRetailDeliveryFee/JavaScript/RedirectPages.Model.js",
-					"Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Helper.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Checkout.EntryPoint.js",
-					"Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Helper.js"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.MyAccount.EntryPoint.js",
-					"Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Helper.js"
-				]
-			}
-		}
-	},
-	"ssp-libraries": {
-		"entry_point": "Modules/StateRetailDeliveryFee/SuiteScript/LiveOrder.Model.StateRetailDeliveryFee.js",
-		"files": [
-			"Modules/StateRetailDeliveryFee/SuiteScript/LiveOrder.Model.StateRetailDeliveryFee.js",
-			"Modules/StateRetailDeliveryFee/SuiteScript/StateRetailDeliveryFee.Helper.js",
-			"Modules/StateRetailDeliveryFee/SuiteScript/RedirectPages.Model.js",
-			"Modules/StateRetailDeliveryFee/SuiteScript/RedirectPages.ServiceController.js"
-		]
-	},
-	"path": "SuiteScripts/Deploy_Extensions/ACS/StateRetailDeliveryFee@1.0.4",
-	"activation_id": "11",
-	"extension_id": "11101"
+    "name": "StateRetailDeliveryFee",
+    "fantasyName": "State Retail Delivery Fee",
+    "vendor": "ACS",
+    "version": "1.0.4",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Add state retail delivery fee to the sales order. Update: 1.0.4: My account fixes",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/RedirectPages.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/StateRetailDeliveryFee/Configuration/StateRetailDeliveryFee.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/StateRetailDeliveryFee/Sass/_stateRetailDeliveryFee.scss",
+            "myaccount": "Modules/StateRetailDeliveryFee/Sass/_stateRetailDeliveryFee.scss"
+        },
+        "files": [
+            "Modules/StateRetailDeliveryFee/Sass/_stateRetailDeliveryFee.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/StateRetailDeliveryFee/Templates/order_history_summary_delivery_fee.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/StateRetailDeliveryFee/Templates/order_history_summary_delivery_fee.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Shopping.EntryPoint.js",
+            "checkout": "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Checkout.EntryPoint.js",
+            "myaccount": "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.MyAccount.EntryPoint.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Shopping.EntryPoint.js",
+                    "Modules/StateRetailDeliveryFee/JavaScript/RedirectPages.Model.js",
+                    "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Helper.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Checkout.EntryPoint.js",
+                    "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Helper.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.MyAccount.EntryPoint.js",
+                    "Modules/StateRetailDeliveryFee/JavaScript/StateRetailDeliveryFee.Helper.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/StateRetailDeliveryFee/SuiteScript/LiveOrder.Model.StateRetailDeliveryFee.js",
+        "files": [
+            "Modules/StateRetailDeliveryFee/SuiteScript/LiveOrder.Model.StateRetailDeliveryFee.js",
+            "Modules/StateRetailDeliveryFee/SuiteScript/StateRetailDeliveryFee.Helper.js",
+            "Modules/StateRetailDeliveryFee/SuiteScript/RedirectPages.Model.js",
+            "Modules/StateRetailDeliveryFee/SuiteScript/RedirectPages.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\StateRetailDeliveryFee"
 }

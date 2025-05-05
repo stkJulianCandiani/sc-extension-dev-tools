@@ -1,72 +1,71 @@
 {
-	"name": "SharedWishlist",
-	"fantasyName": "Shared Wishlist",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": ">=20.1.0",
-		"SCS": ">=20.1.0"
-	},
-	"version": "1.0.1",
-	"description": "Allows users to share wishlists from myaccount.",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"internals": {
-			"files": [
-				"internals/Email Template - Product List Share.html"
-			]
-		}
-	},
-	"templates": {
-		"application": {
-			"myaccount": {
-				"files": [
-					"Modules/Main/Templates/sharedwishlist_product_list_list_details.tpl",
-					"Modules/Main/Templates/sharedwishlist_share_button.tpl",
-					"Modules/Main/Templates/sharedwishlist_share_share_list.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"myaccount": "Modules/Main/Sass/_sharedwishlist.scss"
-		},
-		"files": [
-			"Modules/Main/Sass/_sharedwishlist.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"myaccount": "Modules/Main/JavaScript/CS.SharedWishList.Main.js"
-		},
-		"application": {
-			"myaccount": {
-				"files": [
-					"Modules/Main/JavaScript/CS.SharedWishList.Main.js",
-					"Modules/Main/JavaScript/SharedWishList.ShareList.Button.View.js",
-					"Modules/Main/JavaScript/SharedWishList.ShareList.View.js",
-					"Modules/ProductList/JavaScript/SharedWishList.ProductList.ListDetails.View.js"
-				]
-			}
-		}
-	},
-	"ssp-libraries": {
-		"entry_point": "Modules/ProductList/SuiteScript/SharedWishList.ProductList.Model.js",
-		"files": [
-			"Modules/ProductList/SuiteScript/SharedWishList.ProductList.Model.js"
-		]
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/SharedWishlist@1.0.1",
-	"activation_id": "11",
-	"extension_id": "3802"
+    "name": "SharedWishlist",
+    "fantasyName": "Shared Wishlist",
+    "vendor": "CS",
+    "version": "1.0.1",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "Allows users to share wishlists from myaccount.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "internals": {
+            "files": [
+                "internals/Email Template - Product List Share.html"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/Main/Sass/_sharedwishlist.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_sharedwishlist.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/Main/Templates/sharedwishlist_product_list_list_details.tpl",
+                    "Modules/Main/Templates/sharedwishlist_share_button.tpl",
+                    "Modules/Main/Templates/sharedwishlist_share_share_list.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/Main/JavaScript/CS.SharedWishList.Main.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.SharedWishList.Main.js",
+                    "Modules/Main/JavaScript/SharedWishList.ShareList.Button.View.js",
+                    "Modules/Main/JavaScript/SharedWishList.ShareList.View.js",
+                    "Modules/ProductList/JavaScript/SharedWishList.ProductList.ListDetails.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/ProductList/SuiteScript/SharedWishList.ProductList.Model.js",
+        "files": [
+            "Modules/ProductList/SuiteScript/SharedWishList.ProductList.Model.js"
+        ]
+    },
+    "local_folder": "Workspace\\SharedWishlist",
+    "suitescript2": {
+        "files": []
+    }
 }

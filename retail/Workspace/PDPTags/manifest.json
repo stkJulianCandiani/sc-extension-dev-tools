@@ -1,73 +1,72 @@
 {
-	"name": "PDPTags",
-	"fantasyName": "PDPTags",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": ">=20.1.0",
-		"SCS": ">=20.1.0"
-	},
-	"version": "1.0.2",
-	"description": "Adds tags elements to different product view. Update 1.0.1 > 1.0.2: Fixes issue in my account.",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"templates": {
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/Templates/cs_pdptags.tpl"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/Main/Templates/cs_pdptags.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"shopping": "Modules/Main/Sass/_pdptags-main.scss",
-			"checkout": "Modules/Main/Sass/_pdptags-main.scss"
-		},
-		"files": [
-			"Modules/Main/Sass/_pdptags-main.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CS.PDPTags.Main.js",
-			"checkout": "Modules/Main/JavaScript/CS.PDPTags.Main.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/CS.PDPTags.Main.js",
-					"Modules/Main/JavaScript/PDPTags.View.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/Main/JavaScript/CS.PDPTags.Main.js",
-					"Modules/Main/JavaScript/PDPTags.View.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/PDPTags@1.0.2",
-	"activation_id": "11",
-	"extension_id": "4504"
+    "name": "PDPTags",
+    "fantasyName": "PDPTags",
+    "vendor": "CS",
+    "version": "1.0.2",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "Adds tags elements to different product view. Update 1.0.1 > 1.0.2: Fixes issue in my account.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Main/Sass/_pdptags-main.scss",
+            "checkout": "Modules/Main/Sass/_pdptags-main.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_pdptags-main.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/Templates/cs_pdptags.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Main/Templates/cs_pdptags.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CS.PDPTags.Main.js",
+            "checkout": "Modules/Main/JavaScript/CS.PDPTags.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.PDPTags.Main.js",
+                    "Modules/Main/JavaScript/PDPTags.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.PDPTags.Main.js",
+                    "Modules/Main/JavaScript/PDPTags.View.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\PDPTags",
+    "suitescript2": {
+        "files": []
+    }
 }

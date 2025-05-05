@@ -1,50 +1,49 @@
 {
-	"name": "HideProducts",
-	"fantasyName": "Hide Products",
-	"vendor": "CS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.0",
-	"description": "Hide Products with flag from search ",
-	"assets": {
-		"img": {
-			"files": []
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": []
-		}
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CS.HideProducts.Main.js",
-			"myaccount": "Modules/Main/JavaScript/CS.HideProducts.Main.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/CS.HideProducts.Main.js",
-					"Modules/Main/JavaScript/HideProducts.MasterFacet.Helper.js"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/Main/JavaScript/CS.HideProducts.Main.js",
-					"Modules/Main/JavaScript/HideProducts.MasterFacet.Helper.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS/HideProducts@1.0.0",
-	"activation_id": "11",
-	"extension_id": "3406"
+    "name": "HideProducts",
+    "fantasyName": "Hide Products",
+    "vendor": "CS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Hide Products with flag from search ",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CS.HideProducts.Main.js",
+            "myaccount": "Modules/Main/JavaScript/CS.HideProducts.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.HideProducts.Main.js",
+                    "Modules/Main/JavaScript/HideProducts.MasterFacet.Helper.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.HideProducts.Main.js",
+                    "Modules/Main/JavaScript/HideProducts.MasterFacet.Helper.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\HideProducts",
+    "suitescript2": {
+        "files": []
+    }
 }

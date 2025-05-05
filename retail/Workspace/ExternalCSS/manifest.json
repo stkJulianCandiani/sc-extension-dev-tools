@@ -1,46 +1,45 @@
 {
-	"name": "ExternalCSS",
-	"fantasyName": "External CSS",
-	"vendor": "CS-eComm",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "20.2.0",
-	"description": "Allows external CSS files to be referenced by the application",
-	"assets": {},
-	"configuration": {
-		"files": [
-			"Modules/Main/Configuration/Main.json"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/CSeComm.ExternalCSS.Shopping.js",
-			"myaccount": "Modules/Main/JavaScript/CSeComm.ExternalCSS.MyAccount.js",
-			"checkout": "Modules/Main/JavaScript/CSeComm.ExternalCSS.Checkout.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/CSeComm.ExternalCSS.Shopping.js"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/Main/JavaScript/CSeComm.ExternalCSS.MyAccount.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/Main/JavaScript/CSeComm.ExternalCSS.Checkout.js"
-				]
-			}
-		}
-	},
-	"path": "SuiteScripts/Deploy_Extensions/CS-eComm/ExternalCSS@20.2.0",
-	"activation_id": "11",
-	"extension_id": "6601"
+    "name": "ExternalCSS",
+    "fantasyName": "External CSS",
+    "vendor": "CS-eComm",
+    "version": "20.2.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Allows external CSS files to be referenced by the application",
+    "skins": [],
+    "assets": {},
+    "configuration": {
+        "files": [
+            "Modules/Main/Configuration/Main.json"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/CSeComm.ExternalCSS.Shopping.js",
+            "myaccount": "Modules/Main/JavaScript/CSeComm.ExternalCSS.MyAccount.js",
+            "checkout": "Modules/Main/JavaScript/CSeComm.ExternalCSS.Checkout.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/CSeComm.ExternalCSS.Shopping.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Main/JavaScript/CSeComm.ExternalCSS.MyAccount.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/CSeComm.ExternalCSS.Checkout.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\ExternalCSS"
 }

@@ -1,27 +1,26 @@
 {
-	"name": "ReplaceForgotPasswordMsg",
-	"fantasyName": "Replace ForgotPassword Message",
-	"vendor": "ACS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.0",
-	"description": "Replace ForgotPassword Message.",
-	"configuration": {
-		"files": [
-			"Modules/ReplaceForgotPasswordMsg/Configuration/ForgotPasswordMsg.json"
-		]
-	},
-	"ssp-libraries": {
-		"entry_point": "Modules/ReplaceForgotPasswordMsg/SuiteScript/Account.Model.UpdateForgotMessage.js",
-		"files": [
-			"Modules/ReplaceForgotPasswordMsg/SuiteScript/Account.Model.UpdateForgotMessage.js"
-		]
-	},
-	"path": "SuiteScripts/Deploy_Extensions/ACS/ReplaceForgotPasswordMsg@1.0.0",
-	"activation_id": "11",
-	"extension_id": "10501"
+    "name": "ReplaceForgotPasswordMsg",
+    "fantasyName": "Replace ForgotPassword Message",
+    "vendor": "ACS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Replace ForgotPassword Message.",
+    "skins": [],
+    "configuration": {
+        "files": [
+            "Modules/ReplaceForgotPasswordMsg/Configuration/ForgotPasswordMsg.json"
+        ]
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/ReplaceForgotPasswordMsg/SuiteScript/Account.Model.UpdateForgotMessage.js",
+        "files": [
+            "Modules/ReplaceForgotPasswordMsg/SuiteScript/Account.Model.UpdateForgotMessage.js"
+        ]
+    },
+    "local_folder": "Workspace\\ReplaceForgotPasswordMsg"
 }

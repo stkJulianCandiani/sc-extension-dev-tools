@@ -1,162 +1,161 @@
 {
-	"name": "StoreLocator",
-	"fantasyName": "Store Locator",
-	"vendor": "SuiteCommerce",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.1.2",
-	"description": "SCA Extension version store locator (migrated from sca vinson)",
-	"assets": {
-		"img": {
-			"files": [
-				"img/councilIcon.png",
-				"img/retailIcon.png",
-				"img/position-marker.png"
-			]
-		},
-		"fonts": {
-			"files": []
-		},
-		"services": {
-			"files": [
-				"services/StoreLocator.Footer.Service.ss"
-			]
-		},
-		"internal": {
-			"files": [
-				"internal/GeoIp.Configuration.js"
-			]
-		}
-	},
-	"configuration": {
-		"files": [
-			"Modules/Main/Configuration/StoreLocator.json"
-		]
-	},
-	"templates": {
-		"application": {
-			"checkout": {
-				"files": [
-					"Modules/FooterStoreLocator/Templates/storelocator_footerstorelocator.tpl",
-					"Modules/Location.SCA/Templates/locator_venue_details_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_details_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_list_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_main_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_results_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_search_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_tooltip_custom.tpl"
-				]
-			},
-			"shopping": {
-				"files": [
-					"Modules/FooterStoreLocator/Templates/storelocator_footerstorelocator.tpl",
-					"Modules/Location.SCA/Templates/locator_venue_details_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_details_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_list_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_main_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_results_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_search_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_tooltip_custom.tpl"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/FooterStoreLocator/Templates/storelocator_footerstorelocator.tpl",
-					"Modules/Location.SCA/Templates/locator_venue_details_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_details_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_list_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_main_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_results_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_search_custom.tpl",
-					"Modules/StoreLocator/Templates/store_locator_tooltip_custom.tpl"
-				]
-			}
-		}
-	},
-	"sass": {
-		"entry_points": {
-			"checkout": "Modules/Main/Sass/_store-locator.scss",
-			"shopping": "Modules/Main/Sass/_store-locator-shopping.scss",
-			"myaccount": "Modules/FooterStoreLocator/Sass/_store-locator-footer.scss"
-		},
-		"files": [
-			"Modules/Main/Sass/_store-locator.scss",
-			"Modules/Main/Sass/_store-locator-main.scss",
-			"Modules/Main/Sass/_store-locator-location.scss",
-			"Modules/Main/Sass/_store-locator-icons.scss",
-			"Modules/Main/Sass/_store-locator-shopping.scss",
-			"Modules/FooterStoreLocator/Sass/_store-locator-footer.scss",
-			"Modules/FooterStoreLocator/Sass/_storelocator-footerstorelocator.scss"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"checkout": "Modules/Main/JavaScript/CS.StoreLocator.Main.Checkout.js",
-			"shopping": "Modules/Main/JavaScript/CS.StoreLocator.Main.Shopping.js",
-			"myaccount": "Modules/Main/JavaScript/CS.StoreLocator.Main.MyAccount.js"
-		},
-		"application": {
-			"checkout": {
-				"files": [
-					"Modules/Main/JavaScript/CS.StoreLocator.Main.Checkout.js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Details.View.js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.List.View.js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Main.View..js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Results.View.js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Search.View.js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Tooltip.View.js",
-					"Modules/Location.SCA/JavaScript/StoreLocator.Location.VenueDetails.View.js",
-					"Modules/StoreLocatorGoogleMapsImplementation/JavaScript/StoreLocator.ReferenceMap.js",
-					"Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.js",
-					"Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.Model.js",
-					"Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.View.js"
-				]
-			},
-			"shopping": {
-				"files": [
-					"Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.js",
-					"Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.Model.js",
-					"Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.View.js",
-					"Modules/Main/JavaScript/CS.StoreLocator.Main.Shopping.js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Details.View.js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.List.View.js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Main.View..js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Results.View.js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Search.View.js",
-					"Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Tooltip.View.js",
-					"Modules/Location.SCA/JavaScript/StoreLocator.Location.VenueDetails.View.js",
-					"Modules/StoreLocatorGoogleMapsImplementation/JavaScript/StoreLocator.ReferenceMap.js"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.js",
-					"Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.Model.js",
-					"Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.View.js",
-					"Modules/Main/JavaScript/CS.StoreLocator.Main.MyAccount.js"
-				]
-			}
-		}
-	},
-	"ssp-libraries": {
-		"entry_point": "Modules/Main/SuiteScript/CS.StoreLocator.Main.js",
-		"files": [
-			"Modules/FooterStoreLocator/SuiteScript/StoreLocator.Footer.ServiceController.js",
-			"Modules/GeoIPLocation/SuiteScript/GeoIp.Model.js",
-			"Modules/GeoIPLocation/SuiteScript/GeoIp.Configuration.js",
-			"Modules/Main/SuiteScript/CS.StoreLocator.Main.js",
-			"Modules/StoreLocator/SuiteScript/StoreLocator.StoreLocator.Model.js",
-			"Modules/Main/SuiteScript/StoreLocator.Store.Model.js"
-		]
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/SuiteCommerce/StoreLocator@1.1.2",
-	"activation_id": "11",
-	"extension_id": "13801"
+    "name": "StoreLocator",
+    "fantasyName": "Store Locator",
+    "vendor": "SuiteCommerce",
+    "version": "1.1.2",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "SCA Extension version store locator (migrated from sca vinson)",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": [
+                "img/councilIcon.png",
+                "img/retailIcon.png",
+                "img/position-marker.png"
+            ]
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/StoreLocator.Footer.Service.ss"
+            ]
+        },
+        "internal": {
+            "files": [
+                "internal/GeoIp.Configuration.js"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/Main/Configuration/StoreLocator.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/Main/Sass/_store-locator.scss",
+            "shopping": "Modules/Main/Sass/_store-locator-shopping.scss",
+            "myaccount": "Modules/FooterStoreLocator/Sass/_store-locator-footer.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_store-locator.scss",
+            "Modules/Main/Sass/_store-locator-main.scss",
+            "Modules/Main/Sass/_store-locator-location.scss",
+            "Modules/Main/Sass/_store-locator-icons.scss",
+            "Modules/Main/Sass/_store-locator-shopping.scss",
+            "Modules/FooterStoreLocator/Sass/_store-locator-footer.scss",
+            "Modules/FooterStoreLocator/Sass/_storelocator-footerstorelocator.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/FooterStoreLocator/Templates/storelocator_footerstorelocator.tpl",
+                    "Modules/Location.SCA/Templates/locator_venue_details_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_details_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_list_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_main_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_results_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_search_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_tooltip_custom.tpl"
+                ]
+            },
+            "shopping": {
+                "files": [
+                    "Modules/FooterStoreLocator/Templates/storelocator_footerstorelocator.tpl",
+                    "Modules/Location.SCA/Templates/locator_venue_details_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_details_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_list_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_main_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_results_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_search_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_tooltip_custom.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/FooterStoreLocator/Templates/storelocator_footerstorelocator.tpl",
+                    "Modules/Location.SCA/Templates/locator_venue_details_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_details_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_list_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_main_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_results_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_search_custom.tpl",
+                    "Modules/StoreLocator/Templates/store_locator_tooltip_custom.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/Main/JavaScript/CS.StoreLocator.Main.Checkout.js",
+            "shopping": "Modules/Main/JavaScript/CS.StoreLocator.Main.Shopping.js",
+            "myaccount": "Modules/Main/JavaScript/CS.StoreLocator.Main.MyAccount.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/CS.StoreLocator.Main.Checkout.js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Details.View.js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.List.View.js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Main.View..js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Results.View.js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Search.View.js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Tooltip.View.js",
+                    "Modules/Location.SCA/JavaScript/StoreLocator.Location.VenueDetails.View.js",
+                    "Modules/StoreLocatorGoogleMapsImplementation/JavaScript/StoreLocator.ReferenceMap.js",
+                    "Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.js",
+                    "Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.Model.js",
+                    "Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.View.js"
+                ]
+            },
+            "shopping": {
+                "files": [
+                    "Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.js",
+                    "Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.Model.js",
+                    "Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.View.js",
+                    "Modules/Main/JavaScript/CS.StoreLocator.Main.Shopping.js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Details.View.js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.List.View.js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Main.View..js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Results.View.js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Search.View.js",
+                    "Modules/StoreLocator/JavaScript/StoreLocator.StoreLocator.Tooltip.View.js",
+                    "Modules/Location.SCA/JavaScript/StoreLocator.Location.VenueDetails.View.js",
+                    "Modules/StoreLocatorGoogleMapsImplementation/JavaScript/StoreLocator.ReferenceMap.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.js",
+                    "Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.Model.js",
+                    "Modules/FooterStoreLocator/JavaScript/StoreLocator.Footer.View.js",
+                    "Modules/Main/JavaScript/CS.StoreLocator.Main.MyAccount.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Main/SuiteScript/CS.StoreLocator.Main.js",
+        "files": [
+            "Modules/FooterStoreLocator/SuiteScript/StoreLocator.Footer.ServiceController.js",
+            "Modules/GeoIPLocation/SuiteScript/GeoIp.Model.js",
+            "Modules/GeoIPLocation/SuiteScript/GeoIp.Configuration.js",
+            "Modules/Main/SuiteScript/CS.StoreLocator.Main.js",
+            "Modules/StoreLocator/SuiteScript/StoreLocator.StoreLocator.Model.js",
+            "Modules/Main/SuiteScript/StoreLocator.Store.Model.js"
+        ]
+    },
+    "local_folder": "Workspace\\StoreLocator",
+    "suitescript2": {
+        "files": []
+    }
 }

@@ -1,52 +1,51 @@
 {
-	"name": "PIICompliance",
-	"fantasyName": "PII Compliance Changes",
-	"vendor": "ACS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.0",
-	"description": "PII Compliance Changes",
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/JavaScript/PIICompliance.Main.js",
-			"myaccount": "Modules/Main/JavaScript/PIICompliance.Main.js",
-			"checkout": "Modules/Main/JavaScript/PIICompliance.Main.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/JavaScript/PIICompliance.Main.js",
-					"Modules/Main/JavaScript/GoogleTagManager.Extension.js",
-					"Modules/Main/JavaScript/Transaction.Model.Extension.js",
-					"Modules/Main/JavaScript/GTMApplicationSkeleton.View.js"
-				]
-			},
-			"myaccount": {
-				"files": [
-					"Modules/Main/JavaScript/PIICompliance.Main.js",
-					"Modules/Main/JavaScript/GoogleTagManager.Extension.js",
-					"Modules/Main/JavaScript/Transaction.Model.Extension.js",
-					"Modules/Main/JavaScript/GTMApplicationSkeleton.View.js"
-				]
-			},
-			"checkout": {
-				"files": [
-					"Modules/Main/JavaScript/PIICompliance.Main.js",
-					"Modules/Main/JavaScript/GoogleTagManager.Extension.js",
-					"Modules/Main/JavaScript/Transaction.Model.Extension.js",
-					"Modules/Main/JavaScript/GTMApplicationSkeleton.View.js"
-				]
-			}
-		}
-	},
-	"suitescript2": {
-		"files": []
-	},
-	"path": "SuiteScripts/Deploy_Extensions/ACS/PIICompliance@1.0.0",
-	"activation_id": "11",
-	"extension_id": "12401"
+    "name": "PIICompliance",
+    "fantasyName": "PII Compliance Changes",
+    "vendor": "ACS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "PII Compliance Changes",
+    "skins": [],
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/PIICompliance.Main.js",
+            "myaccount": "Modules/Main/JavaScript/PIICompliance.Main.js",
+            "checkout": "Modules/Main/JavaScript/PIICompliance.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/PIICompliance.Main.js",
+                    "Modules/Main/JavaScript/GoogleTagManager.Extension.js",
+                    "Modules/Main/JavaScript/Transaction.Model.Extension.js",
+                    "Modules/Main/JavaScript/GTMApplicationSkeleton.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Main/JavaScript/PIICompliance.Main.js",
+                    "Modules/Main/JavaScript/GoogleTagManager.Extension.js",
+                    "Modules/Main/JavaScript/Transaction.Model.Extension.js",
+                    "Modules/Main/JavaScript/GTMApplicationSkeleton.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/PIICompliance.Main.js",
+                    "Modules/Main/JavaScript/GoogleTagManager.Extension.js",
+                    "Modules/Main/JavaScript/Transaction.Model.Extension.js",
+                    "Modules/Main/JavaScript/GTMApplicationSkeleton.View.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\PIICompliance",
+    "suitescript2": {
+        "files": []
+    }
 }
