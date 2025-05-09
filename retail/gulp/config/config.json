@@ -177,10 +177,10 @@
         "account": "317771-SB2",
         "hostname": "317771-SB2.restlets.api.netsuite.com",
         "website": "7",
-        "domain": "sandbox2.girlscoutshop.com",
-        "webapp_id": "447273",
-        "ssp_folder": "447273",
-        "is_scis": false
+        "target_folder": {
+            "parentId": "-15",
+            "folderName": "Deploy_Extensions"
+        }
     },
     "product": "gulp",
     "nsdeployPath": ".nsdeploy"

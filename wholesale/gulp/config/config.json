@@ -62,10 +62,10 @@
             "Workspace/GTMCustomEventsSCS",
             "Workspace/QtyAlert",
             "Workspace/QuantityAlert",
-            "Workspace/RequirePurchaseNumber",
-            "Workspace/RemoveCCFromMyAccount",
             "Workspace/QuickBuy",
-            "Workspace/RemoveInventoryPerEmail"
+            "Workspace/RemoveCCFromMyAccount",
+            "Workspace/RemoveInventoryPerEmail",
+            "Workspace/RequirePurchaseNumber"
         ],
         "theme_path": "Workspace/Extras/GSUSATHEME",
         "overrides_path": "Workspace/Extras/GSUSATHEME/Overrides"
@@ -122,11 +122,7 @@
         "secret": "710bdd6adbbf3b0e9dcec558c70fcba8e659c5b55afc0fc47b36db2285c539f1",
         "account": "317771-SB2",
         "hostname": "317771-SB2.restlets.api.netsuite.com",
-        "website": "6",
-        "domain": "sandbox2.gsmwholesale.org",
-        "webapp_id": "316154",
-        "ssp_folder": "316154",
-        "is_scis": false
+        "website": "6"
     },
     "product": "gulp",
     "nsdeployPath": ".nsdeploy"
