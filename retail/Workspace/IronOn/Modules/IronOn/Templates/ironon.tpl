@@ -39,7 +39,7 @@
                 <label class="product-views-option-tile-label">{{translate 'Troop Number Patch Options'}}:</label>
                 <div class="ironon-feature-subtitle">
                     <span class="ironon-feature-subtitle-label">
-                        {{translate 'Troop number patch $(0)/ea. Adjust the number of digits if needed' troopNumeralPrice}}
+                        {{translate 'Troop number patch $(0)/ea. Select 2 to 6 digits for your troop number using the + or - buttons.' troopNumeralPrice}}
                     </span>
                 </div>
             </div>
