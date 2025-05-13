@@ -2,28 +2,17 @@
     "name": "IronOn",
     "fantasyName": "Iron On ",
     "vendor": "ACS",
-    "version": "4.0.0",
     "type": "extension",
     "target": "SCA,SCS",
     "target_version": {
         "SCA": "",
         "SCS": ""
     },
+    "version": "4.0.0",
     "description": "Iron on troop numeral on Vests items",
-    "skins": [],
     "configuration": {
         "files": [
             "Modules/IronOn/Configuration/IronOn.json"
-        ]
-    },
-    "sass": {
-        "entry_points": {
-            "shopping": "Modules/IronOn/Sass/_ironon.scss",
-            "myaccount": "Modules/IronOn/Sass/_ironon.scss",
-            "checkout": "Modules/IronOn/Sass/_ironon.scss"
-        },
-        "files": [
-            "Modules/IronOn/Sass/_ironon.scss"
         ]
     },
     "templates": {
@@ -53,6 +42,16 @@
                 ]
             }
         }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/IronOn/Sass/_ironon.scss",
+            "myaccount": "Modules/IronOn/Sass/_ironon.scss",
+            "checkout": "Modules/IronOn/Sass/_ironon.scss"
+        },
+        "files": [
+            "Modules/IronOn/Sass/_ironon.scss"
+        ]
     },
     "javascript": {
         "entry_points": {
@@ -107,6 +106,5 @@
             "Modules/IronOn/SuiteScript/IronOn.LiveOrder.Main.js",
             "Modules/IronOn/SuiteScript/IronOn.Transaction.Model.js"
         ]
-    },
-    "local_folder": "Workspace\\IronOn"
+    }
 }

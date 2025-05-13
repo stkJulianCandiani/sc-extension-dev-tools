@@ -2,14 +2,15 @@
     "name": "GTMShoppingEvents",
     "fantasyName": "GTM Shopping Events",
     "vendor": "Softtek",
+    "version": "1.0.0",
     "type": "extension",
     "target": "SCA,SCS",
     "target_version": {
         "SCA": ">=20.1.0",
         "SCS": ">=20.1.0"
     },
-    "version": "1.0.0",
     "description": "Shopping Custom Events for Google Tag Manager",
+    "skins": [],
     "javascript": {
         "entry_points": {
             "shopping": "Modules/JavaScript/GTMShoppingEvents.entrypoint.js"
@@ -23,5 +24,6 @@
                 ]
             }
         }
-    }
+    },
+    "local_folder": "Workspace\\GTMShoppingEvents"
 }
