@@ -176,7 +176,11 @@
         "secret": "710bdd6adbbf3b0e9dcec558c70fcba8e659c5b55afc0fc47b36db2285c539f1",
         "account": "317771-SB2",
         "hostname": "317771-SB2.restlets.api.netsuite.com",
-        "website": "7"
+        "website": "7",
+        "domain": "sandbox2.girlscoutshop.com",
+        "webapp_id": "447273",
+        "ssp_folder": "447273",
+        "is_scis": false
     },
     "product": "gulp",
     "nsdeployPath": ".nsdeploy"
