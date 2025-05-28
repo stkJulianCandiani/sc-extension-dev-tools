@@ -53,6 +53,7 @@ $sc-troop-numeral-row-maring:25px;
 
 .ironon-feature .ironon-feature-minus, .ironon-feature .ironon-feature-plus{
     display: inline-block;
+    cursor: pointer;
 }
 
 .ironon-feature,
@@ -105,17 +106,17 @@ $sc-troop-numeral-row-maring:25px;
 .ironon-feature-tooltip-content {
     visibility: hidden;
     width: 200px;
-    background-color: #c8c2c2;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px;
     border-radius: 4px;
     position: absolute;
     z-index: 1;
-    bottom: 70%; /* Position above the label */
     left: 70%;
     margin-left: -65px;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s; 
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 20px;
 }
 
 .ironon-feature-tooltip:hover .ironon-feature-tooltip-content {
@@ -230,12 +231,13 @@ $sc-troop-numeral-row-maring:25px;
 
 .ironon-feature-numerals-row-mobile {
     display: inline-block;
-    margin-left: 27px;
+    margin-left: 32px;
+    padding: 0px $sc-padding-lv6 0px $sc-padding-lv2;
 }
 @media (max-width: $screen-sm-min) {
     .ironon-feature-numeral-selection {
         position: relative;
-        margin: 1.5rem 0;
+        margin-top: 1.5rem;
         display: flex;
         justify-content: center;
     }
@@ -254,10 +256,10 @@ $sc-troop-numeral-row-maring:25px;
     .ironon-feature-numerals-row {
         display: flex;
         justify-content: flex-start;
-        gap: 5px;
-        flex-wrap: wrap;
+        gap: 3px;
+       // flex-wrap: wrap;
         max-width: 350px;
-        margin-left: $sc-margin-lv5;
+        margin-left: -$sc-margin-lv2;
     }
     .ironon-feature-troop-numeral {
         margin: 0;

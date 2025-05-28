@@ -115,7 +115,7 @@ define('IronOn.LiveOrder.Model', [
             result.lines = _.filter(result.lines, function filterLines(line) {
                 var lineFound = _.find(ironOnLines, function findLine(ironOnLine) {
                     return _.find(ironOnLine, function find(ironOnLineItem) {
-                        return ironOnLineItem.line.item.internalid === line.item.internalid && (ironOnLineItem.isTroopNumeral || ironOnLineItem.isExtraItem);
+                        return ironOnLineItem.line.item.internalid === line.item.internalid && ironOnLineItem.isTroopNumeral;
                     });
                 });
                 return !lineFound;

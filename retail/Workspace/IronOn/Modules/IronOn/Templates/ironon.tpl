@@ -28,10 +28,10 @@
                 </div>
             </div>
             <div data-view="Extra.Customization.Options"></div>
+            <div data-view="Council.Error"></div>
 
             <div class="ironon-feature-divider"></div>
 
-            <div data-view="Council.Error"></div>
             <div class="ironon-feature-header">
                 <div class="iron-on-list-circle">
                     <span class="iron-on-list-numbers">2</span>
@@ -47,11 +47,11 @@
             <div class="ironon-feature-numeral-selection">
                 <div class="ironon-feature-minus"><span class="remove-troop-numerals" data-action="remove-troop-numerals"> - </span></div>
                 <div class="ironon-feature-numerals-row" data-view="Troop.Numerals"></div>
-                <!-- {{#if showMobileRow}}
-                    <div class="ironon-feature-numerals-row-mobile" data-view="Troop.Numerals.Mobile.Row"></div>
-                {{/if}}-->
                 <div class="ironon-feature-plus"><span class="add-troop-numerals" data-action="add-troop-numerals"> + </span></div>
             </div>
+            {{#if showMobileRow}}
+                <div class="ironon-feature-numerals-row-mobile" data-view="Troop.Numerals.Mobile.Row"></div>
+            {{/if}}
             <div data-view="Troop.Numerals.Error"></div>
             <div data-view="Troop.Numerals.BackOrderMessage"></div>
 

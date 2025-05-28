@@ -69,6 +69,7 @@ define('IronOn.Cart.AddToCart.Button.View', [
                         extraItemsSelection = extraItemsOption.get('value').internalid;
                         if (extraItemsSelection === 'COUNCIL_NEEDED') {
                             this.showTroopNumeralError(Utils.translate('Please Select A Council.'), true);
+                            this.goToError();
                             return;
                         }
                         if (selection !== '.') {
@@ -79,7 +80,7 @@ define('IronOn.Cart.AddToCart.Button.View', [
                         if (troopNumeralSelection.get('value')) {
                             selection = troopNumeralSelection.get('value').internalid;
                             if (selection === 'INCOMPLETE') {
-                                this.showTroopNumeralError(Utils.translate('Please Select All Numerals'));
+                                this.showTroopNumeralError(Utils.translate('Please Select All Numerals.'));
                             } else {
                                 if (selection !== '.') {
                                     itemModel.setOption(ironOnConfig.ironon.lineIdItemOption, lineIdentifier);
@@ -95,12 +96,31 @@ define('IronOn.Cart.AddToCart.Button.View', [
                 } else {
                     fn.apply(this, _.toArray(arguments).slice(1));
                 }
+                this.goToError();
             } catch (e) {
                 fn.apply(this, _.toArray(arguments).slice(1));
                 // eslint-disable-next-line no-console
                 console.log(e);
             }
         }),
+
+        goToError: function goToError() {
+            if (this.isMobileDevice()) {
+                if (jQuery('.global-views-message-error').length > 0 && jQuery('.global-views-message-error').length !== jQuery('.global-views-message-error [hidden]').length) {
+                    jQuery('html, body').animate({
+                        scrollTop: jQuery('.global-views-message-error').offset().top
+                    }, 500);
+                } else if (jQuery('p[data-validation-error]').length > 0) {
+                    jQuery('html, body').animate({
+                        scrollTop: jQuery('p[data-validation-error]').closest('div[data-validation*="control-group"]').offset().top
+                    }, 500);
+                }
+            }
+        },
+
+        isMobileDevice: function isMobileDevice() {
+            return Utils.isPhoneDevice() || Utils.isTabletDevice();
+        },
 
         showTroopNumeralError: function showTroopNumeralError(message, isCouncilError) {
             var dataView = isCouncilError ? '[data-view="Council.Error"]' : '[data-view="Troop.Numerals.Error"]';

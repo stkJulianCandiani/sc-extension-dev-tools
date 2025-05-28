@@ -51,7 +51,7 @@ define('IronOn.View', [
         },
 
         initialize: function initialize(options) {
-            // var self = this;
+            var self = this;
             this.pdp = options.container.getComponent('PDP');
             this.collection = ['', '', '', '', ''];
             this.patchesAndPins = [];
@@ -63,18 +63,18 @@ define('IronOn.View', [
             });
             this.removeCustomizationOptions();
             this.once('afterCompositeViewRender', this.loadTroopNumeralItem, this);
-          /*  this.on('afterViewRender', function afterViewRender() {
-                var mobileRow = self.$el.find('.ironon-feature-numerals-row-mobile');
-                if (self.collection.length > 5) {
-                    jQuery(mobileRow).show();
-                } else {
-                    jQuery(mobileRow).hide();
-                }
-            });*/
 
             this.onAfterQuantityChangeFn = _.bind(this.onAfterQuantityChange, this);
 
             this.pdp.on('afterQuantityChange', this.onAfterQuantityChangeFn);
+            this.on('afterViewRender', function afterViewRender() {
+                var mobileRow = self.$el.find('.ironon-feature-numerals-row-mobile');
+                if (self.collection.length > 3) {
+                    jQuery(mobileRow).show();
+                } else {
+                    jQuery(mobileRow).hide();
+                }
+            });
         },
 
         onAfterQuantityChange: function onAfterQuantityChange() {
@@ -174,6 +174,7 @@ define('IronOn.View', [
                 this.collection[index] = '';
             }
             this.setCustomizationOptions();
+            jQuery('[data-view="Troop.Numerals.Error"]').html('');
         },
 
         getTroopNumeralPrice: function getTroopNumeralPrice() {
@@ -410,16 +411,18 @@ define('IronOn.View', [
             pdp.setOption(this.configuration.extraItemsOptions, this.getExtraItemsToAdd());
             if (!councilItem) {
                 pdp.setOption('custcol_acs_council_text', 'COUNCIL_NEEDED');
+            } else {
+                jQuery('[data-view="Council.Error"]').html('');
             }
-            this.showNewItemPrice(numeralCost);
-            this.updateSelectAllInsignia();
             this.getBackOrderItems();
+            this.updateSelectAllInsignia();
+            this.showNewItemPrice(numeralCost);
         },
 
         showNewItemPrice: function showNewItemPrice(numeralCost) {
             var itemPriceView = this.getChildViewInstance('Extra.ItemPrice');
+            this.ironOnPrice = numeralCost;
             if (itemPriceView) {
-                this.ironOnPrice = numeralCost;
                 itemPriceView.render();
             }
         },
@@ -514,6 +517,7 @@ define('IronOn.View', [
             this.showCustomizationOptions = true;
             this.setCustomizationOptions();
             this.render();
+            this.showNewItemPrice(this.ironOnPrice);
         },
 
         getIronOnOptions: function getIronOnOptions() {
@@ -553,9 +557,9 @@ define('IronOn.View', [
         childViews: {
             'Troop.Numerals': function TroopNumerals() {
                 var currentCollection = this.collection;
-               /* if (this.isMobileDevice() && currentCollection.length > 5) {
+                if (this.isMobileDevice() && currentCollection.length > 5) {
                     currentCollection = currentCollection.slice(0, 5);
-                }*/
+                }
                 return this.getTroopNumeralView(currentCollection, 0);
             },
             'Troop.Numerals.Mobile.Row': function TroopNumerals() {
@@ -612,21 +616,22 @@ define('IronOn.View', [
         },
 
         renderChildViews: function renderChildViews() {
-           // var mobileRow = this.$el.find('.ironon-feature-numerals-row-mobile');
+            var mobileRow = this.$el.find('.ironon-feature-numerals-row-mobile');
             this.renderChild('Troop.Numerals');
-        /*    if (this.isMobileDevice()) {
+            if (this.isMobileDevice()) {
                 this.renderChild('Troop.Numerals.Mobile.Row');
-                if (this.collection.length > 3) {
+                if (this.collection.length > 5) {
                     jQuery(mobileRow).show();
                 } else {
                     jQuery(mobileRow).hide();
                 }
-            }*/
+            }
         },
 
         isMobileDevice: function isMobileDevice() {
             return Utils.isPhoneDevice() || Utils.isTabletDevice();
         },
+
 
         /**
          * @method hasNumeralSelection
@@ -683,8 +688,8 @@ define('IronOn.View', [
             }
             if (hasTroopCrest && hasTroopCrest.length > 0) {
                 this.patchesPinsToAdd.push(hasTroopCrest[0]);
-                this.setCustomizationOptions();
             }
+            this.setCustomizationOptions();
         },
 
         getCouncilPrice: function getCouncilPrice() {
@@ -713,11 +718,11 @@ define('IronOn.View', [
                 showCustomizationOptions: showCustomizationOptions,
                 confirmationText: confirmationText,
                 showIronOn: showIronOn,
-                showMobileRow: this.isMobileDevice(),
                 serviceFeeMessage: serviceFeeMessage,
                 serviceFeeCost: serviceFeeCost,
                 troopNumeralPrice: troopNumeralPrice,
-                councilPrice: councilPrice
+                councilPrice: councilPrice,
+                showMobileRow: this.isMobileDevice()
             };
         }
     });

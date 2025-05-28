@@ -28,7 +28,7 @@ define('IronOn.ProductViews.Price.View', [
             var newPrice;
             var newPriceFormatted;
             var ironOnConfiguration;
-            if (this.options && this.options.origin === 'PDPFULL') {
+            if (this.options && (this.options.origin === 'PDPFULL' || this.options.origin === 'PDPQUICK')) {
                 try {
                     ironOnConfiguration = Configuration.get('extensions').ironon;
                     hasNumeralCost = parseFloat(this.model.get(ironOnConfiguration.troopNumeralItemCostOption), 10);
