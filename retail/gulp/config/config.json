@@ -171,12 +171,16 @@
     },
     "credentials": {
         "user_agent": "sc-extension-devtools/2024.1.0",
-        "authID": "GSUSA.PROD",
-        "key": "18ad63410990c6bf68be5617eefbb75ba52da04ce0735240b62b9fae2442c377",
-        "secret": "0312ea13cf4c0483bfa3aa519cf2a5d4e7b12f3434aa96c059cd38c44c2df1a3",
-        "account": "317771",
-        "hostname": "317771.restlets.api.netsuite.com",
-        "website": "7"
+        "authID": "GSUSA.DEV",
+        "key": "ccab74c90efb6560994428b3cf0d3277668ca4b012f163a18c001679378ac81e",
+        "secret": "710bdd6adbbf3b0e9dcec558c70fcba8e659c5b55afc0fc47b36db2285c539f1",
+        "account": "317771-SB2",
+        "hostname": "317771-SB2.restlets.api.netsuite.com",
+        "website": "7",
+        "target_folder": {
+            "parentId": "-15",
+            "folderName": "Deploy_Extensions"
+        }
     },
     "product": "gulp",
     "nsdeployPath": ".nsdeploy"
