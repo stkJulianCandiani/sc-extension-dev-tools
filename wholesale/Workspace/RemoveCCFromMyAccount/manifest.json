@@ -1,27 +1,36 @@
 {
-    "name": "RemoveCCFromMyAccount",
-    "fantasyName": "Remove CC from My Account",
-    "vendor": "CSSTeam",
-    "version": "1.0.0",
-    "type": "extension",
-    "target": "SCA,SCS",
-    "target_version": {
-        "SCA": ">=20.24.0",
-        "SCS": ">=20.24.0"
-    },
-    "description": "Remove CC from My Account",
-    "skins": [],
-    "javascript": {
-        "entry_points": {
-            "myaccount": "Modules/JavaScript/RemoveCCFromMyAccount/CSSTeam.RemoveCCFromMyAccount.RemoveCCFromMyAccount.js"
-        },
-        "application": {
-            "myaccount": {
-                "files": [
-                    "Modules/JavaScript/RemoveCCFromMyAccount/CSSTeam.RemoveCCFromMyAccount.RemoveCCFromMyAccount.js"
-                ]
-            }
-        }
-    },
-    "local_folder": "Workspace\\RemoveCCFromMyAccount"
+	"name": "RemoveCCFromMyAccount",
+	"fantasyName": "Remove CC from My Account",
+	"vendor": "Softtek",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.24.0",
+		"SCS": ">=20.24.0"
+	},
+	"version": "1.1.0",
+	"description": "Remove CC from My Account",
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/Sass/_removeCreditcard.scss"
+		},
+		"files": [
+			"Modules/Sass/_removeCreditcard.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/JavaScript/RemoveCCFromMyAccount/CSSTeam.RemoveCCFromMyAccount.RemoveCCFromMyAccount.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/JavaScript/RemoveCCFromMyAccount/CSSTeam.RemoveCCFromMyAccount.RemoveCCFromMyAccount.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Softtek/RemoveCCFromMyAccount@1.1.0",
+	"activation_id": "10",
+	"extension_id": "13501"
 }
