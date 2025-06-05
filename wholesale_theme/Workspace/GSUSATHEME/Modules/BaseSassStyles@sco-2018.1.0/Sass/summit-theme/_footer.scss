@@ -1,0 +1,35 @@
+// Footer variables
+$sc-footer-font-size: $sc-font-size-s; /* editable({"type": "string", "label": "Font size"}) */
+$sc-theme-lower-bgr-color: $sc-color-theme-900; /* editable({"type": "color", "label": "Lower section background"}) */
+$sc-footer-social-icon-color: $sc-color-secondary; /* editable({"type": "color", "label": "Social icons"}) */
+$sc-footer-social-icon-hover-color: $sc-color-link-hover; /* editable({"type": "color", "label": "Social icons hover"}) */
+$sc-footer-social-icon-size: 26px; /* editable({"type": "string", "label": "Social icons size"}) */
+$sc-footer-social-text-color: $sc-color-copy; /* editable({"type": "color", "label": "Social text"}) */
+
+// Link variables
+$sc-upper-footer-link-color: $sc-color-link; /* editable({"type": "color", "label": "Upper section link"}) */
+$sc-upper-footer-link-color-hover: $sc-color-link-hover; /* editable({"type": "color", "label": "Upper section link hover"}) */
+$sc-upper-footer-link-color-active: $sc-color-link-active; /* editable({"type": "color", "label": "Upper section link active"}) */
+$sc-lower-footer-link-color: $sc-color-theme-500; /* editable({"type": "string", "label": "Lower section link"}) */
+$sc-lower-footer-link-color-hover: $sc-color-link-hover; /* editable({"type": "color", "label": "Lower section link hover"}) */
+$sc-lower-footer-link-color-active: $sc-color-link; /* editable({"type": "color", "label": "Lower section link active"}) */
+
+// Headings color
+$sc-footer-headings-color: $sc-color-theme-500; /* editable({"type": "color", "label": "Column headings"}) */
+
+// Input fields variables
+$sc-footer-fields-background-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Input background"}) */
+$sc-footer-fields-border-color: $sc-color-secondary; /* editable({"type": "color", "label": "Input border"}) */
+$sc-footer-fields-text-color: $sc-color-secondary; /* editable({"type": "color", "label": "Input text"}) */
+
+// Buttons variables
+$sc-footer-buttons-background-color: $sc-color-secondary; /* editable({"type": "color", "label": "Buttons background"}) */
+$sc-footer-buttons-background-hover-color: $sc-color-link-hover; /* editable({"type": "color", "label": "Buttons background hover"}) */
+$sc-footer-buttons-text-color: $sc-button-secondary-text-color; /* editable({"type": "color", "label": "Buttons text"}) */
+$sc-footer-buttons-border-radius: $sc-border-radius;
+
+// Copyright color
+$sc-footer-copyright-text-color: $sc-color-copy; /* editable({"type": "color", "label": "Copyright text"}) */
+
+// Newsletter label color
+$sc-newsletter-label-color: $sc-color-copy; /* editable({"type": "color", "label": "Newsletter label"}) */

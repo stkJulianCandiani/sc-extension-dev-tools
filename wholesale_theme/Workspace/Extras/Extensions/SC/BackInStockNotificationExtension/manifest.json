@@ -1,0 +1,100 @@
+{
+	"name": "BackInStockNotificationExtension",
+	"fantasyName": "Back In Stock Notification",
+	"vendor": "SC",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.1.1",
+	"description": "Allow shoppers to request an email notification when an out-of-stock product is back in stock",
+	"assets": {
+		"BackInStockNotification": {
+			"files": [
+				"BackInStockNotification/services/BackInStockNotification.Service.ss",
+				"BackInStockNotification/services/BackInStockNotificationAdmin.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/BackInStockNotification/Configuration/BackInStockNotification.json",
+			"Modules/BackInStockNotification/backinstocknotification_translations_1.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/BackInStockNotification/Templates/back_in_stock_notification_subscribe.tpl",
+					"Modules/BackInStockNotification/Templates/backinstock_view.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/BackInStockNotificationAdmin/Templates/backinstocknotification_list.tpl",
+					"Modules/BackInStockNotificationAdmin/Templates/backinstocknotification_list_details.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/BackInStockNotification/Sass/shopping.scss",
+			"myaccount": "Modules/BackInStockNotificationAdmin/Sass/shopping.scss"
+		},
+		"files": [
+			"Modules/BackInStockNotification/Sass/shopping.scss",
+			"Modules/BackInStockNotification/Sass/_back-in-stock-notification.scss",
+			"Modules/BackInStockNotificationAdmin/Sass/shopping.scss",
+			"Modules/BackInStockNotificationAdmin/Sass/_back-in-stock-notification-admin.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/BackInStockNotification/JavaScript/SC.BackInStockNotification.1.0.0.BackInStockNotification.js",
+			"myaccount": "Modules/BackInStockNotificationAdmin/Javascript/SC.BackInStockNotification.1.0.0.BackInStockNotificationAdministrator.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/BackInStockNotification/JavaScript/BackInStock.View.js",
+					"Modules/BackInStockNotification/JavaScript/SC.BackInStockNotification.1.0.0.BackInStockNotification.js",
+					"Modules/BackInStockNotification/JavaScript/BackInStockNotification.Helper.js",
+					"Modules/BackInStockNotification/JavaScript/BackInStockNotification.Views.Subscribe.js",
+					"Modules/BackInStockNotification/JavaScript/BackInStockNotification.Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/BackInStockNotificationAdmin/Javascript/BackInStock.ConstantVars.js",
+					"Modules/BackInStockNotificationAdmin/Javascript/BackInStockNotification.Collection.js",
+					"Modules/BackInStockNotification/JavaScript/BackInStockNotification.Helper.js",
+					"Modules/BackInStockNotificationAdmin/Javascript/BackInStockNotification.Router.js",
+					"Modules/BackInStockNotificationAdmin/Javascript/BackInStockNotification.Views.List.Details.js",
+					"Modules/BackInStockNotificationAdmin/Javascript/BackInStockNotification.Views.List.js",
+					"Modules/BackInStockNotificationAdmin/Javascript/SC.BackInStockNotification.1.0.0.BackInStockNotificationAdministrator.js",
+					"Modules/BackInStockNotification/JavaScript/BackInStockNotification.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/BackInStockNotification/SuiteScript/SC.BackInStockNotification.1.0.0.BackInStockNotificationEntryPoint.js",
+		"files": [
+			"Modules/BackInStockNotification/SuiteScript/SC.BackInStockNotification.1.0.0.BackInStockNotificationEntryPoint.js",
+			"Modules/BackInStockNotification/SuiteScript/SC.BackInStockNotification.1.0.0.BackInStockNotification.js",
+			"Modules/BackInStockNotification/SuiteScript/BackInStockNotification.Location.js",
+			"Modules/BackInStockNotification/SuiteScript/BackInStockNotification.ServiceController.js",
+			"Modules/BackInStockNotificationAdmin/SuiteScript/BackInStockNotificationAdmin.ServiceController.js",
+			"Modules/BackInStockNotification/SuiteScript/BackInStockNotification.SiteConfiguration.js",
+			"Modules/BackInStockNotification/SuiteScript/BackInStockNotification.Website.js",
+			"Modules/BackInStockNotification/SuiteScript/BackInStockNotification.Configuration.js",
+			"Modules/BackInStockNotification/SuiteScript/BackInStockNotification.Contact.js",
+			"Modules/BackInStockNotification/SuiteScript/BackInStockNotification.Currency.js",
+			"Modules/BackInStockNotification/SuiteScript/BackInStockNotification.Customer.js",
+			"Modules/BackInStockNotification/SuiteScript/BackInStockNotification.FormatCurrency.js",
+			"Modules/BackInStockNotification/SuiteScript/BackInStockNotification.Item.js",
+			"Modules/BackInStockNotification/SuiteScript/BackInStockNotification.ItemKeyMapping.js"
+		]
+	},
+	"path": "SuiteBundles/Bundle 521562/extensions/SC/BackInStockNotificationExtension@1.1.1"
+}

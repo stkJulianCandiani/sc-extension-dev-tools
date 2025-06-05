@@ -1,0 +1,16 @@
+{
+  "name": "@sc-utils/files-concat",
+  "version": "1.0.0",
+  "description": "NS files-concat",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "through2": "3.0.1"
+  },
+  "publishConfig": {
+    "registry": "https://repository-master.eng.netsuite.com/content/repositories/releases-npm/"
+  }
+}

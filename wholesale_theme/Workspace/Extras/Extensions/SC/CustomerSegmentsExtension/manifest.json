@@ -1,0 +1,129 @@
+{
+	"name": "CustomerSegmentsExtension",
+	"fantasyName": "Customer Segments",
+	"vendor": "SC",
+	"version": "1.1.4",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "The ability to display different products and/or static content to different customers on the same site based on some customer attribute",
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": [
+				"CustomerSegments/img/customerSegments.png"
+			]
+		},
+		"services": {
+			"files": [
+				"CustomerSegments/services/CustomerSegments.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/CustomerSegments/Configuration/CustomerSegments.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/CustomerSegmentsEntryPoints/Sass/shopping.scss",
+			"checkout": "Modules/CustomerSegmentsEntryPoints/Sass/checkout.scss"
+		},
+		"files": [
+			"Modules/CustomerSegmentsEntryPoints/Sass/shopping.scss",
+			"Modules/CustomerSegmentsEntryPoints/Sass/checkout.scss",
+			"Modules/HidePrice/Sass/_hide_price.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CustomerSegments/Templates/customersegments_header_logo.tpl",
+					"Modules/HidePrice/Templates/sc_hideprice_hideprice_tpl.tpl",
+					"Modules/HidePrice/Templates/sc_hideprice_cart_tpl.tpl",
+					"Modules/HidePrice/Templates/sc_hideprice_pdp_tpl.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/CustomerSegments/Templates/customersegments_header_logo.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CustomerSegments/Templates/customersegments_header_logo.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/CustomerSegmentsEntryPoints/JavaScript/SC.CustomerSegments.ShoppingEntryPoint.js",
+			"myaccount": "Modules/CustomerSegmentsEntryPoints/JavaScript/SC.CustomerSegments.MyAccountEntryPoint.js",
+			"checkout": "Modules/CustomerSegmentsEntryPoints/JavaScript/SC.CustomerSegments.CheckOutEntryPoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CustomerSegmentsEntryPoints/JavaScript/SC.CustomerSegments.ShoppingEntryPoint.js",
+					"Modules/CustomerSegments/JavaScript/SC.CustomerSegments.1.0.0.CustomerSegments.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.ProductList.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Cart.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Facets.Router.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.GlobalViews.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Header.Logo.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Header.View.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Helper.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Home.View.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Model.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.ProductDetail.js",
+					"Modules/HidePrice/JavaScript/SC.Shopping.HidePrice.js",
+					"Modules/HidePrice/JavaScript/HidePrice.PLP.View.js",
+					"Modules/HidePrice/JavaScript/HidePrice.Cart.View.js",
+					"Modules/HidePrice/JavaScript/HidePrice.PDP.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/CustomerSegmentsEntryPoints/JavaScript/SC.CustomerSegments.MyAccountEntryPoint.js",
+					"Modules/CustomerSegments/JavaScript/SC.CustomerSegments.1.0.0.CustomerSegments.MyAccount.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.GlobalViews.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Model.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Helper.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Header.Logo.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Header.View.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Cart.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Facets.Router.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CustomerSegmentsEntryPoints/JavaScript/SC.CustomerSegments.CheckOutEntryPoint.js",
+					"Modules/CustomerSegments/JavaScript/SC.CustomerSegments.1.0.0.CustomerSegments.Checkout.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.GlobalViews.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Model.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Helper.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Header.Logo.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Header.View.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Cart.js",
+					"Modules/CustomerSegments/JavaScript/CustomerSegments.Facets.Router.js",
+					"Modules/HidePrice/JavaScript/HidePrice.Checkout.View.js",
+					"Modules/HidePrice/JavaScript/SC.Checkout.HidePrice.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CustomerSegments/SuiteScript/SC.CustomerSegments.1.0.0.CustomerSegments.EntryPoint.js",
+		"files": [
+			"Modules/CustomerSegments/SuiteScript/SC.CustomerSegments.1.0.0.CustomerSegments.EntryPoint.js",
+			"Modules/CustomerSegments/SuiteScript/CustomerSegments.Model.js",
+			"Modules/CustomerSegments/SuiteScript/CustomerSegments.Profile.Model.js",
+			"Modules/CustomerSegments/SuiteScript/CustomerSegments.ServiceController.js",
+			"Modules/CustomerSegments/SuiteScript/CustomerSegments.StoreItem.Model.js"
+		]
+	},
+	"local_folder": "Workspace/CustomerSegmentsExtension",
+	"path": "SuiteBundles/Bundle 521562/extensions/SC/CustomerSegmentsExtension@1.1.4"
+}

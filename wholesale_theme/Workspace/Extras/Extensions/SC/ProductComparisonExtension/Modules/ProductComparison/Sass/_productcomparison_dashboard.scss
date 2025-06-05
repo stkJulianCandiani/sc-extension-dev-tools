@@ -1,0 +1,94 @@
+.productcompare-dashboard {
+  @extend .container;
+}
+
+.productcompare-dashboard-header {
+  @extend .row;
+  margin-bottom: $sc-margin-lv2;
+}
+
+.productcompare-dashboard-title {
+  @extend .col-sm-8;
+}
+
+.productcompare-dashboard-buttons {
+  @extend .col-sm-4;
+  margin-top: $sc-margin-lv2;
+  @media (min-width: $screen-xs-min) {
+    text-align: right;
+    margin-top: 0;
+  }
+}
+
+.productcomparison-button-back {
+  @extend .button-small;
+  @extend .button-primary;
+  margin-left: $sc-margin-lv2;
+}
+
+.productcomparison-button-share {
+  @extend .button-small;
+  @extend .button-secondary;
+}
+
+.productcompare-dashboard-table {
+  @extend .table;
+  @extend .table-responsive;
+  @extend .table-striped;
+  table-layout: fixed;
+}
+
+.productcomparison-table-head {
+  background-color: transparent !important;
+  & td {
+    border-top: none !important;
+  }
+}
+
+.productcompare-dashboard-table-buttons,
+.productcomparison-property-value {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.productcomparison-property-name {
+  color: $sc-color-secondary;
+  font-weight: $sc-font-weight-semibold;
+}
+
+.productcomparison-add {
+  @extend .button-small;
+  @extend .button-primary;
+
+  i {
+    margin-right: $sc-margin-lv4;
+  }
+}
+
+.productcomparison-button-view {
+  @extend .button-small;
+  @extend .button-tertiary;
+  padding: $sc-padding-lv1 $sc-padding-lv2;
+  margin: 0 $sc-margin-lv1;
+
+  @media (max-width: $screen-xs-max) {
+    padding: $sc-padding-lv1;
+    margin: 0 $sc-margin-lv1;
+    font-size: 0.65rem;
+  }
+
+}
+
+.productcomparison-button-remove {
+  @extend .button-small;
+  @extend .button-tertiary;
+  padding: $sc-padding-lv1 $sc-padding-lv2;
+  margin: $sc-margin-lv2 $sc-margin-lv1 0 $sc-margin-lv1;
+
+  @media (max-width: $screen-xs-max) {
+    padding: $sc-padding-lv1;
+    margin: 0 $sc-margin-lv1;
+    font-size: 0.65rem;
+  }
+
+}

@@ -1,0 +1,16 @@
+{
+    "name": "@sc-utils/ns-file",
+    "version": "1.0.0",
+    "description": "NS gulp-file",
+    "main": "index.js",
+    "scripts": {
+	  "release": "sh ../release.sh"
+	},
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "through2": "3.0.1",
+        "vinyl": "2.2.1"
+    },
+  	"files": ["index.js"]
+}

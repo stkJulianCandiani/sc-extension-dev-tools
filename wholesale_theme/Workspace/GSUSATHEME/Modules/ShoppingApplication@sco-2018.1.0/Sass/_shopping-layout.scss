@@ -1,0 +1,37 @@
+/* Edited for Summit Theme */
+
+.shopping-layout {
+	@extend %sc-layout;
+}
+
+.shopping-layout-header {
+	margin-bottom: 0;
+	//background-color: transparent;
+}
+
+.shopping-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.shopping-layout-breadcrumb {
+	display: none;
+
+	@extend .container;
+	@extend .content-background;
+	padding-top: $sc-padding-lv7 !important;
+	padding-left: 0 !important;
+	font-family: $sc-theme-secondary-font;
+	text-transform: uppercase;
+	background-color: transparent !important;
+
+	@media(min-width: $screen-md-min) {
+		display: block;
+	}
+}
+
+.shopping-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+.shopping-layout-content{}

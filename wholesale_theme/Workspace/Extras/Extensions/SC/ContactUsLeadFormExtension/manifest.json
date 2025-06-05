@@ -1,0 +1,82 @@
+{
+	"name": "ContactUsLeadFormExtension",
+	"vendor": "SC",
+	"version": "1.1.1",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "Configurable Contact Us lead generation form that hits a legacy Online Case form on NetSuite",
+	"skins": [],
+	"assets": {
+		"services": {
+			"files": [
+				"ContactUsLeadForm/services/ContactUs.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ContactUsLeadForm/Configuration/ContactUs.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ContactUsLeadForm/Sass/_contact-us.scss"
+		},
+		"files": [
+			"Modules/ContactUsLeadForm/Sass/_contact-us.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ContactUsLeadForm/Templates/contact_us.tpl",
+					"Modules/ContactUsLeadForm/Templates/contact_us_modal.tpl",
+					"Modules/ContactUsLeadForm/Templates/contact_us_register_link_view.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/ContactUsLeadForm/Templates/contact_us_enableregistration.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ContactUsLeadForm/JavaScript/SC.ContactUsLeadForm.1.0.0.ContactUs.js",
+			"checkout": "Modules/ContactUsLeadForm/JavaScript/SC.ContactUsLeadForm.1.0.0.ContactUs.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ContactUsLeadForm/JavaScript/SC.ContactUsLeadForm.1.0.0.ContactUs.js",
+					"Modules/ContactUsLeadForm/JavaScript/ContactUs.Router.js",
+					"Modules/ContactUsLeadForm/JavaScript/ContactUs.Model.js",
+					"Modules/ContactUsLeadForm/JavaScript/ContactUs.View.js",
+					"Modules/ContactUsLeadForm/JavaScript/ContactUs.Modal.View.js",
+					"Modules/ContactUsLeadForm/JavaScript/ContactUs.EnableRegistration.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/ContactUsLeadForm/JavaScript/SC.ContactUsLeadForm.1.0.0.ContactUs.js",
+					"Modules/ContactUsLeadForm/JavaScript/ContactUs.Router.js",
+					"Modules/ContactUsLeadForm/JavaScript/ContactUs.Model.js",
+					"Modules/ContactUsLeadForm/JavaScript/ContactUs.View.js",
+					"Modules/ContactUsLeadForm/JavaScript/ContactUs.Modal.View.js",
+					"Modules/ContactUsLeadForm/JavaScript/ContactUs.EnableRegistration.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ContactUsLeadForm/SuiteScript/SC.ContactUsLeadForm.1.0.0.ContactUs.js",
+		"files": [
+			"Modules/ContactUsLeadForm/SuiteScript/SC.ContactUsLeadForm.1.0.0.ContactUs.js",
+			"Modules/ContactUsLeadForm/SuiteScript/ContactUs.Model.js",
+			"Modules/ContactUsLeadForm/SuiteScript/ContactUs.ServiceController.js"
+		]
+	},
+	"path": "SuiteBundles/Bundle 521562/extensions/SC/ContactUsLeadFormExtension@1.1.1"
+}

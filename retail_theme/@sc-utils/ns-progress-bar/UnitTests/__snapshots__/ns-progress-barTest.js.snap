@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ns-progress-bar render method should call render method successfully with force param 1`] = `"Uploading [=                                                 ] 1%"`;
+
+exports[`ns-progress-bar render method should call render method successfully without params 1`] = `"Uploading [=                                                 ] 1%"`;
+
+exports[`ns-progress-bar render method should render with head 1`] = `"Uploading [=                                                 ] 1%"`;
+
+exports[`ns-progress-bar tick method should call tick method successfully ending the progress 1`] = `"Uploading [==================================================] 100%"`;
+
+exports[`ns-progress-bar tick method should call tick method successfully with unfinished progress 1`] = `"Uploading [=                                                 ] 1%"`;

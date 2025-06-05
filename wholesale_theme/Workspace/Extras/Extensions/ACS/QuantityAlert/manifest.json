@@ -1,0 +1,59 @@
+{
+	"name": "QuantityAlert",
+	"fantasyName": "Quantity Alert",
+	"vendor": "ACS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Alert the user if the quantity of the item they are buying is less than the quantity available.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/QuantityAlert/Configuration/QuantityAlert.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/QuantityAlert/Templates/quantityAlertPdp.tpl",
+					"Modules/QuantityAlert/Templates/quantityalert.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/QuantityAlert/Sass/_quantityalert.scss"
+		},
+		"files": [
+			"Modules/QuantityAlert/Sass/_quantityalert.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/QuantityAlert/JavaScript/QuantityAlert.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/QuantityAlert/JavaScript/ACS.CartItemView.Helper.js",
+					"Modules/QuantityAlert/JavaScript/QuantityAlert.js",
+					"Modules/QuantityAlert/JavaScript/QuantityAlert.View.js",
+					"Modules/QuantityAlert/JavaScript/QuantityAlert.PDP.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ACS/QuantityAlert@1.0.0"
+}

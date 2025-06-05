@@ -1,0 +1,31 @@
+/* Edited for Summit Theme */
+
+.storelocator-accesspoints-headerlink-link {
+	text-align: center;
+	display:inline;
+	float:left;
+	@media(min-width: $screen-md-min) {
+		float:none;
+	}
+	@media(min-width: $screen-md-min) {
+		min-width: $sc-target-size;
+	}
+}
+
+
+.storelocator-accesspoints-headerlink-link-icon {
+	@extend .icon-map-marker;
+	font-size:25px;
+	position:relative;
+	top:3px;
+	@media(min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.storelocator-accesspoints-headerlink-link-text {
+	display:none;
+	@media(min-width: $screen-md-min) {
+		display: inline-block;
+	}
+}

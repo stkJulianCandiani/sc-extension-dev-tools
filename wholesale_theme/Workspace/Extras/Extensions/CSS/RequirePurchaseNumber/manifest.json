@@ -1,0 +1,30 @@
+{
+	"name": "RequirePurchaseNumber",
+	"fantasyName": "Require Purchase Number",
+	"vendor": "CSS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Requires PO # field on checkout",
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/RequirePurchaseNumber/Sass/_requirepurhasenumber.scss"
+		},
+		"files": [
+			"Modules/RequirePurchaseNumber/Sass/_requirepurhasenumber.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/RequirePurchaseNumber/JavaScript/RequirePurchaseNumber.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/RequirePurchaseNumber/JavaScript/RequirePurchaseNumber.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CSS/RequirePurchaseNumber@1.0.0"
+}

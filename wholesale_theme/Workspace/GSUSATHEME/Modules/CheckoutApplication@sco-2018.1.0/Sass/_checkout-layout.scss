@@ -1,0 +1,57 @@
+/* Edited for Summit Theme */
+
+.checkout-layout {
+	@extend %sc-layout;
+}
+
+.checkout-layout-header {
+	margin-bottom: 0;
+    //background-color: $sc-header-background-color;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: $sc-margin-lv8;
+	}
+}
+
+.checkout-layout-content {
+	@extend .container;
+	@extend .content-background;
+	@include border-radius($sc-theme-border-radius);
+	padding-top: $sc-padding-lv7;
+    & .error-management-internal-error, .error-management-forbidden-error {
+        padding-right: 0px;
+        padding-left: 0px;
+        width:auto;
+    }
+    & .contact-us-container {
+        padding: 0;
+        width: 100%;
+        background-color: transparent;
+        border-radius: 0;
+    }
+}
+
+.checkout-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.checkout-layout-breadcrumb{
+	display: none;
+
+	@extend .container;
+	@extend .content-background;
+	padding-top: $sc-padding-lv7 !important;
+	padding-left: 0 !important;
+    font-family: $sc-theme-secondary-font;
+    text-transform: uppercase;
+	background-color: transparent !important;
+
+	@media(min-width: $screen-md-min) {
+		display: block;
+	}
+}
+
+.checkout-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}

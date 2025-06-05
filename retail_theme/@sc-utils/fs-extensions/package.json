@@ -1,0 +1,13 @@
+{
+  "name": "@sc-utils/fs-extensions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fs-extensions.js",
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://repository-master.eng.netsuite.com/content/repositories/releases-npm/"
+  }
+}

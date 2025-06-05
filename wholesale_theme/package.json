@@ -1,0 +1,66 @@
+{
+    "name": "sc-extension-devtools",
+    "version": "2024.2.50",
+    "description": "SuiteCommerce Development Tools to develop new themes or extensions",
+    "main": "index.js",
+    "scripts": {
+        "test": "node gulp/spec",
+        "postinstall": "npm i -g gulp-cli"
+    },
+    "engines": {
+        "node": "^20.10.0",
+        "npm": "^10.2.3"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "generator-extension": "file:./gulp/generator-extension",
+        "glob": "7.1.4",
+        "gulp": "5.0.0",
+        "@sc-utils/files-concat": "file:./@sc-utils/files-concat",
+        "@sc-utils/handlebars-compile": "file:./@sc-utils/handlebars-compile",
+        "dotenv": "16.0.1",
+        "gulp-sass": "5.0.0",
+        "gulp-sourcemaps": "2.5.1",
+        "handlebars": "4.7.7",
+        "inquirer": "7.1.0",
+        "@sc-utils/archiver": "file:./@sc-utils/archiver",
+        "@sc-utils/file-cabinet": "file:./@sc-utils/file-cabinet",
+        "@sc-utils/fs-extensions": "file:./@sc-utils/fs-extensions",
+        "@sc-utils/batch-logger": "file:./@sc-utils/batch-logger",
+        "@sc-utils/node-mocks": "file:./@sc-utils/node-mocks",
+        "@sc-utils/through": "file:./@sc-utils/through",
+        "@sc-utils/map-stream": "file:./@sc-utils/map-stream",
+        "@sc-utils/ns-file": "file:./@sc-utils/ns-file",
+        "@sc-utils/ns-mime": "file:./@sc-utils/ns-mime",
+        "@sc-utils/ns-uploader": "file:./@sc-utils/ns-uploader",
+        "@sc-utils/oauth1": "file:./@sc-utils/oauth1",
+        "@sc-utils/ns-logs": "file:./@sc-utils/ns-logs",
+        "@sc-utils/ns-async": "file:./@sc-utils/ns-async",
+        "@sc-utils/ns-progress-bar": "file:./@sc-utils/ns-progress-bar",
+        "@sc-utils/ns-server": "file:./@sc-utils/ns-server",
+        "@sc-utils/ns-request": "file:./@sc-utils/ns-request",
+        "@sc-utils/module-loader": "file:./@sc-utils/module-loader",
+        "@sc-utils/package-manager": "file:./@sc-utils/package-manager",
+        "sass": "1.62.1",
+        "semver": "6.3.1",
+        "@sc-utils/suitetalk": "file:./@sc-utils/suitetalk",
+        "through2": "3.0.1",
+        "underscore": "1.13.1",
+        "xml2js": "0.4.23",
+        "@sc-utils/ns-args": "file:./@sc-utils/ns-args",
+        "yeoman-environment": "3.19.3"
+    },
+    "devDependencies": {
+        "@types/node": "12.0.8"
+    },
+    "overrides": {
+        "binaryextensions": "4.18.0",
+        "ejs": "3.1.10",
+        "scss-tokenizer": "0.4.3",
+        "tough-cookie": "4.1.3",
+        "glob-parent": "5.1.2",
+        "unset-value": "2.0.1"
+    }
+  }

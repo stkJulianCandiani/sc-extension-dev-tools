@@ -1,0 +1,48 @@
+{
+	"name": "QtyAlert",
+	"fantasyName": "MiniCart and Cart Quantity Alret",
+	"vendor": "ACS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": " ",
+		"SCS": " "
+	},
+	"version": "1.0.0",
+	"description": "Qty alert",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Alert/Sass/qtyalert.scss"
+		},
+		"files": [
+			"Modules/Alert/Sass/qtyalert.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Alert/JavaScript/ACS.QtyAlert.Alert.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Alert/JavaScript/ACS.QtyAlert.Alert.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ACS/QtyAlert@1.0.0"
+}

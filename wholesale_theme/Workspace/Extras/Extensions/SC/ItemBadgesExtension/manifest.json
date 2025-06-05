@@ -1,0 +1,67 @@
+{
+	"name": "ItemBadgesExtension",
+	"fantasyName": "Item Badges",
+	"vendor": "SC",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.1.1",
+	"description": "(B2B) Display labels against a product such as 'New', 'On Sale' or 'Best Seller'. Displays in product detail and product listings page.",
+	"assets": {
+		"services": {
+			"files": [
+				"ItemBadges/services/ItemBadges.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ItemBadges/Configuration/ItemBadges.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ItemBadges/Templates/itembadges_list.tpl",
+					"Modules/ItemBadges/Templates/itembadges_view.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ItemBadges/Sass/_ItemBadges.scss"
+		},
+		"files": [
+			"Modules/ItemBadges/Sass/_ItemBadges.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ItemBadges/JavaScript/SC.ItemBadges.1.0.0.ItemBadges.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ItemBadges/JavaScript/SC.ItemBadges.1.0.0.ItemBadges.js",
+					"Modules/ItemBadges/JavaScript/ItemBadges.Collection.js",
+					"Modules/ItemBadges/JavaScript/ItemBadges.ProductDetail.js",
+					"Modules/ItemBadges/JavaScript/ItemBadges.ProductList.js",
+					"Modules/ItemBadges/JavaScript/ItemBadges.GlobalViews.js",
+					"Modules/ItemBadges/JavaScript/ItemBadges.Model.js",
+					"Modules/ItemBadges/JavaScript/ItemBadges.BadgesList.View.js",
+					"Modules/ItemBadges/JavaScript/ItemBadges.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ItemBadges/SuiteScript/SC.ItemBadges.1.0.0.ItemBadges.js",
+		"files": [
+			"Modules/ItemBadges/SuiteScript/SC.ItemBadges.1.0.0.ItemBadges.js",
+			"Modules/ItemBadges/SuiteScript/ItemBadges.Model.js",
+			"Modules/ItemBadges/SuiteScript/ItemBadges.ServiceController.js"
+		]
+	},
+	"path": "SuiteBundles/Bundle 521562/extensions/SC/ItemBadgesExtension@1.1.1"
+}

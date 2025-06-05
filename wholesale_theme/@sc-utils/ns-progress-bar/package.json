@@ -1,0 +1,17 @@
+{
+    "name": "@sc-utils/ns-progress-bar",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest ns-progress-barTest.js"
+    },
+    "author": "",
+    "devDependencies": {
+        "jest": "29.5.0",
+        "jest-junit": "16.0.0"
+    },
+    "publishConfig": {
+        "registry": "https://repository-master.eng.netsuite.com/content/repositories/releases-npm/"
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1724770830745" clover="3.2.0">
+  <project timestamp="1724770830746" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="11" coveredelements="11" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
+    <file name="index.js" path="/opt/teamcity-agents/agent-001/work/2aea408c8ff24cbd/ns-mime/index.js">
+      <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="2" type="stmt"/>
+      <line num="26" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="29" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

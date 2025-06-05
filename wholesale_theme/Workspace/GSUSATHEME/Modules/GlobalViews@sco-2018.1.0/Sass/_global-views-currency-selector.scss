@@ -1,0 +1,33 @@
+/* Edited for Summit Theme */
+
+.global-views-currency-selector{
+	@extend .selector;
+	margin: $sc-margin-lv2;
+    @media (min-width: $screen-md-min) {
+        margin: 0;
+    }
+}
+
+.global-views-currency-selector-addon{
+	@extend .selector-icon;
+	border-color: $sc-color-theme;
+    height: 50px;
+    line-height: 47px;
+    background-color: $sc-neutral-shade-0;
+    border-top-left-radius: $sc-theme-border-radius;
+    border-bottom-left-radius: $sc-theme-border-radius;
+    @media (min-width: $screen-md-min) {
+        border-color: $sc-color-theme-border-light;
+        background-color: transparent;
+    }
+}
+
+.global-views-currency-selector-select{
+	@extend .selector-select;
+	border-color: $sc-color-theme;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    @media (min-width: $screen-md-min) {
+        border-color: $sc-color-theme-border-light;
+    }
+}

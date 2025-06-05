@@ -1,0 +1,1 @@
+<div class="facets-facet-browse-added-for-comparison {{#if productToCompareNotExist}} hide-compare-panel {{/if}}" data-view="AddedForComparison"></div>

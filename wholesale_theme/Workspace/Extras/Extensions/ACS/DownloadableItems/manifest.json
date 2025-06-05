@@ -1,0 +1,113 @@
+{
+	"name": "DownloadableItems",
+	"fantasyName": "Downloadable Items",
+	"vendor": "ACS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Show the downloadable items for the user in a new my account page. And also add the link to the page on the site menus.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/DownloadableItems.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/DownloadableItems/Templates/downloadable_items_item_details.tpl",
+					"Modules/DownloadableItems/Templates/downloadable_items_item.tpl",
+					"Modules/DownloadableItems/Templates/downloadable_items.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/DownloadableItems/Templates/downloadable_items_item_details.tpl",
+					"Modules/DownloadableItems/Templates/downloadable_items_item.tpl",
+					"Modules/DownloadableItems/Templates/downloadable_items.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/DownloadableItems/Templates/downloadable_items_item_details.tpl",
+					"Modules/DownloadableItems/Templates/downloadable_items_item.tpl",
+					"Modules/DownloadableItems/Templates/downloadable_items.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/DownloadableItems/Sass/_downlodable_items.scss",
+			"myaccount": "Modules/DownloadableItems/Sass/_downlodable_items.scss",
+			"checkout": "Modules/DownloadableItems/Sass/_downlodable_items.scss"
+		},
+		"files": [
+			"Modules/DownloadableItems/Sass/_downlodable_items.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/DownloadableItems/JavaScript/DownloadableItems.js",
+			"myaccount": "Modules/DownloadableItems/JavaScript/DownloadableItems.js",
+			"checkout": "Modules/DownloadableItems/JavaScript/DownloadableItems.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.ChildItems.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Collection.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Item.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.ItemDetails.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.List.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Model.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Router.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.ChildItems.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Collection.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Item.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.ItemDetails.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.List.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Model.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Router.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.ChildItems.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Collection.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Item.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.ItemDetails.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.List.View.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Model.js",
+					"Modules/DownloadableItems/JavaScript/DownloadableItems.Router.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/DownloadableItems/SuiteScript/DownloadableItems.ServiceController.js",
+		"files": [
+			"Modules/DownloadableItems/SuiteScript/DownloadableItems.Model.js",
+			"Modules/DownloadableItems/SuiteScript/DownloadableItems.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ACS/DownloadableItems@1.0.0"
+}

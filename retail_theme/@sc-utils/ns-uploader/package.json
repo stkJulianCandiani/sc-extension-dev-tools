@@ -1,0 +1,16 @@
+{
+    "name": "@sc-utils/ns-uploader",
+    "version": "0.0.3",
+    "description": "",
+    "main": "./src/index.js",
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@sc-utils/ns-async": "1.0.0",
+        "@sc-utils/suitetalk": "1.1.0",
+        "underscore": "1.13.1"
+    },
+    "publishConfig": {
+        "registry": "https://repository-master.eng.netsuite.com/content/repositories/releases-npm/"
+    }
+}

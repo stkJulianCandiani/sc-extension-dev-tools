@@ -1,0 +1,57 @@
+{
+	"name": "ProductComparisonExtension",
+	"fantasyName": "Product Comparison",
+	"vendor": "SC",
+	"version": "1.1.4",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "(B2B) Allows shopper to select items in product listing page for comparison.",
+	"configuration": {
+		"files": [
+			"Modules/ProductComparison/Configuration/ProductComparison.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ProductComparison/Sass/shopping.scss"
+		},
+		"files": [
+			"Modules/ProductComparison/Sass/shopping.scss",
+			"Modules/ProductComparison/Sass/_productcomparison_dashboard.scss",
+			"Modules/ProductComparison/Sass/_productcomparison_facets.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ProductComparison/Templates/product_comparison_view.tpl",
+					"Modules/ProductComparison/Templates/product_comparison_facets.tpl",
+					"Modules/ProductComparison/Templates/product_comparison_facets_browse_view_extended.tpl",
+					"Modules/ProductComparison/Templates/productcomparison_dashboard.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ProductComparison/JavaScript/SC.ProductComparison.1.0.0.ProductComparison.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ProductComparison/JavaScript/SC.ProductComparison.1.0.0.ProductComparison.js",
+					"Modules/ProductComparison/JavaScript/ProductComparison.View.js",
+					"Modules/ProductComparison/JavaScript/Facets.AddedForComparison.View.js",
+					"Modules/ProductComparison/JavaScript/ProductComparison.Collection.js",
+					"Modules/ProductComparison/JavaScript/ProductComparison.Dashboard.View.js",
+					"Modules/ProductComparison/JavaScript/ProductComparison.Helper.js",
+					"Modules/ProductComparison/JavaScript/ProductComparison.Router.js",
+					"Modules/ProductComparison/JavaScript/ProductComparison.Facets.Browse.View.Extended.js"
+				]
+			}
+		}
+	},
+	"local_folder": "Workspace/ProductComparisonExtension",
+	"path": "SuiteBundles/Bundle 521562/extensions/SC/ProductComparisonExtension@1.1.4"
+}

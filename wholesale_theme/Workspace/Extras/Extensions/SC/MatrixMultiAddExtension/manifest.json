@@ -1,0 +1,60 @@
+{
+	"name": "MatrixMultiAddExtension",
+	"fantasyName": "Matrix Multi Add to Cart",
+	"vendor": "SC",
+	"version": "1.1.1",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "Display up to two matrix items as a grid, for example colors/sizes. A shopper can enter a quantity for each matrix item they wish to purchase, and add all items to cart at once.",
+	"configuration": {
+		"files": [
+			"Modules/MatrixMultiAdd/Configuration/Configuration.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/MatrixMultiAdd/Sass/shopping.scss"
+		},
+		"files": [
+			"Modules/MatrixMultiAdd/Sass/shopping.scss",
+			"Modules/MatrixMultiAdd/Sass/_matrixmultiadd.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/MatrixMultiAdd/Templates/matrix_multi_add_row.tpl",
+					"Modules/MatrixMultiAdd/Templates/matrix_multi_add_rowHead.tpl",
+					"Modules/MatrixMultiAdd/Templates/matrix_multi_add_view.tpl",
+					"Modules/MatrixMultiAdd/Templates/matrix_multi_add_price_row.tpl",
+					"Modules/MatrixMultiAdd/Templates/matrix_multi_add_notification_subscribe.tpl",
+					"Modules/MatrixMultiAdd/Templates/matrix_multi_add_pricing_view.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/MatrixMultiAdd/JavaScript/SC.MatrixMultiAdd.1.0.0.MatrixMultiAdd.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/MatrixMultiAdd/JavaScript/SC.MatrixMultiAdd.1.0.0.MatrixMultiAdd.js",
+					"Modules/MatrixMultiAdd/JavaScript/MatrixMultiAdd.Item.HashMap.js",
+					"Modules/MatrixMultiAdd/JavaScript/MatrixMultiAdd.ItemsKeyMapping.js",
+					"Modules/MatrixMultiAdd/JavaScript/MatrixMultiAdd.Row.View.js",
+					"Modules/MatrixMultiAdd/JavaScript/MatrixMultiAdd.RowHead.View.js",
+					"Modules/MatrixMultiAdd/JavaScript/MatrixMultiAdd.SubTotal.View.js",
+					"Modules/MatrixMultiAdd/JavaScript/MatrixMultiAdd.View.js",
+					"Modules/MatrixMultiAdd/JavaScript/MatrixMultiAdd.ValidateItem.View.js",
+					"Modules/MatrixMultiAdd/JavaScript/MatrixMultiAdd.Price.View.js",
+					"Modules/MatrixMultiAdd/JavaScript/MatrixMultiAdd.PriceLabel.View.js"
+				]
+			}
+		}
+	},
+	"local_folder": "Workspace/MatrixMultiAdd",
+	"path": "SuiteBundles/Bundle 521562/extensions/SC/MatrixMultiAddExtension@1.1.1"
+}

@@ -1,0 +1,53 @@
+{
+	"name": "GlobalConfigurationExtension",
+	"vendor": "SC",
+	"version": "1.1.1",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "Commerce Extension subtab in SCA Configuration",
+	"skins": [],
+	"configuration": {
+		"files": [
+			"Modules/GlobalConfiguration/Configuration/CommerceSuiteSolution.json",
+			"Modules/GlobalConfiguration/Configuration/GlobalConfiguration.Navigation.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HideQuantityPricing/Templates/hide_quantity_pricing_view.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/GlobalConfigurationEntryPoint/JavaScript/SC.GlobalConfigurationEntryPoint.js",
+			"myaccount": "Modules/GlobalConfiguration/JavaScript/SC.GlobalConfiguration.1.0.0.GlobalConfiguration.js",
+			"checkout": "Modules/GlobalConfiguration/JavaScript/SC.GlobalConfiguration.1.0.0.GlobalConfiguration.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/GlobalConfigurationEntryPoint/JavaScript/SC.GlobalConfigurationEntryPoint.js",
+					"Modules/GlobalConfiguration/JavaScript/SC.GlobalConfiguration.1.0.0.GlobalConfiguration.js",
+					"Modules/HideQuantityPricing/JavaScript/SC.HideQuantityPricing.1.0.0.HideQuantityPricing.js",
+					"Modules/HideQuantityPricing/JavaScript/HideQuantityPricing.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/GlobalConfiguration/JavaScript/SC.GlobalConfiguration.1.0.0.GlobalConfiguration.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/GlobalConfiguration/JavaScript/SC.GlobalConfiguration.1.0.0.GlobalConfiguration.js"
+				]
+			}
+		}
+	},
+	"local_folder": "Workspace/GlobalConfigurationExtension",
+	"path": "SuiteBundles/Bundle 521562/extensions/SC/GlobalConfigurationExtension@1.1.1"
+}

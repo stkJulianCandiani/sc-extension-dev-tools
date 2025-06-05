@@ -1,0 +1,17 @@
+{
+    "name": "@sc-utils/ns-mime",
+    "version": "1.0.0",
+    "description": "NS mime types",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest ns-mimeTest.js"
+    },
+    "author": "",
+    "devDependencies": {
+        "jest": "29.5.0",
+        "jest-junit": "16.0.0"
+    },
+    "publishConfig": {
+        "registry": "https://repository-master.eng.netsuite.com/content/repositories/releases-npm/"
+    }
+}

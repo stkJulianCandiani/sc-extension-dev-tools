@@ -1,0 +1,16 @@
+{
+    "name": "@sc-utils/node-mocks",
+    "version": "1.0.0",
+    "description": "Node core mocks module",
+    "main": "index.js",
+    "scripts": {
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "29.5.0"
+    },
+    "publishConfig": {
+        "registry": "https://repository-master.eng.netsuite.com/content/repositories/releases-npm/"
+    }
+}

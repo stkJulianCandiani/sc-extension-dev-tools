@@ -1,0 +1,12 @@
+/* Edited for Summit Theme */
+
+.product-line-sku-container {
+	margin-top: $sc-margin-lv6;
+	margin-bottom: $sc-margin-lv1;
+}
+.product-line-sku-value {
+	@extend .sc-sku-value;
+}
+.product-line-sku-label {
+	@extend .sc-sku-label;
+}

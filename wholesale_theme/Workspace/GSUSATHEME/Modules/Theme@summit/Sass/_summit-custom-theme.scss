@@ -1,0 +1,42 @@
+/* Product Slider */
+%product-slider {
+    @extend .large-title;
+    text-align: center;
+    font-size: 2.13em;
+}
+
+/* Box styling */
+/* Box around content, slider products, related items, recently viewed, pdp */
+.box {
+    background-color: $sc-color-theme-content-background;
+    @include border-radius($sc-theme-border-radius);
+    //@include box-shadow(0 6px 12px transparentize(black, 1-0.05));
+}
+
+/* Product info */
+/* For Recently Viewed Items, Merchandising Zones and Related Items */
+.product-info {
+    color: $sc-color-link;
+    font-size: $sc-font-size-l;
+    margin-bottom: $sc-margin-lv1;
+    border-top: $sc-theme-border-light;
+    padding-top: $sc-padding-lv3;
+    &:hover {
+        color: $sc-color-link-hover;
+        text-decoration: underline;
+    }
+}
+
+/* Summit specific spacing and color */
+.content-background {
+    padding-left: $sc-theme-mobile-padding;
+    padding-right: $sc-theme-mobile-padding;
+    padding-top: $sc-padding-lv3;
+    background-color: $sc-color-theme-content-background;
+    border-radius: 0 0 $sc-theme-border-radius $sc-theme-border-radius;
+
+    @media (min-width: $screen-md-min) {
+        padding-left: $sc-theme-desktop-padding;
+        padding-right: $sc-theme-desktop-padding;
+    }
+}

@@ -1,0 +1,61 @@
+{
+	"name": "SizeChartExtension",
+	"fantasyName": "Size Chart",
+	"vendor": "SC",
+	"version": "1.1.1",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "(B2B) A modal popup link of Size Chart displayed in PDP relevant to each product",
+	"assets": {
+		"services": {
+			"files": [
+				"SizeChart/services/SizeChart.Service.ss"
+			]
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/SizeChart/Sass/_size-chart.scss"
+		},
+		"files": [
+			"Modules/SizeChart/Sass/_size-chart.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SizeChart/Templates/size_chart.tpl",
+					"Modules/SizeChart/Templates/item_size_chart_link.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/SizeChart/JavaScript/SC.SizeChart.1.0.0.SizeChart.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SizeChart/JavaScript/SC.SizeChart.1.0.0.SizeChart.js",
+					"Modules/SizeChart/JavaScript/SizeChart.Router.js",
+					"Modules/SizeChart/JavaScript/SizeChart.Model.js",
+					"Modules/SizeChart/JavaScript/SizeChart.View.js",
+					"Modules/SizeChart/JavaScript/ItemSizeChartLink.View.js",
+					"Modules/SizeChart/JavaScript/SizeChart.CCT.LinkView.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/SizeChart/SuiteScript/SC.SizeChart.1.0.0.SizeChart.js",
+		"files": [
+			"Modules/SizeChart/SuiteScript/SC.SizeChart.1.0.0.SizeChart.js",
+			"Modules/SizeChart/SuiteScript/SizeChart.Model.js",
+			"Modules/SizeChart/SuiteScript/SizeChart.ServiceController.js"
+		]
+	},
+	"local_folder": "Workspace/SizeChartExtension",
+	"path": "SuiteBundles/Bundle 521562/extensions/SC/SizeChartExtension@1.1.1"
+}

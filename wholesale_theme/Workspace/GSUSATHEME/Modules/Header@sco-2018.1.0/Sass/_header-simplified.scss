@@ -1,0 +1,14 @@
+/* Edited for Summit Theme */
+
+.header-simplified-header{
+	@extend .container;
+	height: $sc-header-height;
+}
+
+.header-simplified-header-logo{
+	text-align: center;
+
+	.header-logo-image{
+		width: auto;
+	}
+}

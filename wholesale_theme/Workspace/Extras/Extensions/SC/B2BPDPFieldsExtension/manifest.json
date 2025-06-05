@@ -1,0 +1,55 @@
+{
+	"name": "B2BPDPFieldsExtension",
+	"fantasyName": "B2B PDP Fields",
+	"vendor": "SC",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.1.1",
+	"description": "(B2B) Include commonly-used B2B fields in PDP by default",
+	"configuration": {
+		"files": [
+			"Modules/B2BPDPFields/Configuration/B2BPDPFields.ProductDetails.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/B2BPDPFields/Templates/b2bpdpfields_view.tpl",
+					"Modules/B2BPDPFields/Templates/b2bpdpfields_list_view.tpl"
+				]
+			},
+			"myaccount": {
+				"files": []
+			},
+			"checkout": {
+				"files": []
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/B2BPDPFields/Sass/shopping.scss"
+		},
+		"files": [
+			"Modules/B2BPDPFields/Sass/shopping.scss",
+			"Modules/B2BPDPFields/Sass/_b2bpdpfields.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/B2BPDPFields/JavaScript/SC.B2BPDPFields.Shopping.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/B2BPDPFields/JavaScript/SC.B2BPDPFields.Shopping.js",
+					"Modules/B2BPDPFields/JavaScript/B2BPDPFields.ProductDetail.js",
+					"Modules/B2BPDPFields/JavaScript/B2BPDPFields.View.js",
+					"Modules/B2BPDPFields/JavaScript/B2BPDPFields.List.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteBundles/Bundle 521562/extensions/SC/B2BPDPFieldsExtension@1.1.1"
+}

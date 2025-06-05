@@ -1,0 +1,44 @@
+{
+	"name": "remove_credit_card_from_my_account",
+	"fantasyName": "Remove CreditCard From Myaccount",
+	"vendor": "CSSTeam",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Removing the credit card option",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/CreditCard/JavaScript/CSSTeam.remove_credit_card_from_my_account.CreditCard.js",
+			"checkout": "Modules/CreditCard/JavaScript/CSSTeam.remove_credit_card_from_my_account.CreditCard.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/CreditCard/JavaScript/CSSTeam.remove_credit_card_from_my_account.CreditCard.js",
+					"Modules/CreditCard/JavaScript/CreditCard.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CreditCard/JavaScript/CSSTeam.remove_credit_card_from_my_account.CreditCard.js",
+					"Modules/CreditCard/JavaScript/CreditCard.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CSSTeam/remove_credit_card_from_my_account@1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "@sc-utils/ns-async",
+    "version": "1.0.0",
+    "description": "Run functions asynchronously",
+    "main": "async.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "29.5.0"
+    },
+    "publishConfig": {
+        "registry": "https://repository-master.eng.netsuite.com/content/repositories/releases-npm/"
+    }
+}

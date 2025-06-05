@@ -1,0 +1,20 @@
+{
+  "name": "@sc-utils/package-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sc-utils/batch-logger": "1.0.0",
+    "@sc-utils/ns-args": "1.0.0",
+    "@sc-utils/ns-logs": "1.0.0",
+    "@sc-utils/through": "1.0.0",
+    "underscore": "1.13.1"
+  },
+  "publishConfig": {
+    "registry": "https://repository-master.eng.netsuite.com/content/repositories/releases-npm/"
+  }
+}

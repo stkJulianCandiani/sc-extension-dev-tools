@@ -1,0 +1,17 @@
+{
+  "name": "@sc-utils/archiver",
+  "version": "1.0.1",
+  "description": "",
+  "main": "archiver.js",
+  "scripts": {
+	"release": "sh ../release.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sc-utils/fs-extensions": "1.0.0",
+    "archiver": "7.0.1",
+    "underscore": "1.13.1"
+  },
+  "files": ["archiver.js"]
+}

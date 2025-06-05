@@ -1,0 +1,16 @@
+{
+    "name": "@sc-utils/suitetalk",
+    "version": "1.1.0",
+    "description": "suitetalk API for nodejs. For version 2015_1 to 2016_1.",
+    "main": "src/index.js",
+    "author": "PSG Ecommerce",
+    "dependencies": {
+        "handlebars": "4.7.7",
+        "underscore": "1.13.1",
+        "xml2js": "0.4.23",
+        "@sc-utils/ns-args": "1.0.0"
+    },
+    "publishConfig": {
+        "registry": "https://repository-master.eng.netsuite.com/content/repositories/releases-npm/"
+    }
+}

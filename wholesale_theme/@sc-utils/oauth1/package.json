@@ -1,0 +1,23 @@
+{
+    "name": "@sc-utils/oauth1",
+    "version": "1.0.0",
+    "description": "NS TBA authorization",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@sc-utils/ns-server": "1.0.0",
+        "@sc-utils/ns-request": "1.0.0"
+    },
+    "devDependencies": {
+        "jest": "29.5.0",
+        "jest-junit": "16.0.0",
+        "@sc-utils/node-mocks": "1.0.0"
+    },
+    "publishConfig": {
+        "registry": "https://repository-master.eng.netsuite.com/content/repositories/releases-npm/"
+    }
+}

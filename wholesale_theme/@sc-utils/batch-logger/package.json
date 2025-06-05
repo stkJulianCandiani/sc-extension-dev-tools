@@ -1,0 +1,13 @@
+{
+  "name": "@sc-utils/batch-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "batch-logger.js",
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://repository-master.eng.netsuite.com/content/repositories/releases-npm/"
+  }
+}

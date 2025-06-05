@@ -1,0 +1,40 @@
+{
+	"name": "FutureShipDate",
+	"fantasyName": "Future Ship Date",
+	"vendor": "CSS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Captures a future ship date",
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/FutureShipDate/Templates/futureshipdate.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/FutureShipDate/Sass/_futureshipdate.scss"
+		},
+		"files": [
+			"Modules/FutureShipDate/Sass/_futureshipdate.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/FutureShipDate/JavaScript/FutureShipDate.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/FutureShipDate/JavaScript/FutureShipDate.js",
+					"Modules/FutureShipDate/JavaScript/FutureShipDate.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CSS/FutureShipDate@1.0.0"
+}

@@ -1,0 +1,46 @@
+{
+	"name": "InventoryDisplayExtension",
+	"fantasyName": "Inventory Display",
+	"vendor": "SC",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.1.1",
+	"description": "(B2B) Display overall available inventory on the Product Detail Page with configurable message.",
+	"configuration": {
+		"files": [
+			"Modules/InventoryDisplay/Configuration/InventoryDisplay.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/InventoryDisplay/Templates/inventory_display_stock_views.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/InventoryDisplay/Sass/_inventory_display.scss"
+		},
+		"files": [
+			"Modules/InventoryDisplay/Sass/_inventory_display.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/InventoryDisplay/JavaScript/SC.InventoryDisplay.1.0.0.InventoryDisplay.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/InventoryDisplay/JavaScript/SC.InventoryDisplay.1.0.0.InventoryDisplay.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.ItemViews.Stock.View.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.ItemsKeyMapping.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteBundles/Bundle 521562/extensions/SC/InventoryDisplayExtension@1.1.1"
+}

@@ -1,0 +1,78 @@
+.item-relations-related-item-price .itembadges-badge-container,
+.itembadges-badge-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 20%;
+}
+
+.itembadges-badge {
+    @extend .col-md-6;
+    color: $sc-color-secondary;
+    font-size: $sc-font-size-base;
+    padding: $sc-padding-base;
+    width: 100%;
+}
+
+.itembadges-badge-row,
+.itembadges-image-row {
+    @extend .row;
+    margin: 0;
+    display: none;
+}
+
+.itembadges-image-row {
+    width: 100%;
+    text-align: center;
+}
+
+.itembadges-show {
+    display: block !important;
+}
+
+.item-relations-related-item-price {
+    position: static;
+}
+
+.product-details-gallery-prev-icon,
+.product-details-gallery-next-icon {
+    z-index: 11;
+}
+
+.product-details-image-gallery-next-icon,
+.product-details-image-gallery-prev-icon {
+  z-index: 11;
+}
+
+
+@media (min-width: $screen-sm-min) {
+    .facets-item-cell-table-content-wrapper {
+        position: relative;
+        .itembadges-badge-container {
+            width: 20%;
+            left: -20%;
+            right: auto;
+        }
+    }
+}
+
+.facets-item-cell-list-right {
+    position: relative;
+    .itembadges-badge-container {
+        left: -5%;
+        width: 5%;
+    }
+}
+
+/* PDP Item Badges */
+
+.product-details-full {
+    .itembadges-badge-container {
+        width: 12%;
+
+        @media (min-width: $screen-sm-min) {
+            width: 20%;
+        }
+    }
+}

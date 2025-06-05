@@ -1,0 +1,499 @@
+.home {
+  @extend .container;
+}
+
+.home-nopad {
+  @extend .container;
+  padding: 0;
+}
+
+.home-banner-top-message {
+  @extend .message-info;
+  @extend .message-large;
+}
+
+.home-slider-container {
+  //margin-top: -34px;
+  margin-bottom:$sc-margin-lv4;
+  @extend .row;
+}
+.home-image-slider {
+  @extend .col-sm-12;
+}
+
+.home-image-slider .bx-wrapper {
+  margin-bottom: $sc-margin-lv8;
+}
+.home-image-slider .bx-pager-item {
+  vertical-align: middle;
+}
+.home-image-slider .bx-controls,
+.home-image-slider .bx-controls .bx-pager {
+  @media (min-width: $screen-sm-min) {
+    margin-top: $sc-margin-lv2;
+  }
+}
+
+.home-image-slider .bx-viewport ul li {
+  overflow:hidden;
+}
+
+.home-image-slider .bx-wrapper img {
+  margin: auto 0;
+  height: 100%;
+  max-width: none;
+  @media (min-width: $screen-sm-min) {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.home-gallery-prev-icon, .home-gallery-next-icon {
+  position: absolute;
+  top: 40%;
+  width: $sc-target-size-mobile;
+  height: $sc-target-size-mobile;
+  font-size: 50px;
+  color: $sc-color-theme-500;
+}
+
+.home-gallery-prev-icon {
+  left: $sc-margin-lv6;
+  @extend .icon-angle-left;
+
+  @media (max-width: $screen-xs-min) {
+    top: 30%;
+  }
+}
+
+.home-gallery-next-icon {
+  right:10px;
+  @extend .icon-angle-right;
+
+  @media (max-width: $screen-xs-min) {
+    top: 37%;
+  }
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    top: 43%;
+  }
+  @media (min-width: $screen-sm-min) {
+    top: 45%;
+  }
+}
+
+.home-image-slider .bx-pager {
+    width: auto !important;
+    left: 50%;
+    @include transform(translateX(-50%));
+
+  a {
+    color: $sc-color-theme !important;
+    background-color: $sc-color-theme !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+    font-size:0;
+    text-indent:-9999px;
+  }
+  a.active,
+  a:active {
+    background-color: $sc-color-secondary;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+
+  .home-image-slider .bx-wrapper {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $screen-md-min) {
+  .home-slider-container, .home-image-slider .bx-wrapper {
+    margin-bottom: 0;
+  }
+}
+
+.home-image-slider .bx-pager {
+  @media (min-width: $screen-md-min) {
+    width: 940px;
+    position: absolute !important;
+    bottom: $sc-margin-lv4;
+    text-align: center;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: 1170px;
+  }
+}
+// end bx-slider specifics
+
+.home-banner-main {
+  margin-bottom:$sc-margin-lv4;
+  @extend .row;
+}
+
+.home-banner-main-cell-nth0{
+  @extend .col-xs-12;
+  @extend .col-sm-4;
+  text-align:center;
+  margin-bottom:$sc-margin-lv4;
+
+  img {
+    margin:auto;
+    float:left;
+    @media (min-width: $screen-sm-min) {
+      max-width:100%;
+      width: 100%;
+      float: none;
+    }
+  }
+}
+
+.home-banner-main-cell-nth1,
+.home-banner-main-cell-nth2 {
+  @extend .col-xs-6;
+  @extend .col-sm-4;
+  .home-banner-main-cell-text {
+    display: none;
+  }
+  img {
+    margin: 0 auto;
+    float: none;
+  }
+}
+.home-banner-main-cell-bg{
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-banner-main-cell-text{
+  display:inline-block;
+  color: $sc-color-theme;
+  font-size:$sc-font-size-xl;
+  text-transform:uppercase;
+  font-weight:$sc-font-weight-light;
+  line-height: 82px;
+  float: left;
+  @media (min-width: $screen-sm-min) {
+    display:none;
+  }
+}
+
+/* CMS */
+.cms-content {
+    margin-top: $sc-margin-lv3;
+    margin-bottom: $sc-margin-lv3;
+    & h2 {
+        @extend %product-slider;
+        text-align: left;
+    }
+}
+
+.cms-content-text h1,
+.cms-content-text h2,
+.cms-content-text h3,
+.cms-content-text h4,
+.cms-content-text h5,
+.cms-content-text h6 {
+    // text-align: center;
+    font-family: $sc-theme-secondary-font;
+    text-transform: uppercase;
+}
+
+.home-merchandizing-zone {
+  & .cms-content-text h1,
+  & .cms-content-text h2,
+  & .cms-content-text h3,
+  & .cms-content-text h4,
+  & .cms-content-text h5,
+  & .cms-content-text h6 {
+    // center titles on the home page only
+    text-align: center;
+  }
+}
+
+.home-merchandising-zone {
+    @extend .home-merchandizing-zone;
+}
+
+.home-slide-main-container{
+  overflow:hidden;
+  height: $sc-desktop-carousel-slide-height;
+  text-align:center;
+  background-color: $sc-color-theme-700; //fallback if no image
+  background-size: cover;
+  background-position: center center;
+  border-bottom-left-radius: $sc-border-radius;
+  border-bottom-right-radius: $sc-border-radius;
+  @media (max-width: $screen-xs-min) {
+      height: $sc-mobile-carousel-slide-height;
+  }
+}
+
+/* Only used for Summit Theme default setup
+Can be removed if images sourced from Enhanced Carousel config */
+.home-slide0 {
+    background-image: url(getThemeAssetsPath('img/summit-carousel-home-1.jpg'));
+}
+.home-slide1 {
+    background-image: url(getThemeAssetsPath('img/summit-carousel-home-2.jpg'));
+}
+.home-slide2 {
+    background-image: url(getThemeAssetsPath('img/summit-carousel-home-3.jpg'));
+}
+
+.home-image-slider-list{
+  & li {
+    height: $sc-desktop-carousel-slide-height !important;
+    @media (max-width: $screen-xs-min) {
+        height: $sc-mobile-carousel-slide-height !important;
+    }
+  }
+}
+.home-slide-caption{
+  position: absolute;
+  top: $sc-carousel-slide-caption-top-m;
+  width: 100%;
+  text-align: center;
+  padding: $sc-margin-lv2;
+  @media (max-width: $screen-xs-min) {
+    top: $sc-carousel-slide-caption-top-xs;
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+    top: $sc-carousel-slide-caption-top-s;
+  }
+  @media (min-width: $screen-sm-min) {
+    text-align: left;
+    padding-left: $sc-carousel-slide-caption-padding-left-m;
+  }
+  .home-slide-caption-title{
+      text-transform: uppercase;
+      margin-bottom: $sc-margin-lv2;
+      margin-left: $sc-margin-lv4;
+      margin-right: $sc-margin-lv4;
+      font-size: $sc-carousel-title-size-mobile;
+      color:$sc-carousel-title-color;
+      text-shadow: 2px 2px $sc-color-shadow;
+      font-weight: $sc-carousel-slide-caption-title-weight;
+      font-family: $sc-carousel-slide-caption-title-font;
+      @media (min-width: $screen-sm-min){
+          margin-left: 0;
+      }
+      @media (min-width: $screen-md-min){
+          margin-bottom: 0;
+          margin-right: 0;
+          font-size: $sc-carousel-title-size-desktop;
+          line-height: $sc-carousel-title-size-desktop;
+          padding-bottom: 0;
+      }
+  }
+  p{
+    display:none;
+    @media (min-width: $screen-xs-min){
+      display:block;
+      margin-bottom: $sc-margin-lv4;
+      color: $sc-carousel-text-color;
+      font-size: $sc-carousel-text-size;
+      font-weight: $sc-carousel-slide-caption-text-weight;
+      text-shadow: 1px 1px $sc-color-shadow;
+      width: $sc-carousel-slide-caption-text-width;
+      line-height: $sc-carousel-slide-caption-text-line-height;
+    }
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: $sc-margin-lv2;
+    }
+  }
+
+  .home-slide-caption-button-container{
+    padding-left:$sc-padding-lv4;
+    padding-right:$sc-padding-lv4;
+    position:absolute;
+    margin-left: -($sc-padding-lv2);
+    width: 100%;
+    @media (min-width: $screen-sm-min){
+      padding:0;
+      margin-left:0;
+      margin-right:0;
+      position:relative;
+    }
+  }
+
+  .home-slide-caption-button{
+    @extend .button-primary;
+    @extend .button-medium;
+    background-color: $sc-carousel-button-color; // same as primary but can be overriden
+	border-color: $sc-carousel-button-border-color; // same as primary but can be overriden
+    border-bottom: 0;
+    box-shadow: inset 0 0, inset 0 0, inset 0 0, 0 $sc-carousel-button-underline-size 0 $sc-carousel-button-underline-color;
+    font-size: $sc-font-size-xl;
+    &:hover {
+      border-bottom: 0 !important; // used because of the box-shadow above
+      background-color: $sc-carousel-button-hover-color; // same as primary but can be overriden
+  	  border-color: $sc-carousel-button-border-hover-color; // same as primary but can be overriden
+    }
+    @media (min-width: $screen-xs-min){
+      width: auto;
+      position:relative;
+    }
+  }
+}
+
+/* Home Infoblocks */
+
+.home-infoblock-layout {
+    @extend .row;
+    margin-left: $sc-margin-lv3;
+    margin-right: $sc-margin-lv3;
+    margin-top: $sc-margin-lv3;
+    @media (min-width: $screen-sm-min) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+}
+
+.home-infoblock {
+    width: 100%;
+    @extend .col-sm-6;
+    height: $sc-infoblock-height-mobile;
+    @include border-radius($sc-border-radius);
+    display: table;
+    margin-bottom: $sc-margin-lv2;
+    background-color: darkgray; //fallback if no image
+    &:hover {
+        cursor: pointer;
+    }
+    @media (min-width: $screen-xs-min) {
+        float: left;
+    }
+    @media (min-width: $screen-sm-min) {
+        margin-bottom: 0;
+        width: calc(50% - 10px);
+    }
+    @media (min-width: $screen-md-min) {
+        height: $sc-infoblock-height-desktop;
+    }
+    @media (max-width: $screen-sm-min) {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* Only used for Summit Theme default setup
+Can be removed if images sourced from Infoblocks config */
+.home-infoblock0 {
+    background-image: url(getThemeAssetsPath('img/summit-infoblock1.jpg'));
+}
+.home-infoblock1 {
+    background-image: url(getThemeAssetsPath('img/summit-infoblock2.jpg'));
+}
+
+.home-infoblock-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  @media (min-width: $screen-sm-min) {
+    padding-left: $sc-infoblock-content-padding;
+    padding-right: $sc-infoblock-content-padding;
+  }
+}
+
+%home-infoblock-copy {
+  font-weight: $sc-infoblock-font-weight;
+  text-transform: uppercase;
+  color: $sc-infoblock-link-color;
+  text-shadow: 2px 2px $sc-color-shadow;
+  letter-spacing: 1px;
+}
+
+.home-infoblock-text {
+  display: none;
+  @extend %home-infoblock-copy;
+  @media (min-width: $screen-sm-min) {
+    display: block;
+    font-size: $sc-infoblock-text-size;
+  }
+}
+
+.home-infoblock-title {
+    @extend %home-infoblock-copy;
+    font-size: $sc-infoblock-title-size-mobile;
+    @media (min-width: $screen-md-min) {
+      font-size: $sc-infoblock-title-size-desktop - 10;
+    }
+    @media (min-width: $screen-lg-min) {
+        font-size: $sc-infoblock-title-size-desktop;
+    }
+}
+
+.home-infoblock-link {
+    &:hover .home-infoblock-title,
+    &:active .home-infoblock-title,
+    &:focus .home-infoblock-title,
+    &:hover .home-infoblock-text,
+    &:active .home-infoblock-text,
+    &:focus .home-infoblock-text {
+        color: $sc-infoblock-link-color;
+        opacity: $sc-infoblock-link-opacity;
+    }
+    @media (min-width: $screen-sm-min) {
+      &:nth-child(even) .home-infoblock {
+          margin-left: $sc-margin-lv2;
+      }
+      &:nth-child(odd) .home-infoblock {
+          margin-right: $sc-margin-lv2;
+      }
+    }
+}
+
+/* Free text area */
+.home-page-freetext {
+    @extend .col-xs-12;
+    @extend .box;
+    padding: 0;
+}
+.home-page-freetext-wrapper {
+    display: block;
+    @extend .row;
+    margin-top: $sc-margin-lv4;
+    margin-bottom: $sc-margin-lv4;
+}
+.home-page-freetext-content {
+    @extend .row;
+}
+.home-page-freetext-content-text {
+    @extend .col-sm-7;
+    padding: $sc-freetext-vertical-padding $sc-freetext-horizontal-padding;
+    & p {
+      padding-bottom: $sc-padding-lv3;
+      color: $sc-freetext-text-color;
+    }
+    & h1, & h2, & h3, & h4, & h5 {
+        text-transform: uppercase;
+        color: $sc-freetext-heading-color;
+        padding-bottom: $sc-padding-lv1;
+    }
+    & .cms-content {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+.home-page-freetext-content-images-wrapper {
+    @extend .col-sm-5;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+      text-align: right;
+    }
+}
+.home-page-freetext-content-image {
+    padding-top: $sc-padding-lv2;
+    font-size: 0;
+    @media (min-width: $screen-sm-min) {
+      padding-top: 0;
+    }
+    & .cms-content {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

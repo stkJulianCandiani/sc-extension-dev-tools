@@ -1,0 +1,27 @@
+/* Edited for Summit Theme */
+
+.header-logo-wrapper {
+	float: left;
+}
+
+.header-logo {
+	display: block;
+	width: $sc-mobile-header-logo-width;
+	margin-top: $sc-mobile-header-logo-top-margin;
+	//margin-left: -($sc-mobile-header-logo-left-margin);
+
+	@media (min-width: $screen-xs-min) {
+		width: $sc-desktop-header-logo-width;
+		margin: $sc-desktop-header-logo-top-margin 0 0 0;
+	}
+}
+
+.header-logo-image {
+	vertical-align: middle;
+
+	@media (min-width: $screen-md-min) {
+		width: auto;
+	}
+}
+
+.header-logo-sitename {}

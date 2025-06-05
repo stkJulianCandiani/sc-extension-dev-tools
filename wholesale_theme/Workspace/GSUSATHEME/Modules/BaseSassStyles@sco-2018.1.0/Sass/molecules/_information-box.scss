@@ -1,0 +1,36 @@
+// Information box
+//
+// Markup:
+// <div class="information-box">
+// 	<div class="information-box-body">Body</div>
+// 	<div class="information-box-summary">Summary</div>
+// <div/>
+//
+// Styleguide 3.9
+
+/* Edited for Summit Theme */
+
+.information-box {
+	width: 100%;
+	border: none;
+	background-color: $sc-neutral-shade-0;
+	@include border-radius($sc-theme-border-radius);
+}
+
+.information-box-body {
+	padding: $sc-padding-lv3;
+
+	@media (min-width: $screen-sm-min) {
+		padding: $sc-padding-lv4;
+	}
+}
+
+.information-box-summary {
+	padding: $sc-padding-lv2 $sc-padding-lv3;
+	border-top: $sc-theme-border-light;
+	background-color: $sc-color-theme-background;
+
+	@media (min-width: $screen-sm-min) {
+		padding: $sc-padding-lv2 $sc-padding-lv4;
+	}
+}
