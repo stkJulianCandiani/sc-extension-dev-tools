@@ -58,11 +58,11 @@
         "extensions_path": [
             "Workspace/DownloadableItems",
             "Workspace/ForgetPassword",
-            "Workspace/GTMCustomEventsSCS",
             "Workspace/FutureShipDate",
+            "Workspace/GTMCustomEventsSCS",
             "Workspace/QtyAlert",
-            "Workspace/QuickBuy",
             "Workspace/QuantityAlert",
+            "Workspace/QuickBuy",
             "Workspace/RemoveCCFromMyAccount",
             "Workspace/RemoveInventoryPerEmail",
             "Workspace/RequirePurchaseNumber"
@@ -118,15 +118,15 @@
     "credentials": {
         "user_agent": "sc-extension-devtools/2024.1.0",
         "authID": "GSUSA.DEV",
-        "key": "ccab74c90efb6560994428b3cf0d3277668ca4b012f163a18c001679378ac81e",
-        "secret": "710bdd6adbbf3b0e9dcec558c70fcba8e659c5b55afc0fc47b36db2285c539f1",
-        "account": "317771-SB2",
         "hostname": "317771-SB2.restlets.api.netsuite.com",
         "website": "6",
         "domain": "sandbox2.gsmwholesale.org",
         "webapp_id": "316154",
         "ssp_folder": "316154",
-        "is_scis": false
+        "is_scis": false,
+        "key": "ccab74c90efb6560994428b3cf0d3277668ca4b012f163a18c001679378ac81e",
+        "secret": "710bdd6adbbf3b0e9dcec558c70fcba8e659c5b55afc0fc47b36db2285c539f1",
+        "account": "317771-SB2"
     },
     "product": "gulp",
     "nsdeployPath": ".nsdeploy"

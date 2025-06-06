@@ -10,8 +10,7 @@ define('GTMCustomEvents.ExtendedViews.View', [], function () {
         var cartAddToCartButtonPrototype = CartAddToCartButtonView.prototype;
         _(cartAddToCartButtonPrototype).extend({
             addToCart: _.wrap(cartAddToCartButtonPrototype.addToCart, function (fn) {
-                !localStorage.getItem('cartEventType') &&
-                    localStorage.setItem('cartEventType', 'add');
+                !localStorage.getItem('cartEventType') && localStorage.setItem('cartEventType', 'add');
 
                 fn.apply(this, Array.prototype.slice.call(arguments, 1));
             }),
@@ -21,8 +20,7 @@ define('GTMCustomEvents.ExtendedViews.View', [], function () {
         var matrixMultiAddPrototype = MatrixMultiAddView.prototype;
         _(matrixMultiAddPrototype).extend({
             addToCart: _.wrap(matrixMultiAddPrototype.addToCart, function (fn) {
-                !localStorage.getItem('cartEventType') &&
-                    localStorage.setItem('cartEventType', 'add');
+                !localStorage.getItem('cartEventType') && localStorage.setItem('cartEventType', 'add');
 
                 var myItemsIds = [];
 
@@ -42,27 +40,18 @@ define('GTMCustomEvents.ExtendedViews.View', [], function () {
         var CartDetailedView = require('Cart.Detailed.View');
         var cartDetailedPrototype = CartDetailedView.prototype;
         _(cartDetailedPrototype).extend({
-            updateItemQuantityEvent: _.wrap(
-                cartDetailedPrototype.updateItemQuantityEvent,
-                function (fn) {
-                    !localStorage.getItem('cartEventType') &&
-                        localStorage.setItem('cartEventType', 'update');
+            updateItemQuantityEvent: _.wrap(cartDetailedPrototype.updateItemQuantityEvent, function (fn) {
+                !localStorage.getItem('cartEventType') && localStorage.setItem('cartEventType', 'update');
 
-                    fn.apply(this, Array.prototype.slice.call(arguments, 1));
-                }
-            ),
-            updateItemQuantityFormSubmit: _.wrap(
-                cartDetailedPrototype.updateItemQuantityFormSubmit,
-                function (fn) {
-                    !localStorage.getItem('cartEventType') &&
-                        localStorage.setItem('cartEventType', 'update');
+                fn.apply(this, Array.prototype.slice.call(arguments, 1));
+            }),
+            updateItemQuantityFormSubmit: _.wrap(cartDetailedPrototype.updateItemQuantityFormSubmit, function (fn) {
+                !localStorage.getItem('cartEventType') && localStorage.setItem('cartEventType', 'update');
 
-                    fn.apply(this, Array.prototype.slice.call(arguments, 1));
-                }
-            ),
+                fn.apply(this, Array.prototype.slice.call(arguments, 1));
+            }),
             removeItem: _.wrap(cartDetailedPrototype.removeItem, function (fn) {
-                !localStorage.getItem('cartEventType') &&
-                    localStorage.setItem('cartEventType', 'remove');
+                !localStorage.getItem('cartEventType') && localStorage.setItem('cartEventType', 'remove');
 
                 fn.apply(this, Array.prototype.slice.call(arguments, 1));
             }),
@@ -74,8 +63,7 @@ define('GTMCustomEvents.ExtendedViews.View', [], function () {
             events: _.extend({}, HeaderMiniCartView.prototype.events, {
                 'click [data-touchpoint="checkout"]': 'triggerBeginCheckout',
                 'click .header-mini-cart-menu-cart-link:not([data-toggle])': 'triggerViewCart',
-                'click .header-mini-cart-button-view-cart[data-touchpoint="home"]':
-                    'triggerViewCart',
+                'click .header-mini-cart-button-view-cart[data-touchpoint="home"]': 'triggerViewCart',
             }),
             triggerBeginCheckout() {
                 GoogleTagManager.trackBeginCheckout(this.model);
@@ -111,8 +99,7 @@ define('GTMCustomEvents.ExtendedViews.View', [], function () {
         var cartSaveForLaterPrototype = ProductListCartSaveForLaterView.prototype;
         _(cartSaveForLaterPrototype).extend({
             saveForLaterItem: _.wrap(cartSaveForLaterPrototype.saveForLaterItem, function (fn, e) {
-                !localStorage.getItem('cartEventType') &&
-                    localStorage.setItem('cartEventType', 'save_for_later');
+                !localStorage.getItem('cartEventType') && localStorage.setItem('cartEventType', 'save_for_later');
 
                 fn.apply(this, Array.prototype.slice.call(arguments, 1));
             }),
@@ -124,8 +111,7 @@ define('GTMCustomEvents.ExtendedViews.View', [], function () {
             addToCart: _.wrap(quickOrderPrototype.addToCart, function (fn, lines) {
                 fn.apply(this, Array.prototype.slice.call(arguments, 1));
 
-                !localStorage.getItem('cartEventType') &&
-                    localStorage.setItem('cartEventType', 'quick-add');
+                !localStorage.getItem('cartEventType') && localStorage.setItem('cartEventType', 'quick-add');
 
                 var myItempluck = this.collection.map(function map(line) {
                     var item = line.get('item');
@@ -138,11 +124,7 @@ define('GTMCustomEvents.ExtendedViews.View', [], function () {
 
                 // filter out empty line items (e.g. new line) & lines already added to cart
                 var myFiltered = _.reject(myItempluck, function filtered(num) {
-                    return (
-                        !_.has(num, 'id') ||
-                        num.get('addedToCart') === true ||
-                        num.get('_isPurchasable') === false
-                    );
+                    return !_.has(num, 'id') || num.get('addedToCart') === true || num.get('_isPurchasable') === false;
                 });
 
                 GoogleTagManager.trackAddToCart(myFiltered);
@@ -152,8 +134,7 @@ define('GTMCustomEvents.ExtendedViews.View', [], function () {
                 var index = $button.data('index');
                 var line = this.collection.findWhere({ internalid: index });
 
-                !localStorage.getItem('cartEventType') &&
-                    localStorage.setItem('cartEventType', 'quick-remove');
+                !localStorage.getItem('cartEventType') && localStorage.setItem('cartEventType', 'quick-remove');
                 GoogleTagManager.trackAddToCart(line);
 
                 fn.apply(this, Array.prototype.slice.call(arguments, 1));
@@ -165,8 +146,7 @@ define('GTMCustomEvents.ExtendedViews.View', [], function () {
                 var index = $element.data('index');
                 var line = this.collection.findWhere({ internalid: index });
 
-                !localStorage.getItem('cartEventType') &&
-                    localStorage.setItem('cartEventType', 'quick-update');
+                !localStorage.getItem('cartEventType') && localStorage.setItem('cartEventType', 'quick-update');
                 GoogleTagManager.trackAddToCart(line);
             }),
             resultSelected: _.wrap(quickOrderPrototype.resultSelected, function (fn, e) {
@@ -176,8 +156,7 @@ define('GTMCustomEvents.ExtendedViews.View', [], function () {
                 var index = $select.data('index');
                 var line = this.collection.findWhere({ internalid: index });
 
-                !localStorage.getItem('cartEventType') &&
-                    localStorage.setItem('cartEventType', 'quick-update');
+                !localStorage.getItem('cartEventType') && localStorage.setItem('cartEventType', 'quick-update');
                 GoogleTagManager.trackAddToCart(line);
             }),
         });
