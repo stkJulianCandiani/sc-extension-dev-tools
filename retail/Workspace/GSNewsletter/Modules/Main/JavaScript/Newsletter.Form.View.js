@@ -8,7 +8,7 @@ define('Newsletter.Form.View', [
     'Backbone.FormView',
     'jQuery',
     'Tracker',
-    'underscore'
+    'underscore',
 ], function NewsletterFormView(
     Configuration,
     Recaptcha,
@@ -31,13 +31,13 @@ define('Newsletter.Form.View', [
             this.state = {
                 code: '',
                 message: '',
-                messageType: ''
+                messageType: '',
             };
 
             this.application = options.application;
 
             this.recaptcha = new Recaptcha({
-                configKey: 'n'
+                configKey: 'n',
             });
             this.options.application.getLayout().once('afterAppendView', function afterAppendToDom() {
                 self.setRecaptchaInForm();
@@ -58,11 +58,11 @@ define('Newsletter.Form.View', [
                     action: 'click',
                     value: 1,
                     callback: _.noop(),
-                    user: self.model
+                    user: self.model,
                 });
                 self.clearValues();
                 self.state.code = 'OK';
-                self.state.message = _('Thank you! Welcome to our newsletter').translate();
+                self.state.message = _('Thanks for joining our list!').translate();
                 self.state.messageType = 'success';
                 self.render();
                 self.setRecaptchaInForm();
@@ -88,21 +88,24 @@ define('Newsletter.Form.View', [
             '[name="firstname"]': 'firstname',
             '[name="lastname"]': 'lastname',
             '[name="email"]': 'email',
-            '[name="birth"]': 'birth'
+            '[name="birth"]': 'birth',
         },
 
         events: {
-            'submit form': 'submitForm'
+            'submit form': 'submitForm',
         },
 
         validateCaptcha: function validateCaptcha() {
             var promise = jQuery.Deferred();
-            this.recaptcha.validate(function onSuccess() {
-                promise.resolve();
-            }, function onError(e) {
-                console.log(e);
-                promise.reject(e);
-            });
+            this.recaptcha.validate(
+                function onSuccess() {
+                    promise.resolve();
+                },
+                function onError(e) {
+                    console.log(e);
+                    promise.reject(e);
+                }
+            );
             return promise;
         },
 
@@ -115,10 +118,12 @@ define('Newsletter.Form.View', [
         },
 
         getBreadcrumbPages: function getBreadcrumbPages() {
-            return [{
-                href: '#',
-                text: _('Email Sign Up').translate()
-            }];
+            return [
+                {
+                    href: '#',
+                    text: _('Email Sign Up').translate(),
+                },
+            ];
         },
         getContext: function getContext() {
             var config = Configuration.newsletter;
@@ -126,8 +131,8 @@ define('Newsletter.Form.View', [
                 isFeedback: !!this.state.code,
                 model: this.model,
                 disclaimer: config ? config.lightboxDisclaimer : '',
-                terms: config ? config.termsMessage : ''
+                terms: config ? config.termsMessage : '',
             };
-        }
+        },
     });
 });

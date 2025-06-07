@@ -10,7 +10,7 @@ define('Newsletter.View.Site', [
     'Backbone',
     'underscore',
     'jQuery',
-    'Utils'
+    'Utils',
 ], function NewsletterViewSite(
     BackboneFormView,
     BackboneCompositeView,
@@ -30,7 +30,7 @@ define('Newsletter.View.Site', [
 
         // @property {Object} events
         events: {
-            'submit [data-action="newsletter-subscribe"]': 'newsletterSubscribe'
+            'submit [data-action="newsletter-subscribe"]': 'newsletterSubscribe',
         },
 
         // @property {Object} bindings Binds email input field with model namesake property
@@ -39,38 +39,38 @@ define('Newsletter.View.Site', [
                 observe: 'email',
                 setOptions: {
                     validate: true,
-                    silent: true
+                    silent: true,
                 },
-                events: ['blur', 'keyup']
+                events: ['blur', 'keyup'],
             },
             '[name="age"]': {
                 observe: 'age',
                 setOptions: {
                     silent: true,
-                    validate: true
+                    validate: true,
                 },
-                events: ['blur', 'change']
-            }
+                events: ['blur', 'change'],
+            },
         },
 
         // @property {Object} feedback Keeps the text and kind of message we need to show as feedback
         feedback: {
             OK: {
                 type: 'success',
-                message: _('Thank you! Welcome to our newsletter').translate()
+                message: _('Thanks for joining our list!').translate(),
             },
             ERR_USER_STATUS_ALREADY_SUBSCRIBED: {
                 type: 'warning',
-                message: _('Sorry, the specified email is already subscribed.').translate()
+                message: _('Sorry, the specified email is already subscribed.').translate(),
             },
             ERR_USER_STATUS_DISABLED: {
                 type: 'error',
-                message: _('Sorry, the specified email cannot be subscribed.').translate()
+                message: _('Sorry, the specified email cannot be subscribed.').translate(),
             },
             ERROR: {
                 type: 'error',
-                message: _('Sorry, subscription cannot be done. Try again later.').translate()
-            }
+                message: _('Sorry, subscription cannot be done. Try again later.').translate(),
+            },
         },
 
         // @method initialize Defines this view as composite, initializes the 'state' object, and makes the form view available.
@@ -81,7 +81,7 @@ define('Newsletter.View.Site', [
             this.state = {
                 code: '',
                 message: '',
-                messageType: ''
+                messageType: '',
             };
 
             if (this.options.isSidebar) {
@@ -105,7 +105,7 @@ define('Newsletter.View.Site', [
                 return;
             }
             Backbone.history.navigate('#newsletter-form', {
-                trigger: true
+                trigger: true,
             });
         },
 
@@ -115,9 +115,9 @@ define('Newsletter.View.Site', [
                 return new GlobalViewsMessageView({
                     message: this.state.message,
                     type: this.state.messageType,
-                    closable: true
+                    closable: true,
                 });
-            }
+            },
         },
 
         // @method getContext
@@ -128,8 +128,8 @@ define('Newsletter.View.Site', [
                 // @property {Boolean} isFeedback
                 isFeedback: !!this.state.code,
                 // @property {Newsletter.Model} model
-                model: this.model
+                model: this.model,
             };
-        }
+        },
     });
 });
