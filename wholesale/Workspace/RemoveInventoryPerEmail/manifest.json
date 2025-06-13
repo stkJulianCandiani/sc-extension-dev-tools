@@ -1,33 +1,32 @@
 {
-	"name": "RemoveInventoryPerEmail",
-	"fantasyName": "Remove Inventory Per Email",
-	"vendor": "ACS",
-	"type": "extension",
-	"target": "SCA,SCS",
-	"target_version": {
-		"SCA": "",
-		"SCS": ""
-	},
-	"version": "1.0.0",
-	"description": "Remove Inventory Per Email",
-	"configuration": {
-		"files": [
-			"Modules/Main/Configuration/RemoveInventoryPerEmail.json"
-		]
-	},
-	"javascript": {
-		"entry_points": {
-			"shopping": "Modules/Main/Javascript/RemoveInventoryPerEmail.js"
-		},
-		"application": {
-			"shopping": {
-				"files": [
-					"Modules/Main/Javascript/RemoveInventoryPerEmail.js"
-				]
-			}
-		}
-	},
-	"path": "SuiteScripts/Deploy_Extensions/ACS/RemoveInventoryPerEmail@1.0.0",
-	"activation_id": "10",
-	"extension_id": "10601"
+    "name": "RemoveInventoryPerEmail",
+    "fantasyName": "Remove Inventory Per Email",
+    "vendor": "ACS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Remove Inventory Per Email",
+    "skins": [],
+    "configuration": {
+        "files": [
+            "Modules/Main/Configuration/RemoveInventoryPerEmail.json"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/Javascript/RemoveInventoryPerEmail.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/Javascript/RemoveInventoryPerEmail.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\RemoveInventoryPerEmail"
 }
