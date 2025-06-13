@@ -2,15 +2,9 @@ define('GSCustomHeader.Menu', [
     'Header.Menu.View',
     'SC.Configuration',
     'gs-header_menu.tpl',
-    'underscore'
-], function GSCustomHeaderMenu(
-    HeaderMenuView,
-    Configuration,
-    gsHeaderMenuTemplate,
-    _
-) {
+    'underscore',
+], function GSCustomHeaderMenu(HeaderMenuView, Configuration, gsHeaderMenuTemplate, _) {
     'use strict';
-
 
     return {
         loadModule: function loadModule(container) {
@@ -22,6 +16,15 @@ define('GSCustomHeader.Menu', [
             layout.addToViewContextDefinition('Header.Menu.View', 'categories', 'array', function selectedCategories() {
                 return _(Configuration.get('navigationData')).first(7);
             });
-        }
+
+            _(HeaderMenuView.prototype).extend({
+                events: _.extend({}, HeaderMenuView.prototype.events, {
+                    'click .header-profile-mobile .green-sub-menu-item a': function () {
+                        var element = document.querySelector('div#main');
+                        element.classList.remove('header-sidebar-opened');
+                    },
+                }),
+            });
+        },
     };
 });
