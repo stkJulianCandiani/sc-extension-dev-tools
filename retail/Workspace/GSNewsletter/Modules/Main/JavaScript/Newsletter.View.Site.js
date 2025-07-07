@@ -115,7 +115,7 @@ define('Newsletter.View.Site', [
                 return new GlobalViewsMessageView({
                     message: this.state.message,
                     type: this.state.messageType,
-                    closable: true,
+                    closable: false,
                 });
             },
         },
