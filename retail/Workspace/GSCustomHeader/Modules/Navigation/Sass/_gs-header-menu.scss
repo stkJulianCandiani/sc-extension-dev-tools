@@ -1,11 +1,23 @@
 @mixin setColorsToNavigation($class-name, $color, $index) {
     .category-color-#{$class-name} {
-        background-color: $color;
+        background-color: #fff;
+        border-bottom: 5px solid $color;
+
+        & .header-menu-level1-anchor {
+            color: #000;
+        }
 
         & .header-menu-level-container,
-        & .header-menu-level1-anchor:hover {
+        &:has(> a.header-menu-level1-anchor:hover),
+        &:has(> a.header-menu-level1-anchor:active),
+        &:has(> a.header-menu-level1-anchor:focus) {
             background-color: $color;
         }
+
+        // & .header-menu-level-container,
+        // & .header-menu-level1-anchor:hover {
+        //     background-color: $color;
+        // }
     }
 }
 
@@ -54,9 +66,9 @@
     }
 }
 
-.open .header-menu-level1-anchor {
-    color: white
-}
+// .open .header-menu-level1-anchor {
+//     color: white
+// }
 
 .header-menu-level1 {
     display: flex;
