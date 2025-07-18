@@ -3,21 +3,21 @@
         background-color: #fff;
         border-bottom: 5px solid $color;
 
-        & .header-menu-level1-anchor {
-            color: #000;
+        & .header-menu-level1-anchor,
+        & .header-menu-level2-anchor,
+        & .header-menu-level3-anchor {
+            color: #000 !important;
         }
 
-        & .header-menu-level-container,
+        & .header-menu-level-container{
+            background-color: #fff;
+        }
+
         &:has(> a.header-menu-level1-anchor:hover),
         &:has(> a.header-menu-level1-anchor:active),
         &:has(> a.header-menu-level1-anchor:focus) {
             background-color: $color;
         }
-
-        // & .header-menu-level-container,
-        // & .header-menu-level1-anchor:hover {
-        //     background-color: $color;
-        // }
     }
 }
 
@@ -56,11 +56,11 @@
     &:focus,
     &:active,
     &:hover {
-        color: white;
+        color: white !important;
     }
 
     @media (min-width: $screen-lg-min) {
-        height: 86px;
+        height: 75px;
         font-size: 17px;
         padding: 0 15px;
     }
@@ -82,7 +82,7 @@
 
     @media (min-width: $screen-lg-min) {
         &>li {
-            height: 86px;
+            height: 75px;
             max-width: 148px;
         }
     }
