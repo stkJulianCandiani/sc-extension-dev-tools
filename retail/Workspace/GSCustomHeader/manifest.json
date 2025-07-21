@@ -55,7 +55,8 @@
                     "Modules/Navigation/Templates/gs-header_menu.tpl",
                     "Modules/SiteSearch/Templates/gs-site_search.tpl",
                     "Modules/Navigation/Templates/gs-header_sidebar.tpl",
-                    "Modules/Navigation/Templates/gs-header_profile_mobile.tpl"
+                    "Modules/Navigation/Templates/gs-header_profile_mobile.tpl",
+                    "Modules/Profile/Template/gs_header_profile.tpl"
                 ]
             },
             "myaccount": {
@@ -65,7 +66,8 @@
                     "Modules/Navigation/Templates/gs-header_menu.tpl",
                     "Modules/SiteSearch/Templates/gs-site_search.tpl",
                     "Modules/Navigation/Templates/gs-header_sidebar.tpl",
-                    "Modules/Navigation/Templates/gs-header_profile_mobile.tpl"
+                    "Modules/Navigation/Templates/gs-header_profile_mobile.tpl",
+                    "Modules/Profile/Template/gs_header_profile.tpl"
                 ]
             },
             "checkout": {
@@ -75,7 +77,8 @@
                     "Modules/Navigation/Templates/gs-header_menu.tpl",
                     "Modules/SiteSearch/Templates/gs-site_search.tpl",
                     "Modules/Navigation/Templates/gs-header_sidebar.tpl",
-                    "Modules/Navigation/Templates/gs-header_profile_mobile.tpl"
+                    "Modules/Navigation/Templates/gs-header_profile_mobile.tpl",
+                    "Modules/Profile/Template/gs_header_profile.tpl"
                 ]
             }
         }
@@ -94,7 +97,8 @@
                     "Modules/Header/JavaScript/Custom.jQuery.sidebarMenu.js",
                     "Modules/Navigation/JavaScript/GSCustomHeader.Menu.js",
                     "Modules/SiteSearch/JavaScript/GSCustomHeader.SiteSearch.js",
-                    "Modules/MiniCart/JavaScript/GSCustomHeader.MiniCart.js"
+                    "Modules/MiniCart/JavaScript/GSCustomHeader.MiniCart.js",
+                    "Modules/Profile/Javascript/GSCustomHeader.Profile.js"
                 ]
             },
             "myaccount": {
@@ -104,7 +108,8 @@
                     "Modules/Navigation/JavaScript/GSCustomHeader.Menu.js",
                     "Modules/SiteSearch/JavaScript/GSCustomHeader.SiteSearch.js",
                     "Modules/MiniCart/JavaScript/GSCustomHeader.MiniCart.js",
-                    "Modules/Header/JavaScript/Custom.jQuery.sidebarMenu.js"
+                    "Modules/Header/JavaScript/Custom.jQuery.sidebarMenu.js",
+                    "Modules/Profile/Javascript/GSCustomHeader.Profile.js"
                 ]
             },
             "checkout": {
@@ -114,12 +119,13 @@
                     "Modules/Navigation/JavaScript/GSCustomHeader.Menu.js",
                     "Modules/SiteSearch/JavaScript/GSCustomHeader.SiteSearch.js",
                     "Modules/MiniCart/JavaScript/GSCustomHeader.MiniCart.js",
-                    "Modules/Header/JavaScript/Custom.jQuery.sidebarMenu.js"
+                    "Modules/Header/JavaScript/Custom.jQuery.sidebarMenu.js",
+                    "Modules/Profile/Javascript/GSCustomHeader.Profile.js"
                 ]
             }
         }
     },
-    "local_folder": "Workspace\\GSCustomHeader",
+    "local_folder": "Workspace/GSCustomHeader",
     "suitescript2": {
         "files": []
     }

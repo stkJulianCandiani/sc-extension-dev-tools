@@ -4,12 +4,14 @@ define('GSCustomHeader.Main', [
     'GSCustomHeader.Menu',
     'GSCustomHeader.SiteSearch',
     'GSCustomHeader.MiniCart',
+    'GSCustomHeader.Profile',
     'jQuery'
 ], function GSCustomHeaderMain(
     GSCustomHeaderHeader,
     GSCustomHeaderMenu,
     GSCustomHeaderSiteSearch,
     GSCustomHeaderMiniCart,
+    GSCustomHeaderProfile,
     jQuery
 ) {
     'use strict';
@@ -21,6 +23,7 @@ define('GSCustomHeader.Main', [
             GSCustomHeaderMenu.loadModule(container);
             GSCustomHeaderSiteSearch.loadModule(container);
             GSCustomHeaderMiniCart.loadModule(container);
+            GSCustomHeaderProfile.loadModule(container);
 
             // This is a workaround to identify when the CMS is open
             // so users can see all DOM elements, there is a banner hidden for dekstop
