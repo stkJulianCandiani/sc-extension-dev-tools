@@ -46,13 +46,25 @@
     }
 }
 
+.new-header-mini-cart-menu-link {
+    position: relative;
+
+    & i.header-mini-cart-menu-cart-icon {
+        color: #000;
+    }
+
+    & span.header-mini-cart-menu-cart-legend {
+        top: -8px;
+        right: -10px;
+    }
+}
 
 .header-mini-cart-menu-cart-icon {
     @extend .gs-icon-cart;
 }
 
 .header-mini-cart-menu-cart-legend {
-  $sc-size-legend: 28px;
+  $sc-size-legend: 24px;
   position: absolute;
   display: block;
   top: -14px;

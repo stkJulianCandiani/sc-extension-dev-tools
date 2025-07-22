@@ -1,4 +1,4 @@
-<a class="header-mini-cart-menu-cart-link {{#if showLines}}header-mini-cart-menu-cart-link-enabled{{/if}}" data-type="mini-cart" title="{{translate 'Cart'}}" data-touchpoint="{{cartTouchPoint}}" data-hashtag="#cart" href="#">
+<a class="new-header-mini-cart-menu-link" data-type="mini-cart" title="{{translate 'Cart'}}" data-touchpoint="{{cartTouchPoint}}" data-hashtag="#cart" href="#">
 	<i class="header-mini-cart-menu-cart-icon"></i>
 	<span class="header-mini-cart-menu-cart-legend">
 		{{#if isLoading}}

@@ -412,3 +412,11 @@ $container-lg: 1200px;
       transform: rotateZ(90deg);
     }
 }
+
+.header-menu-minicart {
+    position: relative;
+
+    & div.header-mini-cart {
+        z-index: 10003;
+    }
+}

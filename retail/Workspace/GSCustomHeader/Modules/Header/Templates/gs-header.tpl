@@ -25,16 +25,19 @@
 					<span class="header-submenu-separator">|</span>
 				{{/if}}
 				<div class="header-menu-profile" data-view="Header.Profile"></div>
+				<span class="header-submenu-separator">|</span>
+
+				<div class="header-menu-minicart" data-view="Header.MiniCart"></div>
 			</nav>
 		</div>
 
 		<section class="gs-header-secondary-wrapper">
 			<div class="gs-header-menu-wrapper" data-view="Header.Menu" data-phone-template="gs-header_sidebar" data-tablet-template="gs-header_sidebar"></div>
-			<div class="gs-header-menu-cart">
+			<!-- <div class="gs-header-menu-cart">
 				<div class="header-menu-cart-dropdown">
 					<div data-view="Header.MiniCart"></div>
 				</div>
-			</div>
+			</div> -->
 		</section>
 	</div>
 
