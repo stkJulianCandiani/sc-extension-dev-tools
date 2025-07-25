@@ -2,14 +2,15 @@
     "name": "GSNewsletter",
     "fantasyName": "GS Newsletter",
     "vendor": "CS",
+    "version": "1.0.5",
     "type": "extension",
     "target": "SCA,SCS",
     "target_version": {
         "SCA": "",
         "SCS": ""
     },
-    "version": "1.0.5",
     "description": "Extra functionality for Newsletter",
+    "skins": [],
     "assets": {
         "fonts": {
             "files": []
@@ -26,6 +27,20 @@
     "configuration": {
         "files": [
             "Modules/Main/Configuration/NewsLetter.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Main/Sass/_newsletter.scss",
+            "myaccount": "Modules/Main/Sass/_newsletter.scss",
+            "checkout": "Modules/Main/Sass/_newsletter.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_newsletter_form.scss",
+            "Modules/Main/Sass/_newsletter_lightbox.scss",
+            "Modules/Main/Sass/_newsletter_sidebar.scss",
+            "Modules/Main/Sass/_newsletter_site.scss",
+            "Modules/Main/Sass/_newsletter.scss"
         ]
     },
     "templates": {
@@ -55,20 +70,6 @@
                 ]
             }
         }
-    },
-    "sass": {
-        "entry_points": {
-            "shopping": "Modules/Main/Sass/_newsletter.scss",
-            "myaccount": "Modules/Main/Sass/_newsletter.scss",
-            "checkout": "Modules/Main/Sass/_newsletter.scss"
-        },
-        "files": [
-            "Modules/Main/Sass/_newsletter_form.scss",
-            "Modules/Main/Sass/_newsletter_lightbox.scss",
-            "Modules/Main/Sass/_newsletter_sidebar.scss",
-            "Modules/Main/Sass/_newsletter_site.scss",
-            "Modules/Main/Sass/_newsletter.scss"
-        ]
     },
     "javascript": {
         "entry_points": {
@@ -128,6 +129,7 @@
             "Modules/Main/SuiteScript/GSNewsletter.js"
         ]
     },
+    "local_folder": "Workspace/GSNewsletter",
     "suitescript2": {
         "files": []
     }

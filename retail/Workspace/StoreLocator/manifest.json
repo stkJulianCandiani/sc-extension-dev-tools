@@ -154,7 +154,7 @@
             "Modules/Main/SuiteScript/StoreLocator.Store.Model.js"
         ]
     },
-    "local_folder": "Workspace\\StoreLocator",
+    "local_folder": "Workspace/StoreLocator",
     "suitescript2": {
         "files": []
     }

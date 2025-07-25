@@ -42,7 +42,7 @@
             "Modules/Main/SuiteScript/LiveOrder.Model.Free.ShipMethods.js"
         ]
     },
-    "local_folder": "Workspace\\CoreFixes",
+    "local_folder": "Workspace/CoreFixes",
     "suitescript2": {
         "files": []
     }

@@ -60,7 +60,7 @@
             }
         }
     },
-    "local_folder": "Workspace\\SalesforceCollect",
+    "local_folder": "Workspace/SalesforceCollect",
     "suitescript2": {
         "files": []
     }

@@ -64,7 +64,7 @@
             "Modules/ProductList/SuiteScript/SharedWishList.ProductList.Model.js"
         ]
     },
-    "local_folder": "Workspace\\SharedWishlist",
+    "local_folder": "Workspace/SharedWishlist",
     "suitescript2": {
         "files": []
     }
