@@ -14,7 +14,9 @@ define('GSCustomHeader.Menu', [
 
             layout.removeToViewContextDefinition('Header.Menu.View', 'categories');
             layout.addToViewContextDefinition('Header.Menu.View', 'categories', 'array', function selectedCategories() {
-                return _(Configuration.get('navigationData')).first(7);
+                var categories = _(Configuration.get('navigationData')).first(8);
+                
+                return categories;
             });
 
             _(HeaderMenuView.prototype).extend({

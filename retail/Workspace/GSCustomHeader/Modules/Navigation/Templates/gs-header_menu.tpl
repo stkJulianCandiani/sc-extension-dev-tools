@@ -15,50 +15,41 @@
 					<a class="{{class}}" {{objectToAtrributes this}}>
 						<span class="header-menu-link-text">{{translate text}}</span>
 					</a>
+
 					{{#if categories}}
-					<ul class="header-menu-level-container">
-						<li>
-                            {{#if thumbnailurl}}
-                                <div class="header-menu-level2-banner mega-menu-banner banner-{{@index}}">
-                                    <div class="header-menu-level2-banner-image">
-                                        <a {{objectToAtrributes this}}>
-                                            <img src="{{thumbnailurl}}" alt="{{translate text}}">
-                                        </a>
-                                    </div>
-                                    <div class="header-menu-level2-banner-info">
-                                        {{#if description}}
-                                            <div class="header-menu-level2-banner-desc"><a {{objectToAtrributes this}}>{{translate description}}</a></div>
-                                        {{/if}}
-                                        <div class="header-menu-level2-banner-link">
+                        <div class="header-menu-level-container">
+								<div class="categories-container">
+									<div class="category-item">
+									<ul class="header-menu-level2">
+										{{#each categories}}
+											<li>
+												<a class="{{class}}" {{objectToAtrributes this}}>{{translate text}}</a>
 
-                                        </div>
-                                    </div>
-                                </div>
-                            {{/if}}
-                            <div class="header-menu-level2-wrap {{#unless thumbnailurl}} no-header-menu-banner{{/unless}}">
-                                <ul class="header-menu-level2">
-                                    {{#each categories}}
-                                        <li>
-                                            <a class="{{class}}" {{objectToAtrributes this}}>{{translate text}}</a>
+												{{#if categories}}
+													<ul >
+														{{#each categories}}
+															<li>
+																<a class="{{class}}" {{objectToAtrributes this}}>{{translate text}}</a>
+															</li>
+														{{/each}}
+													</ul>
+												{{/if}}
+											</li>
+										{{/each}}
+									</ul>
+								</div>
+								
 
-                                            {{#if categories}}
-                                                <ul class="header-menu-level3">
-                                                    {{#each categories}}
-                                                        <li>
-                                                            <a class="{{class}}" {{objectToAtrributes this}}>{{translate text}}</a>
-                                                        </li>
-                                                    {{/each}}
-                                                </ul>
-                                            {{/if}}
-                                        </li>
-                                    {{/each}}
-                                </ul>
-                                <div class="dropdown-menu-sep"></div>
-                                <div class="dropdown-menu-sep"></div>
-                                <div class="dropdown-menu-sep"></div>
-                            </div>
-						</li>
-					</ul>
+								{{#each categories}}
+									{{#if featured}}
+										<div class="category-item category-featured">
+											<img src="{{thumbnailurl}}" alt="">
+											<a class="{{class}}" {{objectToAtrributes this}}>{{translate text}}</a>
+										</div>
+									{{/if}}
+								{{/each}}
+							</div>
+                        </div>
 					{{/if}}
 				</li>
 			{{/if}}
